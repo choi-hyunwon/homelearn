@@ -2,9 +2,43 @@
 <html lang="ko">
 @@include('../html/include/head.html')
 <body>
-<div class="wrap-bg element">
+<div class="wrap-bg">
+
+  <!-- S 배경 슬라이드 -->
+  <div id="mainCarousel" class="carousel slide main" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="bg bg_main">
+          <div class="d-none d-md-block"
+               style="background: url(../img/_temp/img-main-top@3x.png) no-repeat center center /cover"></div>
+          <div class="d-xs-block d-md-none"
+               style="background: url(../img/_temp/m-main-recommend-bg@3x.png) no-repeat center center /cover"></div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="bg bg_main">
+          <div class="d-none d-md-block"
+               style="background: url(../img/_temp/img-main-top@3x.png) no-repeat center center /cover"></div>
+          <div class="d-xs-block d-md-none"
+               style="background: url(../img/_temp/m-main-recommend-bg@3x.png) no-repeat center center /cover"></div>
+        </div>
+      </div>
+      <ol class="carousel-indicators">
+        <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#mainCarousel" data-slide-to="1"></li>
+      </ol>
+    </div>
+  </div>
+  <script>
+    $('#mainCarousel')
+      .carousel({
+        interval: 3000
+      })
+  </script>
+  <!-- E 배경 슬라이드 -->
+
   <div class="wrap">
-    <div class="navbar main_grade">
+    <div class="navbar main">
       <div class="navbar-brand">
         <a href="#"><img src="../img/common/img-main-logo.png" height="32" width="149"/></a>
       </div>
@@ -38,13 +72,15 @@
     </div>
 
     <div class="container-lg container-fluid px-rem-md-3 px-no">
-      <div class="content pt-0">
-        <!-- 3단 이미지 3개 -->
-        <div class="edu-list mb-rem-md-6 p-md-no">
+
+      <div class="content">
+
+        <!-- 3단 이미지 3개 --> <!-- 3단 : card-list card-list-3 -->
+        <div class="edu-list normal-list line-bottom mb-rem-md-6 p-md-no">
           <div class="edu-item">
-            <p class="title pl-md-no">인기학습! 아직도 안해봤어요?<i class="sprite btn-tag-more-arrow-n align-sub"></i></p>
+            <p class="title pl-md-no"><span class="color-text">김홈런</span> 님을 위한 맞춤 학습</p>
             <div class="px-rem-2 p-md-no">
-              <a href="#" class="rounded-box d-md-none">공부하고 싶은 학습이 <span class="color-secondary">2개</span> 있어요.<span
+              <a href="#" class="rounded-box">공부하고 싶은 학습이 <span class="color-secondary">2개</span> 있어요.<span
                 class="badge bg-secondary">2</span>
                 <ul class="clearfix badge-img d-none d-md-inline-block">
                   <li><img src="../img/main/zen@3x.png" alt=""></li>
@@ -52,28 +88,110 @@
                 </ul>
               </a>
             </div>
-            <div class="card-list">
-              <div class="scroll" style="width:844px;">
-                <ul class="clearfix px-rem-2 p-md-no">
+            <div class="card-list card-list-3">
+              <div class="scroll-wrap"> <!-- scroll-wrap 추가 --- 2020.08.19 -->
+                <div class="scroll line-bottom" style="width:844px;">
+                  <ul class="clearfix px-rem-2 p-md-no">
+                    <li class="card-item">
+                      <a href="#">
+                        <span class="img"><img src="../img/main/m-main-recommend-app-img01@2x.png" alt=""></span>
+                        <span class="title text-ellipsis">아이스크림에듀</span>
+                        <span class="title-sm text-ellipsis">캠블리 Cambly<span class="badge-list">학습중</span></span>
+                      </a>
+                    </li>
+                    <li class="card-item">
+                      <a href="#">
+                        <span class="img"><img src="../img/main/m-main-recommend-app-img02@2x.png" alt=""></span>
+                        <span class="title text-ellipsis">아이스크림에듀</span>
+                        <span class="title-sm text-ellipsis">인공지능 홈<span class="badge-list">학습중</span></span>
+                      </a>
+                    </li>
+                    <li class="card-item">
+                      <a href="#">
+                        <span class="img"><img src="../img/main/m-main-recommend-app-img02@2x.png" alt=""></span>
+                        <span class="title text-ellipsis">아이스크림에듀</span>
+                        <span class="title-sm text-ellipsis">인공지능 홈<span class="badge-list">학습중</span></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3단 이미지 2개 --> <!-- 3단 : card-list card-list-3 -->
+        <div class="edu-list normal-list line-bottom mb-rem-md-6 p-md-no">
+          <div class="edu-item">
+            <p class="title pl-md-no"><span class="color-text">김에듀</span> 님을 위한 맞춤 학습</p>
+            <div class="px-rem-2 p-md-no">
+              <a href="#" class="rounded-box">공부하고 싶은 학습이 <span class="color-secondary">5개</span> 있어요.<span
+                class="badge bg-secondary">5</span>
+                <ul class="clearfix badge-img d-none d-md-inline-block">
+                  <li><img src="../img/main/p-fox@3x.png" alt=""></li>
+                  <li><img src="../img/main/wcat@3x.png" alt=""></li>
+                  <li><img src="../img/main/todo@3x.png" alt=""></li>
+                  <li><img src="../img/main/zen@3x.png" alt=""></li>
+                  <li><img src="../img/main/ybird@3x.png" alt=""></li>
+                </ul>
+              </a>
+            </div>
+            <div class="card-list card-list-3">
+              <div class="scroll-wrap"> <!-- scroll-wrap 추가 --- 2020.08.19 -->
+                <div class="scroll line-bottom" style="width:577px;">
+                  <ul class="clearfix px-rem-2 p-md-no">
+                    <li class="card-item">
+                      <a href="#">
+                        <span class="img"><img src="../img/main/m-main-recommend-app-img01@2x.png" alt=""></span>
+                        <span class="title text-ellipsis">아이스크림에듀</span>
+                        <span class="title-sm text-ellipsis">캠블리 Cambly<span class="badge-list">학습중</span></span>
+                      </a>
+                    </li>
+                    <li class="card-item">
+                      <a href="#">
+                        <span class="img"><img src="../img/main/m-main-recommend-app-img02@2x.png" alt=""></span>
+                        <span class="title text-ellipsis">아이스크림에듀</span>
+                        <span class="title-sm text-ellipsis">인공지능 홈<span class="badge-list">학습중</span></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 이벤트 영역 - 1개 --> <!-- 1단 : card-list -->
+        <div class="event-box mb-rem-md-6 p-md-no">
+          <div class="card-list">
+            <div class="card-item">
+              <a class="img" href="#">
+                <img class="d-none d-md-block" src="../img/main/homelearn-banner.png" alt="">
+                <img class="d-xs-block d-md-none" src="../img/main/m-homelearn-banner@2x.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 이벤트 영역 - 2개 --> <!-- 2단 : card-list card-list-2 -->
+        <div class="event-box mb-rem-md-6 p-md-no px-no mb-rem-3 clearfix">
+          <div class="link-title px-rem-2">
+            <a href="#" class="d-lg-no-cursor color-text2">이벤트에 참여해 보세요<i
+              class="sprite btn-tag-more-arrow-n d-xs-block d-md-none"></i></a>
+            <a href="#" class="btn-text d-none d-md-block">더보기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a>
+          </div>
+          <div class="card-list card-list-2">
+            <div class="scroll-wrap"> <!-- scroll-wrap 추가 --- 2020.08.19 -->
+              <div class="scroll" style="width: 570px">
+                <ul class="clearfix px-rem-2 pb-rem-2 p-md-no">
                   <li class="card-item">
-                    <a href="#">
-                      <span class="img"><img src="../img/main/m-main-recommend-app-img01@2x.png" alt=""></span>
-                      <span class="title text-ellipsis">아이스크림에듀</span>
-                      <span class="title-sm text-ellipsis">캠블리 Cambly<span class="badge-list">학습중</span></span>
+                    <a href="#" class="img">
+                      <img src="../img/_temp/m-main-recommend-event-banner-img@3x.png" alt="">
                     </a>
                   </li>
                   <li class="card-item">
-                    <a href="#">
-                      <span class="img"><img src="../img/main/m-main-recommend-app-img02@2x.png" alt=""></span>
-                      <span class="title text-ellipsis">아이스크림에듀</span>
-                      <span class="title-sm text-ellipsis">인공지능 홈<span class="badge-list">학습중</span></span>
-                    </a>
-                  </li>
-                  <li class="card-item">
-                    <a href="#">
-                      <span class="img"><img src="../img/main/m-main-recommend-app-img02@2x.png" alt=""></span>
-                      <span class="title text-ellipsis">아이스크림에듀</span>
-                      <span class="title-sm text-ellipsis">인공지능 홈<span class="badge-list">학습중</span></span>
+                    <a href="#" class="img">
+                      <img src="../img/_temp/m-main-recommend-event-banner-img@3x.png" alt="">
                     </a>
                   </li>
                 </ul>
@@ -82,7 +200,364 @@
           </div>
         </div>
 
-        <div class="tag-btn-wrap"><a href="#">더보기<i class="sprite btn-open-color-n"></i></a></div>
+        <!-- 배너 --> <!-- 1단 : card-list -->
+        <div class="banner-box mb-rem-md-6 p-md-no">
+          <div class="link-title clearfix">
+            <div class="title color-secondary">#인공지능
+              <a href="#" class="btn btn-sm btn-main-off bg-grey"><i class="sprite btn-noti-n-sm"></i>알림 OFF</a>
+            </div>
+            <p class="desc">나에게 딱 맞는 수준별 학습</p>
+          </div>
+          <div class="card-list">
+            <div class="card-item">
+              <div class="img"><img src="../img/main/m-main-recommend-app-card-img@3x.png" alt=""></div>
+              <div class="card-body clearfix">
+                <div class="desc"><span>아이스크림에듀</span><span class="badge-list">학습중</span></div>
+                <div class="title text-ellipsis">홈런 AI수학 : 신나는 숫자나라 깜짝 대모험</div>
+                <div class="title-sm">더 이상 너무 쉽거나 어려운 문제 풀지 마세요.</div>
+                <div class="desc-sm">홈런 뚜루아이와 함께 다양한 미션을 해결하다 보면 저절로
+                  수의 개념이나 연산을 배울 수 있어요!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2단 -->  <!-- 2단 : card-list card-list-2 -->
+        <div class="edu-list shadow-box-list mb-rem-3 mb-rem-md-6">
+          <div class="edu-item">
+            <div class="link-title clearfix px-rem-2 px-md-no">
+              <div class="title">
+                <a href="#" class="color-secondary d-lg-no-cursor">#초등사고력<i
+                  class="sprite btn-tag-more-arrow-color-n d-md-none"></i></a>
+                <a href="#" class="btn btn-sm btn-main-on"><i class="sprite btn-noti-color-n-sm"></i>알림 ON</a>
+              </div>
+              <p class="desc">스스로 생각해보는 습관 기르기</p>
+            </div>
+            <div class="card-list card-list-2">
+              <div class="scroll-wrap"> <!-- scroll-wrap 추가 --- 2020.08.19 -->
+                <div class="scroll pb-20" style="width:570px;">
+                  <ul class="clearfix px-rem-2 px-md-no pb-rem-2">
+                    <li class="card-item">
+                      <a href="#">
+                      <span class="img"><img src="../img/main/m-main-recommend-scroll-app-card-img01@3x.png"
+                                             alt=""></span>
+                        <span class="title text-ellipsis">아이스크림에듀</span>
+                        <span class="title-sm text-ellipsis">마법과 함께하는 천자문 교육</span>
+                        <span class="badge-list">학습중</span>
+                      </a>
+                    </li>
+                    <li class="card-item">
+                      <a href="#">
+                      <span class="img"><img src="../img/main/m-main-recommend-scroll-app-card-img02@3x.png"
+                                             alt=""></span>
+                        <span class="title">아이스크림에듀</span>
+                        <span class="title-sm">프리미엄</span>
+                        <span class="badge-list">학습중</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3단 --> <!-- 3단 : card-list card-list-3 -->
+        <div class="edu-list shadow-box-list mb-rem-3 mb-rem-md-6 d-none d-md-block">
+          <div class="edu-item">
+            <div class="link-title clearfix px-rem-2 pl-md-no pr-md-no">
+              <div class="title">
+                <a href="#" class="color-secondary d-lg-no-cursor">#초등한자<i
+                  class="sprite btn-tag-more-arrow-color-n d-md-none"></i></a>
+                <a href="#" class="btn btn-sm btn-main-on btn-main-on-right"><i class="sprite btn-noti-color-n-sm"></i>알림
+                  ON</a>
+                <a href="#" class="btn-text d-none d-md-block">더보기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a>
+              </div>
+              <p class="desc">스스로 생각해보는 습관 기르기</p>
+            </div>
+            <div class="card-list card-list-3">
+              <div class="scroll-wrap"> <!-- scroll-wrap 추가 --- 2020.08.19 -->
+                <div class="scroll pb-20 " style="width:844px;">
+                  <ul class="clearfix px-rem-2 px-md-no">
+                    <li class="card-item">
+                      <a href="#">
+                        <span class="img"><img src="../img/main/m-main-recommend-scroll-app-card-img01.png"
+                                               alt=""></span>
+                        <span class="title text-ellipsis">아이스크림에듀</span>
+                        <span class="title-sm text-ellipsis">마법과 함께하는 천자문 교육</span>
+                        <span class="badge-list">학습중</span>
+                      </a>
+                    </li>
+                    <li class="card-item">
+                      <a href="#">
+                        <span class="img"><img src="../img/main/m-main-recommend-scroll-app-card-img01.png"
+                                               alt=""></span>
+                        <span class="title">아이스크림에듀</span>
+                        <span class="title-sm text-ellipsis">마법과 함께하는 천자문 교육</span>
+                        <span class="badge-list">학습중</span>
+                      </a>
+                    </li>
+                    <li class="card-item">
+                      <a href="#">
+                        <span class="img"><img src="../img/main/m-main-recommend-scroll-app-card-img01.png"
+                                               alt=""></span>
+                        <span class="title">아이스크림에듀</span>
+                        <span class="title-sm text-ellipsis">마법과 함께하는 천자문 교육</span>
+                        <span class="badge-list">학습중</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5단 / 5개 --> <!-- 5단 : card-list card-list-5 --> <!-- 5단 추가 -- 2020.08.19-->
+        <div class="tag-list mb-rem-md-3">
+          <div class="link-title clearfix px-rem-2 pl-md-no pr-md-no">
+            <div class="title">
+              <a href="#" class="color-secondary d-lg-no-cursor">#초등한자<i
+                class="sprite btn-tag-more-arrow-color-n d-md-none"></i></a>
+              <a href="#" class="btn btn-sm btn-main-on btn-main-on-right"><i class="sprite btn-noti-color-n-sm"></i>알림
+                ON</a>
+              <a href="#" class="btn-text d-none d-md-block">더보기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a>
+            </div>
+            <p class="desc">스스로 생각해보는 습관 기르기</p>
+          </div>
+          <div class="card-list card-list-5">
+            <div class="scroll-wrap"> <!-- scroll-wrap 추가 --- 2020.08.19 -->
+              <div class="scroll" style="width: 845px">
+                <ul class="clearfix px-rem-2 px-md-no">
+                  <li class="card-item">
+                    <a href="#">
+                      <div class="img">
+                        <img src="../img/main/m-app-card-img02@3x.png" alt="">
+                      </div>
+                      <div class="list-body">
+                        <span class="title">1번째 탭 : 24시간 1:1 영어회화</span>
+                        <span class="score"><i class="sprite icon-16-star"></i>3.5</span>
+                        <span class="s-sticker"><i class="sprite icon-list-badge-subscribe"></i></span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="card-item">
+                    <a href="#">
+                      <div class="img">
+                        <img src="../img/main/m-app-card-img01@3x.png" alt="">
+                      </div>
+                      <div class="list-body">
+                        <span class="title">캐치잇 잉글리시 : 게임보다 쉬운 영어</span>
+                        <span class="score"><i class="sprite icon-16-star"></i>3.5</span>
+                        <span class="s-sticker"><i class="sprite icon-list-badge-subscribe"></i></span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="card-item">
+                    <a href="#">
+                      <div class="img">
+                        <img src="../img/main/m-app-card-img02@3x.png" alt="">
+                      </div>
+                      <div class="list-body">
+                        <span class="title">영어를 부탁해</span>
+                        <span class="score"><i class="sprite icon-16-star"></i>3.5</span>
+                        <span class="s-sticker"><i class="sprite icon-list-badge-subscribe"></i></span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="card-item">
+                    <a href="#">
+                      <div class="img">
+                        <img src="../img/main/m-app-card-img01@3x.png" alt="">
+                      </div>
+                      <div class="list-body">
+                        <span class="title">EBS 생방송 톡!톡! 보니하니</span>
+                        <span class="score"><i class="sprite icon-16-star"></i>3.5</span>
+                        <span class="s-sticker"><i class="sprite icon-list-badge-subscribe"></i></span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="card-item">
+                    <a href="#">
+                      <div class="img">
+                        <img src="../img/main/m-app-card-img02@3x.png" alt="">
+                      </div>
+                      <div class="list-body">
+                        <span class="title">실감형 콘텐츠</span>
+                        <span class="score"><i class="sprite icon-16-star"></i>3.5</span>
+                        <span class="s-sticker"><i class="sprite icon-list-badge-subscribe"></i></span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5단 / 4개--> <!-- 5단 : card-list card-list-5 --> <!-- 5단 추가 -- 2020.08.19-->
+        <div class="tag-list mb-rem-md-3">
+          <div class="link-title clearfix px-rem-2 px-md-no">
+            <div class="title">
+              <a href="#" class="color-secondary d-lg-no-cursor">#초등사고력<i
+                class="sprite btn-tag-more-arrow-color-n d-md-none"></i></a>
+              <a href="#" class="btn btn-sm btn-main-on"><i class="sprite btn-noti-color-n-sm"></i>알림 ON</a>
+            </div>
+            <p class="desc">스스로 생각해보는 습관 기르기</p>
+          </div>
+          <div class="card-list card-list-5">
+            <div class="scroll-wrap"> <!-- scroll-wrap 추가 --- 2020.08.19 -->
+              <div class="scroll" style="width: 681px">
+                <ul class="clearfix px-rem-2 px-md-no">
+                  <li class="card-item">
+                    <a href="#">
+                      <div class="img">
+                        <img src="../img/main/m-app-card-img02@3x.png" alt="">
+                      </div>
+                      <div class="list-body">
+                        <span class="title">1번째 탭 : 24시간 1:1 영어회화</span>
+                        <span class="score"><i class="sprite icon-16-star"></i>3.5</span>
+                        <span class="s-sticker"><i class="sprite icon-list-badge-subscribe"></i></span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="card-item">
+                    <a href="#">
+                      <div class="img">
+                        <img src="../img/main/m-app-card-img01@3x.png" alt="">
+                      </div>
+                      <div class="list-body">
+                        <span class="title">캐치잇 잉글리시 : 게임보다 쉬운 영어</span>
+                        <span class="score"><i class="sprite icon-16-star"></i>3.5</span>
+                        <span class="s-sticker"><i class="sprite icon-list-badge-subscribe"></i></span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="card-item">
+                    <a href="#">
+                      <div class="img">
+                        <img src="../img/main/m-app-card-img01@3x.png" alt="">
+                      </div>
+                      <div class="list-body">
+                        <span class="title">EBS 생방송 톡!톡! 보니하니</span>
+                        <span class="score"><i class="sprite icon-16-star"></i>3.5</span>
+                        <span class="s-sticker"><i class="sprite icon-list-badge-subscribe"></i></span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="card-item">
+                    <a href="#">
+                      <div class="img">
+                        <img src="../img/main/m-app-card-img02@3x.png" alt="">
+                      </div>
+                      <div class="list-body">
+                        <span class="title">실감형 콘텐츠</span>
+                        <span class="score"><i class="sprite icon-16-star"></i>3.5</span>
+                        <span class="s-sticker"><i class="sprite icon-list-badge-subscribe"></i></span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4단 정사각형 --> <!-- 4단 : card-list card-list-4 -->
+        <div class="edu-list edu-list-sm mb-rem-3 mb-rem-md-6">
+          <div class="edu-item">
+            <div class="link-title px-rem-2 pl-md-no pr-md-no">
+              <div><a href="#" class="d-lg-no-cursor color-text2">아이스크림몰 상품 추천<i
+                class="sprite btn-tag-more-arrow-n d-md-none"></i></a></div>
+              <a href="#" class="btn-text d-none d-md-block">아이스크림몰 가기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a>
+            </div>
+            <div class="card-list card-list-4">
+              <div class="scroll-wrap"> <!-- scroll-wrap 추가 --- 2020.08.19 -->
+                <div class="scroll" style="width:680px;">
+                  <ul class="clearfix px-rem-2 px-md-no">
+                    <li class="card-item">
+                      <a href="#">
+                        <span class="img"><img src="../img/main/main-recommend-app-goods-img@3x.png" alt=""></span>
+                        <span class="title text-ellipsis">[레시피박스] 소프트 페이셜폼</span>
+                        <span class="title-sm text-ellipsis">11,000<i class="won">원</i></span>
+                      </a>
+                    </li>
+                    <li class="card-item">
+                      <a href="#">
+                        <span class="img"><img src="../img/main/m-main-recommend-app-goods-img02.png" alt=""></span>
+                        <span class="title text-ellipsis">홈런프렌즈 개학 축하팩 (저학년)</span>
+                        <span class="title-sm text-ellipsis">31,000<i class="won">원</i></span>
+                      </a>
+                    </li>
+                    <li class="card-item">
+                      <a href="#">
+                        <span class="img"><img src="../img/main/m-main-recommend-app-goods-img02.png" alt=""></span>
+                        <span class="title text-ellipsis">홈런프렌즈 개학 축하팩 (저학년)</span>
+                        <span class="title-sm text-ellipsis">31,000<i class="won">원</i></span>
+                      </a>
+                    </li>
+                    <li class="card-item">
+                      <a href="#">
+                        <span class="img"><img src="../img/main/m-main-recommend-app-goods-img02.png" alt=""></span>
+                        <span class="title text-ellipsis">홈런프렌즈 개학 축하팩 (저학년)</span>
+                        <span class="title-sm text-ellipsis">31,000<i class="won">원</i></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4단 포스터형 --> <!-- 4단 : card-list card-list-4 -->
+        <div class="edu-list edu-list-post mb-rem-4">
+          <div class="edu-item">
+            <div class="link-title px-rem-2 pl-md-no pr-md-no">
+              <div class=""><a href="#" class="d-lg-no-cursor color-text2">아이스크림북스 도서 추천<i
+                class="sprite btn-tag-more-arrow-n tr-y-2 d-md-none"></i></a></div>
+              <a href="#" class="btn-text d-none d-md-block">아이스크림북스 가기<i
+                class="sprite btn-24-right-arrow-n tr-y-2"></i></a>
+            </div>
+            <div class="card-list card-list-4">
+              <div class="scroll-wrap"> <!-- scroll-wrap 추가 --- 2020.08.19 -->
+                <div class="scroll" style="width:680px;">
+                  <ul class="clearfix px-rem-2 px-md-no">
+                    <li class="card-item">
+                      <a href="#">
+                        <span class="img"><img src="../img/main/m-main-recommend-app-book-img05@3x.png" alt=""></span>
+                        <span class="title text-ellipsis">도서관의 들소 레몽</span>
+                        <span class="title-sm text-ellipsis">13,500<i class="won">원</i></span>
+                      </a>
+                    </li>
+                    <li class="card-item">
+                      <a href="#">
+                        <span class="img"><img src="../img/main/m-main-recommend-app-book-img06@3x.png" alt=""></span>
+                        <span class="title text-ellipsis">안나는 고래래요</span>
+                        <span class="title-sm text-ellipsis">10,000<i class="won">원</i></span>
+                      </a>
+                    </li>
+                    <li class="card-item">
+                      <a href="#">
+                        <span class="img"><img src="../img/main/m-main-recommend-app-book-img05@3x.png" alt=""></span>
+                        <span class="title text-ellipsis">도서관의 들소 레몽</span>
+                        <span class="title-sm text-ellipsis">13,000<i class="won">원</i></span>
+                      </a>
+                    </li>
+                    <li class="card-item">
+                      <a href="#">
+                        <span class="img"><img src="../img/main/m-main-recommend-app-book-img06@3x.png" alt=""></span>
+                        <span class="title text-ellipsis">안나는 고래래요</span>
+                        <span class="title-sm text-ellipsis">12,500<i class="won">원</i></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
