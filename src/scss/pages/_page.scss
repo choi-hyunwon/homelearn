@@ -1,7 +1,56 @@
-$font-black: "Noto Sans CJK KR Black";
 
-.tr-y-1 {
-  transform: translateY(-1px);
+.main.carousel {
+  .carousel-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vw * 0.75);
+
+    .bg.bg_main {
+      > div {
+        height: calc(100vw * 0.75);
+      }
+    }
+
+    .carousel-indicators {
+      bottom: 6px;
+
+      li {
+        width: 6px;
+        height: 6px;
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+        border: solid 1px rgba(255, 255, 255, 0.6);
+        background-color: rgba(255, 255, 255, 0.1);
+        margin-right: 6px;
+        margin-left: 6px;
+
+        &.active {
+          width: 24px;
+          height: 6px;
+          border-radius: 3px;
+          box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+          background-color: #ffffff;
+          border: 0;
+          margin-top: 1px;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up($size-tablet) {
+  .main.carousel {
+    .carousel-inner {
+      height: 480px;
+
+      .bg.bg_main {
+        > div {
+          height: 480px;
+        }
+      }
+    }
+  }
 }
 
 .tr-y-2 {
@@ -16,19 +65,6 @@ $font-black: "Noto Sans CJK KR Black";
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-}
-
-.main-bg {
-  width: 100%;
-  height: auto;
-  z-index: -1;
-  top: 0;
-  left: 0;
-
-  img {
-    width: 100%;
-    height: 100%;
-  }
 }
 
 .align-sub {
@@ -96,91 +132,6 @@ $font-black: "Noto Sans CJK KR Black";
     }
   }
 
-  &.list-box-shadow {
-    .card-item {
-      border-radius: 8px;
-      box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.12);
-      background-color: #ffffff;
-      padding-bottom: 12px;
-
-      .title {
-        padding: 0 14px;
-      }
-
-      .title-sm {
-        padding: 0 52px 0 14px;
-      }
-
-      .img {
-        box-shadow: none;
-        border-radius: 6px 6px 0 0;
-      }
-
-      .badge-list {
-        right: 14px;
-        bottom: 12px;
-      }
-    }
-  }
-
-  &.edu-list-sm {
-    .link-title {
-      margin-bottom: 14px;
-
-      i.btn-tag-more-arrow-n {
-        transform: translateY(1px);
-      }
-    }
-
-    .card-item {
-      width: 146px;
-      height: auto;
-
-      .img {
-        border-radius: 5px;
-      }
-
-      .title {
-        color: #333;
-      }
-
-      .title-sm {
-        .won {
-          font-style: normal;
-        }
-      }
-    }
-  }
-
-  &.edu-list-post {
-    .link-title {
-      margin-bottom: 14px;
-
-      i.btn-tag-more-arrow-n {
-        transform: translateY(0);
-      }
-    }
-
-    .card-item {
-      width: 146px;
-      height: auto;
-
-      .img {
-        border-radius: 5px;
-      }
-
-      .title {
-        color: #333;
-      }
-
-      .title-sm {
-        .won {
-          font-style: normal;
-        }
-      }
-    }
-  }
-
   &.line-bottom {
     position: relative;
 
@@ -239,163 +190,6 @@ $font-black: "Noto Sans CJK KR Black";
       }
     }
 
-    &.list-box-shadow {
-      .card-list {
-        .badge-list {
-          right: 24px;
-          bottom: 27px;
-        }
-
-        &.item-3 {
-          .card-item {
-            width: calc(33.333% - 20px);
-
-            .title {
-              font-size: 16px;
-            }
-
-            .title-sm {
-              font-size: 18px;
-              line-height: 30px;
-              padding-left: 24px;
-            }
-
-            .badge-list {
-              right: 26px;
-              bottom: 23px;
-            }
-
-            &:last-child {
-              margin-right: 0;
-            }
-          }
-        }
-
-        &.item-5 {
-          .card-item {
-            width: calc(20% - 13px);
-            margin-right: 16px;
-
-            .title {
-              font-size: 16px;
-            }
-
-            .title-sm {
-              font-size: 18px;
-              line-height: 30px;
-              padding-left: 24px;
-            }
-
-            .badge-list {
-              right: 24px;
-              bottom: 23px;
-            }
-
-            &:last-child {
-              margin-right: 0;
-            }
-          }
-        }
-      }
-
-      .card-item {
-        width: calc(50% - 15px);
-        margin-right: 30px;
-        padding-bottom: 20px;
-
-        .img {
-          height: auto;
-          max-height: initial;
-          margin-bottom: 20px;
-          border-radius: 12px 12px 0 0;
-          overflow: hidden;
-          box-shadow: none;
-        }
-
-        .title {
-          font-size: 18px;
-          line-height: 24px;
-          padding-left: 24px;
-        }
-
-        .title-sm {
-          font-size: 24px;
-          line-height: 36px;
-          padding-left: 24px;
-        }
-
-        &:last-child {
-          margin-right: 0;
-        }
-      }
-    }
-
-    &.edu-list-sm {
-      .card-list {
-        .card-item {
-          height: auto;
-          margin-right: 26px;
-
-          .title {
-            color: #333;
-            font-size: 18px;
-          }
-
-          .title-sm {
-            font-size: 18px;
-
-            .won {
-              font-style: normal;
-              font-size: 15px;
-            }
-          }
-
-          &:last-child {
-            margin-right: 0;
-          }
-        }
-      }
-
-      &.item-md-4 {
-        .card-item {
-          width: calc(25% - 20px);
-        }
-      }
-
-      &.item-md-5 {
-        .card-item {
-          width: calc(20% - 21px);
-        }
-      }
-    }
-
-    &.edu-list-post {
-      .card-item {
-        width: calc(25% - 13px);
-        margin-right: 16px;
-
-        .img {
-          width: 100%;
-          height: auto;
-          margin-bottom: 16px;
-        }
-
-        .title {
-          font-size: 18px;
-          color: #333;
-        }
-
-        .title-sm {
-          font-size: 18px;
-
-          .won {
-            font-style: normal;
-            font-size: 15px;
-          }
-        }
-      }
-    }
-
     &.line-bottom {
       &::after {
         content: none;
@@ -404,71 +198,371 @@ $font-black: "Noto Sans CJK KR Black";
   }
 }
 
-
-.card-list {
-  overflow: auto;
-
-  .scroll {
-    overflow: hidden;
-  }
-
+.shadow-box-list {
   .card-item {
     position: relative;
-    float: left;
-    margin-right: 18px;
-    width: 256px;
-    height: auto;
-    padding-bottom: 32px;
-
-    > a {
-      display: block;
-    }
+    border-radius: 8px;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+    padding-bottom: 12px;
 
     .img {
-      width: 100%;
-      display: block;
-      height: auto;
-      margin-bottom: 8px;
-      overflow: hidden;
-      border-radius: 6px;
-      box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.12);
-
       img {
         width: 100%;
         height: 100%;
       }
     }
 
-    .title {
+    a {
       display: block;
-      padding: 0 8px;
-      font-size: 14px;
-      line-height: 20px;
-      letter-spacing: normal;
-      color: #333;
-      margin-bottom: 2px;
+
+      .title {
+        display: block;
+        padding: 12px 14px 0;
+        font-size: 12px;
+        font-weight: bold;
+        color: #999999;
+      }
+
+      .title-sm {
+        display: block;
+        padding: 0 58px 0 14px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #333333;
+      }
+
+      .img {
+        display: block;
+        box-shadow: none;
+        border-radius: 6px 6px 0 0;
+      }
+
+      .badge-list {
+        position: absolute;
+        right: 14px;
+        bottom: 12px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up($size-tablet) {
+  .shadow-box-list {
+    .card-list {
+      .badge-list {
+        right: 24px;
+        bottom: 27px;
+      }
     }
 
-    .title-sm {
+    .card-item {
+      padding-bottom: 20px;
+
+      .img {
+        margin-bottom: 20px;
+        border-radius: 12px 12px 0 0;
+        overflow: hidden;
+        box-shadow: none;
+      }
+
+      .title {
+        padding: 0 14px 0 !important;
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      .title-sm {
+        font-size: 24px;
+        line-height: 36px;
+        padding-left: 24px;
+      }
+    }
+  }
+}
+
+.edu-list-sm {
+  .link-title {
+    margin-bottom: 14px;
+
+    i.btn-tag-more-arrow-n {
+      transform: translateY(1px);
+    }
+  }
+
+  .card-item {
+    a {
       display: block;
-      position: relative;
-      font-size: 14px;
-      font-weight: bold;
-      line-height: 20px;
-      letter-spacing: normal;
-      color: #333333;
-      padding-left: 8px;
-      padding-right: 62px;
-    }
 
-    .badge-list {
-      position: absolute;
-      right: 8px;
-      bottom: 0;
-    }
+      .img {
+        display: block;
+        border-radius: 5px;
 
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .title {
+        display: block;
+        font-size: 14px;
+        color: #333;
+        line-height: 20px;
+        padding: 0 8px;
+      }
+
+      .title-sm {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: bold;
+        color: #333333;
+        padding: 0 8px;
+
+        .won {
+          font-style: normal;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up($size-tablet) {
+  .edu-list-sm {
+    .card-list {
+      .card-item {
+        .title {
+          font-size: 18px;
+          line-height: 28px;
+        }
+
+        .title-sm {
+          font-size: 18px;
+          line-height: 28px;
+
+          .won {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.edu-list-post {
+  .link-title {
+    margin-bottom: 14px;
+
+    i.btn-tag-more-arrow-n {
+      transform: translateY(0);
+    }
+  }
+
+  .card-item {
+    a {
+      display: block;
+
+      .img {
+        display: block;
+        border-radius: 5px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 8px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .title {
+        display: block;
+        font-size: 14px;
+        line-height: 20px;
+        color: #333333;
+        padding: 0 8px;
+        margin-bottom: 2px;
+      }
+
+      .title-sm {
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        color: #333333;
+        padding: 0 8px;
+        line-height: 20px;
+
+        .won {
+          font-style: normal;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up($size-tablet) {
+  .edu-list-post {
+    .card-item {
+      a {
+        .title {
+          font-size: 18px;
+          line-height: 28px;
+        }
+
+        .title-sm {
+          font-size: 18px;
+          line-height: 28px;
+
+          .won {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.scroll-wrap {
+  overflow: auto;
+
+  .scroll {
+    overflow: hidden;
+  }
+}
+
+@include media-breakpoint-up($size-tablet) {
+  .scroll-wrap {
+    overflow: visible;
+
+    .scroll {
+      overflow: visible;
+    }
+  }
+}
+
+.normal-list {
+  .card-item {
+    position: relative;
+    height: auto;
+    padding-bottom: 32px;
+
+    a {
+      display: block;
+
+      .img {
+        width: 100%;
+        display: block;
+        height: auto;
+        margin-bottom: 8px;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.12);
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .title {
+        display: block;
+        padding: 0 8px;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: normal;
+        color: #333;
+        margin-bottom: 2px;
+      }
+
+      .title-sm {
+        display: block;
+        position: relative;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 20px;
+        letter-spacing: normal;
+        color: #333333;
+        padding-left: 8px;
+        padding-right: 62px;
+      }
+
+      .badge-list {
+        position: absolute;
+        right: 8px;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up($size-tablet) {
+  .normal-list {
+    .card-item {
+      a {
+        .title-sm {
+          font-size: 18px;
+          line-height: 24px;
+          padding-right: 62px;
+        }
+
+        .badge-list {
+          position: absolute;
+          right: 8px;
+          bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.card-list {
+  &.card-list-2 {
+    .card-item {
+      float: left;
+      width: 256px;
+      margin-right: 18px;
+    }
+  }
+
+  &.card-list-3 {
+    .card-item {
+      float: left;
+      width: 256px;
+      margin-right: 18px !important;
+    }
+  }
+
+  &.card-list-4 {
+    .card-item {
+      float: left;
+      width: 146px;
+      margin-right: 18px;
+    }
+  }
+
+  &.card-list-5 {
+    .card-item {
+      float: left;
+      width: 146px;
+      margin-right: 18px;
+    }
+  }
+
+  &.card-list-rem-2 {
+    .card-item {
+      float: left;
+      width: calc(50% - 6px);
+      margin-right: 12px;
+      &:nth-child(2n) {
+        margin-right: 0 !important;
+      }
+    }
+  }
+
+  .card-item {
     &:last-child {
-      margin-right: 0;
+      margin-right: 0 !important;
     }
   }
 }
@@ -479,6 +573,7 @@ $font-black: "Noto Sans CJK KR Black";
     //1단
     .card-item {
       width: 100%;
+
       &:last-child {
         margin-right: 0 !important;
       }
@@ -486,15 +581,13 @@ $font-black: "Noto Sans CJK KR Black";
 
     &.card-list-2 {
       .card-item {
-        float: left;
-        width: calc(50% - 16px);
+        width: calc(50% - 16px) !important;
         margin-right: 32px;
       }
     }
 
     &.card-list-3 {
       .card-item {
-        float: left;
         width: calc(33.33% - 12px);
         margin-right: 18px;
       }
@@ -502,7 +595,6 @@ $font-black: "Noto Sans CJK KR Black";
 
     &.card-list-4 {
       .card-item {
-        float: left;
         width: calc(25% - 20px);
         margin-right: 26px;
       }
@@ -510,27 +602,40 @@ $font-black: "Noto Sans CJK KR Black";
 
     &.card-list-5 {
       .card-item {
-        float: left;
-        width: calc(20% - 21px);
-        margin-right: 26px;
+        width: calc(20% - 21px) !important;
+        margin-right: 26px !important;
+      }
+    }
+    &.card-list-rem-2 {
+      .card-item {
+        width: auto;
+        margin-right: 12px;
+        &:nth-child(2n) {
+          margin-right: 48px !important;
+        }
+      }
+    }
+    &.card-list-md-5 {
+      .card-item {
+        width: calc(20% - 39px) !important;
+        margin-right: 48px !important;
+        &:nth-child(5n) {
+          margin-right: 0 !important;
+        }
       }
     }
   }
 }
 
-
-
 .tag-list {
   margin-bottom: 46px;
 
-  li {
-    float: left;
-    margin-right: 12px;
-    width: calc(50% - 6px);
+  .card-item {
     border-radius: 8px;
     box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.12);
     background-color: #ffffff;
     margin-bottom: 14px;
+    padding-bottom: 0;
 
     a {
       display: block;
@@ -637,9 +742,15 @@ $font-black: "Noto Sans CJK KR Black";
         right: 14px;
       }
     }
+  }
 
-    &:nth-child(2n) {
-      margin-right: 0;
+  &.tag-list-all {
+    .card-list {
+      .card-item {
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+      }
     }
   }
 }
@@ -648,85 +759,89 @@ $font-black: "Noto Sans CJK KR Black";
   .tag-list {
     margin-bottom: 0;
 
-    li {
-      margin-bottom: 46px;
+    .card-list {
+      .card-item {
+        margin-bottom: 46px;
+        padding-bottom: 0 !important;
 
-      &:nth-child(5n) {
-        margin-right: 0 !important;
-      }
-
-      .img {
-        .sticker-top {
-          right: 0;
-
-          i {
-            margin-left: -12px;
-          }
-
-          .icon-list-badge-homelearn {
-            width: 80px;
-            height: 24px;
-          }
-
-          .icon-list-badge-package {
-            width: 64px;
-            height: 24px;
-          }
+        &:nth-child(5n) {
+          margin-right: 0 !important;
         }
 
-        .sticker-discount {
-          width: 76px;
-          height: 48px;
-          right: -7px;
+        .img {
+          overflow: visible !important;
 
-          span {
-            font-size: 20px;
-            line-height: 48px;
+          .sticker-top {
+            right: 0;
 
-            .percent {
-              font-size: 16px;
+            i {
+              margin-left: -12px;
+            }
+
+            .icon-list-badge-homelearn {
+              width: 80px;
+              height: 24px;
+            }
+
+            .icon-list-badge-package {
+              width: 64px;
+              height: 24px;
+            }
+          }
+
+          .sticker-discount {
+            width: 76px;
+            height: 48px;
+            right: -7px;
+
+            span {
+              font-size: 20px;
+              line-height: 48px;
+
+              .percent {
+                font-size: 16px;
+              }
+            }
+          }
+
+          .sticker-free {
+            right: -6px;
+
+            i {
+              width: 76px;
+              height: 48px;
             }
           }
         }
 
-        .sticker-free {
-          right: -6px;
-
-          i {
-            width: 76px;
-            height: 48px;
+        .list-body {
+          .title {
+            font-size: 16px;
+            line-height: 22px;
+            height: 44px;
           }
-        }
-      }
 
-      .list-body {
-        .title {
-          font-size: 16px;
-          line-height: 22px;
-          height: 44px;
-        }
+          .score {
+            font-size: 14px;
 
-        .score {
-          font-size: 14px;
-
-          i {
-            width: 24px;
-            height: 24px;
-            margin-right: 2px;
+            i {
+              width: 24px;
+              height: 24px;
+              margin-right: 2px;
+            }
           }
-        }
 
-        .s-sticker {
-          i {
-            width: 62px;
-            height: 24px;
+          .s-sticker {
+            i {
+              width: 62px;
+              height: 24px;
+            }
           }
         }
       }
     }
   }
 }
-
 
 .link-title {
   position: relative;
@@ -740,6 +855,7 @@ $font-black: "Noto Sans CJK KR Black";
   }
 
   .title {
+    position: relative;
     line-height: 34px;
 
     a.btn {
@@ -757,6 +873,14 @@ $font-black: "Noto Sans CJK KR Black";
   }
 }
 
+@include media-breakpoint-up($size-tablet) {
+  .link-title {
+    .title {
+      position: static;
+    }
+  }
+}
+
 .event-box {
   padding: 0 20px;
   margin-bottom: 60px;
@@ -770,58 +894,58 @@ $font-black: "Noto Sans CJK KR Black";
     }
   }
 
-  &.item-1 {
-    .scroll {
-      .inner {
-        li {
-          .img {
-            display: block;
+  .card-list {
+    .card-item {
+      .img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.12);
+      }
+    }
+
+    &.card-list-2 {
+      .card-item {
+        height: auto;
+
+        .img {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          border-radius: 12px;
+          box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.12);
+
+          img {
             width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.12);
+            height: 100%;
           }
         }
       }
     }
   }
+}
 
-  &.item-2 {
-    padding: 0;
+@include media-breakpoint-up($size-tablet) {
+  .event-box {
+    padding: 0 20px;
+    margin-bottom: 60px;
 
     .link-title {
-      padding: 0 20px;
+      margin-bottom: 14px;
+
+      i.btn-tag-more-arrow-n {
+        vertical-align: sub;
+        transform: translateY(1px);
+      }
     }
 
-    .scroll {
-      overflow: auto;
+    .card-list {
+      overflow: visible;
 
-      .inner {
-        width: 700px;
-        padding: 0 20px 20px;
-
-        li {
-          float: left;
-          width: 320px;
-          height: auto;
-          margin-right: 20px;
-
-          .img {
-            display: inline-block;
-            width: 100%;
-            height: 100%;
-            border-radius: 12px;
-            box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.12);
-
-            img {
-              width: 100%;
-              height: 100%;
-            }
-          }
-
-          &:last-child {
-            margin-right: 0;
-          }
+      .card-item {
+        &:last-child {
+          margin-right: 0 !important;
         }
       }
     }
@@ -833,7 +957,6 @@ $font-black: "Noto Sans CJK KR Black";
   margin-bottom: 50px;
 
   .card-list {
-    width: 100%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.12);
@@ -890,6 +1013,54 @@ $font-black: "Noto Sans CJK KR Black";
         font-weight: normal;
         line-height: 18px;
         color: #999999;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up($size-tablet) {
+  .banner-box {
+    .card-list {
+      overflow: hidden;
+
+      .img {
+        float: left;
+        width: 50%;
+        border-radius: 16px 0 0 16px;
+        margin-bottom: 0 !important;
+      }
+
+      .card-body {
+        position: relative;
+        width: 50%;
+        float: left;
+        padding: 48px 40px 10px;
+
+        .desc {
+          position: static;
+          font-size: 18px;
+          line-height: 24px;
+
+          .badge-list {
+            right: 16px;
+            top: 16px;
+          }
+        }
+
+        .title {
+          font-size: 32px;
+          line-height: 36px;
+          margin-bottom: 24px;
+        }
+
+        .title-sm {
+          font-size: 16px;
+          margin-bottom: 15px;
+        }
+
+        .desc-sm {
+          font-size: 16px;
+        }
       }
     }
   }
@@ -966,6 +1137,7 @@ $font-black: "Noto Sans CJK KR Black";
 }
 
 @include media-breakpoint-up($size-tablet) {
+
   .content {
     padding-top: 52px;
   }
@@ -991,14 +1163,10 @@ $font-black: "Noto Sans CJK KR Black";
     font-size: 14px;
   }
 
-
   .card-list {
-    overflow: visible;
-
     .scroll {
       width: auto !important;
       height: auto;
-      overflow: visible;
 
       &.line-bottom {
         position: relative;
@@ -1027,57 +1195,6 @@ $font-black: "Noto Sans CJK KR Black";
 
       .img {
         margin-bottom: 12px;
-      }
-    }
-
-    &.item-2 {
-      .card-item {
-        width: calc(50% - 15px);
-      }
-    }
-  }
-
-  .event-box {
-    padding: 0 20px;
-    margin-bottom: 60px;
-
-    .link-title {
-      margin-bottom: 14px;
-
-      i.btn-tag-more-arrow-n {
-        vertical-align: sub;
-        transform: translateY(1px);
-      }
-    }
-
-    &.item-2 {
-      padding: 0;
-
-      .link-title {
-        padding: 0 20px;
-        margin-bottom: 16px;
-      }
-
-      .scroll {
-        overflow: visible;
-
-        .inner {
-          width: 100%;
-          padding: 0 20px 20px;
-
-          li {
-            width: calc(50% - 16px);
-            margin-right: 32px;
-
-            .img {
-              display: inline-block;
-              width: 100%;
-              height: 100%;
-              border-radius: 12px;
-              box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.12);
-            }
-          }
-        }
       }
     }
   }
@@ -1116,51 +1233,6 @@ $font-black: "Noto Sans CJK KR Black";
     }
   }
 
-  .banner-box {
-    .card-list {
-      overflow: hidden;
-
-      .img {
-        float: left;
-        width: 50%;
-        border-radius: 16px 0 0 16px;
-      }
-
-      .card-body {
-        position: relative;
-        width: 50%;
-        float: left;
-        padding: 48px 40px 10px;
-
-        .desc {
-          position: static;
-          font-size: 18px;
-          line-height: 24px;
-
-          .badge-list {
-            right: 16px;
-            top: 16px;
-          }
-        }
-
-        .title {
-          font-size: 32px;
-          line-height: 36px;
-          margin-bottom: 24px;
-        }
-
-        .title-sm {
-          font-size: 16px;
-          margin-bottom: 15px;
-        }
-
-        .desc-sm {
-          font-size: 16px;
-        }
-      }
-    }
-  }
-
   .top-area {
     padding: 0 60px;
     font-size: 24px;
@@ -1186,11 +1258,6 @@ $font-black: "Noto Sans CJK KR Black";
       }
     }
   }
-
-
-  .item-md-2 {
-    width: calc(50% - 16px);
-  }
 }
 
 @media (min-width: 769px) and (max-width: 960px) {
@@ -1199,12 +1266,15 @@ $font-black: "Noto Sans CJK KR Black";
     padding-left: 47px;
     font-size: 16px;
   }
+
   .edu-list .edu-item .rounded-box .badge-img {
     right: 25px;
   }
-  .edu-list.list-box-shadow .card-item .title-sm {
+
+  .edu-list.shadow-box-list .card-item .title-sm {
     padding-right: 92px;
   }
+
   .banner-box {
     padding: 0 20px;
     margin-bottom: 50px;
@@ -1272,37 +1342,23 @@ $font-black: "Noto Sans CJK KR Black";
       }
     }
   }
+
+  .card-list.card-list-rem-2 .card-item:nth-child(2n) {
+    margin-right: 12px !important;
+  }
+
+  .card-list.card-list-md-5 .card-item {
+    width: calc(20% - 12px) !important;
+    margin-right: 12px !important;
+  }
+
   .tag-list {
-    margin-bottom: 46px;
-
-    li {
-      float: left;
-      margin-right: 12px;
-      width: calc(50% - 6px);
-      border-radius: 8px;
-      box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.12);
-      background-color: #ffffff;
-      margin-bottom: 14px;
-
+    .card-item {
       .img {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        border-radius: 8px 8px 0 0;
-
-        img {
-          width: 100%;
-          height: 100%;
-        }
-
         .sticker-top {
           position: absolute;
           top: -6px;
           right: 6px;
-
-          i {
-            display: inline-block;
-          }
         }
 
         .sticker-discount {
@@ -1370,7 +1426,7 @@ $font-black: "Noto Sans CJK KR Black";
         }
 
         .score {
-          padding: 0 14px;
+          padding: 0 10px;
 
           i {
             margin-right: 4px;
@@ -1385,16 +1441,22 @@ $font-black: "Noto Sans CJK KR Black";
           right: 14px;
         }
       }
+    }
 
-      &:nth-child(2n) {
-        margin-right: 0;
+    &.tag-list-all {
+      .card-list {
+        .card-item {
+          &:nth-child(2n) {
+            margin-right: 0;
+          }
+        }
       }
     }
   }
 }
 
 @media (min-width: 769px) and (max-width: 1120px) {
-  .edu-list.list-box-shadow .card-list.item-3 .card-item .title-sm {
+  .edu-list.shadow-box-list .card-list.item-3 .card-item .title-sm {
     padding-right: 92px;
   }
 }

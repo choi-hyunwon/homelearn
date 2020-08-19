@@ -3,6 +3,32 @@
 @@include('../html/include/head.html')
 <body>
 <div class="wrap-bg">
+
+  <div id="mainCarousel" class="carousel slide main" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="bg bg_main">
+          <div class="d-none d-md-block" style="background: url(../img/_temp/img-main-top@3x.png) no-repeat center center /cover"></div>
+          <div class="d-xs-block d-md-none" style="background: url(../img/_temp/m-main-recommend-bg@3x.png) no-repeat center center /cover"></div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="bg bg_main">
+          <div class="d-none d-md-block" style="background: url(../img/_temp/img-main-top@3x.png) no-repeat center center /cover"></div>
+          <div class="d-xs-block d-md-none" style="background: url(../img/_temp/m-main-recommend-bg@3x.png) no-repeat center center /cover"></div>
+        </div>
+      </div>
+      <ol class="carousel-indicators">
+        <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#mainCarousel" data-slide-to="1"></li>
+      </ol>
+    </div>
+  </div>
+  <script>
+    $('#mainCarousel').carousel({
+      interval: 3000
+    })
+  </script>
   <div class="wrap">
     <div class="navbar main">
       <div class="navbar-brand">
@@ -42,43 +68,36 @@
       <div class="content">
 
         <!-- 3단 이미지 3개 -->
-        <div class="edu-list mb-rem-md-6 p-md-no">
+        <div class="edu-list normal-list line-bottom mb-rem-md-6 p-md-no">
           <div class="edu-item">
             <p class="title pl-md-no"><span class="color-text">김홈런</span> 님을 위한 맞춤 학습</p>
-            <div class="px-rem-2 p-md-no">
-              <a href="#" class="rounded-box d-md-none">공부하고 싶은 학습이 <span class="color-secondary">2개</span> 있어요.<span
-                class="badge bg-secondary">2</span>
-                <ul class="clearfix badge-img d-none d-md-inline-block">
-                  <li><img src="../img/main/zen@3x.png" alt=""></li>
-                  <li><img src="../img/main/ybird@3x.png" alt=""></li>
-                </ul>
-              </a>
-            </div>
-            <div class="card-list">
-              <div class="scroll" style="width:844px;">
-                <ul class="clearfix px-rem-2 p-md-no">
-                  <li class="card-item">
-                    <a href="#">
-                      <span class="img"><img src="../img/main/m-main-recommend-app-img01@2x.png" alt=""></span>
-                      <span class="title text-ellipsis">아이스크림에듀</span>
-                      <span class="title-sm text-ellipsis">캠블리 Cambly<span class="badge-list">학습중</span></span>
-                    </a>
-                  </li>
-                  <li class="card-item">
-                    <a href="#">
-                      <span class="img"><img src="../img/main/m-main-recommend-app-img02@2x.png" alt=""></span>
-                      <span class="title text-ellipsis">아이스크림에듀</span>
-                      <span class="title-sm text-ellipsis">인공지능 홈<span class="badge-list">학습중</span></span>
-                    </a>
-                  </li>
-                  <li class="card-item">
-                    <a href="#">
-                      <span class="img"><img src="../img/main/m-main-recommend-app-img02@2x.png" alt=""></span>
-                      <span class="title text-ellipsis">아이스크림에듀</span>
-                      <span class="title-sm text-ellipsis">인공지능 홈<span class="badge-list">학습중</span></span>
-                    </a>
-                  </li>
-                </ul>
+            <div class="card-list card-list-3">
+              <div class="scroll-wrap">
+                <div class="scroll line-bottom" style="width:844px;">
+                  <ul class="clearfix px-rem-2 p-md-no">
+                    <li class="card-item">
+                      <a href="#">
+                        <span class="img"><img src="../img/main/m-main-recommend-app-img01@2x.png" alt=""></span>
+                        <span class="title text-ellipsis">아이스크림에듀</span>
+                        <span class="title-sm text-ellipsis">캠블리 Cambly<span class="badge-list">학습중</span></span>
+                      </a>
+                    </li>
+                    <li class="card-item">
+                      <a href="#">
+                        <span class="img"><img src="../img/main/m-main-recommend-app-img02@2x.png" alt=""></span>
+                        <span class="title text-ellipsis">아이스크림에듀</span>
+                        <span class="title-sm text-ellipsis">인공지능 홈<span class="badge-list">학습중</span></span>
+                      </a>
+                    </li>
+                    <li class="card-item">
+                      <a href="#">
+                        <span class="img"><img src="../img/main/m-main-recommend-app-img02@2x.png" alt=""></span>
+                        <span class="title text-ellipsis">아이스크림에듀</span>
+                        <span class="title-sm text-ellipsis">인공지능 홈<span class="badge-list">학습중</span></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
