@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+@@include('../html/include/head.html')
+<body>
+<div class="wrap-bg">
+  <div class="bg bg_detail">
+    <div class="d-none d-md-block" style="background: url(../img/_temp/img-sub-bg.png) no-repeat center center /cover"></div>
+    <div class="d-xs-block d-md-none" style="background: url(../img/_temp/m-main-detail-bg@2x.png) no-repeat center center /cover"></div>
+  </div>
+  <div class="wrap p-no">
+    <div class="navbar-sub navbar-sub-detail">
+      <div class="navbar-brand">
+        <a href="#"><img src="../img/common/btn-back-white-n@3x.png"/></a>
+      </div>
+      <div class="navbar-util">
+        <a href="#"><img src="../img/common/btn-main-search-white-n@3x.png"/></a>
+        <a href="#"><img src="../img/common/btn-main-home-white-n@3x.png"/></a>
+      </div>
+    </div>
+    <div class="container-lg container-fluid px-rem-md-2 px-rem-2">
+      <div class="detail">
+        <div class="detail-card">
+          <div class="card-name">
+            <div class="app-icon">
+              <img src="../img/_temp/m-main-detail-app-icon@2x.png" width="104" alt="">
+              <span class="badge-homelearn"><img src="../img/common/icon-list-badge-homelearn@2x.png" alt="홈런전용"></span>
+              <span class="badge-package"><img src="../img/common/icon-list-badge-package@2x.png" alt=""></span>
+              <span class="badge-free"><img src="../img/common/icon-list-badge-discount-free@2x.png" alt=""></span>
+            </div>
+            <div class="title">뚜루아이와 함께하는 수학</div>
+            <div class="company">아이스크림 에듀</div>
+            <div class="star"><img src="../img/common/icon-16-star@2x.png" alt=""> <span>5.0</span></div>
+          </div>
+          <div class="card-spec clearfix">
+            <div class="spec">
+              <span class="tit">학습 구성</span>
+              <span class="desc">총 6개 레벨</span>
+            </div>
+            <div class="spec">
+              <span class="tit">권장 학년</span>
+              <span class="desc">초1-2학년</span>
+            </div>
+            <div class="spec">
+              <span class="tit">학습 기간</span>
+              <span class="desc">3개월 (하루 30분)</span>
+            </div>
+          </div>
+          <div class="card-price">
+            <span class="total_price"><span class="plan">6개월 약정</span><span class="price">￦99,000</span><span class="range">/ 월</span></span>
+          </div>
+          <div class="card-btn">
+            <a href="#" class="btn btn-outline btn-radius">미리보기</a>
+            <a href="#" class="btn btn-radius btn-primary btn-subscribe">학습 중</a>
+          </div>
+        </div>
+        <div class="detail-page">
+          <nav>
+            <div class="nav nav-tabs-detail" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="intro-home-tab" data-toggle="tab" href="#intro-home" role="tab" aria-controls="intro-home" aria-selected="true">학습 소개</a>
+              <a class="nav-item nav-link" id="nav-review-tab" data-toggle="tab" href="#nav-review" role="tab" aria-controls="nav-review" aria-selected="false">리뷰</a>
+              <a class="nav-item nav-link" id="nav-relative-tab" data-toggle="tab" href="#nav-relative" role="tab" aria-controls="nav-relative" aria-selected="false">관련 학습</a>
+            </div>
+            @@include('../html/include/detail-content.html')
+          </nav>
+        </div>
+      </div>
+      <div class="sticky-btn">
+        <div class="cont">
+          <a href="#" class="btn btn-white btn-radius">미리보기</a>
+          <a href="#" class="btn btn-outline btn-radius btn-subscribe">학습 중</a>
+        </div>
+      </div>
+    </div>
+    <!-- S content -->
+  </div>
+</div>
+@@include('../html/include/footer.html')
+<!-- E content -->
+
+</body>
+</html>
