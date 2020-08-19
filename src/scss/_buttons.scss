@@ -98,39 +98,6 @@
     }
   }
 
-  &.btn-more {
-    font-size: 16px;
-    border-radius: 0;
-    background-color: #fdf6ef;
-    color: $primary;
-    border: 2px solid #fdf6ef;
-    height: 60px;
-    line-height: 58px;
-
-    i.sprite {
-      margin-left: 6px;
-      transform: translateY(-2px);
-    }
-
-    &:active, &.active {
-      border-color: #dddad8;
-      background-color: #dddad8;
-
-      i.sprite {
-        background-image: url("../img/sprite/btn-open-color-f@2x.png");
-      }
-    }
-
-    &.disabled, &:disabled {
-      background-color: #fcf9f6;
-      border-color: #fcf9f6;
-
-      i.sprite {
-        background-image: url("../img/sprite/btn-open-color-d@2x.png");
-      }
-    }
-  }
-
   &.btn-more-card {
     font-size: 16px;
     border-radius: 0;
@@ -434,8 +401,53 @@
     -moz-border-radius: 48px;
     border-radius: 48px;
   }
+  &.btn-more {
+    border-radius: 0;
+    height: 44px;
+    background-color: #fdf6ef;
+    color: $primary;
+    border: 2px solid #fdf6ef;
+    i {
+      width: 16px;
+      height: 16px;
+      transform: translateY(-1px);
+    }
+  }
 }
+@include media-breakpoint-up($size-tablet) {
+  .btn {
+    &.btn-more {
+      font-size: 16px;
+      height: 60px;
+      line-height: 58px;
 
+      i.sprite {
+        width: 24px;
+        height: 24px;
+        margin-left: 6px;
+        transform: none;
+      }
+
+      &:active, &.active {
+        border-color: #dddad8;
+        background-color: #dddad8;
+
+        i.sprite {
+          background-image: url("../img/sprite/btn-open-color-f@2x.png");
+        }
+      }
+
+      &.disabled, &:disabled {
+        background-color: #fcf9f6;
+        border-color: #fcf9f6;
+
+        i.sprite {
+          background-image: url("../img/sprite/btn-open-color-d@2x.png");
+        }
+      }
+    }
+  }
+}
 @include media-breakpoint-up($size-tablet) {
   .btn {
     font-size: 18px;
