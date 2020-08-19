@@ -162,6 +162,8 @@
         background-image: url("../img/sprite/btn-open-color-d@2x.png");
       }
     }
+
+
   }
 
   &.btn-brand {
@@ -433,6 +435,10 @@
     -webkit-border-radius: 48px;
     -moz-border-radius: 48px;
     border-radius: 48px;
+  }
+
+  img {
+    vertical-align: text-top;
   }
 }
 
