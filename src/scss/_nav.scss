@@ -179,7 +179,7 @@
   }
 }
 
-.nav-tabs-block {
+.nav-tabs-detail {
   position: relative;
   width: calc(100% + 40px);
   height: 44px;
@@ -208,6 +208,14 @@
       height: 3px;
       background-color: #ff7600;
     }
+  }
+}
+@include media-breakpoint-up($size-tablet) {
+  .nav-tabs-detail {
+    width: 360px;
+    height: 66px;
+    margin: 0;
+    border-bottom: 0 none;
   }
 }
 
