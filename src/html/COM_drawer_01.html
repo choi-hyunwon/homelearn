@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+@@include('../html/include/head.html')
+<body>
+<div class="wrap bg-grey">
+  <!-- S content -->
+  <div class="contents">
+    <button type="button" class="btn btn-sm" data-trigger="drawer">Drawer 버튼</button>
+
+  </div>
+</div>
+
+
+@@include('../html/include/drawer.html')
+
+<!-- E content -->
+</body>
+<style>
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+
+  .component {
+    padding: 54px 52px;
+  }
+
+  .component .title-lg {
+    line-height: 41px;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 104px;
+  }
+
+  .component .com-box {
+    margin-bottom: 44px
+  }
+
+  .component .com-box .title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+</style>
+</html>

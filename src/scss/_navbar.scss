@@ -1,0 +1,569 @@
+// Contents
+//
+// Navbar
+// Navbar brand
+// Navbar nav
+// Navbar text
+// Navbar divider
+// Responsive navbar
+// Navbar position
+// Navbar themes
+
+
+// Navbar
+//
+// Provide a static navbar from which we expand to create full-width, fixed, and
+// other navbar variations.
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap; // allow us to do the line break for collapsing content
+  align-items: center;
+  justify-content: space-between; // space out brand from logo
+  background: transparent;
+  height: 66px;
+  box-shadow:none;
+  border-radius: 0;
+  margin: 0;
+
+  &.main {
+    height: calc( 100vw * .73);
+    align-items: initial;
+  }
+
+  &.main_grade {
+    margin-bottom: 84px;
+  }
+
+  // Because flex properties aren't inherited, we need to redeclare these first
+  // few properties so that content nested within behave properly.
+  %container-flex-properties {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .container,
+  .container-fluid {
+    @extend %container-flex-properties;
+  }
+
+  @each $breakpoint, $container-max-width in $container-max-widths {
+    > .container#{breakpoint-infix($breakpoint, $container-max-widths)} {
+      @extend %container-flex-properties;
+    }
+  }
+}
+
+.navbar-sub {
+  height: 60px;
+  margin-bottom: 10px;
+  .navbar-brand {
+    top: 14px;
+    a {
+      width: 32px;
+      height: 32px;
+      display: block;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .title {
+    display: block;
+    padding-left: 52px;
+    font-size: 16px;
+    font-weight: bold;
+    width: calc(100% - 104px);
+    height: 60px;
+    line-height: 60px;
+    color: $secondary;
+  }
+  .navbar-util {
+    right: 12px;
+  }
+
+}
+
+.navbar-brand {
+  position: absolute;
+  display: inline-block;
+  left: 12px;
+  top: 17px;
+  //margin-left: 12px;
+  img {
+    width: 130px;
+  }
+}
+.navbar-gnb {
+  display: none;
+}
+.navbar-btn-eco {
+  position: absolute;
+  top: 15px;
+  right: 0;
+}
+.navbar-gnb-sm {
+  position: relative;
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 100%;
+  .navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 48px;
+    border-radius: 33px;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.12);
+    background-color: rgba(255, 255, 255, 0.84);
+    width: 100%;
+    padding: 0 15%;
+    .nav-item {
+      .nav-link {
+        line-height: 48px;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: normal;
+        color: #555555;
+        padding: 0;
+      }
+      &.active {
+        .nav-link {
+          position: relative;
+          color: $primary;
+          &::after {
+            content: "";
+            position: absolute;
+            width: 54px;
+            height: 6px;
+            border-radius: 4.5px 4.5px 0 0;
+            background-color: $primary;
+            bottom: 0;
+            left: -11px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.navbar-util {
+  position: absolute;
+  top: 14px;
+  right: 66px;
+  a {
+    padding: 13px 5px;
+    line-height: 32px;
+
+    &.hasalram {
+      &:after {
+        content: "";
+        width: 4px;
+        height: 4px;
+        background-color: #42c2d1;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        border-radius: 50%;
+      }
+    }
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  :before {
+    display: none;
+  }
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column; // cannot use `inherit` to get the `.navbar`s value
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+
+  .nav-link {
+    line-height: 66px;
+    padding: 0 25px;
+  }
+
+  .dropdown-menu {
+    position: static;
+    float: none;
+  }
+}
+
+
+@include media-breakpoint-up($size-tablet) {
+  .navbar {
+    height: 66px;
+    border-radius: 33px;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.12);
+    background-color: rgba(255, 255, 255, 0.93);
+    max-width: 1232px;
+    width: auto;
+    margin: 0 24px 36px;
+    &.main {
+      height: 66px;
+      align-items: initial;
+      margin: 0 24px 390px;
+    }
+    &.sub {
+      height: 54px;
+      display: block;
+      border-radius: 0;
+      box-shadow: none;
+      background-color: transparent;
+      max-width: none;
+      margin: 30px auto 46px;
+      text-align: center;
+    }
+  }
+  .navbar-brand {
+    left: 50px;
+    top: 19px;
+  }
+  .navbar-btn-eco {
+    top:0px;
+  }
+  .navbar-gnb {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #555555;
+    display: block;
+    .nav-link {
+      padding: 0 15px;
+    }
+  }
+
+  .navbar-util {
+    right: 160px;
+    padding-left: 16px;
+    top: 0;
+    a {
+      line-height: 36px;
+      padding: 15px 5px;
+      //padding: 15px 18px;
+      display: inline-block;
+
+    }
+
+  }
+  .navbar-sub {
+    height: 54px;
+    .title {
+      font-size: 36px;
+      height: 54px;
+      line-height: 54px;
+      margin-top: 30px;
+      text-align: center;
+    }
+    .navbar-brand {
+      top: 11px;
+      a {
+        width: 36px;
+        height: 36px;
+      }
+    }
+    .navbar-util {
+      top: -8px;
+      right: 39px;
+      a {
+        img {
+          width: 36px;
+          height: 36px;
+        }
+      }
+      &::before {
+        content: none;
+      }
+    }
+  }
+
+}
+@include media-breakpoint-up(lg) {
+  .navbar-gnb {
+    left: 25%;
+    .nav-link {
+      padding: 0 25px;
+    }
+  }
+  .navbar-util {
+    right: 180px;
+    a {
+      padding: 15px 18px;
+    }
+    &:before {
+      content: '';
+      width: 3px;
+      height: 24px;
+      position: absolute;
+      top: 23px;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .navbar-gnb {
+    left: 466px;
+  }
+}
+
+// Navbar text
+//
+//
+
+.navbar-text {
+  display: inline-block;
+  padding-top: $nav-link-padding-y;
+  padding-bottom: $nav-link-padding-y;
+}
+
+
+// Responsive navbar
+//
+// Custom styles for responsive collapsing and toggling of navbar contents.
+// Powered by the collapse Bootstrap JavaScript plugin.
+
+// When collapsed, prevent the toggleable navbar contents from appearing in
+// the default flexbox row orientation. Requires the use of `flex-wrap: wrap`
+// on the `.navbar` parent.
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  // For always expanded or extra full navbars, ensure content aligns itself
+  // properly vertically. Can be easily overridden with flex utilities.
+  align-items: center;
+}
+
+// Button for toggling the navbar when in its collapsed state
+.navbar-toggler {
+  padding: 0;
+  @include font-size($navbar-toggler-font-size);
+  line-height: 1;
+  background-color: transparent; // remove default button style
+  border: $border-width solid transparent; // remove default button style
+  @include border-radius($navbar-toggler-border-radius);
+
+  @include hover-focus() {
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+// Keep as a separate element so folks can easily override it with another icon
+// or image file as needed.
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+}
+
+// Generate series of `.navbar-expand-*` responsive classes for configuring
+// where your navbar collapses.
+.navbar-expand {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $next: breakpoint-next($breakpoint, $grid-breakpoints);
+    $infix: breakpoint-infix($next, $grid-breakpoints);
+
+    &#{$infix} {
+      @include media-breakpoint-down($breakpoint) {
+        %container-navbar-expand-#{$breakpoint} {
+          padding-right: 0;
+          padding-left: 0;
+
+        }
+
+        > .container,
+        > .container-fluid {
+          @extend %container-navbar-expand-#{$breakpoint};
+        }
+
+        @each $size, $container-max-width in $container-max-widths {
+          > .container#{breakpoint-infix($size, $container-max-widths)} {
+            @extend %container-navbar-expand-#{$breakpoint};
+          }
+        }
+      }
+
+      @include media-breakpoint-up($next) {
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+
+        .navbar-nav {
+          flex-direction: row;
+          //margin: 0 auto;
+
+          .dropdown-menu {
+            position: absolute;
+          }
+
+          .nav-link {
+            margin-right: 90px;
+            padding-right: $navbar-nav-link-padding-x;
+            padding-left: $navbar-nav-link-padding-x;
+          }
+        }
+
+        // For nesting containers, have to redeclare for alignment purposes
+        %container-nesting-#{$breakpoint} {
+          flex-wrap: nowrap;
+        }
+
+        > .container,
+        > .container-fluid {
+          @extend %container-nesting-#{$breakpoint};
+        }
+
+        @each $size, $container-max-width in $container-max-widths {
+          > .container#{breakpoint-infix($size, $container-max-widths)} {
+            @extend %container-nesting-#{$breakpoint};
+          }
+        }
+
+        .navbar-collapse {
+          display: flex !important; // stylelint-disable-line declaration-no-important
+
+          // Changes flex-bases to auto because of an IE10 bug
+          flex-basis: auto;
+        }
+
+        .navbar-toggler {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+// Navbar themes
+//
+// Styles for switching between navbars with light or dark background.
+
+// Dark links against a light background
+.navbar-light {
+  .navbar-brand {
+    color: $navbar-light-brand-color;
+
+    @include hover-focus() {
+      color: $navbar-light-brand-hover-color;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $navbar-light-color;
+
+      @include hover-focus() {
+        color: $navbar-light-hover-color;
+      }
+
+      &.disabled {
+        color: $navbar-light-disabled-color;
+      }
+    }
+
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      border-bottom: 2px solid;
+      color: $navbar-light-active-color;
+    }
+  }
+
+  .navbar-toggler {
+    color: $navbar-light-color;
+    border-color: $navbar-light-toggler-border-color;
+  }
+
+  .navbar-toggler-icon {
+    background-image: escape-svg($navbar-light-toggler-icon-bg);
+  }
+
+  .navbar-text {
+    color: $navbar-light-color;
+
+    a {
+      color: $navbar-light-active-color;
+
+      @include hover-focus() {
+        color: $navbar-light-active-color;
+      }
+    }
+  }
+}
+
+// White links against a dark background
+.navbar-dark {
+  .navbar-brand {
+    color: $navbar-dark-brand-color;
+
+    @include hover-focus() {
+      color: $navbar-dark-brand-hover-color;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $navbar-dark-color;
+
+      @include hover-focus() {
+        color: $navbar-dark-hover-color;
+      }
+
+      &.disabled {
+        color: $navbar-dark-disabled-color;
+      }
+    }
+
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      border-bottom: 2px solid;
+      color: $navbar-dark-active-color;
+    }
+  }
+
+  .navbar-toggler {
+    color: $navbar-dark-color;
+    border-color: $navbar-dark-toggler-border-color;
+  }
+
+  .navbar-toggler-icon {
+    background-image: escape-svg($navbar-dark-toggler-icon-bg);
+  }
+
+  .navbar-text {
+    color: $navbar-dark-color;
+
+    a {
+      color: $navbar-dark-active-color;
+
+      @include hover-focus() {
+        color: $navbar-dark-active-color;
+      }
+    }
+  }
+}
+
+
+
+

@@ -1,0 +1,822 @@
+.sprite {
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  text-indent: -9999px;
+  font-size: 0;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+/**
+common
+ */
+
+.sprite.btn-open-color-n {
+  background-image: url("../img/sprite/btn-open-color-n@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-open-color-f {
+  background-image: url("../img/sprite/btn-open-color-f@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-open-color-d {
+  background-image: url("../img/sprite/btn-open-color-d@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-open-n {
+  background-image: url("../img/sprite/btn-open-n@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-open-f {
+  background-image: url("../img/sprite/btn-open-f@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-open-d {
+  background-image: url("../img/sprite/btn-open-d@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-evaluate-pen-n {
+  background-image: url("../img/sprite/btn-evaluate-pen-n@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-thumb-up-color-n {
+   background-image: url("../img/sprite/btn-thumb-up-color-n@2x.png");
+   width: 24px;
+   height: 24px;
+ }
+.sprite.btn-thumb-up-color-f {
+  background-image: url("../img/sprite/btn-thumb-up-color-f@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-thumb-up-color-d {
+  background-image: url("../img/sprite/btn-thumb-up-color-d@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-thumb-up-n {
+  background-image: url("../img/sprite/btn-thumb-up-n@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-noti-color-n {
+  background-image: url("../img/sprite/btn-noti-color-n@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-noti-color-n-sm {
+  background-image: url("../img/sprite/btn-noti-color-n-sm@2x.png");
+  width: 16px;
+  height: 16px;
+}
+.sprite.btn-noti-color-f {
+  background-image: url("../img/sprite/btn-noti-color-f@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-noti-color-d {
+  background-image: url("../img/sprite/btn-noti-color-d@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-noti-n {
+  background-image: url("../img/sprite/btn-noti-n@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-noti-n-sm {
+  background-image: url("../img/sprite/btn-noti-n-sm@2x.png");
+  width: 16px;
+  height: 16px;
+}
+.sprite.btn-edit-n {
+  background-image: url("../img/sprite/btn-edit-n@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-edit-f {
+  background-image: url("../img/sprite/btn-edit-f@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-edit-d {
+  background-image: url("../img/sprite/btn-edit-d@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-question-n {
+  background-image: url("../img/sprite/btn-question-n@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-question-f {
+  background-image: url("../img/sprite/btn-question-f@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-question-d {
+  background-image: url("../img/sprite/btn-question-d@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-subscribe-n {
+  background-image: url("../img/sprite/btn-subscribe-n@2x.png");
+  width: 80px;
+  height: 80px;
+}
+.sprite.btn-subscribe-f {
+  background-image: url("../img/sprite/btn-subscribe-f@2x.png");
+  width: 80px;
+  height: 80px;
+}
+.sprite.btn-subscribe-d {
+  background-image: url("../img/sprite/btn-subscribe-d@2x.png");
+  width: 80px;
+  height: 80px;
+}
+/* S GNB Icon Button 36 x 36 */
+.sprite.btn-main-search-n {
+  background-image: url("../img/sprite/btn-main-search-n@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-main-search-f {
+  background-image: url("../img/sprite/btn-main-search-f@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-main-search-d {
+  background-image: url("../img/sprite/btn-main-search-d@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-search-n {
+  background-image: url("../img/sprite/btn-search-n@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-search-f {
+  background-image: url("../img/sprite/btn-search-f@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-search-d {
+  background-image: url("../img/sprite/btn-search-d@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-main-search-white-n {
+  background-image: url("../img/sprite/btn-main-search-white-n@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-main-search-white-f {
+  background-image: url("../img/sprite/btn-main-search-white-f@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-main-search-white-d {
+  background-image: url("../img/sprite/btn-main-search-white-d@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-main-user-off-n {
+  background-image: url("../img/sprite/btn-main-user-off-n@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-main-user-off-f {
+  background-image: url("../img/sprite/btn-main-user-off-f@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-main-user-off-d {
+  background-image: url("../img/sprite/btn-main-user-off-d@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-main-user-on-n {
+  background-image: url("../img/sprite/btn-main-user-on-n@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-main-user-on-f {
+  background-image: url("../img/sprite/btn-main-user-on-f@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-main-user-on-d {
+  background-image: url("../img/sprite/btn-main-user-on-d@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-sub-back-n {
+  background-image: url("../img/sprite/btn-sub-back-n@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-sub-back-f {
+  background-image: url("../img/sprite/btn-sub-back-f@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-sub-back-d {
+  background-image: url("../img/sprite/btn-sub-back-d@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-36-back-n {
+  background-image: url("../img/sprite/btn-36-back-n@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-main-back-f {
+  background-image: url("../img/sprite/btn-main-back-f@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-main-back-d {
+  background-image: url("../img/sprite/btn-main-back-d@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-sub-home-n {
+  background-image: url("../img/sprite/btn-sub-home-n@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-sub-home-f {
+  background-image: url("../img/sprite/btn-sub-home-f@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-sub-home-d {
+  background-image: url("../img/sprite/btn-sub-home-d@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-main-home-white-n {
+  background-image: url("../img/sprite/btn-main-home-white-n@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-main-home-white-f {
+  background-image: url("../img/sprite/btn-main-home-white-f@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-main-home-white-d {
+  background-image: url("../img/sprite/btn-main-home-white-d@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-main-country-kor-n {
+  background-image: url("../img/sprite/btn-main-country-kor-n@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-main-country-kor-f {
+  background-image: url("../img/sprite/btn-main-country-kor-f@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-main-country-kor-d {
+  background-image: url("../img/sprite/btn-main-country-kor-d@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-main-country-eng-n {
+  background-image: url("../img/sprite/btn-main-country-eng-n@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-main-country-eng-f {
+  background-image: url("../img/sprite/btn-main-country-eng-f@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-main-country-eng-d {
+  background-image: url("../img/sprite/btn-main-country-eng-d@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-main-country-vie-n {
+  background-image: url("../img/sprite/btn-main-country-vie-n@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-main-country-vie-f {
+  background-image: url("../img/sprite/btn-main-country-vie-f@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-main-country-vie-d {
+  background-image: url("../img/sprite/btn-main-country-vie-d@2x.png");
+  width: 36px;
+  height: 36px;
+}
+/* E GNB Icon Button 36 x 36 */
+
+/* S Icon Button 36 x 36 */
+.sprite.btn-right-arrow-n {
+  background-image: url("../img/sprite/btn-right-arrow-n@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-right-arrow-f {
+  background-image: url("../img/sprite/btn-right-arrow-f@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-right-arrow-d {
+  background-image: url("../img/sprite/btn-right-arrow-d@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-left-arrow-n {
+  background-image: url("../img/sprite/btn-left-arrow-n@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-left-arrow-f {
+  background-image: url("../img/sprite/btn-left-arrow-f@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-left-arrow-d {
+  background-image: url("../img/sprite/btn-left-arrow-d@2x.png");
+  width: 36px;
+  height: 36px;
+}
+/* E Icon Button 36 x 36 */
+
+/* S Icon Button 24 x 24 */
+.sprite.btn-close-color-n {
+  background-image: url("../img/sprite/btn-close-color-n@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-close-color-f {
+  background-image: url("../img/sprite/btn-close-color-f@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-close-color-d {
+  background-image: url("../img/sprite/btn-close-color-d@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-close-n {
+  background-image: url("../img/sprite/btn-close-n@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-close-f {
+  background-image: url("../img/sprite/btn-close-f@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-close-d {
+  background-image: url("../img/sprite/btn-close-d@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-plus-n {
+  background-image: url("../img/sprite/btn-plus-n@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-plus-f {
+  background-image: url("../img/sprite/btn-plus-f@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-plus-d {
+  background-image: url("../img/sprite/btn-plus-d@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-noti-f {
+  background-image: url("../img/sprite/btn-noti-f@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-noti-d {
+  background-image: url("../img/sprite/btn-noti-d@2x.png");
+  width: 24px;
+  height: 24px;
+}
+/* E Icon Button 24 x 24 */
+
+/* S List Button_OPEN */
+.sprite.btn-list-open-n {
+  background-image: url("../img/sprite/btn-list-open-n@2x.png");
+  width: 48px;
+  height: 48px;
+}
+.sprite.btn-list-open-f {
+  background-image: url("../img/sprite/btn-list-open-f@2x.png");
+  width: 48px;
+  height: 48px;
+}
+.sprite.btn-list-open-d {
+  background-image: url("../img/sprite/btn-list-open-d@2x.png");
+  width: 48px;
+  height: 48px;
+}
+.sprite.btn-list-close-n {
+  background-image: url("../img/sprite/btn-list-close-n@2x.png");
+  width: 48px;
+  height: 48px;
+}
+.sprite.btn-list-close-f {
+  background-image: url("../img/sprite/btn-list-close-f@2x.png");
+  width: 48px;
+  height: 48px;
+}
+.sprite.btn-list-close-d {
+  background-image: url("../img/sprite/btn-list-close-d@2x.png");
+  width: 48px;
+  height: 48px;
+}
+/* E List Button_OPEN */
+
+/* S Delete Button */
+.sprite.btn-delete-n {
+  background-image: url("../img/sprite/btn-delete-n@2x.png");
+  width: 20px;
+  height: 20px;
+}
+.sprite.btn-delete-f {
+  background-image: url("../img/sprite/btn-delete-f@2x.png");
+  width: 20px;
+  height: 20px;
+}
+.sprite.btn-delete-d {
+  background-image: url("../img/sprite/btn-delete-d@2x.png");
+  width: 20px;
+  height: 20px;
+}
+/* E Delete Button */
+
+/* S Text Delete Button */
+.sprite.btn-text-delete-n {
+  background-image: url("../img/sprite/btn-text-delete-n@2x.png");
+  width: 20px;
+  height: 20px;
+}
+.sprite.btn-text-delete-f {
+  background-image: url("../img/sprite/btn-text-delete-f@2x.png");
+  width: 20px;
+  height: 20px;
+}
+.sprite.btn-text-delete-d {
+  background-image: url("../img/sprite/btn-text-delete-d@2x.png");
+  width: 20px;
+  height: 20px;
+}
+/* E Text Delete Button */
+
+/* S History Button */
+.sprite.btn-history-n {
+  background-image: url("../img/sprite/btn-history-n@2x.png");
+  width: 20px;
+  height: 20px;
+}
+.sprite.btn-history-f {
+  background-image: url("../img/sprite/btn-history-f@2x.png");
+  width: 20px;
+  height: 20px;
+}
+.sprite.btn-history-d {
+  background-image: url("../img/sprite/btn-history-d@2x.png");
+  width: 20px;
+  height: 20px;
+}
+/* E History Button */
+
+/* S GNB Homerun-eco Button */
+.sprite.btn-main-homerun-eco-n {
+  background-image: url("../img/sprite/btn-main-homerun-eco-n@2x.png");
+  width: 150px;
+  height: 66px;
+}
+.sprite.btn-main-homerun-eco-f {
+  background-image: url("../img/sprite/btn-main-homerun-eco-f@2x.png");
+  width: 150px;
+  height: 66px;
+}
+.sprite.btn-main-homerun-eco-d {
+  background-image: url("../img/sprite/btn-main-homerun-eco-d@2x.png");
+  width: 150px;
+  height: 66px;
+}
+/* E GNB Homerun-eco Button */
+
+/* S SNS LOGIN Button 80 x 80 */
+.sprite.btn-login-facebook-n {
+  background-image: url("../img/sprite/btn-login-facebook-n@2x.png");
+  width: 80px;
+  height: 80px;
+}
+.sprite.btn-login-facebook-f {
+  background-image: url("../img/sprite/btn-login-facebook-f@2x.png");
+  width: 80px;
+  height: 80px;
+}
+.sprite.btn-login-facebook-d {
+  background-image: url("../img/sprite/btn-login-facebook-d@2x.png");
+  width: 80px;
+  height: 80px;
+}
+.sprite.btn-login-kakaotalk-n {
+  background-image: url("../img/sprite/btn-login-kakaotalk-n@2x.png");
+  width: 80px;
+  height: 80px;
+}
+.sprite.btn-login-kakaotalk-f {
+  background-image: url("../img/sprite/btn-login-kakaotalk-f@2x.png");
+  width: 80px;
+  height: 80px;
+}
+.sprite.btn-login-kakaotalk-d {
+  background-image: url("../img/sprite/btn-login-kakaotalk-d@2x.png");
+  width: 80px;
+  height: 80px;
+}
+.sprite.btn-login-naver-n {
+  background-image: url("../img/sprite/btn-login-naver-n@2x.png");
+  width: 80px;
+  height: 80px;
+}
+.sprite.btn-login-naver-f {
+  background-image: url("../img/sprite/btn-login-naver-f@2x.png");
+  width: 80px;
+  height: 80px;
+}
+.sprite.btn-login-naver-d {
+  background-image: url("../img/sprite/btn-login-naver-d@2x.png");
+  width: 80px;
+  height: 80px;
+}
+/* E SNS LOGIN Button 80 x 80 */
+
+/* S Floating Button */
+.sprite.btn-cs-n {
+  background-image: url("../img/sprite/btn-cs-n@2x.png");
+  width: 72px;
+  height: 72px;
+}
+.sprite.btn-cs-f {
+  background-image: url("../img/sprite/btn-cs-f@2x.png");
+  width: 72px;
+  height: 72px;
+}
+.sprite.btn-cs-d {
+  background-image: url("../img/sprite/btn-cs-d@2x.png");
+  width: 72px;
+  height: 72px;
+}
+.sprite.btn-top-n {
+  background-image: url("../img/sprite/btn-top-n@2x.png");
+  width: 72px;
+  height: 72px;
+}
+.sprite.btn-top-f {
+  background-image: url("../img/sprite/btn-top-f@2x.png");
+  width: 72px;
+  height: 72px;
+}
+.sprite.btn-top-d {
+  background-image: url("../img/sprite/btn-top-d@2x.png");
+  width: 72px;
+  height: 72px;
+}
+/* E Floating Button */
+
+/* S Tab Menu Button 36 x 36 */
+.sprite.btn-subject-all-n {
+  background-image: url("../img/sprite/btn-subject-all-n@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-subject-all-d {
+  background-image: url("../img/sprite/btn-subject-all-d@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-subject-abc-n {
+  background-image: url("../img/sprite/btn-subject-abc-n@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-subject-abc-d {
+  background-image: url("../img/sprite/btn-subject-abc-d@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-subject-ko-n {
+  background-image: url("../img/sprite/btn-subject-ko-n@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-subject-ko-d {
+  background-image: url("../img/sprite/btn-subject-ko-d@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-subject-x-n {
+  background-image: url("../img/sprite/btn-subject-x-n@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-subject-x-d {
+  background-image: url("../img/sprite/btn-subject-x-d@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-subject-earth-n {
+  background-image: url("../img/sprite/btn-subject-earth-n@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-subject-earth-d {
+  background-image: url("../img/sprite/btn-subject-earth-d@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-subject-star-n {
+  background-image: url("../img/sprite/btn-subject-star-n@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-subject-star-d {
+  background-image: url("../img/sprite/btn-subject-star-d@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-subject-shapes-n {
+  background-image: url("../img/sprite/btn-subject-shapes-n@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-subject-shapes-d {
+  background-image: url("../img/sprite/btn-subject-shapes-d@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-subject-compass-n {
+  background-image: url("../img/sprite/btn-subject-compass-n@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-subject-compass-d {
+  background-image: url("../img/sprite/btn-subject-compass-d@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-subject-book-n {
+  background-image: url("../img/sprite/btn-subject-book-n@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-subject-book-d {
+  background-image: url("../img/sprite/btn-subject-book-d@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-subject-science-n {
+  background-image: url("../img/sprite/btn-subject-science-n@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-subject-science-d {
+  background-image: url("../img/sprite/btn-subject-science-d@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-subject-bulb-n {
+  background-image: url("../img/sprite/btn-subject-bulb-n@2x.png");
+  width: 36px;
+  height: 36px;
+}
+.sprite.btn-subject-bulb-d {
+  background-image: url("../img/sprite/btn-subject-bulb-d@2x.png");
+  width: 36px;
+  height: 36px;
+}
+/* E Tab Menu Button 36 x 36 */
+
+
+/* S Mypage Icon Button 80 x 80 */
+.sprite.btn-subscribe-n {
+  background-image: url("../img/sprite/btn-subscribe-n@2x.png");
+  width: 80px;
+  height: 80px;
+}
+.sprite.btn-subscribe-f {
+  background-image: url("../img/sprite/btn-subscribe-f@2x.png");
+  width: 80px;
+  height: 80px;
+}
+.sprite.btn-subscribe-d {
+  background-image: url("../img/sprite/btn-subscribe-d@2x.png");
+  width: 80px;
+  height: 80px;
+}
+.sprite.btn-pay-info-n {
+  background-image: url("../img/sprite/btn-pay-info-n@2x.png");
+  width: 80px;
+  height: 80px;
+}
+.sprite.btn-pay-info-f {
+  background-image: url("../img/sprite/btn-pay-info-f@2x.png");
+  width: 80px;
+  height: 80px;
+}
+.sprite.btn-pay-info-d {
+  background-image: url("../img/sprite/btn-pay-info-d@2x.png");
+  width: 80px;
+  height: 80px;
+}
+.sprite.btn-evaluation-management-n {
+  background-image: url("../img/sprite/btn-evaluation-management-n@2x.png");
+  width: 80px;
+  height: 80px;
+}
+.sprite.btn-evaluation-management-f {
+  background-image: url("../img/sprite/btn-evaluation-management-f@2x.png");
+  width: 80px;
+  height: 80px;
+}
+.sprite.btn-evaluation-management-d {
+  background-image: url("../img/sprite/btn-evaluation-management-d@2x.png");
+  width: 80px;
+  height: 80px;
+}
+.sprite.btn-q-a-n {
+  background-image: url("../img/sprite/btn-q-a-n@2x.png");
+  width: 80px;
+  height: 80px;
+}
+.sprite.btn-q-a-f {
+  background-image: url("../img/sprite/btn-q-a-f@2x.png");
+  width: 80px;
+  height: 80px;
+}
+.sprite.btn-q-a-d {
+  background-image: url("../img/sprite/btn-q-a-d@2x.png");
+  width: 80px;
+  height: 80px;
+}
+/* E Mypage Icon Button 80 x 80 */
+
+
+.sprite.btn-tag-more-arrow-n {
+  background-image: url("../img/sprite/btn-tag-more-arrow-n@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-tag-more-arrow-color-n {
+  background-image: url("../img/sprite/btn-tag-more-arrow-color-n@2x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.btn-24-right-arrow-n {
+  background-image: url("../img/sprite/btn-24-right-arrow-n@3x.png");
+  width: 24px;
+  height: 24px;
+}
+.sprite.icon-16-star {
+  background-image: url("../img/sprite/icon-16-star@3x.png");
+  width: 16px;
+  height: 16px;
+}
+.sprite.icon-list-badge-subscribe {
+  background-image: url("../img/common/icon-list-badge-subscribe@3x.png");
+  width: 48px;
+  height: 18px;
+}
+.sprite.icon-list-badge-homelearn {
+  background-image: url("../img/common/icon-list-badge-homelearn@3x.png");
+  width: 48px;
+  height: 16px;
+}
+.sprite.icon-list-badge-package {
+  background-image: url("../img/common/icon-list-badge-package@3x.png");
+  width: 38px;
+  height: 16px;
+}
+.sprite.icon-list-badge-discount-free {
+  background-image: url("../img/common/icon-list-badge-discount-free@3x.png");
+  width: 76px;
+  height: 48px;
+}
