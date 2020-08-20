@@ -52,6 +52,8 @@
           <div class="card-btn">
             <a href="#" class="btn btn-outline btn-radius">미리보기</a>
             <a href="#" class="btn btn-radius btn-primary">결제하기</a>
+            <a href="#" class="btn btn-radius btn-primary" data-toggle="modal" data-target="#product1">다계정 상품</a>
+            <a href="#" class="btn btn-radius btn-primary" data-toggle="modal" data-target="#product2">판매 중지 상품 </a>
           </div>
         </div>
         <div class="detail-page">
@@ -67,6 +69,7 @@
       </div>
       <div class="sticky-btn">
         <div class="cont">
+          <div class="price">6개월 약정 <span>￦99,000</span> / 월</div>
           <a href="#" class="btn btn-white btn-radius">미리보기</a>
           <a href="#" class="btn btn-outline btn-radius">결제하기</a>
         </div>
@@ -77,6 +80,35 @@
 </div>
 @@include('../html/include/footer.html')
 <!-- E content -->
+
+<div class="modal fade" id="product1" tabindex="-1" role="dialog" aria-labelledby="alert2" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal-title">2명 이상의 자녀가 필요해요.</div>
+        마이페이지에서 자녀를 추가한 후<br>
+        다시 시도해 주세요.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-sm btn-block" data-dismiss="modal">확인</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="product2" tabindex="-1" role="dialog" aria-labelledby="alert2" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal-title">판매가 중지되었어요.</div>
+        이미 결제한 학습은 정상적으로 학습이 가능하며<br>
+        추가 결제는 불가합니다.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-sm btn-block" data-dismiss="modal">확인</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>

@@ -167,8 +167,8 @@
     /* 5단 */
     &.card-list-5 {
       .card-item {
-        width: calc(20% - 21px) !important;
-        margin-right: 26px !important;
+        width: calc(20% - 39px) !important;
+        margin-right: 48px !important;
       }
     }
 
@@ -255,6 +255,7 @@
       .card-item {
         height: auto;
 
+        width: 320px;
         .img {
           display: inline-block;
           width: 100%;
@@ -729,224 +730,449 @@
   }
 }
 
-/* 교육과정별 메인_01_초등 - 인기학습! 아직도 안해봤어요? todo! */
-.popular-edu-box {
-  .link-title {
-    margin-bottom: 14px;
-  }
 
-  .popular-edu-list {
-    width: 100%;
-    height: auto;
-    padding: 0 20px;
+/*edu-item*/
+.edu-item-list {
+  position: relative;
+  padding: 14px 0;
+  border-bottom: 2px solid rgba(224, 224, 224, 0.5);;
 
-    .edu-item {
-      position: relative;
-      padding: 14px 0;
-      border-bottom: 2px solid rgba(224, 224, 224, 0.5);;
+  &.first {
+    padding: 0;
 
-      &.first {
-        padding: 0;
-        a {
-          .img {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            top: auto;
-            left: auto;
+    a {
+      .img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: auto;
+        left: auto;
 
-            .sticker-num {
-              width: 32px;
-              height: 32px;
+        .sticker-num {
+          width: 32px;
+          height: 32px;
 
-              span {
-                font-size: 20px;
-                line-height: 32px;
-              }
-            }
-
-            .sticker-top {
-              position: absolute;
-              top: -6px;
-              right: 6px;
-
-              i {
-                display: inline-block;
-              }
-            }
-
-            .sticker-discount {
-              position: absolute;
-              background-image: url(../img/common/icon-list-badge-discount-percent@2x.png);
-              background-size: cover;
-              background-repeat: no-repeat;
-              display: block;
-              width: 54px;
-              height: 36px;
-              bottom: 6px;
-              right: -5px;
-
-              span {
-                display: block;
-                font-size: 16px;
-                text-align: center;
-                color: #fff;
-                font-weight: bold;
-                line-height: 36px;
-                padding-top: 3px;
-                padding-left: 4px;
-
-                .percent {
-                  font-weight: bold;
-                  font-style: normal;
-                  font-size: 12px;
-                }
-              }
-            }
+          span {
+            font-size: 20px;
+            line-height: 32px;
           }
+        }
 
-          .list-body {
-            padding-top: 8px;
-            padding-bottom: 14px;
-            padding-left: 0;
+        .sticker-top {
+          position: absolute;
+          top: -6px;
+          right: 6px;
 
-            .title {
-              margin-bottom: 8px;
-            }
-            .score {
-              color: #666;
-            }
-            .s-sticker {
-              bottom: 12px;
-              right: 14px;
+          i {
+            display: inline-block;
+          }
+        }
+
+        .sticker-discount {
+          position: absolute;
+          background-image: url("../img/common/icon-list-badge-discount-percent@2x.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          display: block;
+          width: 54px;
+          height: 36px;
+          bottom: 6px;
+          right: -5px;
+
+          span {
+            display: block;
+            font-size: 16px;
+            text-align: center;
+            color: #fff;
+            font-weight: bold;
+            line-height: 36px;
+            padding-top: 3px;
+            padding-left: 4px;
+
+            .percent {
+              font-weight: bold;
+              font-style: normal;
+              font-size: 12px;
             }
           }
         }
       }
-      a {
-        display: block;
 
-        .img {
-          position: absolute;
-          width: 80px;
-          height: 80px;
-          display: inline-block;
-          left: 0;
-          top: 15px;
+      .list-body {
+        padding-top: 8px;
+        padding-bottom: 14px;
+        padding-left: 0;
 
-          img {
-            width: 100%;
-            height: 100%;
-          }
-
-          .sticker-num {
-            position: absolute;
-            top: -6px;
-            left: -6px;
-            width: 22px;
-            height: 22px;
-            border-radius: 4px;
-            box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12);
-            background-color: #ff7600;
-
-            span {
-              display: block;
-              font-size: 16px;
-              font-weight: bold;
-              line-height: 22px;
-              text-align: center;
-              color: #ffffff;
-            }
-          }
+        .title {
+          margin-bottom: 8px;
         }
 
-        .list-body {
-          position: relative;
-          width: 100%;
+        .score {
+          color: #666;
+        }
+
+        .s-sticker {
+          bottom: 12px;
+          right: 14px;
+        }
+      }
+    }
+  }
+
+  a {
+    display: block;
+
+    .img {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      display: inline-block;
+      left: 0;
+      top: 15px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .sticker-num {
+        position: absolute;
+        top: -6px;
+        left: -6px;
+        width: 22px;
+        height: 22px;
+        border-radius: 4px;
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12);
+        background-color: #ff7600;
+
+        span {
+          display: block;
+          font-size: 16px;
+          font-weight: bold;
+          line-height: 22px;
+          text-align: center;
+          color: #ffffff;
+        }
+      }
+    }
+
+    .list-body {
+      position: relative;
+      width: 100%;
+      display: inline-block;
+      padding-left: 83px;
+
+      .sticker-area {
+        padding-left: 9px;
+        margin-bottom: 2px;
+
+        > div {
           display: inline-block;
-          padding-left: 83px;
+        }
 
-          .sticker-area {
-            padding-left: 9px;
-            margin-bottom: 2px;
-            > div {
-              display: inline-block;
-            }
-            .sticker-homerun {
-              width: 56px;
-              height: 18px;
-            }
-            .sticker-package {
-              width: 42px;
-              height: 18px;
-            }
-            .sticker-free {
-              width: 38px;
-              height: 18px;
-            }
-            .sticker-discount-sm {
-              display: inline-block;
-              background-image: url(../img/common/icon-list-discount@3x.png);
-              background-size: cover;
-              background-repeat: no-repeat;
-              width: 32px;
-              height: 18px;
+        .sticker-homerun {
+          width: 56px;
+          height: 18px;
+        }
 
-              span {
-                display: block;
-                font-size: 12px;
-                text-align: center;
-                color: #fff;
-                font-weight: bold;
-                line-height: 18px;
+        .sticker-package {
+          width: 42px;
+          height: 18px;
+        }
 
-                .percent {
-                  font-weight: bold;
-                  font-style: normal;
-                  font-size: 9px;
-                }
-              }
-            }
-            img {
-              width: 100%;
-              height: 100%;
-            }
-          }
+        .sticker-free {
+          width: 38px;
+          height: 18px;
+        }
 
-          .title {
-            width: 100%;
+        .sticker-discount-sm {
+          display: inline-block;
+          background-image: url("../img/common/icon-list-discount@3x.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 32px;
+          height: 18px;
+
+          span {
             display: block;
-            height: 44px;
-            padding: 0 8px;
-            font-size: 16px;
+            font-size: 12px;
+            text-align: center;
+            color: #fff;
             font-weight: bold;
-            line-height: 22px;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            -webkit-box-orient: vertical;
-            word-wrap: break-word;
-          }
-          .score {
-            padding: 0 4px;
-            color: #999;
-            i {
-              margin-right: 4px;
-              transform: translateY(-1px);
+            line-height: 18px;
+
+            .percent {
+              font-weight: bold;
+              font-style: normal;
+              font-size: 9px;
             }
           }
-          .s-sticker {
-            display: block;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-          }
         }
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .title {
+        width: 100%;
+        display: block;
+        height: 44px;
+        padding: 0 8px;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 22px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        word-wrap: break-word;
+      }
+
+      .score {
+        padding: 0 4px;
+        color: #999;
+
+        i {
+          margin-right: 4px;
+          transform: translateY(-1px);
+        }
+      }
+
+      .s-sticker {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
       }
     }
   }
 }
 @include media-breakpoint-up($size-tablet) {
+  .edu-item-list {
+    position: relative;
+    padding: 15px 0;
+    border-bottom: 0 none;
+    float: left;
+    width: 314px;
+    margin-right: 18px;
 
+    &.first {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      width: 370px;
+
+      a {
+        .img {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          top: auto;
+          left: auto;
+
+          .sticker-num {
+            width: 32px;
+            height: 32px;
+
+            span {
+              font-size: 20px;
+              line-height: 32px;
+            }
+          }
+
+          .sticker-top {
+            position: absolute;
+            top: -6px;
+            right: 6px;
+
+            i {
+              display: inline-block;
+            }
+          }
+
+          .sticker-discount {
+            position: absolute;
+            background-image: url("../img/common/icon-list-badge-discount-percent@2x.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: block;
+            width: 54px;
+            height: 36px;
+            bottom: 6px;
+            right: -5px;
+
+            span {
+              display: block;
+              font-size: 16px;
+              text-align: center;
+              color: #fff;
+              font-weight: bold;
+              line-height: 36px;
+              padding-top: 3px;
+              padding-left: 4px;
+
+              .percent {
+                font-weight: bold;
+                font-style: normal;
+                font-size: 12px;
+              }
+            }
+          }
+        }
+
+        .list-body {
+          padding-top: 8px;
+          padding-bottom: 14px;
+          padding-left: 0;
+
+          .title {
+            margin-bottom: 8px;
+          }
+
+          .score {
+            color: #666;
+          }
+
+          .s-sticker {
+            bottom: 12px;
+            right: 14px;
+          }
+        }
+      }
+    }
+
+    a {
+      display: block;
+
+      .img {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        display: inline-block;
+        left: 0;
+        top: 15px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        .sticker-num {
+          position: absolute;
+          top: -6px;
+          left: -6px;
+          width: 22px;
+          height: 22px;
+          border-radius: 4px;
+          box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12);
+          background-color: #ff7600;
+
+          span {
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 22px;
+            text-align: center;
+            color: #ffffff;
+          }
+        }
+      }
+
+      .list-body {
+        position: relative;
+        width: 100%;
+        display: inline-block;
+        padding-left: 83px;
+
+        .sticker-area {
+          padding-left: 9px;
+          margin-bottom: 2px;
+
+          > div {
+            display: inline-block;
+          }
+
+          .sticker-homerun {
+            width: 56px;
+            height: 18px;
+          }
+
+          .sticker-package {
+            width: 42px;
+            height: 18px;
+          }
+
+          .sticker-free {
+            width: 38px;
+            height: 18px;
+          }
+
+          .sticker-discount-sm {
+            display: inline-block;
+            background-image: url("../img/common/icon-list-discount@3x.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 32px;
+            height: 18px;
+
+            span {
+              display: block;
+              font-size: 12px;
+              text-align: center;
+              color: #fff;
+              font-weight: bold;
+              line-height: 18px;
+
+              .percent {
+                font-weight: bold;
+                font-style: normal;
+                font-size: 9px;
+              }
+            }
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .title {
+          width: 100%;
+          display: block;
+          height: 44px;
+          padding: 0 8px;
+          font-size: 16px;
+          font-weight: bold;
+          line-height: 22px;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          -webkit-box-orient: vertical;
+          word-wrap: break-word;
+        }
+
+        .score {
+          padding: 0 4px;
+          color: #999;
+
+          i {
+            margin-right: 4px;
+            transform: translateY(-1px);
+          }
+        }
+
+        .s-sticker {
+          display: block;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+      }
+    }
+  }
 }

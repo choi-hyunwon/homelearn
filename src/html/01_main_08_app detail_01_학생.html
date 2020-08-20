@@ -49,15 +49,27 @@
             <span class="state">현재 <span class="text-secondary font-weight-bold">김홈런</span> 님이 학습 중이에요.</span>
             <span class="total_price"><span class="plan">6개월 약정</span><span class="price">￦99,000</span><span class="range">/ 월</span></span>
           </div>
-          <div class="card-btn please">
+          <div class="card-btn please _please">
             <a href="#" class="btn btn-outline btn-radius">미리보기</a>
-            <a href="#" class="btn btn-radius btn-primary">조르기</a>
+            <a href="#" class="btn btn-radius btn-primary" data-toggle="modal" data-target="#alert">조르기</a>
             <div class="info">
               <span class="desc">공부하고 싶은 학습이 있다면<br>부모님께 알려주세요.</span>
               <a href="#" class="btn btn-outline">다시 보지 않기</a>
               <a href="#" class="btn btn-primary">닫기</a>
             </div>
           </div>
+          <script>
+            //닫기 클릭 시
+            $('._please').on('click', '.info .btn-primary', function () {
+              $('._please').find('.info').hide();
+            });
+            //다시 보지 않기
+            $('._please').on('click', '.info .btn-outline', function () {
+              $('._please').find('.info').hide();
+              //쿠키 기능 삽입
+            });
+
+          </script>
         </div>
         <div class="detail-page">
           <nav>
@@ -73,7 +85,7 @@
       <div class="sticky-btn">
         <div class="cont">
           <a href="#" class="btn btn-white btn-radius">미리보기</a>
-          <a href="#" class="btn btn-outline btn-radius">결제하기</a>
+          <a href="#" class="btn btn-outline btn-radius" data-toggle="modal" data-target="#alert">조르기</a>
         </div>
       </div>
     </div>
@@ -82,6 +94,18 @@
 </div>
 @@include('../html/include/footer.html')
 <!-- E content -->
-
+<div class="modal fade" id="alert" tabindex="-1" role="dialog" aria-labelledby="alert" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        공부하고 싶은 학습 조르기 완료! <br>
+        부모님께 메시지를 보냈어요.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-sm btn-block" data-dismiss="modal">확인</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>

@@ -7,7 +7,10 @@
   -webkit-transition: height 0s ease .3s, width 0s ease .3s, -webkit-transform .3s cubic-bezier(.7, .3, .1, 1);
   transition: height 0s ease .3s, width 0s ease .3s, -webkit-transform .3s cubic-bezier(.7, .3, .1, 1);
   transition: transform .3s cubic-bezier(.7, .3, .1, 1), height 0s ease .3s, width 0s ease .3s;
-  transition: transform .3s cubic-bezier(.7, .3, .1, 1), height 0s ease .3s, width 0s ease .3s, -webkit-transform .3s cubic-bezier(.7, .3, .1, 1)
+  transition: transform .3s cubic-bezier(.7, .3, .1, 1), height 0s ease .3s, width 0s ease .3s, -webkit-transform .3s cubic-bezier(.7, .3, .1, 1);
+  &:after{
+    display: none;
+  }
 }
 
 .drawer > * {
@@ -308,8 +311,8 @@
           font-weight: bold;
           line-height: 1.29;
           color: #333333;
-          width: 186px;
-          padding: 15px 12px;
+          width: 151px;
+          padding: 15px 0px 15px 12px;
         }
       }
     }
@@ -396,6 +399,7 @@
       top: -5px;
       left: -80px;
       transform: rotate(45deg);
+      display: none;
     }
   }
 }
@@ -408,7 +412,7 @@
     border-radius: 10px;
     box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2);
     &:after {
-
+      display: block;
     }
   }
   .drawer-open {

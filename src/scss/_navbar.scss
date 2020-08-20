@@ -166,18 +166,51 @@
         height: 4px;
         background-color: #42c2d1;
         position: absolute;
-        top: 20px;
-        right: 20px;
+        top: 4px;
+        right: 9px;
         border-radius: 50%;
       }
     }
+
     img {
       width: 32px;
       height: 32px;
     }
   }
+
   :before {
     display: none;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .navbar-util {
+    a.hasalram {
+      &:after {
+        top: 5px;
+        right: 10px;
+      }
+    }
+  }
+}
+@include media-breakpoint-up($size-tablet) {
+  .navbar-util {
+    a.hasalram {
+      &:after {
+        top: 20px;
+        right: 10px;
+      }
+    }
+  }
+}
+@include media-breakpoint-up(lg) {
+  .navbar-util {
+    a.hasalram {
+      &:after {
+        top: 20px;
+        right: 20px;
+      }
+    }
   }
 }
 
@@ -303,7 +336,7 @@
       padding: 15px 18px;
     }
     &:before {
-      content: '';
+      content: "";
       width: 3px;
       height: 24px;
       position: absolute;

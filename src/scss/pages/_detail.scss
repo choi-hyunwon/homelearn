@@ -205,6 +205,7 @@
       }
     }
   }
+
 }
 
 @include media-breakpoint-up(lg) {
@@ -464,7 +465,9 @@
   text-align: center;
   padding: 10px;
   z-index: 1000;
-
+  .cont {
+    position: relative;
+  }
   .btn {
     width: 156px;
     min-width: 0;
@@ -479,6 +482,11 @@
   .btn-white {
     border-radius: 27px;
     border: solid 2px #ffffff;
+  }
+
+  .price {
+    display: none;
+    position: relative;
   }
 }
 
@@ -499,6 +507,19 @@
 
       &.btn-outline {
         width: 180px;
+      }
+    }
+    .price {
+      display: block;
+      position: absolute;
+      top: 20px;
+      left: 0;
+      font-size: 16px;
+      font-weight: normal;
+      color: #ffffff;
+      span {
+        font-weight: bold;
+        font-size: 20px;
       }
     }
   }
@@ -624,6 +645,24 @@
         }
       }
     }
+
+  }
+
+  &.empty {
+    text-align: center;
+    padding: 80px 0;
+    .title {
+      font-size: 18px;
+      line-height: 1.5;
+      text-align: center;
+      color: #666666;
+    }
+    .desc {
+      font-size: 14px;
+      line-height: 1.5;
+      text-align: center;
+      color: #666666;
+    }
   }
 }
 @include media-breakpoint-up($size-tablet) {
@@ -681,6 +720,24 @@
             line-height: 30px;
           }
         }
+      }
+    }
+
+    &.empty {
+      text-align: center;
+      height: auto;
+      padding: 124px 0;
+      .title {
+        font-size: 24px;
+        line-height: 1.17;
+        text-align: center;
+        color: #666666;
+      }
+      .desc {
+        font-size: 18px;
+        line-height: 1.22;
+        text-align: center;
+        color: #666666;
       }
     }
   }
@@ -915,6 +972,154 @@
 
         }
 
+      }
+    }
+  }
+}
+
+.relative-section {
+  padding-top: 24px;
+  margin-top: 24px;
+  border-top: 2px solid rgba(224, 224, 224, 0.5);
+
+  &:first-child {
+    padding-top: 0;
+    margin-top: 0;
+    border-top: none;
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+  }
+
+  .edu-item-list {
+    border-bottom: 0 none;
+  }
+}
+
+
+.detail-modal-rating {
+  padding: 0 !important;
+
+  .modal-dialog {
+    width: 100%;
+    max-width: 630px;
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
+    height: 640px;
+    min-height: 100%;
+    margin: 0 auto;
+
+    .modal-content {
+
+      -webkit-border-radius: 12px 12px 0 0;
+      -moz-border-radius: 12px 12px 0 0;
+      border-radius: 12px 12px 0 0;
+      padding: 18px 24px;
+
+      .modal-head {
+        border-bottom: 2px solid rgba(224, 224, 224, 0.6);
+        margin-left: -24px;
+        margin-right: -24px;
+
+        .title {
+          font-size: 20px;
+          font-weight: bold;
+          line-height: 1.2;
+          text-align: center;
+          color: #333333;
+          margin-bottom: 4px;
+        }
+
+        .desc {
+          font-size: 14px;
+          line-height: 1.43;
+          text-align: center;
+          color: #333333;
+          margin-bottom: 10px;
+        }
+      }
+
+      .modal-body {
+        padding-top: 12px;
+
+        .rating {
+          text-align: center;
+          margin-bottom: 12px;
+        }
+
+        .edit {
+          width: 100%;
+
+          textarea {
+            width: 100%;
+            height: 333px;
+            border: solid 1px #dddddd;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            padding: 12px 14px;
+            color: #666666;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@include media-breakpoint-up($size-tablet) {
+
+  .detail-modal-rating {
+    padding: 0 !important;
+
+    .modal-dialog {
+      align-items: center;
+      max-width: 710px;
+      .modal-content {
+        border-radius: 12px;
+        padding: 40px;
+
+        .modal-head {
+          border-bottom: 2px solid rgba(224, 224, 224, 0.6);
+          margin-left: -40px;
+          margin-right: -40px;
+
+          .title {
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 1.08;
+            text-align: center;
+            color: #333333;
+            margin-bottom: 0;
+          }
+
+          .desc {
+            font-size: 18px;
+            line-height: 1.44;
+            text-align: center;
+            color: #333333;
+          }
+        }
+
+        .modal-body {
+          padding-top: 12px;
+
+          .rating {
+            text-align: center;
+            margin-bottom: 12px;
+          }
+
+          .edit {
+            textarea {
+              width: 100%;
+              height: 200px;
+            }
+          }
+        }
       }
     }
   }

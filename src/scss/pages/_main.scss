@@ -70,6 +70,7 @@
 .edu-list {
   margin-bottom: 36px;
 
+
   .edu-item {
     > .title {
       font-size: 18px;
@@ -100,6 +101,7 @@
     }
   }
 
+
   &.line-bottom {
     position: relative;
 
@@ -115,19 +117,19 @@
 }
   /* 769~960 겹침 현상 대응 */
 @media (min-width: 769px) and (max-width: 960px) {
-  .edu-list {
-    .edu-item {
-      .rounded-box {
-        width: 437px;
-        padding-left: 47px;
-        font-size: 16px;
-        .badge-img {
-          right: 25px;
-        }
+  .edu-item {
+    .rounded-box {
+      width: 437px;
+      padding-left: 47px;
+      font-size: 16px;
+
+      .badge-img {
+        right: 25px;
       }
     }
   }
 }
+
 @include media-breakpoint-up($size-tablet) {
   .edu-list {
     .edu-item {
@@ -171,7 +173,6 @@
         }
       }
     }
-
     &.line-bottom {
       &::after {
         content: none;
@@ -179,6 +180,11 @@
     }
   }
 }
+
+
+
+
+
 
 /* 메인 - 링크 타이틀 */
 .link-title {
@@ -745,5 +751,314 @@
     font-weight: bold;
     right: 0;
     top: 0;
+  }
+}
+
+
+/* 교육과정별 메인_01_초등 - 인기학습! 아직도 안해봤어요? todo! */
+.popular-edu-box {
+  margin-bottom: 20px;
+
+  .link-title {
+    margin-bottom: 14px;
+  }
+
+  .popular-edu-list {
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+
+
+  }
+}
+
+@include media-breakpoint-up($size-tablet) {
+  .popular-edu-box {
+    max-width: 1160px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 9px 24px 0 rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.86);
+    padding: 36px;
+    margin-bottom: 16px;
+
+    .popular-edu-list {
+      padding: 0;
+      position: relative;
+      padding-left: 414px;
+
+      .edu-item {
+        position: relative;
+        padding: 15px 0;
+        border-bottom: 0 none;
+        float: left;
+        width: 314px;
+        margin-right: 18px;
+
+        &.first {
+          position: absolute;
+          top: 40px;
+          left: 0;
+          width: 370px;
+
+          a {
+            .img {
+              position: relative;
+              width: 100%;
+              height: 100%;
+              top: auto;
+              left: auto;
+
+              .sticker-num {
+                width: 32px;
+                height: 32px;
+
+                span {
+                  font-size: 20px;
+                  line-height: 32px;
+                }
+              }
+
+              .sticker-top {
+                position: absolute;
+                top: -6px;
+                right: 6px;
+
+                i {
+                  display: inline-block;
+                }
+              }
+
+              .sticker-discount {
+                position: absolute;
+                background-image: url("../img/common/icon-list-badge-discount-percent@2x.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                display: block;
+                width: 54px;
+                height: 36px;
+                bottom: 6px;
+                right: -5px;
+
+                span {
+                  display: block;
+                  font-size: 16px;
+                  text-align: center;
+                  color: #fff;
+                  font-weight: bold;
+                  line-height: 36px;
+                  padding-top: 3px;
+                  padding-left: 4px;
+
+                  .percent {
+                    font-weight: bold;
+                    font-style: normal;
+                    font-size: 12px;
+                  }
+                }
+              }
+            }
+
+            .list-body {
+              padding-top: 8px;
+              padding-bottom: 14px;
+              padding-left: 0;
+
+              .title {
+                margin-bottom: 8px;
+              }
+
+              .score {
+                color: #666;
+              }
+
+              .s-sticker {
+                bottom: 12px;
+                right: 14px;
+              }
+            }
+          }
+        }
+
+        a {
+          display: block;
+
+          .img {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            display: inline-block;
+            left: 0;
+            top: 15px;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+
+            .sticker-num {
+              position: absolute;
+              top: -6px;
+              left: -6px;
+              width: 22px;
+              height: 22px;
+              border-radius: 4px;
+              box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12);
+              background-color: #ff7600;
+
+              span {
+                display: block;
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 22px;
+                text-align: center;
+                color: #ffffff;
+              }
+            }
+          }
+
+          .list-body {
+            position: relative;
+            width: 100%;
+            display: inline-block;
+            padding-left: 83px;
+
+            .sticker-area {
+              padding-left: 9px;
+              margin-bottom: 2px;
+
+              > div {
+                display: inline-block;
+              }
+
+              .sticker-homerun {
+                width: 56px;
+                height: 18px;
+              }
+
+              .sticker-package {
+                width: 42px;
+                height: 18px;
+              }
+
+              .sticker-free {
+                width: 38px;
+                height: 18px;
+              }
+
+              .sticker-discount-sm {
+                display: inline-block;
+                background-image: url("../img/common/icon-list-discount@3x.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 32px;
+                height: 18px;
+
+                span {
+                  display: block;
+                  font-size: 12px;
+                  text-align: center;
+                  color: #fff;
+                  font-weight: bold;
+                  line-height: 18px;
+
+                  .percent {
+                    font-weight: bold;
+                    font-style: normal;
+                    font-size: 9px;
+                  }
+                }
+              }
+
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+
+            .title {
+              width: 100%;
+              display: block;
+              height: 44px;
+              padding: 0 8px;
+              font-size: 16px;
+              font-weight: bold;
+              line-height: 22px;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              -webkit-box-orient: vertical;
+              word-wrap: break-word;
+            }
+
+            .score {
+              padding: 0 4px;
+              color: #999;
+
+              i {
+                margin-right: 4px;
+                transform: translateY(-1px);
+              }
+            }
+
+            .s-sticker {
+              display: block;
+              position: absolute;
+              bottom: 0;
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* 교육과정별 카테고리 */
+.popular-edu-category {
+  position: relative;
+  margin-bottom: 30px;
+  text-align: left;
+  .scroll {
+    width: 850px !important;
+  }
+  a {
+    display: inline-block;
+    width: 120px;
+    height: 48px;
+    border-radius: 25px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+    margin: 0 9px;
+    line-height: 48px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+  }
+}
+
+@include media-breakpoint-up($size-tablet) {
+
+  .popular-edu-category {
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+
+    a {
+      display: inline-block;
+      width: 138px;
+      height: 66px;
+      border-radius: 33px;
+      box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.12);
+      background-color: #ffffff;
+      margin: 0 12px;
+      line-height: 66px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #333333;
+    }
   }
 }
