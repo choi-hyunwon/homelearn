@@ -410,7 +410,6 @@
     i {
       width: 16px;
       height: 16px;
-      transform: translateY(-1px);
     }
   }
 }
@@ -431,8 +430,9 @@
       &:active, &.active {
         border-color: #dddad8;
         background-color: #dddad8;
-
+        color: #994600;
         i.sprite {
+          transform: translateY(-1px);
           background-image: url("../img/sprite/btn-open-color-f@2x.png");
         }
       }

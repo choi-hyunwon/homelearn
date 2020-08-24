@@ -85,7 +85,11 @@
   .navbar-util {
     right: 12px;
   }
-
+  &.event {
+    .title {
+      color: #333;
+    }
+  }
 }
 
 .navbar-brand {
@@ -318,6 +322,11 @@
       }
       &::before {
         content: none;
+      }
+    }
+    &.event {
+      .navbar-brand {
+        left: 40px;
       }
     }
   }

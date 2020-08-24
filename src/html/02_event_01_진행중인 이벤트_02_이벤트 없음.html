@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+@@include('../html/include/head.html')
+<body>
+<div class="wrap p-no">
+
+  <div class="navbar-sub event">
+    <div class="navbar-brand">
+      <a href="#"><img src="../img/common/btn-back-n@3x.png"/></a>
+    </div>
+    <div class="title">이벤트</div>
+    <div class="navbar-util">
+      <a href="#"><img src="../img/common/btn-main-search-n@3x.png"/></a>
+      <a href="#"><img src="../img/common/btn-sub-home-n@3x.png"/></a>
+    </div>
+  </div>
+
+  <div class="container-lg container-fluid px-rem-md-3 px-rem-2">
+    <!-- tab -->
+    <div class="tabs tab-order mb-2 mb-rem-md-4">
+      <ul class="list">
+        <li class="active" data-target="pannel1"><a href="#">진행 중인 이벤트</a></li>
+        <li data-target="pannel2"><a href="#">지난 이벤트</a></li>
+      </ul>
+    </div>
+
+    <div class="tabs-pannel" id="pannel1" >
+      <div class="event empty">
+        <div class="img">
+          <img src="../img/common/icon-120-event@3x.png" alt="" width="96" height="96">
+        </div>
+        <p class="desc">진행 중인 이벤트가 없어요.</p>
+      </div>
+    </div>
+    <div class="tabs-pannel" id="pannel2" style="display: none;">
+      <div class="event empty">
+        <div class="img">
+          <img src="../img/common/icon-120-event@3x.png" alt="" width="96" height="96">
+        </div>
+        <p class="desc">지난 이벤트가 없어요.</p>
+      </div>
+    </div>
+  </div>
+  <!-- S content -->
+</div>
+<script>
+  $('.tab-order li a')
+    .on('click', function () {
+      $(this)
+        .parent()
+        .addClass('active')
+        .siblings()
+        .removeClass('active')
+      var target = '#' + $(this)
+        .parent()
+        .data('target')
+      $(target)
+        .show()
+        .siblings('.tabs-pannel')
+        .hide()
+    })
+</script>
+@@include('../html/include/fixed-btn.html')
+@@include('../html/include/footer.html')
+<!-- E content -->
+</body>
+</html>
