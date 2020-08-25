@@ -96,6 +96,46 @@ front.common = (function () {
       }, 0);
     });
 
+    // 검색창
+    var $inputSearch = $('._search'),
+      $inputClear = $('._searchClear');
+
+    $inputSearch.keyup(function () {
+      $inputClear.toggle(Boolean($(this).val()));
+
+      // 같은 검색 단어 컬러 변경
+      var value = $(this).val();
+      $("._searchList li .item-1 .text:contains('"+ value +"')").each(function () {
+        var regex = new RegExp(value,'gi');
+        $(this).html( $(this).text().replace(regex, "<span class='highlight'>"+value+"</span>") );
+      });
+    })
+
+    $inputClear.toggle(Boolean($inputSearch.val()));
+
+    $inputClear.on('click', function () {
+      $inputSearch.val('').focus();
+      $(this).hide();
+    })
+
+    // 알림 on/off - 클릭 이벤트
+    $('._notice').on('click', function (){
+
+      if($(this).hasClass('btn-main-off')) {
+        $(this).removeClass('btn-main-off').addClass('btn-main-on').text('알림 ON');
+        $(this).children().remove();
+        $(this).prepend('<i class="sprite btn-noti-color-n-sm"></i>');
+        return 0;
+      }
+
+      if($(this).hasClass('btn-main-on')){
+        $(this).removeClass('btn-main-on').addClass('btn-main-off').text('알림 OFF');
+        $(this).children().remove();
+        $(this).prepend('<i class="sprite btn-noti-n-sm"></i>');
+        return 0;
+      }
+    });
+
   };
   var drawer = function () {
 

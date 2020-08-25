@@ -81,8 +81,10 @@
     var template = Handlebars.compile(source); //컴파일
     $('.wrap_scroll')
     .append(template(data.common))
+    .append(template(data.login))
     .append(template(data.main))
     .append(template(data.detail))
+    .append(template(data.event))
 </script>
 <script>
     $('.link').on('click', function () {

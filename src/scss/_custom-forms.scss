@@ -269,7 +269,7 @@
 .custom-radio {
   position: relative;
   padding-left: 21px;
-  line-height: 28px;
+  line-height: 26px;
   min-height: auto;
 
   .custom-control-input {
@@ -283,8 +283,8 @@
   }
 
   .custom-control-label::before {
-    width: 28px;
-    height: 28px;
+    width: 26px;
+    height: 26px;
     border-radius: 50%;
     border: 2px solid #fff;
     background: #fff;
@@ -318,8 +318,8 @@
 
     &::after {
       position: absolute;
-      top: 7px;
-      left: -13px;
+      top: 6px;
+      left: -14px;
       width: 14px;
       height: 14px;
       border-radius: 50%;
@@ -373,6 +373,22 @@
   }
 }
 
+@include media-breakpoint-up($size-tablet) {
+  .custom-radio {
+    line-height: 28px;
+  }
+  .custom-radio .custom-control-label::before {
+    width: 28px;
+    height: 28px;
+    top: 0;
+  }
+  .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+    top: 7px;
+    left: -13px;
+    width: 14px;
+    height: 14px;
+  }
+}
 
 
 // switches

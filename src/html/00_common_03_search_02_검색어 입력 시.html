@@ -2,80 +2,60 @@
 <html lang="ko">
 @@include('../html/include/head.html')
 <body>
-<div class="">
-  <div class="wrap" style="background: pink">
-    <div class="search-box">
-      <div class="input-group">
-        <a href="#" class="btn-back"><img src="../img/common/btn-search-back-n@3x.png" alt=""></a>
-        <input class="form-control _search" type="search" placeholder="검색어를 입력하세요" aria-label="Search">
-        <a href="#" class="btn-search"><img src="../img/common/btn-search-color-n@3x.png" alt=""></a>
-        <a href="#" class="btn-search-close _searchClear"><img src="../img/common/btn-text-delete-n@3x.png" alt="" width="16" height="16"></a>
-      </div>
-      <div class="search-content">
-        <div class="search-list">
-          <ul>
-            <li>
-              <a class="item-1" href="#">
-                <span class="img"><img src="../img/common/icon-24-search-auto@3x.png" alt=""></span>
-                <span>초등 수학</span>
-              </a>
-              <div class="item-2">
-                <a href="#"><img src="../img/common/history-button-n@3x.png" alt="" width="20" height="20"></a>
-              </div>
-            </li>
-            <li>
-              <a class="item-1" href="#">
-                <span class="img"><img src="../img/common/icon-24-search-auto@3x.png" alt=""></span>
-                <span>초등 영어</span>
-              </a>
-              <div class="item-2">
-                <a href="#"><img src="../img/common/history-button-n@3x.png" alt="" width="20" height="20"></a>
-              </div>
-            </li>
-            <li>
-              <a class="item-1" href="#">
-                <span class="img"><img src="../img/common/icon-24-search-auto@3x.png" alt=""></span>
-                <span>초등 국어</span>
-              </a>
-              <div class="item-2">
-                <a href="#"><img src="../img/common/history-button-n@3x.png" alt="" width="20" height="20"></a>
-              </div>
-            </li>
-            <li>
-              <a class="item-1" href="#">
-                <span class="img"><img src="../img/common/icon-24-search-auto@3x.png" alt=""></span>
-                <span>초등 사회</span>
-              </a>
-              <div class="item-2">
-                <a href="#"><img src="../img/common/history-button-n@3x.png" alt="" width="20" height="20"></a>
-              </div>
-            </li>
-          </ul>
-        </div>
+<div class="wrap">
+  <div class="search-box">
+    <div class="input-group">
+      <a href="#" class="btn-back"><img src="../img/common/btn-search-back-n@3x.png" alt=""></a>
+      <input class="form-control _search" type="search" placeholder="검색어를 입력하세요" aria-label="Search">
+      <a href="#" class="btn-search"><img src="../img/common/btn-search-color-n@3x.png" alt=""></a>
+      <a href="#" class="btn-search-close _searchClear"><img src="../img/common/btn-text-delete-n@3x.png" alt=""
+                                                             width="16" height="16"></a>
+    </div>
+    <div class="search-content">
+      <div class="search-list _searchList">
+        <ul>
+          <li>
+            <a class="item-1" href="#">
+              <span class="img"><img src="../img/common/icon-24-search-auto@3x.png" alt=""></span>
+              <span class="text">초등 수학</span>
+            </a>
+            <div class="item-2">
+              <a href="#"><img src="../img/common/history-button-n@3x.png" alt="" width="20" height="20"></a>
+            </div>
+          </li>
+          <li>
+            <a class="item-1" href="#">
+              <span class="img"><img src="../img/common/icon-24-search-auto@3x.png" alt=""></span>
+              <span class="text">초등 영어</span>
+            </a>
+            <div class="item-2">
+              <a href="#"><img src="../img/common/history-button-n@3x.png" alt="" width="20" height="20"></a>
+            </div>
+          </li>
+          <li>
+            <a class="item-1" href="#">
+              <span class="img"><img src="../img/common/icon-24-search-auto@3x.png" alt=""></span>
+              <span class="text">초등 국어</span>
+            </a>
+            <div class="item-2">
+              <a href="#"><img src="../img/common/history-button-n@3x.png" alt="" width="20" height="20"></a>
+            </div>
+          </li>
+          <li>
+            <a class="item-1" href="#">
+              <span class="img"><img src="../img/common/icon-24-search-auto@3x.png" alt=""></span>
+              <span class="text">초등 사회</span>
+            </a>
+            <div class="item-2">
+              <a href="#"><img src="../img/common/history-button-n@3x.png" alt="" width="20" height="20"></a>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
-
-
-    <!-- S content -->
   </div>
+  <!-- S content -->
 </div>
-
-<script>
-  var $inputSearch = $('._search'),
-    $inputClear = $('._searchClear');
-
-  $inputSearch.keyup(function(){
-    $inputClear.toggle(Boolean($(this).val()));
-  });
-
-  $inputClear.toggle(Boolean($inputSearch.val()));
-
-  $inputClear.on('click',function(){
-    console.log('asdasd')
-    $inputSearch.val('').focus();
-    $(this).hide();
-  });
-</script>
 @@include('../html/include/fixed-btn.html')
 @@include('../html/include/footer.html')
 <!-- E content -->

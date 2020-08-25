@@ -105,3 +105,28 @@
     }
   }
 }
+
+/*
+  이용 약관
+*/
+.terms-of-service {
+  padding-bottom: 20px;
+  p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@include media-breakpoint-up($size-tablet) {
+  .terms-of-service {
+    width: 100%;
+    padding: 36px 54px;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.06);
+    background-color: #ffffff;
+    margin-top: 30px;
+    p {
+      font-size: 14px;
+      line-height: normal;
+    }
+  }
+}
