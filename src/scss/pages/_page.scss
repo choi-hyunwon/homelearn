@@ -1310,7 +1310,6 @@
 @include media-breakpoint-up($size-tablet) {
   .search-box {
     position: static;
-    margin: 20px;
     background: transparent;
     border-radius: 33px;
     box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.12);
