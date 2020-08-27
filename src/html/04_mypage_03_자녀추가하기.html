@@ -20,12 +20,12 @@
   </head>
 
   <body>
-    <div class="wrap p-no cs-center">
+    <div class="wrap p-no cs-center mypage">
       <div class="navbar-sub">
         <div class="navbar-brand">
           <a href="#"><img src="../img/common/btn-back-n@3x.png"/></a>
         </div>
-        <div class="title">1:1 문의하기</div>
+        <div class="title">자녀 추가하기</div>
         <div class="navbar-util">
           <a href="#"><img src="../img/common/btn-main-search-n@3x.png"/></a>
           <a href="#"><img src="../img/common/btn-sub-home-n@3x.png"/></a>
@@ -35,8 +35,8 @@
         <div class="container">
           <div class="title text-center">
             <h3>
-              <img src="../img/common/icon-16-info-black@3x.png" />답변은
-              고객센터 1:1 문의 내역을 통해 확인하실 수 있습니다.
+              <img src="../img/common/icon-16-info-black@3x.png" />아이디와
+              비밀번호는 꼭 기억하세요.
             </h3>
             <p><i class="require"></i>항목은 필수 입력 항목입니다.</p>
           </div>
@@ -47,63 +47,63 @@
             <input
               type="text"
               id="name"
-              placeholder="이름을 입력해주세요"
+              placeholder="한글 또는 영문 (최대 20자)"
               class="form-control"
             />
           </div>
           <div class="form-group">
-            <label for="pin" class="font-weight-bold"
-              >비밀번호<i class="require"></i
+            <label for="grade" class="font-weight-bold"
+              >학년<i class="require"></i
             ></label>
-            <input
-              type="text"
-              id="pin"
-              placeholder="비밀번호 4자리를 입력해주세요"
-              class="form-control"
-            />
-            <span class="text text-primrary font-response-1 pt-0"
-              >비회원 1:1 문의 답변 확인 시 비밀번호가 필요합니다.</span
-            >
-          </div>
-          <div class="form-group">
-            <label for="type" class="font-weight-bold"
-              >문의 유형<i class="require"></i
-            ></label>
-            <select
-              id="type"
-              placeholder="분류를 선택하세요."
-              class="form-control"
-            >
-              <option disabled selected>분류를 선택하세요</option>
-              <option>상품문의</option>
-              <option>문의유형1</option>
-              <option>문의유형2</option>
+            <select id="grade" class="form-control">
+              <option disabled selected>현재 학년으로 신청해주세요.</option>
+              <option>예비 초등</option>
+              <option>초1</option>
+              <option>초2</option>
+              <option>초3</option>
+              <option>초4</option>
+              <option>초5</option>
+              <option>초6</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="title" class="font-weight-bold"
-              >제목<i class="require"></i
+            <div class="button-group">
+              <label for="id" class="font-weight-bold"
+                >아이디<i class="require"></i
+              ></label>
+              <input
+                type="text"
+                id="id"
+                placeholder="영문/숫자 조합 6자리 이상"
+                class="form-control"
+              />
+              <button class="btn">중복 확인</button>
+              <span class="text text-secondary font-response-1 pt-0"
+                >사용 가능한 아이디입니다.</span
+              >
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="password" class="font-weight-bold"
+              >비밀번호<i class="require"></i
             ></label>
             <input
-              type="text"
-              id="title"
-              placeholder="문의 제목을 입력하세요. (최대 50자)"
+              type="password"
+              id="password"
+              placeholder="영문 대소문자/숫자/특수문자 조합 8~15자리"
+              class="form-control"
+            />
+            <input
+              type="password"
+              id="password-confirm"
+              placeholder="비밀번호 확인"
               class="form-control"
             />
           </div>
-          <div class="form-group textarea">
-            <label for="content" class="font-weight-bold"
-              >문의 내용<i class="require"></i
-            ></label>
-            <textarea
-              id="content"
-              placeholder="문의 내용을 입력하세요. (최대 500자)"
-              class="form-control"
-            ></textarea>
-          </div>
+
           <div class="buttons">
             <a href="#" class="btn btn-outline btn-radius">취소</a>
-            <a href="#" class="btn btn-white btn-radius">등록</a>
+            <a href="#" class="btn btn-white btn-radius">저장</a>
           </div>
         </div>
       </div>
