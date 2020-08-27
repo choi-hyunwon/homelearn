@@ -25,7 +25,7 @@
         <div class="navbar-brand">
           <a href="#"><img src="../img/common/btn-back-n@3x.png"/></a>
         </div>
-        <div class="title">학생별 학습 현황</div>
+        <div class="title">평가 관리</div>
         <div class="navbar-util">
           <a href="#"><img src="../img/common/btn-main-search-n@3x.png"/></a>
           <a href="#"><img src="../img/common/btn-sub-home-n@3x.png"/></a>
@@ -33,43 +33,34 @@
       </div>
       <div class="content">
         <div class="container">
-          <div class="input-group">
-            <select class="form-control">
-              <option>김홈런</option>
-            </select>
-          </div>
-          <p><strong>12개</strong>의 학습이 진행 중 입니다.</p>
-          <ul class="edu-list">
+          <p><strong>12개</strong>의 내가 남긴 평가가 있습니다.</p>
+          <ul class="review-list">
             <li>
-              <a href="" class="btn btn-outline btn-radius btn-minus">
-                학습 제외
-              </a>
               <img src="../img/main/m-app-card-img02@3x.png" />
               <h2>뚜루아이와 함께하는 초등수학</h2>
-              <p>2020. 04. 15부터 학습 시작</p>
+              <p>
+                <ul class="star-rating">
+                  <li class="checked"></li>
+                  <li class="checked"></li>
+                  <li class="checked"></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <span>2020.11.20</span>
+              </p>
+              <a href="" class="btn btn-edit">수정하기</a>
+              <div class="review">
+                <p>아이가 생각보다 많이 좋아라해서 만족하고 학습 시키고 있습니다. 컨텐츠도 많아서 컨텐츠 일일히 살 돈도 아낄 수 있어서 좋구요! 평소에 공부라곤 정말 싫어하던 아이가 잘 따라하네요. 좋습니다!</p>
+              </div>
+              <div class="review-btn">
+                <a href="#" class="btn" data-toggle="modal" data-target="#rating"><img src="../img/common/btn-evaluate-pen-n@2x.png" width="24" alt=""> 평가하기</a>
+              </div>              
+              <div class="comment">
+                <h4>아이스크림 에듀<small>2020.11.20</small></h4>
+                <p>어머님 좋은 리뷰 남겨주셔서 감사합니다. 앞으로도 아이스크림 에듀 열심히 하겠습니다!</p>
+              </div>
             </li>
-            <li>
-              <a href="" class="btn btn-outline btn-radius btn-minus">
-                학습 제외
-              </a>
-              <img src="../img/main/m-app-card-img02@3x.png" />
-              <h2>뚜루아이와 함께하는 창의력</h2>
-              <p>2020. 04. 15부터 학습 시작</p>
-            </li>
-            <li>
-              <a href="" class="btn btn-outline btn-radius btn-plus">
-                학습 추가
-              </a>
-              <img src="../img/main/m-app-card-img02@3x.png" />
-              <h2>뚜루아이와 함께하는 초등수학</h2>
-            </li>
-            <li>
-              <a href="" class="btn btn-outline btn-radius btn-plus">
-                학습 추가
-              </a>
-              <img src="../img/main/m-app-card-img02@3x.png" />
-              <h2>뚜루아이와 함께하는 초등수학</h2>
-            </li>
+           
           </ul>
           <div class="buttons">
             <button class="btn btn-block btn-more">
@@ -123,6 +114,57 @@
       </div>
     </footer>
 
-    <!-- E content -->
+    <div class="modal fade detail-modal-rating" id="rating" tabindex="-1" role="dialog" aria-labelledby="alert" aria-hidden="true">
+      <div class="modal-dialog " role="document">
+        <div class="modal-content">
+          <div class="modal-head">
+            <div class="title">평가하기</div>
+            <div class="desc">뚜루아이와 함께하는 초등 수학</div>
+          </div>
+          <div class="modal-body">
+            <div class="rating _rating">
+              <a href="#" data-rating="1">
+                <img src="../img/common/icon-42-star@2x.png" class="on" width="42">
+                <img src="../img/common/icon-42-star-off@2x.png" class="off" width="42" style="display: none;">
+              </a>
+              <a href="#" class="current" data-rating="2">
+                <img src="../img/common/icon-42-star@2x.png" class="on" width="42">
+                <img src="../img/common/icon-42-star-off@2x.png" class="off" width="42" style="display: none;">
+              </a>
+              <a href="#" data-rating="3">
+                <img src="../img/common/icon-42-star@2x.png" class="on" width="42"  style="display: none;">
+                <img src="../img/common/icon-42-star-off@2x.png" class="off" width="42">
+              </a>
+              <a href="#" data-rating="4">
+                <img src="../img/common/icon-42-star@2x.png" class="on" width="42" style="display: none;">
+                <img src="../img/common/icon-42-star-off@2x.png" class="off" width="42" >
+              </a>
+              <a href="#" data-rating="5">
+                <img src="../img/common/icon-42-star@2x.png" class="on" width="42" style="display: none;">
+                <img src="../img/common/icon-42-star-off@2x.png" class="off" width="42" >
+              </a>
+            </div>
+    
+            <script>
+              $('._rating').on('click', 'a', function () {
+                $(this).prevAll().addBack().find('.off').hide();
+                $(this).prevAll().addBack().find('.on').show();
+                $(this).nextAll().find('.off').show();
+                $(this).nextAll().find('.on').hide();
+                $(this).addClass('current').siblings().removeClass('current');
+                alert($(this).data('rating')+"선택");
+              })
+            </script>
+    
+            <div class="edit">
+              <textarea name="rating" id="" rows="10"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-block" data-dismiss="modal">평가 완료</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
