@@ -127,7 +127,7 @@
     height: 34px;
     line-height: 32px;
     font-size: 12px;
-    background: url(../img/common/btn-plus-color-n@3x.png) no-repeat 10px center;
+    background: url(../img/common/btn-plus-n@3x.png) no-repeat 10px center;
     background-size: 16px;
   }
   .btn-minus {
@@ -391,12 +391,13 @@
       height: 48px;
       line-height: 44px;
       font-size: 18px;
-      background: url(../img/common/btn-plus-n@3x.png) no-repeat 22px center;
+      background-position: 22px center;
       background-size: 24px;
     }
     .btn-reg,
     .btn-disabled {
       padding: 0 10px;
+      background: none;
     }
     .btn-pay {
       padding: 0 10px;
@@ -470,6 +471,9 @@
           span {
             margin-left: calc(24px + 14px);
           }
+          &.p-24 {
+            padding: 24px 0;
+          }
         }
         .empty {
           margin: 32px 0 40px 0;
@@ -527,6 +531,7 @@
     }
     .edu-list {
       li {
+        position: relative;
         padding: 40px 0;
         height: calc(146px + 40px * 2);
         img {
@@ -541,6 +546,53 @@
         p {
           margin-left: calc(146px + 24px);
           font-size: 18px;
+        }
+        .form-control,
+        .btn {
+          float: right;
+          margin: 5px 0 0 0;
+          & ~ h2 {
+            width: calc(100% - 146px - 24px - 160px - 40px);
+          }
+        }
+        select.form-control {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translate(0, -50%);
+          padding: 16px 24px;
+          width: 180px;
+          height: 54px;
+          font-size: 18px;
+        }
+      }
+    }
+    .form-group {
+      & + .buttons {
+        margin: 0;
+        padding: 48px 0 60px 0;
+      }
+      .form-control {
+        & + .form-control {
+          margin-top: 20px;
+          margin-left: calc(118px + 18px);
+          width: calc(100% - 118px - 18px);
+        }
+      }
+      .button-group {
+        label {
+          display: inline-block;
+        }
+        input {
+          float: none;
+          width: calc(100% - 180px - 8px - 118px - 18px);
+        }
+        .btn {
+          float: right;
+          min-width: 180px;
+        }
+        span {
+          margin-left: calc(118px + 18px);
         }
       }
     }
