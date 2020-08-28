@@ -3,10 +3,13 @@
   .p-product {
     position: relative;
     width: 100%;
-    padding: 6px 20px 22px;
+    height: 108px;
+    padding: 6px 20px 16px;
 
     .info {
       position: relative;
+      width: 100%;
+      height: 100%;
       padding-left: 92px;
 
       .app-icon {
@@ -23,7 +26,10 @@
         padding-top: 2px;
       }
       .company {
-        display: block;
+        position: absolute;
+        width: calc(100% - 90px);
+        left: 92px;
+        bottom: 8px;
         font-size: 14px;
         line-height: 20px;
         color: #666;
@@ -31,7 +37,7 @@
       }
       .star {
         position: absolute;
-        bottom: 1px;
+        bottom: 8px;
         right: 22px;
         line-height: 20px;
         > img {
@@ -66,12 +72,52 @@
     .accordion {
       .card {
         box-shadow: none;
-
         .card-header {
           position: relative;
           padding: 20px 20px 16px;
           background-color: #fff;
           border-bottom: 0;
+          margin-bottom: 0;
+
+          .title-area {
+            position: relative;
+            margin-bottom: 4px;
+            .title {
+              display: block;
+              font-size: 18px;
+              line-height: 24px;
+              font-weight: bold;
+              padding-right: 30px;
+            }
+            .btn-accordion {
+              display: block;
+              position: absolute;
+              width: 32px;
+              height: 32px;
+              right: 0;
+              top: -4px;
+              .img {
+                display: block;
+                width: 32px;
+                height: 32px;
+                background-image: url("../img/common/btn-list-open-n@3x.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+              }
+            }
+          }
+          .t-selected {
+            span {
+              display: block;
+              font-size: 14px;
+              line-height: 20px;
+              color: #999999;
+              &.highlight {
+                color: #666666;
+                font-weight: bold;
+              }
+            }
+          }
 
           &::after {
             content: '';
@@ -82,11 +128,90 @@
             bottom: 0;
             left: 0;
           }
+          &[aria-expanded="true"] {
+            .title-area {
+              .btn-accordion {
+                .img {
+                  background-image: url("../img/common/btn-list-close-n@3x.png");
+                }
+              }
+            }
+          }
         }
         .card-body {
+          padding: 20px;
+          .user-list {
+            li {
+              margin-bottom: 20px;
 
+              .custom-radio {
+                .custom-control-input {}
+                .custom-control-label {
+                  display: block;
+                  font-size: 14px;
+                  line-height: 20px;
+                  font-weight: bold;
+                  .desc {
+                    display: block;
+                    font-weight: normal;
+                  }
+                  .badge-list {
+                    vertical-align: inherit;
+                    margin-left: 10px;
+                  }
+                }
+              }
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+          }
+          .btn-wrap {
+            text-align: center;
+            margin-top: 28px;
+            .btn {
+              display: inline-block;
+              min-width: 140px;
+              height: 34px;
+              line-height: 30px;
+              box-shadow: none;
+            }
+          }
+
+          &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: rgba(224, 224, 224, 0.5);
+            bottom: 1px;
+            left: 0;
+          }
+        }
+        &:last-child {
+          .card-header {
+            &::after {
+              content: none;
+            }
+          }
         }
       }
+    }
+  }
+}
+
+.payment {
+  >.btn-wrap {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    .btn {
+      display: inline-block;
+      height: 48px;
+      min-width: 156px;
+      line-height: 44px;
+      margin: 0 2px;
     }
   }
 }

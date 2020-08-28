@@ -276,6 +276,18 @@
     width: 28px;
     height: 28px;
     z-index: 5;
+
+    &[disabled],
+    &:disabled {
+      ~ .custom-control-label {
+        color: #ddd;
+
+        &::before {
+          border-color: #EEEEEE;
+          background-color: #fff;
+        }
+      }
+    }
   }
 
   .custom-control-label {

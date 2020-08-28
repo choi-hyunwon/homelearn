@@ -76,7 +76,7 @@ data.common = {
     },
     {
       'stateClass': 'complete',
-      'url': '00_common_04_result_01_검색결과_01',
+      'url': '00_common_04_result_01_검색결과',
       'category': 'common',
       'page': '검색결과'
     },
@@ -299,6 +299,18 @@ data.event = {
       'url': '02_event_02_지난 이벤트_02_이벤트 없음',
       'category': 'Event',
       'page': '지난 이벤트_이벤트 없음'
+    },
+  ]
+}
+
+data.payment = {
+  'title': '결제',
+  'list': [
+    {
+      'stateClass': 'complete',
+      'url': '01_main_10_app detail_결제_01_학습할 자녀 선택',
+      'category': 'Payment',
+      'page': '결제_학습할 자녀 선택'
     },
   ]
 }

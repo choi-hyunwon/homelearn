@@ -277,6 +277,24 @@
     font-weight: bold;
     color: #555555;
     display: block;
+    .nav-item {
+      &.active {
+        .nav-link {
+          position: relative;
+          color: $primary;
+          &::after {
+            content: "";
+            position: absolute;
+            width: 54px;
+            height: 6px;
+            border-radius: 4.5px 4.5px 0 0;
+            background-color: #ff7600;
+            bottom: 0;
+            left: 16px;
+          }
+        }
+      }
+    }
     .nav-link {
       padding: 0 15px;
     }

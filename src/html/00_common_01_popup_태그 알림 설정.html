@@ -566,8 +566,7 @@
 @@include('../html/include/footer.html')
 
 <!-- S 태그 알림 팝업 -->
-<div class="modal fade tag-notice-setting" id="tagNotice" tabindex="-1" role="dialog" aria-labelledby="alert"
-     aria-hidden="true">
+<div class="modal fade tag-notice-setting show" id="tagNotice" tabindex="-1" role="dialog" aria-labelledby="alert" aria-modal="true" style="z-index: 1040; padding-right: 17px; display: block;">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-head">
@@ -616,5 +615,6 @@
   </div>
 </div>
 <!-- E 태그 알림 팝업 -->
+<div class="modal-backdrop fade show modal-stack" style="z-index: 1039;"></div>
 </body>
 </html>
