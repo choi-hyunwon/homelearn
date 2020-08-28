@@ -1,4 +1,4 @@
-/* 결제 상단 부분 */
+/* 결제  */
 .payment {
   .p-product {
     position: relative;
@@ -17,6 +17,7 @@
         top: 0;
         left: 0;
       }
+
       .title {
         font-size: 16px;
         font-weight: bold;
@@ -25,24 +26,27 @@
         margin-bottom: 16px;
         padding-top: 2px;
       }
+
       .company {
         position: absolute;
         width: calc(100% - 90px);
         left: 92px;
         bottom: 8px;
-        font-size: 14px;
         line-height: 20px;
         color: #666;
         padding-right: 60px;
       }
+
       .star {
         position: absolute;
         bottom: 8px;
         right: 22px;
         line-height: 20px;
+
         > img {
           height: 16px;
         }
+
         span {
           vertical-align: baseline;
           font-size: 12px;
@@ -65,6 +69,85 @@
   }
 }
 @include media-breakpoint-up($size-tablet) {
+  .payment {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 9px 24px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+
+    .p-product {
+      height: 178px;
+      padding: 30px 38px;
+
+      .info {
+        padding-left: 146px;
+
+        .app-icon {
+          width: 120px;
+          height: 120px;
+          img {
+            width:100%;
+            height: 100%;
+          }
+        }
+
+        .title {
+          font-size: 32px;
+          line-height: 36px;
+          margin-bottom: 30px;
+          padding-top: 10px;
+        }
+
+        .company {
+          position: relative;
+          display: inline-block;
+          width: auto;
+          left: auto;
+          bottom: auto;
+          font-size: 20px;
+          line-height: 24px;
+          padding-right: 0;
+          overflow: visible !important;
+          &::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 12px;
+            background-color: #e0e0e0;
+            right: -12px;
+            top: 6px;
+          }
+        }
+
+        .star {
+          display: inline-block;
+          position: static;
+          bottom: auto;
+          right: auto;
+          line-height: 22px;
+          font-size: 16px;
+          padding-left: 16px;
+          transform: translateY(-4px);
+
+          span {
+            font-size: 16px;
+            line-height: 22px;
+            vertical-align: middle;
+          }
+        }
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(224, 224, 224, 0.5);
+      }
+    }
+  }
 }
 
 .payment {
@@ -72,6 +155,7 @@
     .accordion {
       .card {
         box-shadow: none;
+
         .card-header {
           position: relative;
           padding: 20px 20px 16px;
@@ -81,7 +165,7 @@
 
           .title-area {
             position: relative;
-            margin-bottom: 4px;
+
             .title {
               display: block;
               font-size: 18px;
@@ -89,6 +173,7 @@
               font-weight: bold;
               padding-right: 30px;
             }
+
             .btn-accordion {
               display: block;
               position: absolute;
@@ -96,6 +181,7 @@
               height: 32px;
               right: 0;
               top: -4px;
+
               .img {
                 display: block;
                 width: 32px;
@@ -106,12 +192,15 @@
               }
             }
           }
+
           .t-selected {
+            margin-top: 4px;
+
             span {
               display: block;
-              font-size: 14px;
               line-height: 20px;
               color: #999999;
+
               &.highlight {
                 color: #666666;
                 font-weight: bold;
@@ -128,7 +217,14 @@
             bottom: 0;
             left: 0;
           }
+
           &[aria-expanded="true"] {
+            padding: 20px 20px 0;
+
+            &::after {
+              content: none;
+            }
+
             .title-area {
               .btn-accordion {
                 .img {
@@ -136,25 +232,114 @@
                 }
               }
             }
+
+            .t-selected {
+              display: none;
+
+              &.display {
+                display: block;
+              }
+            }
           }
         }
+
         .card-body {
+          position: relative;
           padding: 20px;
+
+          .top-list {
+            padding-bottom: 12px;
+            border-bottom: 2px solid rgba(224, 224, 224, 0.5);
+            margin-bottom: 20px;
+
+            .left {
+              display: inline-block;
+              font-weight: bold;
+              line-height: 20px;
+              color: $primary;
+            }
+
+            .right {
+              display: inline-block;
+              float: right;
+              color: #666666;
+              line-height: 20px;
+
+              .highlight {
+                color: #333333;
+                font-weight: bold;
+              }
+            }
+          }
+
+          .text-top {
+            margin-top: -20px;
+            margin-bottom: 28px;
+            line-height: 20px;
+          }
+
+          /* 학습할 자녀 선택 리스트 */
           .user-list {
+            padding: 0 16px;
+
             li {
               margin-bottom: 20px;
 
               .custom-radio {
-                .custom-control-input {}
+                .custom-control-input {
+                  top: 6px;
+                }
+
+                .custom-control-input:checked ~ .custom-control-label::after {
+                  top: 13px;
+                }
+
                 .custom-control-label {
                   display: block;
-                  font-size: 14px;
                   line-height: 20px;
                   font-weight: bold;
+                  padding-left: 18px;
+
+                  &::before {
+                    top: 7px;
+                  }
+
                   .desc {
                     display: block;
                     font-weight: normal;
                   }
+
+                  .badge-list {
+                    vertical-align: inherit;
+                    margin-left: 10px;
+                  }
+                }
+              }
+
+              .custom-checkbox {
+                .custom-control-input {
+                  top: 6px;
+                }
+
+                .custom-control-input:checked ~ .custom-control-label::after {
+                  top: 7px;
+                }
+
+                .custom-control-label {
+                  display: block;
+                  line-height: 20px;
+                  font-weight: bold;
+                  padding-left: 10px;
+
+                  &::before {
+                    top: 7px;
+                  }
+
+                  .desc {
+                    display: block;
+                    font-weight: normal;
+                  }
+
                   .badge-list {
                     vertical-align: inherit;
                     margin-left: 10px;
@@ -167,15 +352,233 @@
               }
             }
           }
+
+          /* 버튼 영역 */
           .btn-wrap {
             text-align: center;
             margin-top: 28px;
+
             .btn {
               display: inline-block;
               min-width: 140px;
               height: 34px;
               line-height: 30px;
               box-shadow: none;
+            }
+          }
+
+          /* 수량  선택 */
+          .qty-info {
+            float: left;
+            .title {
+              display: inline-block;
+              line-height: 30px;
+              margin-right: 12px;
+            }
+            .value {
+              display: inline-block;
+              line-height: 30px;
+              em {
+                font-style: normal;
+              }
+            }
+          }
+
+          .count-num {
+            float: right;
+
+            & .qty-minus, & .qty-plus {
+              display: inline-block;
+              width: 30px;
+              height: 30px;
+              border: 1px solid #e0e0e0;
+              border-radius: 4px 0 0 4px;
+              text-align: center;
+              line-height: 26px;
+            }
+
+            & .qty-plus {
+              border-radius: 0 4px 4px 0;
+            }
+
+            & .qty {
+              display: inline-block;
+              width: 42px;
+              background-color: transparent;
+              border: 0;
+              height: 30px;
+              line-height: 30px;
+              text-align: center;
+              font-size: 12px;
+              font-weight: bold;
+              border-top: 1px solid #e0e0e0;
+              border-bottom: 1px solid #e0e0e0;
+              margin: 0 -3px;
+
+              &:focus {
+                outline: none;
+              }
+
+              &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+              }
+            }
+          }
+
+          /* 총 결제 금액 */
+          .total-list {
+            border-bottom: 2px solid rgba(224, 224, 224, 0.5);
+            padding-bottom: 12px;
+
+            .total-price {
+              display: inline-block;
+              color: #666666;
+              margin-bottom: 10px;
+
+              .price {
+                display: inline-block;
+                font-size: 20px;
+                font-weight: bold;
+                margin-right: 4px;
+                color: #333333;
+              }
+            }
+            .desc-01 {
+              font-size: 12px;
+              line-height: 20px;
+              color: #666666;
+              margin-bottom: 20px;
+            }
+            .desc-02 {
+              font-size: 12px;
+              line-height: 20px;
+            }
+          }
+
+          .total-bottom {
+            padding-top: 12px;
+            .title {
+              margin-bottom: 11px;
+              color: #666666;
+              line-height: 20px;
+            }
+            ul {
+              li {
+                margin-bottom: 10px;
+                .custom-checkbox {
+                  .custom-control-label {
+                    padding-left: 5px;
+                  }
+                }
+                a {
+                  float: right;
+                  display: inline-block;
+                  font-size: 12px;
+                  line-height: 22px;
+                  font-weight: bold;
+                  color: #666666;
+                }
+                &:last-child {
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+
+          /* 배송지 */
+          .delivery-info {
+            margin-top: -8px;
+
+            .desc {
+              border-top: 2px solid rgba(224, 224, 224, 0.5);
+              padding-top: 12px;
+              color: #666666;
+              margin-bottom: 20px;
+            }
+            .form-group {
+              label {
+                color: #666666;
+              }
+              .form-control {
+                padding: 0 14px;
+              }
+              .button-group {
+                label {
+                  display: block;
+                }
+                input {
+                  float: left;
+                  margin-right: 6px;
+                  width: calc(100% - 94px);
+                }
+                .btn {
+                  display: inline-block;
+                  min-width: 88px;
+                }
+              }
+              .telephone {
+                display: flex;
+                flex-direction: row;
+                .custom-select {
+                  border-width: 2px;
+                  font-weight: bold;
+                  line-height: 40px;
+                }
+                .form-control {
+                  display: inline-block;
+                  width: calc(33% - 9px);
+                }
+                .line {
+                  display: inline-block;
+                  width: 8px;
+                  height: 1px;
+                  background-color: #666666;
+                  vertical-align: middle;
+                  margin: 0 4px;
+                  transform: translateY(20px);
+                }
+              }
+              .email {
+                display: flex;
+                flex-direction: row;
+
+                .custom-select {
+                  border-width: 2px;
+                  line-height: 40px;
+                }
+
+                .form-control {
+                  display: inline-block;
+                  width: calc(33% - 9px);
+                  &:disabled {
+                    color: #bbbbbb;
+                    background-color: #eeeeee;
+                  }
+                }
+                .char {
+                  display: inline-block;
+                  margin: 0 4px;
+                  transform: translateY(10px);
+                }
+              }
+              textarea {
+                height: 160px;
+                resize: none;
+                padding: 12px 14px;
+              }
+            }
+            .checkbox {
+              margin-bottom: 14px;
+              .title {
+                color: #666666;
+                font-weight: bold;
+                margin-bottom: 12px;
+              }
+              .custom-radio {
+                width: 49%;
+                margin-right: 0;
+              }
             }
           }
 
@@ -189,6 +592,7 @@
             left: 0;
           }
         }
+
         &:last-child {
           .card-header {
             &::after {
@@ -200,18 +604,483 @@
     }
   }
 }
+@include media-breakpoint-up($size-tablet) {
+  .payment {
+    .p-info {
+      .accordion {
+        .card {
+          .card-header {
+            padding: 45px 42px;
+
+            .title-area {
+              .title {
+                display: inline-block;
+                font-size: 18px;
+                line-height: 24px;
+                padding-right: 0;
+              }
+
+              .btn-accordion {
+                width: 48px;
+                height: 48px;
+                right: 0;
+                top: -14px;
+
+                .img {
+                  display: block;
+                  width: 48px;
+                  height: 48px;
+                }
+              }
+            }
+
+            .t-selected {
+              margin-top: 0;
+              position: absolute;
+              right: 130px;
+              top: 44px;
+
+              span {
+                font-size: 18px;
+                line-height: 24px;
+              }
+            }
+
+            &::after {
+              content: '';
+              position: absolute;
+              width: 100%;
+              height: 2px;
+              background-color: rgba(224, 224, 224, 0.5);
+              bottom: 0;
+              left: 0;
+            }
+
+            &[aria-expanded="true"] {
+              padding: 45px 42px;
+
+              .title-area {
+                .btn-accordion {
+                  .img {
+                    background-image: url("../img/common/btn-list-close-n@3x.png");
+                  }
+                }
+              }
+
+              .t-selected {
+                display: none;
+
+                &.display {
+                  display: block;
+                }
+              }
+            }
+          }
+
+          .card-body {
+            position: relative;
+            padding: 20px 40px 30px;
+
+            .top-list {
+              padding-bottom: 12px;
+              border-bottom: 2px solid rgba(224, 224, 224, 0.5);
+              margin-bottom: 20px;
+
+              .left {
+                display: inline-block;
+                font-weight: bold;
+                line-height: 20px;
+                color: $primary;
+              }
+
+              .right {
+                display: inline-block;
+                float: right;
+                color: #666666;
+                line-height: 20px;
+
+                .highlight {
+                  color: #333333;
+                  font-weight: bold;
+                }
+              }
+            }
+
+            .text-top {
+              line-height: 28px;
+              padding-left: 18px;
+              font-size: 18px;
+            }
+
+            /* 학습할 자녀 선택 리스트 */
+            .user-list {
+              padding: 0 16px;
+
+              li {
+                margin-bottom: 44px;
+
+                .custom-radio {
+                  .custom-control-input {
+                    top: auto;
+                  }
+
+                  .custom-control-input:checked ~ .custom-control-label::after {
+                    top: 7px;
+                  }
+
+                  .custom-control-label {
+                    position: relative;
+                    display: inline-block;
+                    line-height: 28px;
+                    padding-left: 18px;
+                    font-size: 18px;
+
+                    &::before {
+                      top: auto;
+                    }
+                    &::after {
+                      top: auto;
+                    }
+
+                    .desc {
+                      display: inline-block;
+                    }
+
+                    .badge-list {
+                      position: absolute;
+                      margin-left: 0;
+                      right: -70px;
+                      top: 3px;
+                    }
+                  }
+                }
+
+                .custom-checkbox {
+                  .custom-control-input {
+                    top: 6px;
+                  }
+
+                  .custom-control-input:checked ~ .custom-control-label::after {
+                    top: 7px;
+                  }
+
+                  .custom-control-label {
+                    display: block;
+                    line-height: 20px;
+                    font-weight: bold;
+                    padding-left: 10px;
+
+                    &::before {
+                      top: 7px;
+                    }
+
+                    .desc {
+                      display: block;
+                      font-weight: normal;
+                    }
+
+                    .badge-list {
+                      vertical-align: inherit;
+                      margin-left: 10px;
+                    }
+                  }
+                }
+
+                &:last-child {
+                  margin-bottom: 0;
+                }
+              }
+            }
+
+            /* 버튼 영역 */
+            .btn-wrap {
+              margin-top: 52px;
+
+              .btn {
+                min-width: 360px;
+                height: 54px;
+                line-height: 52px;
+              }
+            }
+
+            /* 수량  선택 */
+            .qty-info {
+              float: left;
+              .title {
+                display: inline-block;
+                line-height: 30px;
+                margin-right: 12px;
+              }
+              .value {
+                display: inline-block;
+                line-height: 30px;
+                em {
+                  font-style: normal;
+                }
+              }
+            }
+
+            .count-num {
+              float: right;
+
+              & .qty-minus, & .qty-plus {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                border: 1px solid #e0e0e0;
+                border-radius: 4px 0 0 4px;
+                text-align: center;
+                line-height: 26px;
+              }
+
+              & .qty-plus {
+                border-radius: 0 4px 4px 0;
+              }
+
+              & .qty {
+                display: inline-block;
+                width: 42px;
+                background-color: transparent;
+                border: 0;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                font-size: 12px;
+                font-weight: bold;
+                border-top: 1px solid #e0e0e0;
+                border-bottom: 1px solid #e0e0e0;
+                margin: 0 -3px;
+
+                &:focus {
+                  outline: none;
+                }
+
+                &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+                  -webkit-appearance: none;
+                  margin: 0;
+                }
+              }
+            }
+
+            /* 총 결제 금액 */
+            .total-list {
+              border-bottom: 2px solid rgba(224, 224, 224, 0.5);
+              padding-bottom: 12px;
+
+              .total-price {
+                display: inline-block;
+                color: #666666;
+                margin-bottom: 10px;
+
+                .price {
+                  display: inline-block;
+                  font-size: 20px;
+                  font-weight: bold;
+                  margin-right: 4px;
+                  color: #333333;
+                }
+              }
+              .desc-01 {
+                font-size: 12px;
+                line-height: 20px;
+                color: #666666;
+                margin-bottom: 20px;
+              }
+              .desc-02 {
+                font-size: 12px;
+                line-height: 20px;
+              }
+            }
+
+            .total-bottom {
+              padding-top: 12px;
+              .title {
+                margin-bottom: 11px;
+                color: #666666;
+                line-height: 20px;
+              }
+              ul {
+                li {
+                  margin-bottom: 10px;
+                  .custom-checkbox {
+                    .custom-control-label {
+                      padding-left: 5px;
+                    }
+                  }
+                  a {
+                    float: right;
+                    display: inline-block;
+                    font-size: 12px;
+                    line-height: 22px;
+                    font-weight: bold;
+                    color: #666666;
+                  }
+                  &:last-child {
+                    margin-bottom: 0;
+                  }
+                }
+              }
+            }
+
+            /* 배송지 */
+            .delivery-info {
+              margin-top: -8px;
+
+              .desc {
+                border-top: 2px solid rgba(224, 224, 224, 0.5);
+                padding-top: 12px;
+                color: #666666;
+                margin-bottom: 20px;
+              }
+              .form-group {
+                label {
+                  color: #666666;
+                }
+                .form-control {
+                  padding: 0 14px;
+                }
+                .button-group {
+                  label {
+                    display: block;
+                  }
+                  input {
+                    float: left;
+                    margin-right: 6px;
+                    width: calc(100% - 94px);
+                  }
+                  .btn {
+                    display: inline-block;
+                    min-width: 88px;
+                  }
+                }
+                .telephone {
+                  display: flex;
+                  flex-direction: row;
+                  .custom-select {
+                    border-width: 2px;
+                    font-weight: bold;
+                    line-height: 40px;
+                  }
+                  .form-control {
+                    display: inline-block;
+                    width: calc(33% - 9px);
+                  }
+                  .line {
+                    display: inline-block;
+                    width: 8px;
+                    height: 1px;
+                    background-color: #666666;
+                    vertical-align: middle;
+                    margin: 0 4px;
+                    transform: translateY(20px);
+                  }
+                }
+                .email {
+                  display: flex;
+                  flex-direction: row;
+
+                  .custom-select {
+                    border-width: 2px;
+                    line-height: 40px;
+                  }
+
+                  .form-control {
+                    display: inline-block;
+                    width: calc(33% - 9px);
+                    &:disabled {
+                      color: #bbbbbb;
+                      background-color: #eeeeee;
+                    }
+                  }
+                  .char {
+                    display: inline-block;
+                    margin: 0 4px;
+                    transform: translateY(10px);
+                  }
+                }
+                textarea {
+                  height: 160px;
+                  resize: none;
+                  padding: 12px 14px;
+                }
+              }
+              .checkbox {
+                margin-bottom: 14px;
+                .title {
+                  color: #666666;
+                  font-weight: bold;
+                  margin-bottom: 12px;
+                }
+                .custom-radio {
+                  width: 49%;
+                  margin-right: 0;
+                }
+              }
+            }
+
+            &::after {
+              content: '';
+              position: absolute;
+              width: 100%;
+              height: 2px;
+              background-color: rgba(224, 224, 224, 0.5);
+              bottom: 1px;
+              left: 0;
+            }
+          }
+
+          &:last-child {
+            .card-header {
+              &::after {
+                content: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 .payment {
-  >.btn-wrap {
+  .required {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/common/icon-16-dot@3x.png);
+    background-size: cover;
+    background-position-y: 2px;
+  }
+}
+@include media-breakpoint-up($size-tablet) {}
+
+.payment {
+  > .btn-wrap {
     text-align: center;
     margin-top: 20px;
     padding-bottom: 20px;
+
     .btn {
       display: inline-block;
       height: 48px;
       min-width: 156px;
       line-height: 44px;
       margin: 0 2px;
+    }
+  }
+}
+@include media-breakpoint-up($size-tablet) {
+  .payment {
+    > .btn-wrap {
+      margin-top: 60px;
+      padding-bottom: 60px;
+
+      .btn {
+        height: 54px;
+        min-width: 180px;
+        line-height: 50px;
+        margin: 0 10px;
+      }
     }
   }
 }

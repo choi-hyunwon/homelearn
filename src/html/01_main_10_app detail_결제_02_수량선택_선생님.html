@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ko">
 @@include('../html/include/head.html')
-<body>
+<body class="bg-white">
 <div class="wrap p-no">
 
   <div class="container-lg container-fluid px-rem-md-3 px-rem-0">
@@ -44,44 +44,33 @@
             <div class="card-header" id="headingFirstMenu" data-toggle="collapse" data-target="#collapseFirstMenu"
                  aria-expanded="true" aria-controls="collapseFirstMenu">
               <div class="title-area">
-                <span class="title text-ellipsis">학습할 자녀</span>
+                <span class="title text-ellipsis">수량</span>
                 <a href="#" class="btn-accordion"><span class="img"></span></a>
               </div>
               <div class="t-selected">
-                <span class="highlight">김홈런</span>
+                <span class="highlight">2개</span>
               </div>
             </div>
             <div id="collapseFirstMenu" class="collapse show" aria-labelledby="headingFirstMenu"
                  data-parent="#paymentAccordion">
               <div class="card-body">
-                <p class="text-top">학습관 이용 자녀만 학습이 가능합니다.</p>
-                <ul class="user-list">
-                  <li>
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" id="children1" name="name" class="custom-control-input line" checked="">
-                      <label class="custom-control-label" for="children1">김홈런<span class="desc">(kim_homelearning/초3)</span></label>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" id="children2" name="name" class="custom-control-input line">
-                      <label class="custom-control-label" for="children2">김홈런<span class="desc">(kim_homelearning/초3)</span></label>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" id="children3" name="name" class="custom-control-input line" disabled>
-                      <label class="custom-control-label" for="children3">김홈런<span class="badge-list">학습중</span><span class="desc">(kim_homelearning/초3)</span></label>
-                    </div>
-                  </li>
-                </ul>
+                <div class="clearfix">
+                  <div class="qty-info">
+                    <span class="title">월별 결제</span>
+                    <span class="value"><em class="font-weight-bold">￦99,000</em>/월</span>
+                  </div>
+                  <div class="count-num">
+                    <a class="qty-minus" href="#"><img src="../img/common/btn-minus-n@3x.png" alt="" width="16"></a>
+                    <input type="number" class="qty" title="qty" value="9999" min="0">
+                    <a class="qty-plus" href="#"><img src="../img/common/btn-plus-n@3x.png" alt="" width="16"></a>
+                  </div>
+                </div>
                 <div class="btn-wrap">
                   <a href="#" class="btn btn-round">다음</a>
                 </div>
               </div>
             </div>
           </div>
-
           <!-- 배송지 -->
           <div class="card">
             <div class="card-header" id="headingSecondMenu" data-toggle="collapse" data-target="#collapseSecondMenu"
@@ -91,7 +80,7 @@
                 <a href="#" class="btn-accordion"><span class="img"></span></a>
               </div>
               <div class="t-selected">
-                <span>선택 미완료</span>
+                <span class="highlight">서울시 강남구 어디로1길 18</span>
               </div>
             </div>
             <div id="collapseSecondMenu" class="collapse" aria-labelledby="headingSecondMenu"

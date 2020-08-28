@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ko">
 @@include('../html/include/head.html')
-<body>
+<body class="bg-white">
 <div class="wrap p-no">
 
   <div class="container-lg container-fluid px-rem-md-3 px-rem-0">
@@ -48,35 +48,37 @@
                 <a href="#" class="btn-accordion"><span class="img"></span></a>
               </div>
               <div class="t-selected">
-                <span class="highlight">김홈런</span>
+                <span class="highlight">김홈런 외 1명</span>
               </div>
             </div>
-            <div id="collapseFirstMenu" class="collapse show" aria-labelledby="headingFirstMenu"
-                 data-parent="#paymentAccordion">
+            <div id="collapseFirstMenu" class="collapse show" aria-labelledby="headingFirstMenu" data-parent="#paymentAccordion">
               <div class="card-body">
-                <p class="text-top">학습관 이용 자녀만 학습이 가능합니다.</p>
+                <div class="top-list">
+                  <span class="left">전체선택</span>
+                  <span class="right"><span class="highlight">2명</span> 이상 선택</span>
+                </div>
                 <ul class="user-list">
                   <li>
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" id="children1" name="name" class="custom-control-input line" checked="">
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                      <input type="checkbox" class="custom-control-input" id="children1" checked="">
                       <label class="custom-control-label" for="children1">김홈런<span class="desc">(kim_homelearning/초3)</span></label>
                     </div>
                   </li>
                   <li>
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" id="children2" name="name" class="custom-control-input line">
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                      <input type="checkbox" class="custom-control-input" id="children2">
                       <label class="custom-control-label" for="children2">김홈런<span class="desc">(kim_homelearning/초3)</span></label>
                     </div>
                   </li>
                   <li>
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" id="children3" name="name" class="custom-control-input line" disabled>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                      <input type="checkbox" class="custom-control-input" id="children3">
                       <label class="custom-control-label" for="children3">김홈런<span class="badge-list">학습중</span><span class="desc">(kim_homelearning/초3)</span></label>
                     </div>
                   </li>
                 </ul>
                 <div class="btn-wrap">
-                  <a href="#" class="btn btn-round">다음</a>
+                  <a href="#" class="btn btn-round disabled">다음</a>
                 </div>
               </div>
             </div>
@@ -91,7 +93,7 @@
                 <a href="#" class="btn-accordion"><span class="img"></span></a>
               </div>
               <div class="t-selected">
-                <span>선택 미완료</span>
+                <span class="highlight">서울시 강남구 어디로1길 18</span>
               </div>
             </div>
             <div id="collapseSecondMenu" class="collapse" aria-labelledby="headingSecondMenu"
@@ -116,7 +118,7 @@
                 <a href="#" class="btn-accordion"><span class="img"></span></a>
               </div>
               <div class="t-selected">
-                <span>약관 동의 필요</span>
+                <span class="highlight">￦198,000/월</span>
               </div>
             </div>
             <div id="collapseThirdMenu" class="collapse" aria-labelledby="headingThirdMenu"

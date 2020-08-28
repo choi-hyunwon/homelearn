@@ -75,7 +75,7 @@
                   </li>
                 </ul>
                 <div class="btn-wrap">
-                  <a href="#" class="btn btn-pay">다음</a>
+                  <a href="#" class="btn btn-round">다음</a>
                 </div>
               </div>
             </div>
@@ -93,15 +93,81 @@
                 <span>선택 미완료</span>
               </div>
             </div>
-            <div id="collapseSecondMenu" class="collapse show" aria-labelledby="headingSecondMenu"
-                 data-parent="#paymentAccordion">
+            <div id="collapseSecondMenu" class="collapse show" aria-labelledby="headingSecondMenu" data-parent="#paymentAccordion">
               <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <div class="delivery-info">
+                  <p class="desc"><i class="required"></i>항목은 필수 입력 항목입니다.</p>
+                  <div class="checkbox">
+                    <div class="title">배송지 선택<i class="required"></i></div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="type1" name="delivery" class="custom-control-input line">
+                      <label class="custom-control-label" for="type1">회원 정보와 동일</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="type2" name="delivery" class="custom-control-input line" checked="">
+                      <label class="custom-control-label" for="type2">신규 등록</label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="rName" class="font-weight-bold">받으시는 분<i class="required"></i></label>
+                    <input type="text" id="rName"  class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <div class="button-group mb-0">
+                      <label for="address" class="font-weight-bold">배송지 주소<i class="required"></i></label>
+                      <input type="text" id="address" class="form-control">
+                      <button class="btn btn-outline-primary">우편번호</button>
+                    </div>
+                    <input type="text" id="address2" class="form-control mb-0">
+                    <input type="text" id="address3" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="phone" class="font-weight-bold">휴대폰 번호<i class="required"></i></label>
+                    <div class="telephone">
+                      <select id="phone" class="custom-select form-control" disabled>
+                        <option selected="">02</option>
+                        <option selected="">010</option>
+                      </select>
+                      <span class="line"></span>
+                      <input type="text" id="num1" class="form-control" value="1234" disabled>
+                      <span class="line"></span>
+                      <input type="text" id="num2" class="form-control" value="5678" disabled>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="phone" class="font-weight-bold">전화 번호</label>
+                    <div class="telephone">
+                      <select id="phone" class="custom-select form-control">
+                        <option selected="">02</option>
+                        <option>010</option>
+                      </select>
+                      <span class="line"></span>
+                      <input type="text" id="num3" class="form-control">
+                      <span class="line"></span>
+                      <input type="text" id="num4" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="email1" class="font-weight-bold">이메일</label>
+                    <div class="email">
+                      <input type="text" id="email1" class="form-control">
+                      <span class="char">@</span>
+                      <input type="text" id="email2" class="form-control mr-0">
+                      <select id="email" class="custom-select form-control">
+                        <option disabled="" selected="">선택</option>
+                        <option>선택</option>
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="memo" class="font-weight-bold">배송시 요구사항</label>
+                    <textarea class="form-control" id="memo" placeholder="한글 50자, 영문 100자 이내로 입력해주세요."></textarea>
+                  </div>
+                </div>
+                <div class="btn-wrap">
+                  <a href="#" class="btn btn-round disabled">다음</a>
+                </div>
               </div>
             </div>
           </div>

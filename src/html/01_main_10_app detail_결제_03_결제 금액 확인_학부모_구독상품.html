@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ko">
 @@include('../html/include/head.html')
-<body>
+<body class="bg-white">
 <div class="wrap p-no">
 
   <div class="container-lg container-fluid px-rem-md-3 px-rem-0">
@@ -42,41 +42,43 @@
           <!-- 학습할 자녀 -->
           <div class="card">
             <div class="card-header" id="headingFirstMenu" data-toggle="collapse" data-target="#collapseFirstMenu"
-                 aria-expanded="true" aria-controls="collapseFirstMenu">
+                 aria-expanded="false" aria-controls="collapseFirstMenu">
               <div class="title-area">
                 <span class="title text-ellipsis">학습할 자녀</span>
                 <a href="#" class="btn-accordion"><span class="img"></span></a>
               </div>
               <div class="t-selected">
-                <span class="highlight">김홈런</span>
+                <span class="highlight">김홈런 외 1명</span>
               </div>
             </div>
-            <div id="collapseFirstMenu" class="collapse show" aria-labelledby="headingFirstMenu"
-                 data-parent="#paymentAccordion">
+            <div id="collapseFirstMenu" class="collapse" aria-labelledby="headingFirstMenu" data-parent="#paymentAccordion">
               <div class="card-body">
-                <p class="text-top">학습관 이용 자녀만 학습이 가능합니다.</p>
+                <div class="top-list">
+                  <span class="left">전체선택</span>
+                  <span class="right"><span class="highlight">2명</span> 이상 선택</span>
+                </div>
                 <ul class="user-list">
                   <li>
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" id="children1" name="name" class="custom-control-input line" checked="">
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                      <input type="checkbox" class="custom-control-input" id="children1" checked="">
                       <label class="custom-control-label" for="children1">김홈런<span class="desc">(kim_homelearning/초3)</span></label>
                     </div>
                   </li>
                   <li>
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" id="children2" name="name" class="custom-control-input line">
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                      <input type="checkbox" class="custom-control-input" id="children2">
                       <label class="custom-control-label" for="children2">김홈런<span class="desc">(kim_homelearning/초3)</span></label>
                     </div>
                   </li>
                   <li>
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" id="children3" name="name" class="custom-control-input line" disabled>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                      <input type="checkbox" class="custom-control-input" id="children3">
                       <label class="custom-control-label" for="children3">김홈런<span class="badge-list">학습중</span><span class="desc">(kim_homelearning/초3)</span></label>
                     </div>
                   </li>
                 </ul>
                 <div class="btn-wrap">
-                  <a href="#" class="btn btn-round">다음</a>
+                  <a href="#" class="btn btn-round disabled">다음</a>
                 </div>
               </div>
             </div>
@@ -91,7 +93,7 @@
                 <a href="#" class="btn-accordion"><span class="img"></span></a>
               </div>
               <div class="t-selected">
-                <span>선택 미완료</span>
+                <span class="highlight">서울시 강남구 어디로1길 18</span>
               </div>
             </div>
             <div id="collapseSecondMenu" class="collapse" aria-labelledby="headingSecondMenu"
@@ -110,24 +112,43 @@
           <!-- 총 결제 금액 -->
           <div class="card">
             <div class="card-header" id="headingThirdMenu" data-toggle="collapse" data-target="#collapseThirdMenu"
-                 aria-expanded="false" aria-controls="collapseThirdMenu">
+                 aria-expanded="true" aria-controls="collapseThirdMenu">
               <div class="title-area">
                 <span class="title text-ellipsis">총 결제 금액</span>
                 <a href="#" class="btn-accordion"><span class="img"></span></a>
               </div>
               <div class="t-selected">
-                <span>약관 동의 필요</span>
+                <span class="highlight">￦198,000/월</span>
               </div>
             </div>
-            <div id="collapseThirdMenu" class="collapse" aria-labelledby="headingThirdMenu"
-                 data-parent="#paymentAccordion">
+            <div id="collapseThirdMenu" class="collapse show" aria-labelledby="headingThirdMenu" data-parent="#paymentAccordion">
               <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <div class="total-list">
+                  <div class="total-price"><span class="price">￦198,000</span>/ 월 (2명 X 99,000/월)</div>
+                  <p class="desc-01">
+                    다음 정기 결제는 현재 구독이 만료되면 시작됩니다. 갱신일 하루 전까지 마이페이지에서 취소할 수 있습니다. 취소할 때까지 구독이 자동 갱신됩니다.
+                  </p>
+                  <p class="desc-02">다음 결제일 <span class="font-weight-bold">2020. 12. 02</span> 결제 예정</p>
+                </div>
+                <div class="total-bottom">
+                  <p class="title">약관 동의<i><img src="../img/common/icon-16-dot@3x.png" alt="" width="16"></i></p>
+                  <ul>
+                    <li>
+                      <div class="custom-control custom-checkbox d-inline-block mr-2">
+                        <input type="checkbox" class="custom-control-input" id="list1">
+                        <label class="custom-control-label" for="list1">개인정보수집 약관 동의 (필수)</label>
+                      </div>
+                      <a href="#">자세히 보기</a>
+                    </li>
+                    <li>
+                      <div class="custom-control custom-checkbox d-inline-block mr-2">
+                        <input type="checkbox" class="custom-control-input" id="list2">
+                        <label class="custom-control-label" for="list2">환불 규정 안내 동의 (필수)</label>
+                      </div>
+                      <a href="#">자세히 보기</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

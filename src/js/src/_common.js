@@ -136,6 +136,16 @@ front.common = (function () {
       }
     });
 
+    /*
+    -/+ count
+    * */
+    $('.qty-plus').on('click', function () {
+      $(this).prev().val(+$(this).prev().val() + 1);
+    });
+    $('.qty-minus').on('click', function () {
+      if ($(this).next().val() > 0) $(this).next().val(+$(this).next().val() - 1);
+    });
+
   };
   var drawer = function () {
 
