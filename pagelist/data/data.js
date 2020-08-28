@@ -303,14 +303,44 @@ data.event = {
   ]
 }
 
-data.payment = {
-  'title': '결제',
+// data.payment = {
+//   'title': '결제',
+//   'list': [
+//     {
+//       'stateClass': 'complete',
+//       'url': '01_main_10_app detail_결제_01_학습할 자녀 선택',
+//       'category': 'Payment',
+//       'page': '결제_학습할 자녀 선택'
+//     },
+//   ]
+// }
+
+data.cs = {
+  'title': '고객센터',
   'list': [
     {
       'stateClass': 'complete',
-      'url': '01_main_10_app detail_결제_01_학습할 자녀 선택',
-      'category': 'Payment',
-      'page': '결제_학습할 자녀 선택'
+      'url': '03_cs_01_공지사항',
+      'category': 'CS',
+      'page': '공지사항'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '03_cs_02_문의내역_문의내역없음',
+      'category': 'CS',
+      'page': '문의내역_없음'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '03_cs_03_문의내역_로그인',
+      'category': 'CS',
+      'page': '문의내역_로그인'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '03_cs_04_문의하기',
+      'category': 'CS',
+      'page': '문의하기'
     },
   ]
 }

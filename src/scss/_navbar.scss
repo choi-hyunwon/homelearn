@@ -165,13 +165,17 @@
 
     &.hasalram {
       &:after {
-        content: "";
-        width: 4px;
-        height: 4px;
+        content: "N";
+        width: 12px;
+        height: 12px;
+        font-size: 10px;
+        line-height: 12px;
+        text-align: center;
+        color: #ffffff;
         background-color: #42c2d1;
         position: absolute;
-        top: 4px;
-        right: 9px;
+        top: 0;
+        right: 2px;
         border-radius: 50%;
       }
     }
@@ -188,21 +192,14 @@
 }
 
 @include media-breakpoint-up(sm) {
-  .navbar-util {
-    a.hasalram {
-      &:after {
-        top: 5px;
-        right: 10px;
-      }
-    }
-  }
+
 }
 @include media-breakpoint-up($size-tablet) {
   .navbar-util {
     a.hasalram {
       &:after {
         top: 20px;
-        right: 10px;
+        right: 0;
       }
     }
   }
@@ -212,7 +209,7 @@
     a.hasalram {
       &:after {
         top: 20px;
-        right: 20px;
+        right: 13px;
       }
     }
   }
