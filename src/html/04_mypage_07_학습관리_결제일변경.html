@@ -20,12 +20,12 @@
   </head>
 
   <body>
-    <div class="wrap p-no cs-center">
+    <div class="wrap p-no mypage">
       <div class="navbar-sub">
         <div class="navbar-brand">
           <a href="#"><img src="../img/common/btn-back-n@3x.png"/></a>
         </div>
-        <div class="title">1:1 문의하기</div>
+        <div class="title">결제일 변경</div>
         <div class="navbar-util">
           <a href="#"><img src="../img/common/btn-main-search-n@3x.png"/></a>
           <a href="#"><img src="../img/common/btn-sub-home-n@3x.png"/></a>
@@ -33,80 +33,39 @@
       </div>
       <div class="content">
         <div class="container">
-          <div class="title text-center">
-            <h3>
-              <img src="../img/common/icon-16-info-black@3x.png" />답변은
-              고객센터 1:1 문의 내역을 통해 확인하실 수 있습니다.
-            </h3>
-            <p><i class="require"></i>항목은 필수 입력 항목입니다.</p>
-          </div>
-          <div class="form-group">
-            <label for="name" class="font-weight-bold"
-              >이름<i class="require"></i
-            ></label>
-            <input
-              type="text"
-              id="name"
-              placeholder="이름을 입력해주세요"
-              class="form-control"
-            />
-          </div>
-          <div class="form-group">
-            <label for="pin" class="font-weight-bold"
-              >비밀번호<i class="require"></i
-            ></label>
-            <input
-              type="text"
-              id="pin"
-              placeholder="비밀번호 4자리를 입력해주세요"
-              class="form-control"
-            />
-            <span class="text text-primrary font-response-1 pt-0"
-              >비회원 1:1 문의 답변 확인 시 비밀번호가 필요합니다.</span
-            >
-          </div>
-          <div class="form-group">
-            <label for="type" class="font-weight-bold"
-              >문의 유형<i class="require"></i
-            ></label>
-            <select
-              id="type"
-              placeholder="분류를 선택하세요."
-              class="form-control"
-            >
-              <option disabled selected>분류를 선택하세요</option>
-              <option>상품문의</option>
-              <option>문의유형1</option>
-              <option>문의유형2</option>
+          <ul class="edu-list">
+            <li>
+              <img src="../img/main/m-app-card-img02@3x.png" />
+              <h2>뚜루아이와 함께하는 초등수학</h2>
+              <p>
+                <strong>￦198,000/월 (2개 X 99,000/월)</strong>
+                <span>2020. 04. 15부터 구독</span
+                ><span>2020. 12. 15 환불 요청</span>
+              </p>
+            </li>
+          </ul>
+          <div class="input-group">
+            <p>
+              현재 결제일은 <strong>매월 1일</strong>입니다. 변경을 원하시면
+              원하는 날짜를 선택해 주세요.
+            </p>
+            <select class="form-control">
+              <option>1일</option>
             </select>
-          </div>
-          <div class="form-group">
-            <label for="title" class="font-weight-bold"
-              >제목<i class="require"></i
-            ></label>
-            <input
-              type="text"
-              id="title"
-              placeholder="문의 제목을 입력하세요. (최대 50자)"
-              class="form-control"
-            />
-          </div>
-          <div class="form-group textarea">
-            <label for="content" class="font-weight-bold"
-              >문의 내용<i class="require"></i
-            ></label>
-            <textarea
-              id="content"
-              placeholder="문의 내용을 입력하세요. (최대 500자)"
-              class="form-control"
-            ></textarea>
+            <p>매월 4일에 198,000원의 결제 금액이 청구됩니다.</p>
+            <p class="desc">
+              ‘확인’을 선택하면 결제일이 변경되며, 자세한 내용은 고객 센터에
+              문의하세요.
+            </p>
           </div>
           <div class="buttons">
             <a href="#" class="btn btn-outline btn-radius">취소</a>
-            <a href="#" class="btn btn-white btn-radius">등록</a>
+            <a href="#" class="btn btn-white btn-radius">확인</a>
           </div>
         </div>
+        <!--/.container-->
       </div>
+      <!--/.content-->
     </div>
     <footer>
       <div class="container-footer">

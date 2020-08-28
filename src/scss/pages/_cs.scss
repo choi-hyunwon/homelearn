@@ -1,5 +1,6 @@
 .cs-center {
   .navbar-sub {
+    margin-bottom: 0;
     .title {
       color: #333;
     }
@@ -12,6 +13,9 @@
         color: #ff7600;
       }
     }
+  }
+  .content {
+    padding-top: 0;
   }
   .container {
     padding-bottom: 0;
@@ -96,6 +100,7 @@
     .buttons {
       padding: 20px;
       .btn-more {
+        border-radius: 4px;
         img {
           margin-left: 3px;
           width: 18px;
@@ -186,9 +191,6 @@
       color: #666;
     }
   }
-  .text-error {
-    color: #ff7600 !important;
-  }
   textarea {
     min-height: 250px;
   }
@@ -213,7 +215,7 @@
 
 .empty {
   margin: 60px auto;
-  color: #666;
+  color: #999;
   text-align: center;
   img {
     max-width: 64px;
@@ -297,6 +299,8 @@
         .btn-more {
           background: #fafafa;
           border-color: #fafafa;
+          border-bottom-left-radius: 8px;
+          border-bottom-right-radius: 8px;
         }
       }
     }
