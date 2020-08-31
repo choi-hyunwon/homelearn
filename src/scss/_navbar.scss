@@ -162,7 +162,7 @@
   a {
     padding: 13px 5px;
     line-height: 32px;
-
+    position: relative;
     &.hasalram {
       &:after {
         content: "N";
