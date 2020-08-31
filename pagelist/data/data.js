@@ -303,17 +303,53 @@ data.event = {
   ]
 }
 
-// data.payment = {
-//   'title': '결제',
-//   'list': [
-//     {
-//       'stateClass': 'complete',
-//       'url': '01_main_10_app detail_결제_01_학습할 자녀 선택',
-//       'category': 'Payment',
-//       'page': '결제_학습할 자녀 선택'
-//     },
-//   ]
-// }
+data.payment = {
+  'title': '결제',
+  'list': [
+    {
+      'stateClass': 'complete',
+      'url': '01_main_10_app detail_결제_01_학습할 자녀 선택',
+      'category': 'Payment',
+      'page': '결제_학습할 자녀 선택'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '01_main_10_app detail_결제_01_학습할 자녀 선택_다계정 상품',
+      'category': 'Payment',
+      'page': '결제_학습할 자녀 선택'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '01_main_10_app detail_결제_03_결제 금액 확인_학부모_구독상품',
+      'category': 'Payment',
+      'page': '결제_학습할 자녀 선택'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '01_main_10_app detail_결제_03_결제 금액 확인_학부모_약정상품',
+      'category': 'Payment',
+      'page': '결제_학습할 자녀 선택'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '01_main_10_app detail_결제_02_수량선택_선생님',
+      'category': 'Payment',
+      'page': '결제_학습할 자녀 선택'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '01_main_10_app detail_결제_03_배송지 선택_기존 배송지',
+      'category': 'Payment',
+      'page': '결제_학습할 자녀 선택'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '01_main_10_app detail_결제_03_배송지 선택_신규등록',
+      'category': 'Payment',
+      'page': '결제_학습할 자녀 선택'
+    },
+  ]
+}
 
 data.cs = {
   'title': '고객센터',

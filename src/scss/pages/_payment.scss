@@ -255,15 +255,15 @@
             .left {
               display: inline-block;
               font-weight: bold;
-              line-height: 20px;
+              line-height: 26px;
               color: $primary;
             }
 
             .right {
               display: inline-block;
               float: right;
-              color: #666666;
-              line-height: 20px;
+              color: #999999;
+              line-height: 26px;
 
               .highlight {
                 color: #333333;
@@ -502,6 +502,9 @@
               }
               .form-control {
                 padding: 0 14px;
+                &:disabled {
+                  color: #bbbbbb;
+                }
               }
               .button-group {
                 label {
@@ -678,26 +681,20 @@
           }
 
           .card-body {
-            position: relative;
             padding: 20px 40px 30px;
 
             .top-list {
-              padding-bottom: 12px;
-              border-bottom: 2px solid rgba(224, 224, 224, 0.5);
-              margin-bottom: 20px;
+              padding-bottom: 20px;
+              margin-bottom: 35px;
 
               .left {
-                display: inline-block;
-                font-weight: bold;
-                line-height: 20px;
-                color: $primary;
+                line-height: 26px;
+                font-size: 18px;
               }
 
               .right {
-                display: inline-block;
-                float: right;
-                color: #666666;
-                line-height: 20px;
+                line-height: 26px;
+                font-size: 18px;
 
                 .highlight {
                   color: #333333;
@@ -757,31 +754,36 @@
 
                 .custom-checkbox {
                   .custom-control-input {
-                    top: 6px;
+                    top: 2px;
                   }
 
                   .custom-control-input:checked ~ .custom-control-label::after {
-                    top: 7px;
+                    top: 2px;
                   }
 
                   .custom-control-label {
-                    display: block;
-                    line-height: 20px;
-                    font-weight: bold;
-                    padding-left: 10px;
+                    position: relative;
+                    display: inline-block;
+                    line-height: 28px;
+                    padding-left: 18px;
+                    font-size: 18px;
 
                     &::before {
-                      top: 7px;
+                      top: 2px;
+                    }
+                    &::after {
+                      top: 2px;
                     }
 
                     .desc {
-                      display: block;
-                      font-weight: normal;
+                      display: inline-block;
                     }
 
                     .badge-list {
-                      vertical-align: inherit;
-                      margin-left: 10px;
+                      position: absolute;
+                      margin-left: 0;
+                      right: -70px;
+                      top: 3px;
                     }
                   }
                 }
@@ -807,13 +809,12 @@
             .qty-info {
               float: left;
               .title {
-                display: inline-block;
-                line-height: 30px;
-                margin-right: 12px;
+                font-size: 18px;
+                line-height: 44px;
               }
               .value {
-                display: inline-block;
-                line-height: 30px;
+                font-size: 18px;
+                line-height: 44px;
                 em {
                   font-style: normal;
                 }
@@ -821,102 +822,80 @@
             }
 
             .count-num {
-              float: right;
-
               & .qty-minus, & .qty-plus {
-                display: inline-block;
-                width: 30px;
-                height: 30px;
-                border: 1px solid #e0e0e0;
-                border-radius: 4px 0 0 4px;
-                text-align: center;
-                line-height: 26px;
+                width: 44px;
+                height: 44px;
+                border-radius: 6px 0 0 6px;
+                line-height: 46px;
+                img {
+                  transform: translateY(-3px);
+                }
               }
 
               & .qty-plus {
-                border-radius: 0 4px 4px 0;
+                border-radius: 0 6px 6px 0;
               }
 
               & .qty {
-                display: inline-block;
-                width: 42px;
-                background-color: transparent;
-                border: 0;
-                height: 30px;
-                line-height: 30px;
-                text-align: center;
-                font-size: 12px;
-                font-weight: bold;
-                border-top: 1px solid #e0e0e0;
-                border-bottom: 1px solid #e0e0e0;
-                margin: 0 -3px;
-
-                &:focus {
-                  outline: none;
-                }
-
-                &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
-                  -webkit-appearance: none;
-                  margin: 0;
-                }
+                width: 74px;
+                height: 44px;
+                line-height: 44px;
+                font-size: 20px;
               }
             }
 
             /* 총 결제 금액 */
             .total-list {
-              border-bottom: 2px solid rgba(224, 224, 224, 0.5);
-              padding-bottom: 12px;
+              margin-top: -20px;
+              padding-left: 24px;
+              padding-bottom: 30px;
 
               .total-price {
-                display: inline-block;
-                color: #666666;
-                margin-bottom: 10px;
+                margin-bottom: 20px;
 
                 .price {
-                  display: inline-block;
-                  font-size: 20px;
-                  font-weight: bold;
-                  margin-right: 4px;
-                  color: #333333;
+                  font-size: 24px;
                 }
               }
               .desc-01 {
-                font-size: 12px;
-                line-height: 20px;
-                color: #666666;
-                margin-bottom: 20px;
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 24px;
               }
               .desc-02 {
-                font-size: 12px;
-                line-height: 20px;
+                font-size: 16px;
+                line-height: 24px;
               }
             }
 
             .total-bottom {
-              padding-top: 12px;
+              padding: 30px;
               .title {
-                margin-bottom: 11px;
-                color: #666666;
-                line-height: 20px;
+                margin-bottom: 0;
+                line-height: 25px;
+                float: left;
+                width: 80px;
+                margin-right: 100px;
+                i {
+                  img {
+                    vertical-align: baseline;
+                  }
+                }
               }
               ul {
                 li {
-                  margin-bottom: 10px;
+                  width: calc(50% - 90px);
+                  float: left;
+                  margin-bottom: 0;
                   .custom-checkbox {
                     .custom-control-label {
-                      padding-left: 5px;
+                      padding-left: 15px;
                     }
                   }
                   a {
-                    float: right;
-                    display: inline-block;
-                    font-size: 12px;
-                    line-height: 22px;
-                    font-weight: bold;
-                    color: #666666;
-                  }
-                  &:last-child {
-                    margin-bottom: 0;
+                    float: none;
+                    font-size: 16px;
+                    line-height: 24px;
                   }
                 }
               }
@@ -924,96 +903,90 @@
 
             /* 배송지 */
             .delivery-info {
-              margin-top: -8px;
+              margin-top: -20px;
 
               .desc {
-                border-top: 2px solid rgba(224, 224, 224, 0.5);
-                padding-top: 12px;
-                color: #666666;
-                margin-bottom: 20px;
+                border-top: 0;
+                padding-top: 30px;
+                margin-bottom: 30px;
+                text-align: right;
               }
+              .checkbox {
+                padding-left: 38px;
+                margin-bottom: 30px;
+                .title {
+                  float: left;
+                  width: 208px;
+                  margin-bottom: 0;
+                  line-height: 30px;
+                }
+                .custom-radio {
+                  width: calc(50% - 150px);
+                  margin-right: 0;
+                }
+              }
+
               .form-group {
+                padding-left: 38px;
+                overflow: hidden;
                 label {
-                  color: #666666;
+                  float: left;
+                  width: 208px;
+                  margin-bottom: 0;
+                  line-height: 56px;
                 }
                 .form-control {
-                  padding: 0 14px;
+                  float: left;
+                  width: calc(100% - 208px);
+                  padding: 0 20px;
                 }
                 .button-group {
-                  label {
-                    display: block;
-                  }
                   input {
                     float: left;
-                    margin-right: 6px;
-                    width: calc(100% - 94px);
+                    width: calc(100% - 338px);
                   }
                   .btn {
-                    display: inline-block;
-                    min-width: 88px;
+                    float: left;
+                    min-width: 124px;
                   }
                 }
                 .telephone {
-                  display: flex;
-                  flex-direction: row;
                   .custom-select {
-                    border-width: 2px;
-                    font-weight: bold;
-                    line-height: 40px;
+                    height: 56px;
+                    line-height: 56px;
                   }
                   .form-control {
-                    display: inline-block;
-                    width: calc(33% - 9px);
+                    width: calc(33% - 31px);
                   }
                   .line {
-                    display: inline-block;
-                    width: 8px;
-                    height: 1px;
-                    background-color: #666666;
-                    vertical-align: middle;
-                    margin: 0 4px;
-                    transform: translateY(20px);
+                    width: 10px;
+                    height: 2px;
+                    margin: 0 24px;
+                    transform: translateY(27px);
                   }
                 }
                 .email {
-                  display: flex;
-                  flex-direction: row;
-
                   .custom-select {
-                    border-width: 2px;
-                    line-height: 40px;
+                    height: 56px;
+                    line-height: 56px;
                   }
 
                   .form-control {
-                    display: inline-block;
-                    width: calc(33% - 9px);
+                    width: calc(33% - 21px);
                     &:disabled {
                       color: #bbbbbb;
                       background-color: #eeeeee;
                     }
                   }
                   .char {
-                    display: inline-block;
-                    margin: 0 4px;
-                    transform: translateY(10px);
+                    margin: 0 24px;
+                    line-height: 54px;
+                    transform: none;
                   }
                 }
                 textarea {
-                  height: 160px;
-                  resize: none;
-                  padding: 12px 14px;
-                }
-              }
-              .checkbox {
-                margin-bottom: 14px;
-                .title {
-                  color: #666666;
-                  font-weight: bold;
-                  margin-bottom: 12px;
-                }
-                .custom-radio {
-                  width: 49%;
-                  margin-right: 0;
+                  height: 150px;
+                  padding: 16px 20px;
                 }
               }
             }
@@ -1033,6 +1006,38 @@
             .card-header {
               &::after {
                 content: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 769px) and (max-width: 1045px) {
+  .payment {
+    .p-info {
+      .accordion {
+        .card {
+          .card-body {
+            .total-bottom {
+              padding: 30px 10px;
+              .title {
+                margin-right: 10px;
+              }
+              ul {
+                li {
+                  width: calc(50% - 45px);
+                  white-space: nowrap;
+                  .custom-checkbox {
+                    .custom-control-label {
+                      font-size: 13px;
+                    }
+                  }
+                  >a {
+                    font-size: 13px;
+                  }
+                }
               }
             }
           }

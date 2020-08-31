@@ -48,37 +48,34 @@
                 <a href="#" class="btn-accordion"><span class="img"></span></a>
               </div>
               <div class="t-selected">
-                <span class="highlight">김홈런 외 1명</span>
+                <span class="highlight">김홈런</span>
               </div>
             </div>
-            <div id="collapseFirstMenu" class="collapse" aria-labelledby="headingFirstMenu" data-parent="#paymentAccordion">
+            <div id="collapseFirstMenu" class="collapse" aria-labelledby="headingFirstMenu"
+                 data-parent="#paymentAccordion">
               <div class="card-body">
-                <div class="top-list">
-                  <span class="left">전체선택</span>
-                  <span class="right"><span class="highlight">2명</span> 이상 선택</span>
-                </div>
                 <ul class="user-list">
                   <li>
-                    <div class="custom-control custom-checkbox custom-control-inline">
-                      <input type="checkbox" class="custom-control-input" id="children1" checked="">
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="children1" name="name" class="custom-control-input line" checked="">
                       <label class="custom-control-label" for="children1">김홈런<span class="desc">(kim_homelearning/초3)</span></label>
                     </div>
                   </li>
                   <li>
-                    <div class="custom-control custom-checkbox custom-control-inline">
-                      <input type="checkbox" class="custom-control-input" id="children2">
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="children2" name="name" class="custom-control-input line">
                       <label class="custom-control-label" for="children2">김홈런<span class="desc">(kim_homelearning/초3)</span></label>
                     </div>
                   </li>
                   <li>
-                    <div class="custom-control custom-checkbox custom-control-inline">
-                      <input type="checkbox" class="custom-control-input" id="children3">
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="children3" name="name" class="custom-control-input line" disabled>
                       <label class="custom-control-label" for="children3">김홈런<span class="badge-list">학습중</span><span class="desc">(kim_homelearning/초3)</span></label>
                     </div>
                   </li>
                 </ul>
                 <div class="btn-wrap">
-                  <a href="#" class="btn btn-round disabled">다음</a>
+                  <a href="#" class="btn btn-round">다음</a>
                 </div>
               </div>
             </div>
@@ -87,17 +84,16 @@
           <!-- 배송지 -->
           <div class="card">
             <div class="card-header" id="headingSecondMenu" data-toggle="collapse" data-target="#collapseSecondMenu"
-                 aria-expanded="false" aria-controls="collapseSecondMenu">
+                 aria-expanded="true" aria-controls="collapseSecondMenu">
               <div class="title-area">
                 <span class="title text-ellipsis">배송지</span>
                 <a href="#" class="btn-accordion"><span class="img"></span></a>
               </div>
               <div class="t-selected">
-                <span class="highlight">서울시 강남구 어디로1길 18</span>
+                <span>선택 미완료</span>
               </div>
             </div>
-            <div id="collapseSecondMenu" class="collapse" aria-labelledby="headingSecondMenu"
-                 data-parent="#paymentAccordion">
+            <div id="collapseSecondMenu" class="collapse show" aria-labelledby="headingSecondMenu" data-parent="#paymentAccordion">
               <div class="card-body">
                 <div class="delivery-info">
                   <p class="desc"><i class="required"></i>항목은 필수 입력 항목입니다.</p>
@@ -114,7 +110,7 @@
                   </div>
                   <div class="form-group">
                     <label for="rName" class="font-weight-bold">받으시는 분<i class="required"></i></label>
-                    <input type="text" id="rName" class="form-control">
+                    <input type="text" id="rName"  class="form-control">
                   </div>
                   <div class="form-group">
                     <div class="button-group mb-0">
@@ -128,14 +124,14 @@
                   <div class="form-group">
                     <label for="phone" class="font-weight-bold">휴대폰 번호<i class="required"></i></label>
                     <div class="telephone">
-                      <select id="phone" class="custom-select form-control" disabled>
+                      <select id="phone" class="custom-select form-control">
                         <option selected="">02</option>
                         <option selected="">010</option>
                       </select>
                       <span class="line"></span>
-                      <input type="text" id="num1" class="form-control" value="1234" title="phone" disabled>
+                      <input type="text" class="form-control" title="phone">
                       <span class="line"></span>
-                      <input type="text" id="num2" class="form-control" title="phone" value="5678" disabled>
+                      <input type="text" class="form-control" title="phone">
                     </div>
                   </div>
                   <div class="form-group">
@@ -179,16 +175,17 @@
           <!-- 총 결제 금액 -->
           <div class="card">
             <div class="card-header" id="headingThirdMenu" data-toggle="collapse" data-target="#collapseThirdMenu"
-                 aria-expanded="true" aria-controls="collapseThirdMenu">
+                 aria-expanded="false" aria-controls="collapseThirdMenu">
               <div class="title-area">
                 <span class="title text-ellipsis">총 결제 금액</span>
                 <a href="#" class="btn-accordion"><span class="img"></span></a>
               </div>
               <div class="t-selected">
-                <span class="highlight">￦198,000/월</span>
+                <span>약관 동의 필요</span>
               </div>
             </div>
-            <div id="collapseThirdMenu" class="collapse show" aria-labelledby="headingThirdMenu" data-parent="#paymentAccordion">
+            <div id="collapseThirdMenu" class="collapse" aria-labelledby="headingThirdMenu"
+                 data-parent="#paymentAccordion">
               <div class="card-body">
                 <div class="total-list">
                   <div class="total-price"><span class="price">￦198,000</span>/ 월 (2명 X 99,000/월)</div>
