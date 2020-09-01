@@ -531,6 +531,12 @@
                 .form-control {
                   display: inline-block;
                   width: calc(33% - 9px);
+                &::-webkit-inner-spin-button,
+                &::-webkit-outer-spin-button
+                {
+                  -webkit-appearance: none;
+                  margin: 0;
+                }
                 }
                 .line {
                   display: inline-block;
@@ -908,11 +914,12 @@
               .desc {
                 border-top: 0;
                 padding-top: 30px;
+                padding-right: 24px;
                 margin-bottom: 30px;
                 text-align: right;
               }
               .checkbox {
-                padding-left: 38px;
+                padding-left: 24px;
                 margin-bottom: 30px;
                 .title {
                   float: left;
@@ -927,7 +934,7 @@
               }
 
               .form-group {
-                padding-left: 38px;
+                padding: 0 24px;
                 overflow: hidden;
                 label {
                   float: left;

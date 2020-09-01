@@ -400,6 +400,10 @@
     -webkit-border-radius: 48px;
     -moz-border-radius: 48px;
     border-radius: 48px;
+    &.disabled, &:disabled{
+      background-color: #eeeeee;
+      border-color: #eeeeee;
+    }
   }
   &.btn-more {
     border-radius: 0;
