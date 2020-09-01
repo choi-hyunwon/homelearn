@@ -665,7 +665,7 @@
     }
   }
 }
-@include media-breakpoint-up($size-tablet) {
+@include media-breakpoint-up(lg) {
   .review-wrap {
     height: 200px;
     padding-right: 300px;
