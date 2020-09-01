@@ -232,67 +232,67 @@ body {
 @include media-breakpoint-up($size-tablet) {
   .cs-center {
     .content {
-      margin: 46px 84px 72px 84px;
-      padding-top: 40px;
-      border-radius: 12px;
-      box-shadow: 0 9px 24px 0 rgba(0, 0, 0, 0.1);
+      margin: 3.5938vw 6.5625vw 5.625vw 6.5625vw;
+      padding-top: 3.125vw;
+      border-radius: 0.9375vw;
+      box-shadow: 0 0.7031vw 1.875vw 0 rgba(0, 0, 0, 0.1);
       background-color: #ffffff;
     }
     .container {
-      padding: 0 80px 60px 80px;
+      padding: 0 6.25vw 4.6875vw 6.25vw;
     }
     .nav-tabs-detail {
-      font-size: 20px;
+      font-size: 1.5625vw;
       width: auto;
       .nav-item {
         flex: none;
-        margin-right: 14px;
-        padding: 0 14px;
-        height: 40px;
+        margin-right: 1.0938vw;
+        padding: 0 1.0938vw;
+        height: 3.125vw;
         line-height: 1;
       }
     }
     .accordion {
-      border-top: 2px solid rgba(224, 224, 224, 0.5);
+      border-top: 0.1563vw solid rgba(224, 224, 224, 0.5);
       & > label {
-        padding: 30px 90px 30px 40px;
+        padding: 2.3438vw 7.0313vw 2.3438vw 3.125vw;
         h4 {
-          font-size: 18px;
+          font-size: 1.4063vw;
           small {
             display: inline-block;
           }
         }
         span {
           display: inline-block;
-          margin-top: 10px;
+          margin-top: 0.7813vw;
 
-          font-size: 16px;
+          font-size: 1.25vw;
         }
         strong {
-          padding-right: 12px;
-          font-size: 16px;
+          padding-right: 0.9375vw;
+          font-size: 1.25vw;
           & + span {
-            padding-left: 12px;
+            padding-left: 0.9375vw;
           }
         }
         &::after {
-          right: 42px;
-          width: 48px;
-          height: 48px;
+          right: 3.2813vw;
+          width: 3.75vw;
+          height: 3.75vw;
           background-size: contain;
         }
       }
       article {
         div {
-          margin-bottom: 30px;
-          padding: 30px 24px;
-          width: calc(100% - 72px);
+          margin-bottom: 2.3438vw;
+          padding: 2.3438vw 1.875vw;
+          width: calc(100% - 5.625vw);
           h3 {
-            font-size: 18px;
+            font-size: 1.4063vw;
             & + span {
               display: block;
-              margin-top: 5px;
-              font-size: 16px;
+              margin-top: 0.3906vw;
+              font-size: 1.25vw;
               color: #999;
             }
           }
@@ -303,51 +303,51 @@ body {
         .btn-more {
           background: #fafafa;
           border-color: #fafafa;
-          border-bottom-left-radius: 8px;
-          border-bottom-right-radius: 8px;
+          border-bottom-left-radius: 0.625vw;
+          border-bottom-right-radius: 0.625vw;
         }
       }
     }
     .box {
-      margin: 10px auto 42px auto;
-      padding: 24px 36px;
-      width: calc(100% - 160px);
+      margin: 0.7813vw auto 3.2813vw auto;
+      padding: 1.875vw 2.8125vw;
+      width: calc(100% - 12.5vw);
       .desc {
         display: inline-block;
 
         width: 67.5%;
-        font-size: 18px;
+        font-size: 1.4063vw;
         line-height: 1.56;
         & + .btn {
           float: right;
           margin: 0;
-          width: 192px;
+          width: 15vw;
         }
       }
       & + .container {
-        padding: 0 80px 72px 80px;
+        padding: 0 6.25vw 5.625vw 6.25vw;
         .title {
           margin-top: 0;
           h3 {
-            margin-bottom: 18px;
-            font-size: 18px;
+            margin-bottom: 1.4063vw;
+            font-size: 1.4063vw;
           }
           li {
-            margin: 10px 0;
+            margin: 0.7813vw 0;
           }
           & + .form-group {
-            margin: 36px 0 0 0;
-            padding-top: 48px;
-            border-top: 2px solid rgba(224, 224, 224, 0.5);
+            margin: 2.8125vw 0 0 0;
+            padding-top: 3.75vw;
+            border-top: 0.1563vw solid rgba(224, 224, 224, 0.5);
             .input-group {
-              max-width: 560px;
+              max-width: 43.75vw;
               margin: 0 auto;
               &:last-of-type {
-                margin: 12px auto 40px auto;
+                margin: 0.9375vw auto 3.125vw auto;
               }
             }
             .btn {
-              max-width: 560px;
+              max-width: 43.75vw;
               margin: 0 auto;
             }
           }
@@ -356,10 +356,10 @@ body {
     }
     #nav-faq {
       .form-group {
-        padding: 0 80px 42px 80px;
+        padding: 0 6.25vw 3.2813vw 6.25vw;
         .input-group {
           input {
-            padding-right: 62px;
+            padding-right: 4.8438vw;
           }
         }
         select {
@@ -367,19 +367,19 @@ body {
         }
         .radio-group {
           display: block;
-          margin-top: calc(36px - 8px);
+          margin-top: calc(2.8125vw - 0.625vw);
           width: 100%;
-          border: 1px solid #bbb;
-          border-radius: 4px;
+          border: 0.0781vw solid #bbb;
+          border-radius: 0.3125vw;
           label {
             float: left;
             margin: 0;
             width: 25%;
-            border: 1px solid #bbb;
+            border: 0.0781vw solid #bbb;
             span {
               display: block;
-              padding: 14px 0;
-              font-size: 18px;
+              padding: 1.0938vw 0;
+              font-size: 1.4063vw;
               color: #666;
               text-align: center;
             }
@@ -397,64 +397,64 @@ body {
       }
     }
     .btn-search {
-      right: 20px;
-      background-size: 36px auto;
+      right: 1.5625vw;
+      background-size: 2.8125vw auto;
     }
     .title.text-center {
-      padding: 20px 0 42px 0;
+      padding: 1.5625vw 0 3.2813vw 0;
       h3 {
-        margin-bottom: 10px;
-        font-size: 24px;
+        margin-bottom: 0.7813vw;
+        font-size: 1.875vw;
         img {
-          max-width: 20px;
+          max-width: 1.5625vw;
         }
       }
     }
     .form-group {
       label {
-        margin-right: 14px;
-        width: 118px;
+        margin-right: 1.0938vw;
+        width: 9.2188vw;
         & + input,
         & + select {
           display: inline-block;
-          width: calc(100% - 118px - 18px);
+          width: calc(100% - 9.2188vw - 1.4063vw);
           & + span {
-            margin-left: calc(118px + 18px);
+            margin-left: calc(9.2188vw + 1.4063vw);
           }
         }
       }
       & + .form-group {
-        margin-top: 20px;
+        margin-top: 1.5625vw;
       }
       &.textarea {
-        margin-top: 30px;
+        margin-top: 2.3438vw;
         textarea {
-          margin-top: 10px;
+          margin-top: 0.7813vw;
         }
       }
       & + .buttons {
-        margin: 60px 0 0 0;
+        margin: 4.6875vw 0 0 0;
         .btn {
-          min-width: 180px;
+          min-width: 14.0625vw;
           &:first-child {
-            margin-right: 20px;
+            margin-right: 1.5625vw;
           }
         }
       }
     }
     i.require {
-      background-size: 18px auto;
+      background-size: 1.4063vw auto;
     }
   }
   .empty {
     margin: 0;
-    padding-top: calc(124px - 42px);
-    padding-bottom: 124px;
+    padding-top: calc(9.6875vw - 3.2813vw);
+    padding-bottom: 9.6875vw;
     img {
-      max-width: 120px;
+      max-width: 9.375vw;
     }
     p {
-      font-size: 24px;
+      font-size: 1.875vw;
     }
   }
 }

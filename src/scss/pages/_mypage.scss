@@ -337,6 +337,7 @@
   .scroll-x {
     display: block;
     margin: 0;
+    padding: 0;
     width: 100%;
     height: auto;
     white-space: nowrap;
@@ -346,7 +347,10 @@
       display: inline-block;
       flex: none;
       &.active::after {
-        bottom: 2px;
+        bottom: 0;
+      }
+      & + .nav-item {
+        margin-left: 3vw;
       }
     }
   }
