@@ -513,7 +513,14 @@
     text-shadow: 0 0 0 $custom-select-color;
   }
 }
-
+/*
+@include media-breakpoint-up($size-tablet) {
+  .custom-select {
+    height: 56px;
+    line-height: 56px;
+  }
+}
+*/
 .custom-select-sm {
   height: 30px;
   padding-top: $custom-select-padding-y-sm;
