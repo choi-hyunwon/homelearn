@@ -499,8 +499,9 @@
 
   &:disabled {
     color: #bbbbbb;
-    background-color: #eeeeee;
     opacity: 1;
+    background: #eeeeee url("../img/common/btn-open-d@3x.png") no-repeat right 14px center/16px 16px;
+
   }
 
   // Hides the default caret in IE11
