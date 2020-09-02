@@ -146,6 +146,15 @@ front.common = (function () {
       if ($(this).next().val() > 0) $(this).next().val(+$(this).next().val() - 1);
     });
 
+    /*
+    검색창
+    * */
+    $('._searchBtn').on('click',function (){
+      $('._searchBox').show();
+    })
+    $('._searchCloseBtn').on('click',function (){
+      $('._searchBox').hide();
+    })
   };
   var drawer = function () {
 
@@ -175,6 +184,7 @@ front.common = (function () {
     init: init
   }
 })();
+
 $(function () {
   front.common.init();
 });

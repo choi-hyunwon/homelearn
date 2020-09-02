@@ -3,9 +3,51 @@
 @@include('../html/include/head.html')
 <body>
 <div class="wrap">
-  <div class="search-box">
+  <!--
+  제목 :  검색창 팝업 처리
+  작성자 : 이주연
+  날짜 :  2020.09.02
+  내용 :  _searchBox
+      - <a href="#" class="_searchBtn"> _searchBtn 클래스 추가  (열기)
+      - <div class="search-box _searchBox" style="display: block"> _searchBox 클래스 추가 style 제거 후, 사용
+      - <a href="#" class="btn-back _searchCloseBtn">  _searchCloseBtn 클래스 추가 (닫기)
+  -->
+  <div class="navbar main">
+    <div class="navbar-brand">
+      <a href="#"><img src="../img/common/img-main-logo.png" height="32" width="149"/></a>
+    </div>
+    <div class="navbar-gnb">
+      <ul class="navbar-nav flex-row">
+        <li class="nav-item active"><a href="#" class="nav-link">추천</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">초등</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">중등</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">고등</a></li>
+      </ul>
+    </div>
+    <div class="navbar-util">
+      <a href="#" class="_searchBtn"><img src="../img/common/btn-main-search-n.png" height="36" width="36"/></a>
+      <a href="#" data-trigger="drawer"><img src="../img/common/btn-main-user-off-n@2x.png" height="36" width="36"/></a>
+      @@include('../html/include/drawer.html')
+    </div>
+    <div class="navbar-btn-eco">
+      <a href="#">
+        <img src="../img/common/btn-main-homerun-eco-n.png" class="d-none d-md-block"/>
+        <img src="../img/common/btn-main-homerun-eco-n-mobile.png" class="d-xs-block d-md-none"/>
+      </a>
+    </div>
+    <div class="navbar-gnb-sm d-md-none mt-rem-6">
+      <ul class="navbar-nav flex-row">
+        <li class="nav-item active"><a href="#" class="nav-link">추천</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">초등</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">중등</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">고등</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="search-box _searchBox" style="display: block">
     <div class="input-group">
-      <a href="#" class="btn-back"><img src="../img/common/btn-search-back-n@3x.png" alt=""></a>
+      <a href="#" class="btn-back _searchCloseBtn"><img src="../img/common/btn-search-back-n@3x.png" alt=""></a>
       <input class="form-control _search" type="search" placeholder="검색어를 입력하세요" aria-label="Search">
       <a href="#" class="btn-search"><img src="../img/common/btn-search-color-n@3x.png" alt=""></a>
       <a href="#" class="btn-search-close _searchClear"><img src="../img/common/btn-text-delete-n@3x.png" alt=""
@@ -59,7 +101,5 @@
 @@include('../html/include/fixed-btn.html')
 @@include('../html/include/footer.html')
 <!-- E content -->
-
-
 </body>
 </html>
