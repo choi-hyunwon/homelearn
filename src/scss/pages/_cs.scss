@@ -202,7 +202,7 @@ body {
     margin: 24px 0 60px 0;
     text-align: center;
     .btn {
-      min-width: 156px;
+      min-width: 150px;
       &:first-child {
         margin-right: 4px;
       }
@@ -232,67 +232,67 @@ body {
 @include media-breakpoint-up($size-tablet) {
   .cs-center {
     .content {
-      margin: 3.5938vw 6.5625vw 5.625vw 6.5625vw;
-      padding-top: 3.125vw;
-      border-radius: 0.9375vw;
-      box-shadow: 0 0.7031vw 1.875vw 0 rgba(0, 0, 0, 0.1);
+      margin: 46px 84px 72px 84px;
+      padding-top: 40px;
+      border-radius: 12px;
+      box-shadow: 0 9px 24px 0 rgba(0, 0, 0, 0.1);
       background-color: #ffffff;
     }
     .container {
-      padding: 0 6.25vw 4.6875vw 6.25vw;
+      padding: 0 80px 60px 80px;
     }
     .nav-tabs-detail {
-      font-size: 1.5625vw;
+      font-size: 20px;
       width: auto;
       .nav-item {
         flex: none;
-        margin-right: 1.0938vw;
-        padding: 0 1.0938vw;
-        height: 3.125vw;
+        margin-right: 14px;
+        padding: 0 14px;
+        height: 40px;
         line-height: 1;
       }
     }
     .accordion {
-      border-top: 0.1563vw solid rgba(224, 224, 224, 0.5);
+      border-top: 2px solid rgba(224, 224, 224, 0.5);
       & > label {
-        padding: 2.3438vw 7.0313vw 2.3438vw 3.125vw;
+        padding: 30px 90px 30px 40px;
         h4 {
-          font-size: 1.4063vw;
+          font-size: 18px;
           small {
             display: inline-block;
           }
         }
         span {
           display: inline-block;
-          margin-top: 0.7813vw;
+          margin-top: 10px;
 
-          font-size: 1.25vw;
+          font-size: 16px;
         }
         strong {
-          padding-right: 0.9375vw;
-          font-size: 1.25vw;
+          padding-right: 12px;
+          font-size: 16px;
           & + span {
-            padding-left: 0.9375vw;
+            padding-left: 12px;
           }
         }
         &::after {
-          right: 3.2813vw;
-          width: 3.75vw;
-          height: 3.75vw;
+          right: 42px;
+          width: 48px;
+          height: 48px;
           background-size: contain;
         }
       }
       article {
         div {
-          margin-bottom: 2.3438vw;
-          padding: 2.3438vw 1.875vw;
-          width: calc(100% - 5.625vw);
+          margin-bottom: 30px;
+          padding: 30px 24px;
+          width: calc(100% - 72px);
           h3 {
-            font-size: 1.4063vw;
+            font-size: 18px;
             & + span {
               display: block;
-              margin-top: 0.3906vw;
-              font-size: 1.25vw;
+              margin-top: 5px;
+              font-size: 16px;
               color: #999;
             }
           }
@@ -303,51 +303,51 @@ body {
         .btn-more {
           background: #fafafa;
           border-color: #fafafa;
-          border-bottom-left-radius: 0.625vw;
-          border-bottom-right-radius: 0.625vw;
+          border-bottom-left-radius: 8px;
+          border-bottom-right-radius: 8px;
         }
       }
     }
     .box {
-      margin: 0.7813vw auto 3.2813vw auto;
-      padding: 1.875vw 2.8125vw;
-      width: calc(100% - 12.5vw);
+      margin: 10px auto 42px auto;
+      padding: 24px 36px;
+      width: calc(100% - 160px);
       .desc {
         display: inline-block;
 
         width: 67.5%;
-        font-size: 1.4063vw;
+        font-size: 18px;
         line-height: 1.56;
         & + .btn {
           float: right;
           margin: 0;
-          width: 15vw;
+          width: 192px;
         }
       }
       & + .container {
-        padding: 0 6.25vw 5.625vw 6.25vw;
+        padding: 0 80px 72px 80px;
         .title {
           margin-top: 0;
           h3 {
-            margin-bottom: 1.4063vw;
-            font-size: 1.4063vw;
+            margin-bottom: 18px;
+            font-size: 18px;
           }
           li {
-            margin: 0.7813vw 0;
+            margin: 10px 0;
           }
           & + .form-group {
-            margin: 2.8125vw 0 0 0;
-            padding-top: 3.75vw;
-            border-top: 0.1563vw solid rgba(224, 224, 224, 0.5);
+            margin: 36px 0 0 0;
+            padding-top: 48px;
+            border-top: 2px solid rgba(224, 224, 224, 0.5);
             .input-group {
-              max-width: 43.75vw;
+              max-width: 560px;
               margin: 0 auto;
               &:last-of-type {
-                margin: 0.9375vw auto 3.125vw auto;
+                margin: 12px auto 40px auto;
               }
             }
             .btn {
-              max-width: 43.75vw;
+              max-width: 560px;
               margin: 0 auto;
             }
           }
@@ -356,10 +356,10 @@ body {
     }
     #nav-faq {
       .form-group {
-        padding: 0 6.25vw 3.2813vw 6.25vw;
+        padding: 0 80px 42px 80px;
         .input-group {
           input {
-            padding-right: 4.8438vw;
+            padding-right: 62px;
           }
         }
         select {
@@ -367,19 +367,19 @@ body {
         }
         .radio-group {
           display: block;
-          margin-top: calc(2.8125vw - 0.625vw);
+          margin-top: calc(36px - 8px);
           width: 100%;
-          border: 0.0781vw solid #bbb;
-          border-radius: 0.3125vw;
+          border: 1px solid #bbb;
+          border-radius: 4px;
           label {
             float: left;
             margin: 0;
             width: 25%;
-            border: 0.0781vw solid #bbb;
+            border: 1px solid #bbb;
             span {
               display: block;
-              padding: 1.0938vw 0;
-              font-size: 1.4063vw;
+              padding: 14px 0;
+              font-size: 18px;
               color: #666;
               text-align: center;
             }
@@ -397,64 +397,61 @@ body {
       }
     }
     .btn-search {
-      right: 1.5625vw;
-      background-size: 2.8125vw auto;
+      right: 20px;
+      background-size: 36px auto;
     }
     .title.text-center {
-      padding: 1.5625vw 0 3.2813vw 0;
+      padding: 20px 0 42px 0;
       h3 {
-        margin-bottom: 0.7813vw;
-        font-size: 1.875vw;
+        margin-bottom: 10px;
+        font-size: 24px;
         img {
-          max-width: 1.5625vw;
+          max-width: 20px;
         }
       }
     }
     .form-group {
       label {
-        margin-right: 1.0938vw;
-        width: 9.2188vw;
+        margin-right: 14px;
+        min-width: 128px;
         & + input,
         & + select {
           display: inline-block;
-          width: calc(100% - 9.2188vw - 1.4063vw);
-          & + span {
-            margin-left: calc(9.2188vw + 1.4063vw);
-          }
+          width: calc(100% - 118px - 18px);
         }
       }
       & + .form-group {
-        margin-top: 1.5625vw;
+        margin-top: 20px;
       }
       &.textarea {
-        margin-top: 2.3438vw;
+        margin-top: 30px;
         textarea {
-          margin-top: 0.7813vw;
+          margin-top: 10px;
         }
       }
       & + .buttons {
-        margin: 4.6875vw 0 0 0;
+        margin: 60px 0 0 0;
         .btn {
-          min-width: 14.0625vw;
+          min-width: 180px;
           &:first-child {
-            margin-right: 1.5625vw;
+            margin-right: 20px;
           }
         }
       }
     }
     i.require {
-      background-size: 1.4063vw auto;
+      background-size: 18px auto;
     }
   }
   .empty {
     margin: 0;
-    padding-top: calc(9.6875vw - 3.2813vw);
-    padding-bottom: 9.6875vw;
+    padding-top: calc(124px - 42px);
+    padding-bottom: 124px;
     img {
-      max-width: 9.375vw;
+      max-width: 120px;
     }
     p {
-      font-size: 1.875vw;
+      font-size: 24px;
     }
   }
 }

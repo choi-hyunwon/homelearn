@@ -31,7 +31,7 @@
           <a href="#"><img src="../img/common/btn-sub-home-n@3x.png"/></a>
         </div>
       </div>
-      <div class="content">
+      <div class="content children-add">
         <div class="container">
           <div class="title text-center">
             <h3>
@@ -55,7 +55,7 @@
             <label for="grade" class="font-weight-bold"
               >학년<i class="require"></i
             ></label>
-            <select id="grade" class="form-control">
+            <select id="grade" class="custom-control form-control">
               <option disabled selected>현재 학년으로 신청해주세요.</option>
               <option>예비 초등</option>
               <option>초1</option>
@@ -66,8 +66,8 @@
               <option>초6</option>
             </select>
           </div>
-          <div class="form-group">
-            <div class="button-group">
+          <div class="button-group">
+            <div class="form-group">
               <label for="id" class="font-weight-bold"
                 >아이디<i class="require"></i
               ></label>
@@ -78,27 +78,29 @@
                 class="form-control"
               />
               <button class="btn">중복 확인</button>
-              <span class="text text-secondary font-response-1 pt-0"
-                >사용 가능한 아이디입니다.</span
-              >
             </div>
+            <span class="text text-secondary font-response-1 pt-0"
+              >사용 가능한 아이디입니다.</span
+            >
           </div>
           <div class="form-group">
             <label for="password" class="font-weight-bold"
               >비밀번호<i class="require"></i
             ></label>
-            <input
-              type="password"
-              id="password"
-              placeholder="영문 대소문자/숫자/특수문자 조합 8~15자리"
-              class="form-control"
-            />
-            <input
-              type="password"
-              id="password-confirm"
-              placeholder="비밀번호 확인"
-              class="form-control"
-            />
+            <div class="input-group">
+              <input
+                type="password"
+                id="password"
+                placeholder="영문 대소문자/숫자/특수문자 조합 8~15자리"
+                class="form-control"
+              />
+              <input
+                type="password"
+                id="password-confirm"
+                placeholder="비밀번호 확인"
+                class="form-control"
+              />
+            </div>
           </div>
 
           <div class="buttons">

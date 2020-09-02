@@ -14,9 +14,6 @@
       }
     }
   }
-  select {
-    flex: none !important;
-  }
   .content {
     padding-top: 0;
   }
@@ -311,20 +308,19 @@
       }
     }
   }
-  .form-group {
-    .button-group {
-      label {
-        display: block;
-      }
-      input {
-        float: left;
-        margin-right: 6px;
-        width: calc(100% - 88px - 6px);
-      }
-      .btn {
-        display: inline-block;
-        min-width: 88px;
-      }
+
+  .button-group {
+    label {
+      display: block;
+    }
+    input {
+      float: left;
+      margin-right: 6px;
+      width: calc(100% - 88px - 6px);
+    }
+    .btn {
+      display: inline-block;
+      min-width: 88px;
     }
     .form-control + .form-control {
       margin-top: 8px;
@@ -333,7 +329,15 @@
       margin-top: 24px;
       padding: 0;
     }
+    .form-group {
+      margin-bottom: 0;
+      & + span {
+        margin-bottom: 1.2rem;
+        padding-top: 0 !important;
+      }
+    }
   }
+
   .scroll-x {
     display: block;
     margin: 0;
@@ -525,6 +529,14 @@
       }
     }
   }
+  .children-add {
+    .input-group {
+      display: block;
+      input + input {
+        margin-top: 8px;
+      }
+    }
+  }
 }
 .modal-footer {
   .buttons {
@@ -547,44 +559,44 @@
 @include media-breakpoint-up($size-tablet) {
   .mypage {
     .content {
-      margin: 3.5938vw 6.5625vw 4.6875vw 6.5625vw;
-      padding-top: 3.125vw;
-      border-radius: 0.9375vw;
-      box-shadow: 0 0.7031vw 1.875vw 0 rgba(0, 0, 0, 0.1);
+      margin: 46px 84px 60px 84px;
+      padding-top: 40px;
+      border-radius: 12px;
+      box-shadow: 0 9px 24px 0 rgba(0, 0, 0, 0.1);
       background-color: #ffffff;
     }
     .container {
-      padding: 0 3.2813vw;
+      padding: 0 42px;
       & + .buttons {
         padding: 0;
       }
       & > .input-group:first-child {
         display: inline-block;
-        margin-right: 1.5625vw;
-        width: 17.1875vw;
+        margin-right: 20px;
+        width: 220px;
         & + p {
           display: inline-block;
-          font-size: 1.875vw;
+          font-size: 24px;
           & + .edu-list {
-            margin-top: 2.8125vw;
+            margin-top: 36px;
           }
         }
       }
       & > .edu-list:first-child {
         li {
-          padding: 0.7813vw 0 6.875vw 0;
+          padding: 10px 0 88px 0;
           height: auto;
         }
       }
     }
     .nav-tabs-detail {
-      font-size: 1.5625vw;
+      font-size: 20px;
       width: auto;
       .nav-item {
         flex: none;
-        margin-right: 1.0938vw;
-        padding: 0 1.0938vw;
-        height: 3.125vw;
+        margin-right: 14px;
+        padding: 0 14px;
+        height: 40px;
         line-height: 1;
       }
     }
@@ -593,8 +605,8 @@
       .btn-more {
         background: #fafafa;
         border-color: #fafafa;
-        border-bottom-left-radius: 0.625vw;
-        border-bottom-right-radius: 0.625vw;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
       }
     }
     .btn-disabled,
@@ -602,99 +614,99 @@
     .btn-reg,
     .btn-plus,
     .btn-minus {
-      padding: 0 0.7813vw 0 3.125vw;
-      min-width: 12.5vw;
-      height: 3.75vw;
-      line-height: 3.4375vw;
-      font-size: 1.4063vw;
-      background-position: 1.7188vw center;
-      background-size: 1.875vw;
+      padding: 0 10px 0 40px;
+      min-width: 160px;
+      height: 48px;
+      line-height: 44px;
+      font-size: 18px;
+      background-position: 22px center;
+      background-size: 24px;
     }
     .btn-reg,
     .btn-disabled {
-      padding: 0 0.7813vw;
+      padding: 0 10px;
       background: none;
     }
     .btn-pay {
-      padding: 0 0.7813vw;
+      padding: 0 10px;
     }
 
     .dashboard {
       h4 {
-        font-size: 1.5625vw;
+        font-size: 20px;
         small {
-          font-size: 1.0938vw;
+          font-size: 14px;
         }
       }
       h2 {
-        margin: 0.7813vw 0 0 0;
-        font-size: 2.5vw;
+        margin: 10px 0 0 0;
+        font-size: 32px;
       }
       nav {
-        margin: 2.3438vw 0;
+        margin: 30px 0;
         a {
-          margin-left: 1.5625vw;
-          padding: 2.5vw 0;
+          margin-left: 20px;
+          padding: 32px 0;
           width: 23.2%;
-          border-radius: 0.3906vw;
-          border: solid 0.1563vw rgba(224, 224, 224, 0.5);
+          border-radius: 5px;
+          border: solid 2px rgba(224, 224, 224, 0.5);
           img {
-            width: 6.25vw;
+            width: 80px;
           }
           span {
-            font-size: 1.5625vw;
+            font-size: 20px;
           }
           .badge {
             top: 15%;
             right: 25%;
-            width: 3.2813vw;
-            height: 3.2813vw;
-            line-height: 3.2813vw;
-            font-size: 1.5625vw;
+            width: 42px;
+            height: 42px;
+            line-height: 42px;
+            font-size: 20px;
           }
         }
       }
       .list {
-        padding: 2.8125vw 0 2.3438vw 0;
+        padding: 36px 0 30px 0;
         h3 {
-          font-size: 1.875vw;
+          font-size: 24px;
           & + div {
-            margin: 1.875vw 0 2.0313vw 0;
+            margin: 24px 0 26px 0;
             img {
-              margin: 0 0.7813vw 0 0;
-              width: 1.5625vw;
+              margin: 0 10px 0 0;
+              width: 20px;
             }
             p {
-              font-size: 1.4063vw;
+              font-size: 18px;
             }
           }
         }
         li {
           display: inline-block;
           margin-left: 5%;
-          padding: 0.9375vw 0;
+          padding: 12px 0;
           width: 29.6%;
           &:nth-child(3n + 1) {
             margin-left: 0;
           }
           &::before {
-            margin-right: 1.0938vw;
-            width: 1.875vw;
-            height: 1.875vw;
+            margin-right: 14px;
+            width: 24px;
+            height: 24px;
           }
           h3 {
-            font-size: 1.4063vw;
+            font-size: 18px;
           }
           span {
-            margin-left: calc(1.875vw + 1.0938vw);
-            font-size: 1.25vw;
+            margin-left: calc(24px + 14px);
+            font-size: 16px;
           }
           &.p-24 {
-            padding: 1.875vw 0;
+            padding: 24px 0;
           }
         }
         .empty {
-          margin: 2.5vw 0 3.125vw 0;
+          margin: 32px 0 40px 0;
           padding: 0;
           p {
             line-height: 1.56;
@@ -704,35 +716,35 @@
     }
     .recent {
       margin: 0;
-      padding: 0 6.5625vw 0 6.5625vw;
+      padding: 0 84px 0 84px;
       width: 100%;
       border-top: 0;
       h3 {
-        margin-bottom: 1.5625vw;
-        font-size: 1.875vw;
+        margin-bottom: 20px;
+        font-size: 24px;
       }
       .card-item {
         margin-top: 0;
-        margin-bottom: 3.5938vw;
+        margin-bottom: 46px;
         .list-body {
-          padding: 0.9375vw 0.9375vw 1.5625vw 0.9375vw;
+          padding: 12px 12px 20px 12px;
           .title {
             font-weight: bold;
           }
           .score {
-            font-size: 1.0938vw;
+            font-size: 14px;
             font-weight: bold;
             i {
-              margin: 0 0.2344vw 0 0;
-              width: 1.875vw;
-              height: 1.875vw;
-              background-size: 1.5625vw auto;
+              margin: 0 3px 0 0;
+              width: 24px;
+              height: 24px;
+              background-size: 20px auto;
             }
           }
           .s-sticker {
             i {
-              width: 4.8438vw;
-              height: 1.875vw;
+              width: 62px;
+              height: 24px;
             }
           }
         }
@@ -741,43 +753,43 @@
         display: none;
       }
       .empty {
-        padding: 4.0625vw 0 2.5vw 0;
+        padding: 52px 0 32px 0;
         p {
-          font-size: 1.4063vw;
+          font-size: 18px;
         }
       }
     }
     .edu-list {
       li {
         position: relative;
-        padding: 3.125vw 0;
-        height: calc(11.4063vw + 3.125vw * 2);
+        padding: 40px 0;
+        height: calc(146px + 40px * 2);
         img {
-          width: 11.4063vw;
+          width: 146px;
         }
         h2 {
-          margin-left: 1.875vw;
+          margin-left: 24px;
           width: auto;
           height: auto;
-          font-size: 1.875vw;
+          font-size: 24px;
         }
         p {
-          margin-left: calc(11.4063vw + 1.875vw);
-          font-size: 1.4063vw;
+          margin-left: calc(146px + 24px);
+          font-size: 18px;
           span {
-            margin-top: 0.625vw;
-            padding-right: 0.7813vw;
+            margin-top: 8px;
+            padding-right: 10px;
             & + span {
-              padding-left: 0.7813vw;
-              border-width: 0.1563vw;
+              padding-left: 10px;
+              border-width: 2px;
             }
           }
           & + p {
-            font-size: 1.25vw;
+            font-size: 16px;
             a {
               display: inline-block;
-              padding-left: 0.7813vw;
-              border-left: 0.1563vw solid #ddd;
+              padding-left: 10px;
+              border-left: 2px solid #ddd;
               line-height: 1;
             }
           }
@@ -790,7 +802,7 @@
           transform: translate(0, -50%);
           margin: 0;
           & ~ h2 {
-            width: calc(100% - 11.4063vw - 1.875vw - 12.5vw - 3.125vw);
+            width: calc(100% - 146px - 24px - 160px - 40px);
           }
         }
         select.form-control {
@@ -798,40 +810,40 @@
           right: 0;
           top: 50%;
           transform: translate(0, -50%);
-          padding: 0 1.875vw;
-          width: 14.0625vw;
-          height: 4.2188vw;
-          line-height: 4.2188vw;
-          font-size: 1.4063vw;
+          padding: 0 24px;
+          width: 180px;
+          height: 54px;
+          line-height: 54px;
+          font-size: 18px;
         }
       }
       & + .input-group {
-        padding: 2.5vw 14.8438vw 0 14.8438vw;
+        padding: 32px 190px 0 190px;
         width: 100%;
         p {
           margin: 0;
-          font-size: 1.5625vw;
+          font-size: 20px;
           & + .form-control {
             flex: inherit;
-            margin: 3.5938vw auto 3.75vw auto;
-            width: 26.5625vw;
+            margin: 46px auto 48px auto;
+            width: 340px;
             & + p {
-              margin-bottom: 2.3438vw;
-              font-size: 1.25vw;
+              margin-bottom: 30px;
+              font-size: 16px;
               & + .desc {
-                margin-bottom: 4.6875vw;
-                font-size: 1.25vw;
+                margin-bottom: 60px;
+                font-size: 16px;
               }
             }
           }
         }
         & + .buttons {
-          padding-bottom: 4.6875vw;
+          padding-bottom: 60px;
           text-align: center;
           .btn {
-            min-width: 14.0625vw;
+            min-width: 180px;
             &:first-child {
-              margin-right: 1.5625vw;
+              margin-right: 20px;
             }
           }
         }
@@ -840,43 +852,46 @@
     .form-group {
       & + .buttons {
         margin: 0;
-        padding: 3.75vw 0 4.6875vw 0;
+        padding: 48px 0 60px 0;
       }
       .form-control {
         & + .form-control {
-          margin-top: 1.5625vw;
-          margin-left: calc(9.2188vw + 1.4063vw);
-          width: calc(100% - 9.2188vw - 1.4063vw);
-        }
-      }
-      .button-group {
-        label {
-          display: inline-block;
-        }
-        input {
-          float: none;
-          width: calc(100% - 14.0625vw - 0.625vw - 9.2188vw - 1.4063vw);
-        }
-        .btn {
-          float: right;
-          min-width: 14.0625vw;
-        }
-        span {
-          margin-left: calc(9.2188vw + 1.4063vw);
+          margin-top: 20px;
         }
       }
     }
+    .button-group {
+      label {
+        display: inline-block;
+      }
+      input {
+        float: none;
+        width: calc(100% - 180px - 8px - 118px - 18px);
+      }
+      .btn {
+        float: right;
+        max-width: 180px;
+      }
+      span {
+        display: block;
+        margin-left: 128px;
+        margin-bottom: 1.2rem;
+      }
+      & + .form-group {
+        margin-top: 20px;
+      }
+    }
     .datepicker {
-      margin: 0.1563vw 0 2.3438vw 0;
+      margin: 2px 0 30px 0;
       padding: 0;
       border: 0;
       h3 {
-        font-size: 1.5625vw;
+        font-size: 20px;
       }
       .btn {
         left: 38%;
-        width: 1.875vw;
-        height: 1.875vw;
+        width: 24px;
+        height: 24px;
       }
       .btn-next {
         left: auto;
@@ -886,15 +901,15 @@
     .visible-header {
       display: block;
       margin: 0 auto;
-      padding: 0.9375vw 1.9531vw;
-      width: calc(100% - 3.2813vw * 2);
+      padding: 12px 25px;
+      width: calc(100% - 42px * 2);
       font-size: 0;
-      border-top: 0.1563vw solid #ccc;
-      border-bottom: 0.1563vw solid #ccc;
+      border-top: 2px solid #ccc;
+      border-bottom: 2px solid #ccc;
       span {
         display: inline-block;
         width: 15%;
-        font-size: 1.25vw;
+        font-size: 16px;
         text-align: center;
         font-weight: bold;
         &:first-child {
@@ -903,16 +918,16 @@
       }
     }
     .pay-list {
-      padding: 0 1.9531vw 0.9375vw 1.9531vw;
+      padding: 0 25px 12px 25px;
       li {
-        padding: 1.7188vw 0;
+        padding: 22px 0;
         font-size: 0;
         line-height: 0;
         h2 {
           display: inline-block;
-          padding-left: 3.0469vw;
+          padding-left: 39px;
           width: 40%;
-          font-size: 1.25vw;
+          font-size: 16px;
         }
         p {
           display: inline-block;
@@ -922,13 +937,13 @@
           span {
             display: inline-block;
             width: 33.33%;
-            font-size: 1.25vw;
+            font-size: 16px;
             text-align: center;
             em {
               display: none;
             }
             &:first-child {
-              font-size: 1.4063vw;
+              font-size: 18px;
               font-weight: bold;
             }
           }
@@ -937,7 +952,7 @@
           display: inline-block;
           position: static;
           width: 15%;
-          font-size: 1.25vw;
+          font-size: 16px;
           font-weight: normal;
           text-align: center;
         }
@@ -946,48 +961,65 @@
     .review {
       .container {
         & > p {
-          font-size: 1.875vw;
+          font-size: 24px;
         }
       }
       .review-list {
         li {
-          padding: 1.875vw 0;
+          padding: 24px 0;
           img {
-            margin-right: 1.5625vw;
-            width: 4.6875vw;
+            margin-right: 20px;
+            width: 60px;
           }
           h2 {
-            font-size: 1.875vw;
+            font-size: 24px;
           }
           div {
             .star-rating {
-              margin-top: -0.0781vw;
+              margin-top: -1px;
               li {
-                width: 1.5625vw;
-                height: 1.5625vw;
+                width: 20px;
+                height: 20px;
               }
             }
             span {
-              font-size: 1.0938vw;
+              font-size: 14px;
             }
           }
           .btn-review {
             margin-top: -5.8em;
-            padding: 0.8594vw 0.3906vw 0.8594vw 2.3438vw;
-            min-width: 9.5313vw;
-            font-size: 1.25vw;
-            background-position: 1.0938vw center;
-            background-size: 1.875vw auto;
+            padding: 11px 5px 11px 30px;
+            min-width: 122px;
+            font-size: 16px;
+            background-position: 14px center;
+            background-size: 24px auto;
           }
           .review-comment {
-            padding: 1.5625vw;
+            padding: 20px;
             h4 {
-              font-size: 1.25vw;
+              font-size: 16px;
               small {
-                font-size: 1.0938vw;
+                font-size: 14px;
               }
             }
           }
+        }
+      }
+    }
+    .children-add {
+      .form-group {
+        display: flex;
+        label {
+          margin-right: 0;
+          &[for="id"] + .input-group {
+            display: flex;
+          }
+        }
+      }
+      .button-group {
+        .btn {
+          min-width: inherit;
+          width: 150px;
         }
       }
     }
