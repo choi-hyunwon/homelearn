@@ -54,7 +54,7 @@
             <div id="collapseFirstMenu" class="collapse show" aria-labelledby="headingFirstMenu"
                  data-parent="#paymentAccordion">
               <div class="card-body">
-                <div class="clearfix">
+                <div class="qty-wrap clearfix">
                   <div class="qty-info">
                     <span class="title">월별 결제</span>
                     <span class="value"><em class="font-weight-bold">￦99,000</em>/월</span>
@@ -116,13 +116,17 @@
                     <label for="phone" class="font-weight-bold">휴대폰 번호<i class="required"></i></label>
                     <div class="telephone">
                       <select id="phone" class="custom-select form-control" disabled>
-                        <option selected="">02</option>
                         <option selected="">010</option>
+                        <option>011</option>
+                        <option>016</option>
+                        <option>017</option>
+                        <option>018</option>
+                        <option>019</option>
                       </select>
                       <span class="line"></span>
-                      <input type="text" id="num1" class="form-control" value="1234" title="phone" disabled>
+                      <input type="number" class="form-control" value="1234" title="phone" maxlength="4" disabled>
                       <span class="line"></span>
-                      <input type="text" id="num2" class="form-control" title="phone" value="5678" disabled>
+                      <input type="number" class="form-control" value="5678" title="phone" maxlength="4" disabled>
                     </div>
                   </div>
                   <div class="form-group">
@@ -130,12 +134,17 @@
                     <div class="telephone">
                       <select id="phone2" class="custom-select form-control">
                         <option selected="">02</option>
-                        <option>010</option>
+                        <option>031</option>
+                        <option>032</option>
+                        <option>033</option>
+                        <option>041</option>
+                        <option>042</option>
+                        <option>070</option>
                       </select>
                       <span class="line"></span>
-                      <input type="text" class="form-control" title="phone2">
+                      <input type="number" class="form-control" title="phone2" maxlength="4">
                       <span class="line"></span>
-                      <input type="text" class="form-control" title="phone2">
+                      <input type="number" class="form-control" title="phone2" maxlength="4">
                     </div>
                   </div>
                   <div class="form-group">
@@ -146,8 +155,13 @@
                       <input type="text" title="email" class="form-control mr-0">
                       <select title="email" class="custom-select form-control">
                         <option disabled="" selected="">선택</option>
-                        <option>선택</option>
-                        <option></option>
+                        <option>네이버</option>
+                        <option>다음</option>
+                        <option>구글</option>
+                        <option>네이트</option>
+                        <option>핫메일</option>
+                        <option>MSN</option>
+                        <option>직접입력</option>
                       </select>
                     </div>
                   </div>

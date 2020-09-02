@@ -245,12 +245,12 @@
 
         .card-body {
           position: relative;
-          padding: 20px;
+          padding: 0 20px 20px;
 
           .top-list {
-            padding-bottom: 12px;
+            padding: 20px 0 12px;
             border-bottom: 2px solid rgba(224, 224, 224, 0.5);
-            margin-bottom: 20px;
+            margin-bottom: -8px;
 
             .left {
               display: inline-block;
@@ -273,14 +273,13 @@
           }
 
           .text-top {
-            margin-top: -20px;
-            margin-bottom: 28px;
+            margin-top: 6px;
             line-height: 20px;
           }
 
           /* 학습할 자녀 선택 리스트 */
           .user-list {
-            padding: 0 16px;
+            padding: 28px 16px 0;
 
             li {
               margin-bottom: 20px;
@@ -367,69 +366,73 @@
             }
           }
 
-          /* 수량  선택 */
-          .qty-info {
-            float: left;
-            .title {
-              display: inline-block;
-              line-height: 30px;
-              margin-right: 12px;
-            }
-            .value {
-              display: inline-block;
-              line-height: 30px;
-              em {
-                font-style: normal;
+          /* 수량 선택 */
+          .qty-wrap {
+            padding-top: 15px;
+
+            .qty-info {
+              float: left;
+              .title {
+                display: inline-block;
+                line-height: 30px;
+                margin-right: 12px;
+              }
+              .value {
+                display: inline-block;
+                line-height: 30px;
+                em {
+                  font-style: normal;
+                }
               }
             }
-          }
 
-          .count-num {
-            float: right;
+            .count-num {
+              float: right;
 
-            & .qty-minus, & .qty-plus {
-              display: inline-block;
-              width: 30px;
-              height: 30px;
-              border: 1px solid #e0e0e0;
-              border-radius: 4px 0 0 4px;
-              text-align: center;
-              line-height: 26px;
-            }
-
-            & .qty-plus {
-              border-radius: 0 4px 4px 0;
-            }
-
-            & .qty {
-              display: inline-block;
-              width: 42px;
-              background-color: transparent;
-              border: 0;
-              height: 30px;
-              line-height: 30px;
-              text-align: center;
-              font-size: 12px;
-              font-weight: bold;
-              border-top: 1px solid #e0e0e0;
-              border-bottom: 1px solid #e0e0e0;
-              margin: 0 -3px;
-
-              &:focus {
-                outline: none;
+              & .qty-minus, & .qty-plus {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                border: 1px solid #e0e0e0;
+                border-radius: 4px 0 0 4px;
+                text-align: center;
+                line-height: 26px;
               }
 
-              &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
-                -webkit-appearance: none;
-                margin: 0;
+              & .qty-plus {
+                border-radius: 0 4px 4px 0;
+              }
+
+              & .qty {
+                display: inline-block;
+                width: 42px;
+                background-color: transparent;
+                border: 0;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                font-size: 12px;
+                font-weight: bold;
+                border-top: 1px solid #e0e0e0;
+                border-bottom: 1px solid #e0e0e0;
+                margin: 0 -3px;
+
+                &:focus {
+                  outline: none;
+                }
+
+                &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+                  -webkit-appearance: none;
+                  margin: 0;
+                }
               }
             }
           }
 
           /* 총 결제 금액 */
           .total-list {
+            padding: 16px 0 12px;
             border-bottom: 2px solid rgba(224, 224, 224, 0.5);
-            padding-bottom: 12px;
 
             .total-price {
               display: inline-block;
@@ -488,11 +491,8 @@
 
           /* 배송지 */
           .delivery-info {
-            margin-top: -8px;
-
+            padding-top: 6px;
             .desc {
-              border-top: 2px solid rgba(224, 224, 224, 0.5);
-              padding-top: 12px;
               color: #666666;
               margin-bottom: 20px;
             }
@@ -531,6 +531,12 @@
                 .form-control {
                   display: inline-block;
                   width: calc(33% - 9px);
+                &::-webkit-inner-spin-button,
+                &::-webkit-outer-spin-button
+                {
+                  -webkit-appearance: none;
+                  margin: 0;
+                }
                 }
                 .line {
                   display: inline-block;
@@ -681,10 +687,10 @@
           }
 
           .card-body {
-            padding: 20px 40px 30px;
+            padding: 0 32px 30px;
 
             .top-list {
-              padding-bottom: 20px;
+              padding: 0 12px 20px;
               margin-bottom: 35px;
 
               .left {
@@ -705,13 +711,15 @@
 
             .text-top {
               line-height: 28px;
-              padding-left: 18px;
+              padding-left: 30px;
               font-size: 18px;
+              margin-top: 0;
+              margin-bottom: 22px;
             }
 
             /* 학습할 자녀 선택 리스트 */
             .user-list {
-              padding: 0 16px;
+              padding: 22px 28px 0;
 
               li {
                 margin-bottom: 44px;
@@ -806,48 +814,50 @@
             }
 
             /* 수량  선택 */
-            .qty-info {
-              float: left;
-              .title {
-                font-size: 18px;
-                line-height: 44px;
-              }
-              .value {
-                font-size: 18px;
-                line-height: 44px;
-                em {
-                  font-style: normal;
+            .qty-wrap {
+              .qty-info {
+                float: left;
+                .title {
+                  font-size: 18px;
+                  line-height: 44px;
                 }
-              }
-            }
-
-            .count-num {
-              & .qty-minus, & .qty-plus {
-                width: 44px;
-                height: 44px;
-                border-radius: 6px 0 0 6px;
-                line-height: 46px;
-                img {
-                  transform: translateY(-3px);
+                .value {
+                  font-size: 18px;
+                  line-height: 44px;
+                  em {
+                    font-style: normal;
+                  }
                 }
               }
 
-              & .qty-plus {
-                border-radius: 0 6px 6px 0;
-              }
+              .count-num {
+                & .qty-minus, & .qty-plus {
+                  width: 44px;
+                  height: 44px;
+                  border-radius: 6px 0 0 6px;
+                  line-height: 46px;
+                  img {
+                    transform: translateY(-3px);
+                  }
+                }
 
-              & .qty {
-                width: 74px;
-                height: 44px;
-                line-height: 44px;
-                font-size: 20px;
+                & .qty-plus {
+                  border-radius: 0 6px 6px 0;
+                }
+
+                & .qty {
+                  width: 74px;
+                  height: 44px;
+                  line-height: 44px;
+                  font-size: 20px;
+                }
               }
             }
 
             /* 총 결제 금액 */
             .total-list {
               margin-top: -20px;
-              padding-left: 24px;
+              padding-left: 32px;
               padding-bottom: 30px;
 
               .total-price {
@@ -869,7 +879,7 @@
             }
 
             .total-bottom {
-              padding: 30px;
+              padding: 30px 32px 30px;
               .title {
                 margin-bottom: 0;
                 line-height: 25px;
@@ -906,13 +916,13 @@
               margin-top: -20px;
 
               .desc {
-                border-top: 0;
                 padding-top: 30px;
+                padding-right: 24px;
                 margin-bottom: 30px;
                 text-align: right;
               }
               .checkbox {
-                padding-left: 38px;
+                padding-left: 32px;
                 margin-bottom: 30px;
                 .title {
                   float: left;
@@ -927,7 +937,7 @@
               }
 
               .form-group {
-                padding-left: 38px;
+                padding: 0 32px;
                 overflow: hidden;
                 label {
                   float: left;

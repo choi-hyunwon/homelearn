@@ -267,9 +267,6 @@ data.detail = {
       'category': 'Main',
       'page': '평가하기(팝업)'
     },
-
-
-
   ]
 }
 
@@ -310,7 +307,7 @@ data.payment = {
       'stateClass': 'complete',
       'url': '01_main_10_app detail_결제_01_학습할 자녀 선택',
       'category': 'Payment',
-      'page': '결제_학습할 자녀 선택'
+      'page': '학습할 자녀 선택'
     },
     {
       'stateClass': 'complete',
@@ -334,7 +331,7 @@ data.payment = {
       'stateClass': 'complete',
       'url': '01_main_10_app detail_결제_02_수량선택_선생님',
       'category': 'Payment',
-      'page': '결제_수량선택_선생님'
+      'page': '수량선택_선생님'
     },
     {
       'stateClass': 'complete',
@@ -346,7 +343,7 @@ data.payment = {
       'stateClass': 'complete',
       'url': '01_main_10_app detail_결제_03_배송지 선택_신규등록',
       'category': 'Payment',
-      'page': '결제_배송지 선택_신규등록'
+      'page': '배송지 선택_신규등록'
     },
   ]
 }
@@ -356,45 +353,99 @@ data.mypage = {
   'list': [
     {
       'stateClass': 'complete',
-      'url': '01_main_10_app detail_결제_01_학습할 자녀 선택',
-      'category': 'Payment',
-      'page': '결제_학습할 자녀 선택'
+      'url': '04_mypage_01_학부모회원',
+      'category': 'mypage',
+      'page': '학부모회원'
     },
     {
       'stateClass': 'complete',
-      'url': '01_main_10_app detail_결제_01_학습할 자녀 선택_다계정 상품',
-      'category': 'Payment',
-      'page': '결제_학습할 자녀 선택'
+      'url': '04_mypage_01_학부모회원_내역없음',
+      'category': 'mypage',
+      'page': '학부모회원_내역없음'
     },
     {
       'stateClass': 'complete',
-      'url': '01_main_10_app detail_결제_03_결제 금액 확인_학부모_구독상품',
-      'category': 'Payment',
-      'page': '결제_학습할 자녀 선택'
+      'url': '04_mypage_02_자녀별학습목록',
+      'category': 'mypage',
+      'page': '자녀별학습목록'
     },
     {
       'stateClass': 'complete',
-      'url': '01_main_10_app detail_결제_03_결제 금액 확인_학부모_약정상품',
-      'category': 'Payment',
-      'page': '결제_학습할 자녀 선택'
+      'url': '04_mypage_02_자녀별학습목록_목록없음',
+      'category': 'mypage',
+      'page': '자녀별학습목록_목록없음'
     },
     {
       'stateClass': 'complete',
-      'url': '01_main_10_app detail_결제_02_수량선택_선생님',
-      'category': 'Payment',
-      'page': '결제_학습할 자녀 선택'
+      'url': '04_mypage_03_자녀추가하기',
+      'category': 'mypage',
+      'page': '자녀추가하기'
     },
     {
       'stateClass': 'complete',
-      'url': '01_main_10_app detail_결제_03_배송지 선택_기존 배송지',
-      'category': 'Payment',
-      'page': '결제_학습할 자녀 선택'
+      'url': '04_mypage_04_자녀회원',
+      'category': 'mypage',
+      'page': '자녀회원'
     },
     {
       'stateClass': 'complete',
-      'url': '01_main_10_app detail_결제_03_배송지 선택_신규등록',
-      'category': 'Payment',
-      'page': '결제_학습할 자녀 선택'
+      'url': '04_mypage_05_학부모회원',
+      'category': 'mypage',
+      'page': '학부모회원'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '04_mypage_06_학생별학습목록',
+      'category': 'mypage',
+      'page': '학생별학습목록'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '04_mypage_06_학생별학습목록_목록없음',
+      'category': 'mypage',
+      'page': '학생별학습목록_목록없음'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '04_mypage_07_학습관리_결제일변경',
+      'category': 'mypage',
+      'page': '학습관리_결제일변경'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '04_mypage_07_학습관리_진행중학습',
+      'category': 'mypage',
+      'page': '학습관리_진행중학습'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '04_mypage_07_학습관리_항목없음',
+      'category': 'mypage',
+      'page': '학습관리_항목없음'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '04_mypage_08_결제상세내역',
+      'category': 'mypage',
+      'page': '결제상세내역'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '04_mypage_08_결제상세내역_없음',
+      'category': 'mypage',
+      'page': '결제상세내역_없음'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '04_mypage_09_평가관리',
+      'category': 'mypage',
+      'page': '평가관리'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '04_mypage_09_평가관리_없음',
+      'category': 'mypage',
+      'page': '평가관리_없음'
     },
   ]
 }
