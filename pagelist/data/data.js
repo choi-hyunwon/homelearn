@@ -245,6 +245,12 @@ data.detail = {
     },
     {
       'stateClass': 'complete',
+      'url': '01_main_08_app detail_01_학습소개_학습관',
+      'category': 'Main',
+      'page': '학습소개_학습관'
+    },
+    {
+      'stateClass': 'complete',
       'url': '01_main_08_app detail_01_학습중',
       'category': 'Main',
       'page': '학습소개(탭메뉴)'
