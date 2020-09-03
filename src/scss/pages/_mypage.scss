@@ -116,10 +116,48 @@
     }
   }
 
+  .add-logo {
+    .thumb {
+      margin: 10px 0 0 0;
+      padding: 16px;
+      width: 100%;
+      border: 1px solid #ddd;
+      text-align: center;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    figure {
+      margin: 0;
+      padding-top: calc(100% - 2px);
+      background: #ccc;
+    }
+    ul {
+      padding-left: 20px;
+      li {
+        margin-top: 10px;
+        list-style-type: disc;
+        color: #666;
+      }
+    }
+    & + .buttons {
+      text-align: center;
+      .btn {
+        max-width: 48%;
+        min-width: inherit;
+        width: 150px;
+        &:first-child {
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+
   .btn-more {
     border-radius: 4px;
   }
 
+  .btn-install,
   .btn-disabled,
   .btn-pay,
   .btn-reg,
@@ -146,10 +184,18 @@
     color: #999;
     border: 0;
   }
+  .btn-install,
   .btn-pay {
     padding: 0 10px;
     background: #ff7600;
     box-shadow: none;
+  }
+  .btn-install {
+    &.readonly {
+      color: #ff7600;
+      border-color: transparent;
+      background: #ffd5b2;
+    }
   }
 
   .dashboard {
@@ -585,8 +631,8 @@
       }
       & > .edu-list:first-child {
         li {
-          padding: 10px 0 88px 0;
-          height: auto;
+          padding: 40px 0;
+          height: calc(146px + 40px * 2);
         }
       }
     }
@@ -610,6 +656,7 @@
         border-bottom-right-radius: 8px;
       }
     }
+    .btn-install,
     .btn-disabled,
     .btn-pay,
     .btn-reg,
@@ -628,6 +675,7 @@
       padding: 0 10px;
       background: none;
     }
+    .btn-install,
     .btn-pay {
       padding: 0 10px;
     }
@@ -776,6 +824,7 @@
         }
         p {
           margin-left: calc(146px + 24px);
+          width: calc(100% - 146px - 24px - 180px);
           font-size: 18px;
           span {
             margin-top: 8px;
@@ -1040,6 +1089,26 @@
         .btn {
           min-width: inherit;
           width: 150px;
+        }
+      }
+    }
+    .add-logo {
+      display: flex;
+      .thumb {
+        margin: 0 48px 0 0;
+        padding: 12px;
+        max-width: 276px;
+      }
+      ul {
+        align-self: center;
+        li {
+          margin: 40px 0;
+        }
+      }
+      & + .buttons {
+        padding: 60px 0;
+        .btn {
+          min-width: 180px;
         }
       }
     }
