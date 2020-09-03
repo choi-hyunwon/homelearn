@@ -294,7 +294,7 @@
           display: block;
           margin-bottom: 10px;
           color: #333;
-          font-size: 1.25vw;
+          font-size: 16px;
           @include ellipsis(2, 1.3em);
         }
         .score {
@@ -819,21 +819,24 @@
         }
       }
       & + .input-group {
-        padding: 32px 190px 0 190px;
-        width: 100%;
-        p {
-          margin: 0;
-          font-size: 20px;
-          & + .form-control {
-            flex: inherit;
-            margin: 46px auto 48px auto;
-            width: 340px;
-            & + p {
-              margin-bottom: 30px;
-              font-size: 16px;
-              & + .desc {
-                margin-bottom: 60px;
+        padding: 32px 0;
+        & > div {
+          margin: 0 auto;
+          width: 650px;
+          p {
+            margin: 0;
+            font-size: 20px;
+            & + .form-control {
+              flex: inherit;
+              margin: 46px auto 48px auto;
+              width: 340px;
+              & + p {
+                margin-bottom: 30px;
                 font-size: 16px;
+                & + .desc {
+                  margin-bottom: 60px;
+                  font-size: 16px;
+                }
               }
             }
           }
@@ -1011,13 +1014,29 @@
       .form-group {
         display: flex;
         label {
-          margin-right: 0;
-          &[for="id"] + .input-group {
-            display: flex;
+          & + input {
+            width: calc(100% - 128px - 18px);
           }
+        }
+        .input-group {
+          width: calc(100% - 128px - 18px);
         }
       }
       .button-group {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        .form-group {
+          width: 100%;
+          label {
+            & + input {
+              width: calc(100% - 128px - 174px);
+            }
+          }
+          & + span {
+            margin-left: calc(128px + 18px);
+          }
+        }
         .btn {
           min-width: inherit;
           width: 150px;

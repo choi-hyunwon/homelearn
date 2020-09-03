@@ -216,13 +216,18 @@ body {
     background-size: 16px auto;
   }
 }
+.form-group {
+  .custom-select {
+    color: #aaa;
+  }
+}
 
 .empty {
   margin: 60px auto;
   color: #999;
   text-align: center;
   img {
-    max-width: 64px;
+    max-width: 80px;
   }
   p {
     margin-top: 12px;
@@ -411,13 +416,17 @@ body {
       }
     }
     .form-group {
+      display: flex;
+      flex-wrap: wrap;
       label {
         margin-right: 14px;
         min-width: 128px;
         & + input,
         & + select {
-          display: inline-block;
-          width: calc(100% - 118px - 18px);
+          width: calc(100% - 128px - 18px);
+          & + span {
+            margin-left: calc(128px + 18px);
+          }
         }
       }
       & + .form-group {
