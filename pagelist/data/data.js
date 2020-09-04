@@ -453,6 +453,12 @@ data.mypage = {
       'category': 'mypage',
       'page': '평가관리_없음'
     },
+    {
+      'stateClass': 'complete',
+      'url': '04_mypage_10_선생님회원_로고등록',
+      'category': 'mypage',
+      'page': '선생님회원_로고등록'
+    },
   ]
 }
 

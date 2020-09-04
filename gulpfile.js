@@ -70,11 +70,20 @@ function jsLib() {
     'src/js/src/bootstrap-datepicker.ko.min.js',
     'src/js/src/jquery.twbsPagination.js',
     'src/js/src/Chart.min.js',
-    'src/js/src/lang.js',
+    // 'src/js/src/lang.js',
   ];
   return gulp.src(sourceLib)
     .pipe(concat('bundle.js'))
     .pipe(gulp.dest('dist/js'))
+}
+
+function jsLang() {
+  let sourceLib = [
+    'src/js/src/lang.js',
+  ];
+  return gulp.src(sourceLib)
+    .pipe(concat('lang.js'))
+    .pipe(gulp.dest('dist/js/lang'))
 }
 
 function jsCommon() {
@@ -134,7 +143,7 @@ function setEnvDevelope(cb) {
 
 
 //task
-gulp.task("dev", gulp.series(setEnvDevelope, delDist, scss, copyImg, copyFonts, jsLib, jsCommon, htmlPage));
+gulp.task("dev", gulp.series(setEnvDevelope, delDist, scss, copyImg, copyFonts, jsLib, jsLang, jsCommon, htmlPage));
 gulp.task("dist", gulp.series(setEnvProduct, delDist, copyCss, copyImg, copyFonts, jsLib, jsCommon, htmlPage, beautify));
 gulp.task("watch", gulp.parallel(watchScss, watchHtml, watchInclude, watchJs, watchImg, watchFont));
 

@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="Referrer" content="origin"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="apple-mobile-web-app-title" content="HOMERUN_MARKET" />
+  <meta name="robots" content="index,nofollow"/>
+  <meta name="description" content="HOMERUN_MARKET"/>
+  <meta name="keywords" content="HOMERUN_MARKET"/>
+  <title>홈런MARKET</title>
+  <link type="text/css" rel="stylesheet" href="../css/bootstrap.css"/>
+  <link type="text/css" rel="stylesheet" href="../css/fonts/fontAwesomepro.css"/>
+  <script src="../js/bundle.js"></script>
+</head>
+
+<body>
+<div class="wrap">
+  <!--
+  제목 :  검색창 팝업 처리
+  날짜 :  2020.09.02
+  내용 :  _searchBox
+      - <a href="#" class="_searchBtn"> _searchBtn 클래스 추가  (열기)
+      - <div class="search-box _searchBox" style="display: block"> _searchBox 클래스 추가 style 제거 후, 사용
+      - <a href="#" class="btn-back _searchCloseBtn">  _searchCloseBtn 클래스 추가 (닫기)
+  -->
+  <div class="navbar main">
+    <div class="navbar-brand">
+      <a href="#"><img src="../img/common/img-main-logo.png" height="32" width="149"/></a>
+    </div>
+    <div class="navbar-gnb">
+      <ul class="navbar-nav flex-row">
+        <li class="nav-item active"><a href="#" class="nav-link">추천</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">초등</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">중등</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">고등</a></li>
+      </ul>
+    </div>
+    <div class="navbar-util">
+      <a href="#" class="_searchBtn"><img src="../img/common/btn-main-search-n.png" height="36" width="36"/></a>
+      <a href="#" data-trigger="drawer"><img src="../img/common/btn-main-user-off-n@2x.png" height="36" width="36"/></a>
+      <div tabindex="-1" class="drawer drawer-right">
+  <div class="drawer-mask"></div>
+  <div class="drawer-content-wrapper" style="width: 292px; ">
+    <div class="drawer-content">
+      <div class="drawer-wrapper-body">
+        <div class="drawer-header">
+          <div class="drawer-title">
+            <span class="grade">학부모 회원</span>
+            <a href="#" class="name">이크림</a>
+
+          </div>
+        </div>
+        <div class="drawer-body">
+          <div class="alram">
+            읽지 않은 알림 <span class="text-secondary">3개</span>가 있습니다.
+            <a href="#" class="setting d-inline" data-toggle="modal" data-target="#tagNotice"><span class="text-secondary">알람설정</span></a> <!-- a태그 및 클래스 추가 --- 2020.08.25 -->
+          </div>
+          <div class="alram">
+            읽지 않은 알림이 없습니다.
+            <a href="#" class="setting d-inline" data-toggle="modal" data-target="#tagNotice"><span class="text-secondary">알람설정</span></a> <!-- a태그 및 클래스 추가 --- 2020.08.25 -->
+          </div>
+          <hr class="line">
+          <div class="daylist">
+            <div class="date">오늘</div>
+            <ul>
+              <li>
+                <span class="desc"><span class="text-secondary">#인공지능과학기술</span>에 새로운 학습이 등록되었습니다.</span>
+                <span class="list">
+                  <img src="../img/common/m-alram-app-img.png" alt="">
+                  <em>뚜루아이와 함께하는 초등 수학 3학년</em>
+                  <!-- 알림함 목록에 읽지 않은 알림 표시 추가 -- 2020.08.28 -->
+                  <i class="new"><img src="../img/common/icon-list-badge-new@3x.png" alt="" width="16"></i>
+                </span>
+              </li>
+              <li>
+                <span class="desc"><span class="text-secondary">#인공지능과학기술</span>에 새로운 학습이 등록되었습니다.</span>
+                <span class="list">
+                  <img src="../img/common/m-alram-app-img.png" alt="">
+                  <em>뚜루아이와 함께하는 초등 수학 3학년</em>
+                  <!-- 알림함 목록에 읽지 않은 알림 표시 추가 -- 2020.08.28 -->
+                  <i class="new"><img src="../img/common/icon-list-badge-new@3x.png" alt="" width="16"></i>
+                </span>
+              </li>
+              <li>
+                <span class="desc"><span class="text-secondary">#인공지능과학기술</span>에 새로운 학습이 등록되었습니다.</span>
+                <span class="list">
+                  <img src="../img/common/m-alram-app-img.png" alt="">
+                  <em>뚜루아이와 함께하는 초등 수학 3학년</em>
+                </span>
+              </li>
+              <li>
+                <span class="desc"><span class="text-secondary">#인공지능과학기술</span>에 새로운 학습이 등록되었습니다.</span>
+                <span class="list">
+                  <img src="../img/common/m-alram-app-img.png" alt="">
+                  <em>뚜루아이와 함께하는 초등 수학 3학년</em>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="daylist">
+            <div class="date">오늘</div>
+            <ul>
+              <li>
+                <span class="desc"><span class="text-secondary">#인공지능과학기술</span>에 새로운 학습이 등록되었습니다.</span>
+                <span class="list">
+                  <img src="../img/common/m-alram-app-img.png" alt="">
+                  <em>뚜루아이와 함께하는 초등 수학 3학년</em>
+                </span>
+              </li>
+              <li>
+                <span class="desc"><span class="text-secondary">#인공지능과학기술</span>에 새로운 학습이 등록되었습니다.</span>
+                <span class="list">
+                  <img src="../img/common/m-alram-app-img.png" alt="">
+                  <em>뚜루아이와 함께하는 초등 수학 3학년</em>
+                </span>
+              </li>
+              <li>
+                <span class="desc"><span class="text-secondary">#인공지능과학기술</span>에 새로운 학습이 등록되었습니다.</span>
+                <span class="list">
+                  <img src="../img/common/m-alram-app-img.png" alt="">
+                  <em>뚜루아이와 함께하는 초등 수학 3학년</em>
+                </span>
+              </li>
+              <li>
+                <span class="desc"><span class="text-secondary">#인공지능과학기술</span>에 새로운 학습이 등록되었습니다.</span>
+                <span class="list">
+                  <img src="../img/common/m-alram-app-img.png" alt="">
+                  <em>뚜루아이와 함께하는 초등 수학 3학년</em>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="empty">
+            <img src="../img/common/icon-80-alram.png" alt="알람">
+            <span>알림함이 비었습니다.</span>
+          </div>
+        </div>
+        <div class="drawer-footer">
+          <a href="#">로그아웃</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+    <div class="navbar-btn-eco">
+      <a href="#">
+        <img src="../img/common/btn-main-homerun-eco-n.png" class="d-none d-md-block"/>
+        <img src="../img/common/btn-main-homerun-eco-n-mobile.png" class="d-xs-block d-md-none"/>
+      </a>
+    </div>
+    <div class="navbar-gnb-sm d-md-none mt-rem-6">
+      <ul class="navbar-nav flex-row">
+        <li class="nav-item active"><a href="#" class="nav-link">추천</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">초등</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">중등</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">고등</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="search-box _searchBox" style="display: block">
+    <div class="input-group">
+      <a href="#" class="btn-back _searchCloseBtn"><img src="../img/common/btn-search-back-n@3x.png" alt=""></a>
+      <input class="form-control _search" type="search" placeholder="검색어를 입력하세요" aria-label="Search">
+      <a href="#" class="btn-search"><img src="../img/common/btn-search-color-n@3x.png" alt=""></a>
+      <a href="#" class="btn-search-close _searchClear"><img src="../img/common/btn-text-delete-n@3x.png" alt=""
+                                                             width="16" height="16"></a>
+    </div>
+    <div class="search-content">
+      <div class="search-list _searchList">
+        <ul>
+          <li>
+            <a class="item-1" href="#">
+              <span class="img"><img src="../img/common/icon-24-search-auto@3x.png" alt=""></span>
+              <span class="text">초등 수학</span>
+            </a>
+            <div class="item-2">
+              <a href="#"><img src="../img/common/history-button-n@3x.png" alt="" width="20" height="20"></a>
+            </div>
+          </li>
+          <li>
+            <a class="item-1" href="#">
+              <span class="img"><img src="../img/common/icon-24-search-auto@3x.png" alt=""></span>
+              <span class="text">초등 영어</span>
+            </a>
+            <div class="item-2">
+              <a href="#"><img src="../img/common/history-button-n@3x.png" alt="" width="20" height="20"></a>
+            </div>
+          </li>
+          <li>
+            <a class="item-1" href="#">
+              <span class="img"><img src="../img/common/icon-24-search-auto@3x.png" alt=""></span>
+              <span class="text">초등 국어</span>
+            </a>
+            <div class="item-2">
+              <a href="#"><img src="../img/common/history-button-n@3x.png" alt="" width="20" height="20"></a>
+            </div>
+          </li>
+          <li>
+            <a class="item-1" href="#">
+              <span class="img"><img src="../img/common/icon-24-search-auto@3x.png" alt=""></span>
+              <span class="text">초등 사회</span>
+            </a>
+            <div class="item-2">
+              <a href="#"><img src="../img/common/history-button-n@3x.png" alt="" width="20" height="20"></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- S content -->
+</div>
+<div class="fixed-btn">
+  <ul>
+    <li><a href="#" class="cs"><img src="../img/common/btn-cs-n.png" /></a></li>
+    <li><a href="#" class="top"><img src="../img/common/btn-top-n.png" /></a></li>
+  </ul>
+</div>
+
+<footer>
+  <div class="container-footer">
+    <div class="policy">
+      <ul class="clearfix">
+        <li class="item"><a href="#">회사소개</a></li>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보처리방침</a></li>
+      </ul>
+    </div>
+    <div class="family">
+      <div class="input-group">
+        <select name="" id="">
+          <option value="">FAMILY SITE</option>
+          <option value="">아이스크림홈런</option>
+          <option value="">아이스크림홈런중등</option>
+          <option value="">아이스크림에듀</option>
+          <option value="">아이스크림미디어</option>
+          <option value="">아이스크림</option>
+          <option value="">아이스크림몰</option>
+          <option value="">아이스크림연수원</option>
+        </select>
+      </div>
+    </div>
+    <address>
+      <p>
+          <span class="address">(주)아이스크림에듀 서울특별시 강남구 테헤란로88길 15 대표 : 조용상<br>
+            상담 및 문의전화 : 1544-0910 팩스 : (02)3448-5262 사업자등록번호 : 120-87-97004<br>
+            통신판매신고번호 : 제2013-서울강남-01379호<br>
+            호스팅사업자 : AWS<br><br></span>
+        <span class="copyright">Copyright © i-Scream edu Corporation. All rights reserved.</span>
+      </p>
+    </address>
+  </div>
+</footer>
+
+<!-- E content -->
+</body>
+</html>
