@@ -33,6 +33,10 @@
   color: $secondary;
 }
 
+em {
+  font-style: normal !important;
+}
+
 /* 학습중 라벨 */
 .badge-list {
   display: inline-block;

@@ -7,12 +7,14 @@
   <div class="container">
     <div class="tabs mb-2 mb-rem-md-4">
       <ul class="list">
-        <li class="active"><a href="#">아이디 찾기</a></li>
-        <li><a href="#">비밀번호 찾기</a></li>
+        <li class="active"><a href="#" data-text="LI_0002_04">아이디 찾기</a></li>
+        <li><a href="#" data-text="LI_0002_05">비밀번호 찾기</a></li>
       </ul>
     </div>
     <div class="member findidpw mb-3 mb-md-2">
-      <div class="title mb-2">회원정보에 등록한 <span class="font-weight-bold">휴대폰번호</span>를 입력하세요.</div>
+      <!-- S 다국어 적용을 위한 마크업 변경 -- 2020.09.04 -->
+      <div class="title mb-2"><em data-text="LI_0005_15">회원정보에 등록한</em> <span class="font-weight-bold" data-text="LI_0005_16">휴대폰번호</span><em data-text="LI_0005_17">를 입력하세요.</em></div>
+      <!-- E 다국어 적용을 위한 마크업 변경 -- 2020.09.04 -->
       <div class="form-group">
         <label for="name" class="font-weight-bold" data-text="LI_0013_04">이름 <i class="require"><img src="../img/common/icon-16-dot@2x.png" height="16" width="16"/></i></label>
         <input type="text" placeholder="" value="김철수" id="name" class="form-control">
@@ -31,7 +33,7 @@
       <div class="form-group mb-2 mb-rem-md-4">
         <div class="input-group">
           <input type="password" disabled placeholder="인증번호를 입력하세요." data-placeholder="LI_0007_02"  class="form-control">
-          <span class="timer">03:00</span>
+          <span class="timer" data-text="LI_0007_03">03:00</span>
           <button class="btn ml-0 px-1 btn-check" disabled data-text="LI_0007_04">인증 하기< /button>
         </div>
         <span class="text text-error font-response-1 pt-0" data-text="LI_0007_06">인증에 실패했습니다. 인증번호를 재전송 하세요.</span>
