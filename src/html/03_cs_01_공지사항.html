@@ -1,25 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="Referrer" content="origin" />
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="apple-mobile-web-app-title" content="HOMERUN_MARKET" />
-    <meta name="robots" content="index,nofollow" />
-    <meta name="description" content="HOMERUN_MARKET" />
-    <meta name="keywords" content="HOMERUN_MARKET" />
-    <title>홈런MARKET</title>
-    <link type="text/css" rel="stylesheet" href="../css/bootstrap.css" />
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="../css/fonts/fontAwesomepro.css"
-    />
-    <script src="../js/bundle.js"></script>
-  </head>
-
-  <body>
+@@include('../html/include/head.html')
+<body>@@include('../html/include/button.html')
     <div class="wrap p-no cs-center">
       <div class="navbar-sub">
         <div class="navbar-brand">
@@ -42,7 +24,7 @@
               role="tab"
               aria-controls="nav-notice"
               aria-selected="true"
-              >공지사항</a
+               data-text="CC_0001_03">공지사항</a
             >
             <a
               class="nav-item nav-link"
@@ -52,7 +34,7 @@
               role="tab"
               aria-controls="nav-qna"
               aria-selected="false"
-              >1:1 문의 내역</a
+               data-text="CC_0001_04">1:1 문의 내역</a
             >
             <a
               class="nav-item nav-link"
@@ -62,7 +44,7 @@
               role="tab"
               aria-controls="nav-faq"
               aria-selected="false"
-              >자주 묻는 질문</a
+               data-text="CC_0001_05">자주 묻는 질문</a
             >
           </div>
         </div>
@@ -172,7 +154,7 @@
             aria-labelledby="nav-qna-tab"
           >
             <div class="box">
-              <p class="desc">
+              <p class="desc" data-text="CC_0003_01">
                 학습 문의 혹은 마켓플레이스 이용에 관한 문의는 “1:1문의하기”를
                 이용하세요. 각 학습 상품에 대한 리뷰, 평가에 대한 정보는 상세
                 목록을 참고하세요.
