@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ko">
 @@include('../html/include/head.html')
-<body>
+<body>@@include('../html/include/button.html')
 <div class="wrap-bg">
   <div class="bg bg_detail">
     <div class="d-none d-md-block" style="background: url(../img/_temp/img-sub-bg.png) no-repeat center center /cover"></div>
@@ -33,33 +33,33 @@
           </div>
           <div class="card-spec clearfix">
             <div class="spec">
-              <span class="tit">학습 구성</span>
+              <span class="tit" data-text="AD_0001_01">학습 구성</span>
               <span class="desc">총 6개 레벨</span>
             </div>
             <div class="spec">
-              <span class="tit">권장 학년</span>
+              <span class="tit" data-text="AD_0001_02">권장 학년</span>
               <span class="desc">초1-2학년</span>
             </div>
             <div class="spec">
-              <span class="tit">학습 기간</span>
+              <span class="tit" data-text="AD_0001_03">학습 기간</span>
               <span class="desc">3개월 (하루 30분)</span>
             </div>
           </div>
           <div class="card-price">
-            <span class="state">현재 <span class="text-secondary font-weight-bold">김홈런</span> 님이 학습 중이에요.</span>
+            <span class="state" data-text="AD_0001_04">현재 <span class="text-secondary font-weight-bold">김홈런</span> 님이 학습 중이에요.</span>
             <span class="total_price"><span class="plan">6개월 약정</span><span class="price">￦99,000</span><span class="range">/ 월</span></span>
           </div>
           <div class="card-btn">
-            <a href="#" class="btn btn-outline btn-radius">미리보기</a>
-            <a href="#" class="btn btn-radius btn-primary">결제하기</a>
+            <a href="#" class="btn btn-outline btn-radius" data-text="AD_0001_05">미리보기</a>
+            <a href="#" class="btn btn-radius btn-primary" data-text="AD_0001_06">결제하기</a>
           </div>
         </div>
         <div class="detail-page">
           <nav>
             <div class="nav nav-tabs-detail" id="nav-tab" role="tablist">
-              <a class="nav-item nav-link active" id="intro-home-tab" data-toggle="tab" href="#intro-home" role="tab" aria-controls="intro-home" aria-selected="true">학습 소개</a>
-              <a class="nav-item nav-link " id="nav-review-tab" data-toggle="tab" href="#nav-review" role="tab" aria-controls="nav-review" aria-selected="false">리뷰</a>
-              <a class="nav-item nav-link" id="nav-relative-tab" data-toggle="tab" href="#nav-relative" role="tab" aria-controls="nav-relative" aria-selected="false">관련 학습</a>
+              <a class="nav-item nav-link active" id="intro-home-tab" data-toggle="tab" href="#intro-home" role="tab" aria-controls="intro-home" aria-selected="true" data-text="AD_0009_02">학습 소개</a>
+              <a class="nav-item nav-link " id="nav-review-tab" data-toggle="tab" href="#nav-review" role="tab" aria-controls="nav-review" aria-selected="false" data-text="AD_0009_03">리뷰</a>
+              <a class="nav-item nav-link" id="nav-relative-tab" data-toggle="tab" href="#nav-relative" role="tab" aria-controls="nav-relative" aria-selected="false" data-text="AD_0009_04">관련 학습</a>
             </div>
 
             @@include('../html/include/detail-content.html')
@@ -69,8 +69,8 @@
       </div>
       <div class="sticky-btn">
         <div class="cont">
-          <a href="#" class="btn btn-white btn-radius">미리보기</a>
-          <a href="#" class="btn btn-outline btn-radius">결제하기</a>
+          <a href="#" class="btn btn-white btn-radius" data-text="AD_0001_05">미리보기</a>
+          <a href="#" class="btn btn-outline btn-radius" data-text="AD_0001_06">결제하기</a>
         </div>
       </div>
     </div>

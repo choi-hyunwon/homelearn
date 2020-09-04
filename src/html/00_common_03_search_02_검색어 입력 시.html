@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ko">
 @@include('../html/include/head.html')
-<body>
+<body>@@include('../html/include/button.html')
 <div class="wrap">
   <!--
   제목 :  검색창 팝업 처리
@@ -17,10 +17,10 @@
     </div>
     <div class="navbar-gnb">
       <ul class="navbar-nav flex-row">
-        <li class="nav-item active"><a href="#" class="nav-link">추천</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">초등</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">중등</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">고등</a></li>
+        <li class="nav-item active"><a href="#" class="nav-link" data-text="MA_0013_02">추천</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" data-text="MA_0013_03">초등</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" data-text="MA_0013_04">중등</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" data-text="MA_0013_05">고등</a></li>
       </ul>
     </div>
     <div class="navbar-util">
@@ -36,10 +36,10 @@
     </div>
     <div class="navbar-gnb-sm d-md-none mt-rem-6">
       <ul class="navbar-nav flex-row">
-        <li class="nav-item active"><a href="#" class="nav-link">추천</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">초등</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">중등</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">고등</a></li>
+        <li class="nav-item active"><a href="#" class="nav-link" data-text="MA_0013_02">추천</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" data-text="MA_0013_03">초등</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" data-text="MA_0013_04">중등</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" data-text="MA_0013_05">고등</a></li>
       </ul>
     </div>
   </div>
@@ -47,7 +47,7 @@
   <div class="search-box _searchBox" style="display: block">
     <div class="input-group">
       <a href="#" class="btn-back _searchCloseBtn"><img src="../img/common/btn-search-back-n@3x.png" alt=""></a>
-      <input class="form-control _search" type="search" placeholder="검색어를 입력하세요" aria-label="Search">
+      <input class="form-control _search" type="search" placeholder="검색어를 입력하세요" data-placeholder="CU_0010_01"  aria-label="Search">
       <a href="#" class="btn-search"><img src="../img/common/btn-search-color-n@3x.png" alt=""></a>
       <a href="#" class="btn-search-close _searchClear"><img src="../img/common/btn-text-delete-n@3x.png" alt=""
                                                              width="16" height="16"></a>

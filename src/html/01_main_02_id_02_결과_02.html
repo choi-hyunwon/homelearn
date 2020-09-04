@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ko">
 @@include('../html/include/head.html')
-<body>
+<body>@@include('../html/include/button.html')
 <div class="wrap">
   @@include('../html/include/navbar.html')
   <div class="container">
@@ -14,10 +14,10 @@
     <div class="member result mb-3 mb-md-2">
       <div class="empty mb-2 mb-rem-md-4">
         <p class="mb-1 pt-3"><img src="../img/common/icon-clear-list.png"></p>
-        <p><span class="font-weight-bold">입력하신 정보와 일치하는 아이디가 없습니다.</span> <br>아이디찾기를 다시 시도하거나, 회원가입을 진행해주세요.</p>
+        <p  data-text="LI_0009_04"><span class="font-weight-bold">입력하신 정보와 일치하는 아이디가 없습니다.</span> <br>아이디찾기를 다시 시도하거나, 회원가입을 진행해주세요.</p>
       </div>
       <div class="btn-login mb-2">
-        <button class="btn btn-lg btn-block">재검색</button>
+        <button class="btn btn-lg btn-block"  data-text="LI_0009_05">재검색</button>
       </div>
     </div>
   </div>

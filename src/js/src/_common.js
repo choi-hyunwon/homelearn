@@ -156,6 +156,7 @@ front.common = (function () {
       $('._searchBox').hide();
     })
   };
+
   var drawer = function () {
 
     $(function () {
@@ -188,3 +189,42 @@ front.common = (function () {
 $(function () {
   front.common.init();
 });
+
+// 언어 설정
+window.onload = () => {
+  let koBtn = document.getElementById("koBtn");
+  let enBtn = document.getElementById("enBtn");
+  let setLanguage = (lang) => {
+    let textList = Array.prototype.slice.call(document.querySelectorAll('[data-text]'));
+
+    textList.map( v => {
+
+      let child = v.firstChild;
+      while (child) {
+        if (child.nodeType == 3) {
+          child.data = langData[lang][v.dataset.text];
+          break;
+        }
+        child = child.nextSibling;
+      }
+    });
+
+    let urlList = Array.prototype.slice.call(document.querySelectorAll('[data-url]'));
+    urlList.map( v => {
+      v.src = langData[lang][v.dataset.url]
+    });
+
+    let placeholderList = Array.prototype.slice.call(document.querySelectorAll('[data-placeholder]'));
+    placeholderList.map( v => {
+      v.placeholder = langData[lang][v.dataset.placeholder]
+    });
+  };
+  koBtn.addEventListener("click" , () => {
+    setLanguage("ko");
+  });
+  enBtn.addEventListener("click" , () => {
+    setLanguage("en");
+  });
+  setLanguage("ko");
+};
+

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ko">
 @@include('../html/include/head.html')
-<body>
+<body>@@include('../html/include/button.html')
 <div class="wrap p-no">
 
   <div class="container-lg container-fluid px-rem-md-3 px-rem-0">
@@ -44,7 +44,7 @@
             <div class="card-header" id="headingFirstMenu" data-toggle="collapse" data-target="#collapseFirstMenu"
                  aria-expanded="true" aria-controls="collapseFirstMenu">
               <div class="title-area">
-                <span class="title text-ellipsis">학습할 자녀</span>
+                <span class="title text-ellipsis" data-text="AD_0023_01">학습할 자녀</span>
                 <a href="#" class="btn-accordion"><span class="img"></span></a>
               </div>
               <div class="t-selected">
@@ -54,7 +54,7 @@
             <div id="collapseFirstMenu" class="collapse show" aria-labelledby="headingFirstMenu"
                  data-parent="#paymentAccordion">
               <div class="card-body">
-                <p class="text-top">학습관 이용 자녀만 학습이 가능합니다.</p>
+                <p class="text-top" data-text="AD_0025_06">학습관 이용 자녀만 학습이 가능합니다.</p>
                 <ul class="user-list">
                   <li>
                     <div class="custom-control custom-radio custom-control-inline">
@@ -71,12 +71,12 @@
                   <li>
                     <div class="custom-control custom-radio custom-control-inline">
                       <input type="radio" id="children3" name="name" class="custom-control-input line" disabled>
-                      <label class="custom-control-label" for="children3">김홈런<span class="badge-list">학습중</span><span class="desc">(kim_homelearning/초3)</span></label>
+                      <label class="custom-control-label" for="children3">김홈런<span class="badge-list" data-text="CU_0023_02">학습중</span><span class="desc">(kim_homelearning/초3)</span></label>
                     </div>
                   </li>
                 </ul>
                 <div class="btn-wrap">
-                  <a href="#" class="btn btn-round">다음</a>
+                  <a href="#" class="btn btn-round" data-text="AD_0023_02">다음</a>
                 </div>
               </div>
             </div>
@@ -87,44 +87,44 @@
             <div class="card-header" id="headingSecondMenu" data-toggle="collapse" data-target="#collapseSecondMenu"
                  aria-expanded="false" aria-controls="collapseSecondMenu">
               <div class="title-area">
-                <span class="title text-ellipsis">배송지</span>
+                <span class="title text-ellipsis" data-text="AD_0028_01">배송지</span>
                 <a href="#" class="btn-accordion"><span class="img"></span></a>
               </div>
               <div class="t-selected">
-                <span>선택 미완료</span>
+                <span data-text="AD_0025_04">선택 미완료</span>
               </div>
             </div>
             <div id="collapseSecondMenu" class="collapse" aria-labelledby="headingSecondMenu"
                  data-parent="#paymentAccordion">
               <div class="card-body">
                 <div class="delivery-info">
-                  <p class="desc"><i class="required"></i>항목은 필수 입력 항목입니다.</p>
+                  <p class="desc" data-text="AD_0028_02"><i class="required"></i>항목은 필수 입력 항목입니다.</p>
                   <div class="checkbox">
-                    <div class="title">배송지 선택<i class="required"></i></div>
+                    <div class="title" data-text="AD_0028_03">배송지 선택<i class="required"></i></div>
                     <div class="custom-control custom-radio custom-control-inline">
                       <input type="radio" id="type1" name="delivery" class="custom-control-input line">
-                      <label class="custom-control-label" for="type1">회원 정보와 동일</label>
+                      <label class="custom-control-label" for="type1" data-text="AD_0028_04">회원 정보와 동일</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
                       <input type="radio" id="type2" name="delivery" class="custom-control-input line" checked="">
-                      <label class="custom-control-label" for="type2">신규 등록</label>
+                      <label class="custom-control-label" for="type2" data-text="AD_0028_05">신규 등록</label>
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="rName" class="font-weight-bold">받으시는 분<i class="required"></i></label>
+                    <label for="rName" class="font-weight-bold" data-text="AD_0028_06">받으시는 분<i class="required"></i></label>
                     <input type="text" id="rName"  class="form-control">
                   </div>
                   <div class="form-group">
                     <div class="button-group mb-0">
-                      <label for="address" class="font-weight-bold">배송지 주소<i class="required"></i></label>
+                      <label for="address" class="font-weight-bold" data-text="AD_0028_07">배송지 주소<i class="required"></i></label>
                       <input type="text" id="address" class="form-control mb-md-0">
-                      <button class="btn btn-outline-primary">우편번호</button>
+                      <button class="btn btn-outline-primary" data-text="AD_0028_08">우편번호</button>
                     </div>
                     <input type="text" title="address" class="form-control mb-0 float-md-right">
                     <input type="text" title="address" class="form-control float-md-right">
                   </div>
                   <div class="form-group">
-                    <label for="phone" class="font-weight-bold">휴대폰 번호<i class="required"></i></label>
+                    <label for="phone" class="font-weight-bold" data-text="AD_0028_09">휴대폰 번호<i class="required"></i></label>
                     <div class="telephone">
                       <select id="phone" class="custom-select form-control" disabled>
                         <option selected="">010</option>
@@ -141,7 +141,7 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="phone2" class="font-weight-bold">전화 번호</label>
+                    <label for="phone2" class="font-weight-bold" data-text="AD_0028_10">전화 번호</label>
                     <div class="telephone">
                       <select id="phone2" class="custom-select form-control">
                         <option selected="">02</option>
@@ -159,15 +159,15 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="email" class="font-weight-bold">이메일</label>
+                    <label for="email" class="font-weight-bold" data-text="AD_0028_11">이메일</label>
                     <div class="email">
                       <input type="text" id="email" class="form-control">
                       <span class="char">@</span>
                       <input type="text" title="email" class="form-control mr-0">
                       <select title="email" class="custom-select form-control">
-                        <option disabled="" selected="">선택</option>
+                        <option disabled="" selected="" data-text="AD_0028_12">선택<</option>
                         <option>네이버</option>
-                        <option>다음</option>
+                        <option data-text="AD_0023_02">다음</option>
                         <option>구글</option>
                         <option>네이트</option>
                         <option>핫메일</option>
@@ -178,11 +178,11 @@
                   </div>
                   <div class="form-group">
                     <label for="memo" class="font-weight-bold">배송시 요구사항</label>
-                    <textarea class="form-control" id="memo" placeholder="한글 50자, 영문 100자 이내로 입력해주세요."></textarea>
+                    <textarea class="form-control" id="memo"  placeholder="한글 50자, 영문 100자 이내로 입력해주세요." data-placeholder="AD_0028_13">></textarea>
                   </div>
                 </div>
                 <div class="btn-wrap">
-                  <a href="#" class="btn btn-round disabled">다음</a>
+                  <a href="#" class="btn btn-round disabled" data-text="AD_0023_02">다음</a>
                 </div>
               </div>
             </div>
@@ -193,7 +193,7 @@
             <div class="card-header" id="headingThirdMenu" data-toggle="collapse" data-target="#collapseThirdMenu"
                  aria-expanded="false" aria-controls="collapseThirdMenu">
               <div class="title-area">
-                <span class="title text-ellipsis">총 결제 금액</span>
+                <span class="title text-ellipsis" data-text="AD_0033_01">총 결제 금액</span>
                 <a href="#" class="btn-accordion"><span class="img"></span></a>
               </div>
               <div class="t-selected">
@@ -205,13 +205,13 @@
               <div class="card-body">
                 <div class="total-list">
                   <div class="total-price"><span class="price">￦198,000</span>/ 월 (2명 X 99,000/월)</div>
-                  <p class="desc-01">
+                  <p class="desc-01" data-text="AD_0033_02">
                     다음 정기 결제는 현재 구독이 만료되면 시작됩니다. 갱신일 하루 전까지 마이페이지에서 취소할 수 있습니다. 취소할 때까지 구독이 자동 갱신됩니다.
                   </p>
-                  <p class="desc-02">다음 결제일 <span class="font-weight-bold">2020. 12. 02</span> 결제 예정</p>
+                  <p class="desc-02" data-text="AD_0033_03">다음 결제일 <span class="font-weight-bold">2020. 12. 02</span> 결제 예정</p>
                 </div>
                 <div class="total-bottom">
-                  <p class="title">약관 동의<i><img src="../img/common/icon-16-dot@3x.png" alt="" width="16"></i></p>
+                  <p class="title" data-text="AD_0033_06">약관 동의<i><img src="../img/common/icon-16-dot@3x.png" alt="" width="16"></i></p>
                   <ul>
                     <li>
                       <div class="custom-control custom-checkbox d-inline-block mr-2 mr-rem-md-1">

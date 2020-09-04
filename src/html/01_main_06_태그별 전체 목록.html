@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ko">
 @@include('../html/include/head.html')
-<body>
+<body>@@include('../html/include/button.html')
 <div class="wrap p-no">
 
   <div class="navbar-sub">
@@ -16,11 +16,11 @@
   </div>
 
   <div class="top-area">
-    <div><span class="font-weight-bold color-text">6개</span>의 학습이 있습니다.</div>
+    <div data-text="MA_0016_01"><span class="font-weight-bold color-text">6개</span>의 학습이 있습니다.</div>
     <div class="tab-order">
       <ul class="clearfix">
-        <li class="active" data-target="pannel1"><a href="#">인기순</a></li>
-        <li data-target="pannel2"><a href="#">최신순</a></li>
+        <li class="active" data-target="pannel1"><a href="#" data-text="MA_0016_03">인기순</a></li>
+        <li data-target="pannel2"><a href="#" data-text="MA_0016_04">최신순</a></li>
       </ul>
     </div>
   </div>
@@ -543,7 +543,7 @@
           </ul>
         </div>
         <div class="more-btn ">
-          <a href="#" class="btn btn-block btn-more">더보기<i class="sprite btn-open-color-n"></i></a>
+          <a href="#" class="btn btn-block btn-more" data-text="CU_0023_01">더보기<i class="sprite btn-open-color-n"></i></a>
         </div>
       </div> <!-- tag-list-all 클래스 추가 -->
     </div>
@@ -1116,7 +1116,7 @@
           </ul>
         </div>
         <div class="more-btn px-rem-2 px-rem-md-0">
-          <a href="#" class="btn btn-block btn-more">더보기<i class="sprite btn-open-color-n"></i></a>
+          <a href="#" class="btn btn-block btn-more" data-text="CU_0023_01">더보기<i class="sprite btn-open-color-n"></i></a>
         </div>
       </div> <!-- tag-list-all 클래스 추가 -->
     </div>

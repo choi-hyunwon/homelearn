@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ko">
 @@include('../html/include/head.html')
-<body>
+<body>@@include('../html/include/button.html')
 <div class="wrap">
   @@include('../html/include/navbar.html')
   <div class="container">
@@ -14,34 +14,34 @@
     <div class="member findidpw mb-3 mb-md-2">
       <div class="title mb-2">회원정보에 등록한 <span class="font-weight-bold">휴대폰번호</span>를 입력하세요.</div>
       <div class="form-group">
-        <label for="name" class="font-weight-bold">이름 <i class="require"><img src="../img/common/icon-16-dot@2x.png" height="16" width="16"/></i></label>
+        <label for="name" class="font-weight-bold" data-text="LI_0013_04">이름 <i class="require"><img src="../img/common/icon-16-dot@2x.png" height="16" width="16"/></i></label>
         <input type="text" placeholder="" id="name" class="form-control">
-        <span class="text text-error font-response-1 pt-0">이름을 입력해주세요.</span>
+        <span class="text text-error font-response-1 pt-0" data-text="LI_0005_09">이름을 입력해주세요.</span>
       </div>
 
 
 
 
       <div class="form-group mb-0 mb-md-2">
-        <label for="phone" class="font-weight-bold">휴대폰 번호 <i class="require"><img src="../img/common/icon-16-dot@2x.png" height="16" width="16"/></i></label>
+        <label for="phone" class="font-weight-bold" data-text="LI_0005_05">휴대폰 번호 <i class="require"><img src="../img/common/icon-16-dot@2x.png" height="16" width="16"/></i></label>
         <div class="input-group">
-          <input type="text" placeholder="-없이 숫자만 입력해주세요." id="phone" value="014052348962" class="form-control">
-          <button class="btn btn-outline ml-0 px-1 btn-check">재요청</button>
+          <input type="text" placeholder="-없이 숫자만 입력해주세요." data-placeholder="LI_0005_06" id="phone" value="014052348962" class="form-control">
+          <button class="btn btn-outline ml-0 px-1 btn-check" data-text="LI_0007_01">재요청</button>
         </div>
-        <span class="text text-error font-response-1 pt-0">인증에 실패했습니다. 인증번호를 재전송 하세요.</span>
+        <span class="text text-error font-response-1 pt-0" data-text="LI_0007_06">인증에 실패했습니다. 인증번호를 재전송 하세요.</span>
 
       </div>
       <div class="form-group mb-2 mb-rem-md-4">
         <div class="input-group">
-          <input type="password" placeholder="인증번호를 입력하세요." class="form-control">
+          <input type="password" placeholder="인증번호를 입력하세요." data-placeholder="LI_0007_02"  class="form-control">
           <span class="timer">03:00</span>
-          <button class="btn ml-0 px-1 btn-check" data-toggle="modal" data-target="#alert1">인증 하기</button>
+          <button class="btn ml-0 px-1 btn-check" data-toggle="modal" data-target="#alert1" data-text="LI_0007_04">인증 하기< /button>
         </div>
         <span class="text text-error font-response-1 pt-0">인증번호를 입력하세요.</span>
-        <span class="text text-secondary font-response-1 pt-0">입력하신 휴대폰 번호로 인증번호를 발송하였습니다.</span>
+        <span class="text text-secondary font-response-1 pt-0" data-text="LI_0007_05">입력하신 휴대폰 번호로 인증번호를 발송하였습니다.</span>
       </div>
       <div class="btn-login mb-2">
-        <button class="btn btn-lg btn-block">확인</button>
+        <button class="btn btn-lg btn-block" data-text="CU_0007_04">확인</button>
       </div>
     </div>
   </div>
@@ -55,12 +55,12 @@
 <div class="modal fade" id="alert1" tabindex="-1" role="dialog" aria-labelledby="alert1" aria-hidden="true">
   <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
     <div class="modal-content">
-      <div class="modal-body">
+      <div class="modal-body" data-text="LI_0007_09">
         인증시간이 만료되었습니다.<br>
         인증번호를 다시 전송합니다.
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-sm btn-block" data-dismiss="modal">확인</button>
+        <button type="button" class="btn btn-sm btn-block" data-dismiss="modal" data-text="CU_0007_04">확인</button>
       </div>
     </div>
   </div>

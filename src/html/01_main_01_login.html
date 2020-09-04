@@ -1,37 +1,37 @@
 <!doctype html>
 <html lang="ko">
 @@include('../html/include/head.html')
-<body>
+<body>@@include('../html/include/button.html')
 <div class="wrap">
   @@include('../html/include/navbar.html')
   <div class="container">
     <div class="member login mb-3 mb-md-2">
-      <div class="title">아이스크림 홈런 로그인</div>
+      <div class="title" data-text="LI_0001_01">아이스크림 홈런 로그인</div>
       <div class="form-group w100p">
-        <input type="text" placeholder="아이디" class="form-control">
-        <div class="text text-error font-response-1 pt-0">아이디를 입력해주세요.</div>
+        <input type="text" placeholder="아이디" data-placeholder="LI_0001_02"  class="form-control">
+        <div class="text text-error font-response-1 pt-0" data-text="LI_0001_07">아이디를 입력해주세요.</div>
       </div>
       <div class="form-group w100p">
-        <input type="password" placeholder="비밀번호" class="form-control">
-        <div class="text text-error font-response-1 pt-0">비밀번호를 입력해주세요.</div>
+        <input type="password" placeholder="비밀번호" data-placeholder="LI_0001_03"  class="form-control">
+        <div class="text text-error font-response-1 pt-0" data-text="LI_0001_08">비밀번호를 입력해주세요.</div>
       </div>
-      <div class="text text-error font-response-1 pt-0 mb-1">아이디 또는 비밀번호가 일치하지 않습니다. 다시 입력해주세요.</div>
+      <div class="text text-error font-response-1 pt-0 mb-1" data-text="LI_0001_09">아이디 또는 비밀번호가 일치하지 않습니다. 다시 입력해주세요.</div>
       <div class="custom-control custom-checkbox mb-2 mb-md-3">
         <input type="checkbox" class="custom-control-input" id="saveId">
-        <label class="custom-control-label" for="saveId">아이디 저장</label>
+        <label class="custom-control-label" for="saveId" data-text="LI_0001_04">아이디 저장</label>
       </div>
 
       <div class="btn-login mb-0 mb-md-2">
-        <button class="btn btn-lg btn-block">로그인</button>
+        <button class="btn btn-lg btn-block" data-text="LI_0001_05">로그인</button>
       </div>
       <div class="util-group">
-        <a href="#" class="btn-link">학부모 회원가입</a>
-        <a href="#" class="btn-link" data-toggle="modal" data-target="#alert">선생님 회원가입</a><br>
-        <a href="#" class="btn-link last">아이디/비밀번호 찾기</a>
+        <a href="#" class="btn-link" data-text="LI_0001_10">학부모 회원가입</a>
+        <a href="#" class="btn-link" data-toggle="modal" data-target="#alert" data-text="LI_0001_11">선생님 회원가입</a><br>
+        <a href="#" class="btn-link last" data-text="LI_0002_03">아이디/비밀번호 찾기</a>
       </div>
     </div>
     <div class="sns_login mb-5 mb-md-1">
-      <div class="title mb-1">SNS 로그인</div>
+      <div class="title mb-1" data-text="LI_0001_06">SNS 로그인</div>
       <div class="btn-sns">
         <ul class="clearfix">
           <li><a href="#"><img src="../img/common/ic-login-facebook-n.png" height="80" width="80"/></a></li>
@@ -52,13 +52,13 @@
 <div class="modal fade" id="alert" tabindex="-1" role="dialog" aria-labelledby="alert" aria-hidden="true">
   <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
     <div class="modal-content">
-      <div class="modal-body">
+      <div class="modal-body" data-text="LI_0002_01">
         회원가입을 원하는 선생님께서는 <br>
         홈런 고객감동센터 1544-0910으로 <br>
         연락하여 주시길 바랍니다.
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-sm btn-block" data-dismiss="modal">확인</button>
+        <button type="button" class="btn btn-sm btn-block" data-dismiss="modal" data-text="CU_0007_04">확인</button>
       </div>
     </div>
   </div>

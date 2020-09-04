@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="ko">
 @@include('../html/include/head.html')
-<body>
+<body>@@include('../html/include/button.html')
 <div class="wrap p-no">
 
   <div class="navbar-sub event"> <!-- event 클래스 추가 -->
     <div class="navbar-brand">
       <a href="#"><img src="../img/common/btn-back-n@3x.png"/></a>
     </div>
-    <div class="title">검색 결과</div>
+    <div class="title" data-text="CU_0014_01">검색 결과</div>
     <div class="navbar-util">
       <a href="#"><img src="../img/common/btn-main-search-n@3x.png"/></a>
       <a href="#"><img src="../img/common/btn-sub-home-n@3x.png"/></a>
@@ -30,10 +30,10 @@
       <div class="tabs-pannel" id="pannel1">
         <div class="empty">
           <div class="img"><img src="../img/common/icon-120-clear-list@3x.png" alt="" width="80"></div>
-          <p class="desc"><span class="font-weight-bold color-secondary">AI</span>에 대한 검색 결과가 없습니다.</p>
+          <p class="desc" data-text="CU_0016_01"><span class="font-weight-bold color-secondary">AI</span>에 대한 검색 결과가 없습니다.</p>
           <ul class="dot-list">
-            <li>단어의 철자를 올바르게 썼는지 확인해 보세요.</li>
-            <li>다른 키워드를 사용하여 검색해 보세요.</li>
+            <li data-text="CU_0016_02">단어의 철자를 올바르게 썼는지 확인해 보세요.</li>
+            <li data-text="CU_0016_03">다른 키워드를 사용하여 검색해 보세요.</li>
           </ul>
         </div>
       </div>
@@ -606,21 +606,21 @@
             </ul>
           </div>
           <div class="more-btn px-rem-2 px-rem-md-0">
-            <a href="#" class="btn btn-block btn-more">더보기<i class="sprite btn-open-color-n"></i></a>
+            <a href="#" class="btn btn-block btn-more" data-text="CU_0023_01">더보기<i class="sprite btn-open-color-n"></i></a>
           </div>
         </div> <!-- tag-list-all 클래스 추가 -->
       </div>
     </div>
     <div class="tabs-pannel" id="pannelLarge2" style="display: none;">
       <div class="top-area px-no">
-        <div class="text text-ellipsis">
+        <div class="text text-ellipsis" data-text="CU_0014_03">
           <span class="font-weight-bold color-secondary">“AI”</span>
           <span class="font-weight-bold color-text">12개</span>의 학습이 검색되었습니다.
         </div>
         <div class="tab-order">
           <ul class="clearfix">
-            <li class="active" data-target="pannel3"><a href="#">인기순</a></li>
-            <li data-target="pannel4"><a href="#">최신순</a></li>
+            <li class="active" data-target="pannel3"><a href="#" data-text="MA_0016_03">인기순</a></li>
+            <li data-target="pannel4"><a href="#" data-text="MA_0016_04">최신순</a></li>
           </ul>
         </div>
       </div>
@@ -1141,7 +1141,7 @@
             </ul>
           </div>
           <div class="more-btn ">
-            <a href="#" class="btn btn-block btn-more">더보기<i class="sprite btn-open-color-n"></i></a>
+            <a href="#" class="btn btn-block btn-more" data-text="CU_0023_01">더보기<i class="sprite btn-open-color-n"></i></a>
           </div>
         </div> <!-- tag-list-all 클래스 추가 -->
       </div>
@@ -1714,7 +1714,7 @@
             </ul>
           </div>
           <div class="more-btn px-rem-2 px-rem-md-0">
-            <a href="#" class="btn btn-block btn-more">더보기<i class="sprite btn-open-color-n"></i></a>
+            <a href="#" class="btn btn-block btn-more" data-text="CU_0023_01">더보기<i class="sprite btn-open-color-n"></i></a>
           </div>
         </div> <!-- tag-list-all 클래스 추가 -->
       </div>
@@ -1727,8 +1727,8 @@
         </div>
         <div class="tab-order">
           <ul class="clearfix">
-            <li class="active" data-target="pannel5"><a href="#">인기순</a></li>
-            <li data-target="pannel6"><a href="#">최신순</a></li>
+            <li class="active" data-target="pannel5"><a href="#" data-text="MA_0016_03">인기순</a></li>
+            <li data-target="pannel6"><a href="#" data-text="MA_0016_04">최신순</a></li>
           </ul>
         </div>
       </div>
@@ -2249,7 +2249,7 @@
             </ul>
           </div>
           <div class="more-btn ">
-            <a href="#" class="btn btn-block btn-more">더보기<i class="sprite btn-open-color-n"></i></a>
+            <a href="#" class="btn btn-block btn-more" data-text="CU_0023_01">더보기<i class="sprite btn-open-color-n"></i></a>
           </div>
         </div> <!-- tag-list-all 클래스 추가 -->
       </div>
@@ -2822,7 +2822,7 @@
             </ul>
           </div>
           <div class="more-btn px-rem-2 px-rem-md-0">
-            <a href="#" class="btn btn-block btn-more">더보기<i class="sprite btn-open-color-n"></i></a>
+            <a href="#" class="btn btn-block btn-more" data-text="CU_0023_01">더보기<i class="sprite btn-open-color-n"></i></a>
           </div>
         </div> <!-- tag-list-all 클래스 추가 -->
       </div>

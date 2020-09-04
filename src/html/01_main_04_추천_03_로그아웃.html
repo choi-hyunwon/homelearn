@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ko">
 @@include('../html/include/head.html')
-<body>
+<body>@@include('../html/include/button.html')
 <div class="wrap-bg">
 
   <div id="mainCarousel" class="carousel slide main" data-ride="carousel">
@@ -36,10 +36,10 @@
       </div>
       <div class="navbar-gnb">
         <ul class="navbar-nav flex-row">
-          <li class="nav-item"><a href="#" class="nav-link">추천</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">초등</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">중등</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">고등</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" data-text="MA_0013_02">추천</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" data-text="MA_0013_03">초등</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" data-text="MA_0013_04">중등</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" data-text="MA_0013_05">고등</a></li>
         </ul>
       </div>
       <div class="navbar-util">
@@ -55,10 +55,10 @@
       </div>
       <div class="navbar-gnb-sm d-md-none mt-rem-6">
         <ul class="navbar-nav flex-row">
-          <li class="nav-item active"><a href="#" class="nav-link">추천</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">초등</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">중등</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">고등</a></li>
+          <li class="nav-item active"><a href="#" class="nav-link" data-text="MA_0013_02">추천</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" data-text="MA_0013_03">초등</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" data-text="MA_0013_04">중등</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" data-text="MA_0013_05">고등</a></li>
         </ul>
       </div>
     </div>
@@ -82,9 +82,9 @@
         <!-- 이벤트 영역 - 2개 -->
         <div class="event-box mb-rem-md-6 p-md-no px-no mb-rem-3 clearfix">
           <div class="link-title px-rem-2">
-            <a href="#" class="d-lg-no-cursor color-text2">이벤트에 참여해 보세요<i
+            <a href="#" class="d-lg-no-cursor color-text2" data-text="MA_0007_03">이벤트에 참여해 보세요<i
               class="sprite btn-tag-more-arrow-n d-xs-block d-md-none"></i></a>
-            <a href="#" class="btn-text d-none d-md-block">더보기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a>
+            <a href="#" class="btn-text d-none d-md-block" data-text="CU_0023_01">더보기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a>
           </div>
           <div class="card-list card-list-2">
             <div class="scroll-wrap">
@@ -110,7 +110,7 @@
         <div class="banner-box mb-rem-md-6 p-md-no">
           <div class="link-title clearfix">
             <div class="title color-secondary">#인공지능
-              <a href="#" class="btn btn-sm btn-main-off bg-grey"><i class="sprite btn-noti-n-sm"></i>알림 OFF</a>
+              <a href="#" class="btn btn-sm btn-main-off bg-grey" data-text="CU_0007_03"><i class="sprite btn-noti-n-sm"></i>알림 OFF</a>
             </div>
             <p class="desc">나에게 딱 맞는 수준별 학습</p>
           </div>
@@ -118,7 +118,7 @@
             <div class="card-item">
               <div class="img"><img src="../img/main/m-main-recommend-app-card-img@3x.png" alt=""></div>
               <div class="card-body clearfix">
-                <div class="desc"><span>아이스크림에듀</span><span class="badge-list">학습중</span></div>
+                <div class="desc"><span data-text="CU_0018_15">아이스크림에듀</span><span class="badge-list" data-text="CU_0023_02">학습중</span></div>
                 <div class="title text-ellipsis">홈런 AI수학 : 신나는 숫자나라 깜짝 대모험</div>
                 <div class="title-sm">더 이상 너무 쉽거나 어려운 문제 풀지 마세요.</div>
                 <div class="desc-sm">홈런 뚜루아이와 함께 다양한 미션을 해결하다 보면 저절로
@@ -136,7 +136,7 @@
               <div class="title">
                 <a href="#" class="color-secondary d-lg-no-cursor">#초등사고력<i
                   class="sprite btn-tag-more-arrow-color-n d-md-none"></i></a>
-                <a href="#" class="btn btn-sm btn-main-on"><i class="sprite btn-noti-color-n-sm"></i>알림 ON</a>
+                <a href="#" class="btn btn-sm btn-main-on" data-text="CU_0007_02"><i class="sprite btn-noti-color-n-sm"></i>알림 ON</a>
               </div>
               <p class="desc">스스로 생각해보는 습관 기르기</p>
             </div>
@@ -148,18 +148,18 @@
                       <a href="#">
                       <span class="img"><img src="../img/main/m-main-recommend-scroll-app-card-img01@3x.png"
                                              alt=""></span>
-                        <span class="title text-ellipsis">아이스크림에듀</span>
+                        <span class="title text-ellipsis" data-text="CU_0018_15">아이스크림에듀</span>
                         <span class="title-sm text-ellipsis">마법과 함께하는 천자문 교육</span>
-                        <span class="badge-list">학습중</span>
+                        <span class="badge-list" data-text="CU_0023_02">학습중</span>
                       </a>
                     </li>
                     <li class="card-item">
                       <a href="#">
                       <span class="img"><img src="../img/main/m-main-recommend-scroll-app-card-img02@3x.png"
                                              alt=""></span>
-                        <span class="title">아이스크림에듀</span>
+                        <span class="title" data-text="CU_0018_15">아이스크림에듀</span>
                         <span class="title-sm">프리미엄</span>
-                        <span class="badge-list">학습중</span>
+                        <span class="badge-list" data-text="CU_0023_02">학습중</span>
                       </a>
                     </li>
                   </ul>
@@ -178,7 +178,7 @@
                   class="sprite btn-tag-more-arrow-color-n d-md-none"></i></a>
                 <a href="#" class="btn btn-sm btn-main-on btn-main-on-right"><i class="sprite btn-noti-color-n-sm"></i>알림
                   ON</a>
-                <a href="#" class="btn-text d-none d-md-block">더보기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a>
+                <a href="#" class="btn-text d-none d-md-block" data-text="CU_0023_01">더보기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a>
               </div>
               <p class="desc">스스로 생각해보는 습관 기르기</p>
             </div>
@@ -190,27 +190,27 @@
                       <a href="#">
                         <span class="img"><img src="../img/main/m-main-recommend-scroll-app-card-img01.png"
                                                alt=""></span>
-                        <span class="title text-ellipsis">아이스크림에듀</span>
+                        <span class="title text-ellipsis" data-text="CU_0018_15">아이스크림에듀</span>
                         <span class="title-sm text-ellipsis">마법과 함께하는 천자문 교육</span>
-                        <span class="badge-list">학습중</span>
+                        <span class="badge-list" data-text="CU_0023_02">학습중</span>
                       </a>
                     </li>
                     <li class="card-item">
                       <a href="#">
                         <span class="img"><img src="../img/main/m-main-recommend-scroll-app-card-img01.png"
                                                alt=""></span>
-                        <span class="title">아이스크림에듀</span>
+                        <span class="title" data-text="CU_0018_15">아이스크림에듀</span>
                         <span class="title-sm text-ellipsis">마법과 함께하는 천자문 교육</span>
-                        <span class="badge-list">학습중</span>
+                        <span class="badge-list" data-text="CU_0023_02">학습중</span>
                       </a>
                     </li>
                     <li class="card-item">
                       <a href="#">
                         <span class="img"><img src="../img/main/m-main-recommend-scroll-app-card-img01.png"
                                                alt=""></span>
-                        <span class="title">아이스크림에듀</span>
+                        <span class="title" data-text="CU_0018_15">아이스크림에듀</span>
                         <span class="title-sm text-ellipsis">마법과 함께하는 천자문 교육</span>
-                        <span class="badge-list">학습중</span>
+                        <span class="badge-list" data-text="CU_0023_02">학습중</span>
                       </a>
                     </li>
                   </ul>
@@ -228,7 +228,7 @@
                 class="sprite btn-tag-more-arrow-color-n d-md-none"></i></a>
               <a href="#" class="btn btn-sm btn-main-on btn-main-on-right"><i class="sprite btn-noti-color-n-sm"></i>알림
                 ON</a>
-              <a href="#" class="btn-text d-none d-md-block">더보기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a>
+              <a href="#" class="btn-text d-none d-md-block" data-text="CU_0023_01">더보기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a>
             </div>
             <p class="desc">스스로 생각해보는 습관 기르기</p>
           </div>
@@ -307,7 +307,7 @@
           <div class="link-title clearfix px-rem-2 px-md-no">
             <div class="title">
               <a href="#" class="color-secondary d-lg-no-cursor">#초등사고력<i class="sprite btn-tag-more-arrow-color-n d-md-none"></i></a>
-              <a href="#" class="btn btn-sm btn-main-on"><i class="sprite btn-noti-color-n-sm"></i>알림 ON</a>
+              <a href="#" class="btn btn-sm btn-main-on" data-text="CU_0007_02"><i class="sprite btn-noti-color-n-sm"></i>알림 ON</a>
             </div>
             <p class="desc">스스로 생각해보는 습관 기르기</p>
           </div>
@@ -373,9 +373,9 @@
         <div class="edu-list edu-list-sm mb-rem-3 mb-rem-md-6">
           <div class="edu-item">
             <div class="link-title px-rem-2 pl-md-no pr-md-no">
-              <div><a href="#" class="d-lg-no-cursor color-text2">아이스크림몰 상품 추천<i
+              <div><a href="#" class="d-lg-no-cursor color-text2" data-text="MA_0010_02">아이스크림몰 상품 추천<i
                 class="sprite btn-tag-more-arrow-n d-md-none"></i></a></div>
-              <a href="#" class="btn-text d-none d-md-block">아이스크림몰 가기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a>
+              <a href="#" class="btn-text d-none d-md-block" data-text="MA_0010_05">아이스크림몰 가기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a>
             </div>
             <div class="card-list card-list-4">
               <div class="scroll-wrap">
@@ -420,9 +420,9 @@
         <div class="edu-list edu-list-post mb-rem-4">
           <div class="edu-item">
             <div class="link-title px-rem-2 pl-md-no pr-md-no">
-              <div class=""><a href="#" class="d-lg-no-cursor color-text2">아이스크림북스 도서 추천<i
+              <div class=""><a href="#" class="d-lg-no-cursor color-text2" data-text="MA_0010_03">아이스크림북스 도서 추천<i
                 class="sprite btn-tag-more-arrow-n tr-y-2 d-md-none"></i></a></div>
-              <a href="#" class="btn-text d-none d-md-block">아이스크림북스 가기<i
+              <a href="#" class="btn-text d-none d-md-block" data-text="MA_0010_06">아이스크림북스 가기<i
                 class="sprite btn-24-right-arrow-n tr-y-2"></i></a>
             </div>
             <div class="card-list card-list-4">

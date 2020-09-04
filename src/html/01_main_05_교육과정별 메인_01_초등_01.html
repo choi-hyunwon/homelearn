@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ko">
 @@include('../html/include/head.html')
-<body>
+<body>@@include('../html/include/button.html')
 <div class="wrap-bg">
 
   <div class="bg bg_detail">
@@ -16,10 +16,10 @@
       </div>
       <div class="navbar-gnb">
         <ul class="navbar-nav flex-row">
-          <li class="nav-item"><a href="#" class="nav-link">추천</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">초등</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">중등</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">고등</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" data-text="MA_0013_02">추천</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" data-text="MA_0013_03">초등</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" data-text="MA_0013_04">중등</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" data-text="MA_0013_05">고등</a></li>
         </ul>
       </div>
       <div class="navbar-util">
@@ -35,10 +35,10 @@
       </div>
       <div class="navbar-gnb-sm d-md-none mt-rem-6">
         <ul class="navbar-nav flex-row">
-          <li class="nav-item active"><a href="#" class="nav-link">추천</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">초등</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">중등</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">고등</a></li>
+          <li class="nav-item active"><a href="#" class="nav-link" data-text="MA_0013_02">추천</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" data-text="MA_0013_03">초등</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" data-text="MA_0013_04">중등</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" data-text="MA_0013_05">고등</a></li>
         </ul>
       </div>
     </div>
@@ -50,9 +50,9 @@
         <!-- 인기학습 -->
         <div class="popular-edu-box">
           <div class="link-title pl-rem-2 pl-md-no pr-rem-md-2">
-            <a href="#" class="d-lg-no-cursor color-text2">인기학습! 아직도 안해봤어요?<i
+            <a href="#" class="d-lg-no-cursor color-text2" data-text="MA_0013_01">인기학습! 아직도 안해봤어요?<i
               class="sprite btn-tag-more-arrow-n d-xs-block d-md-none tr-y-2"></i></a>
-            <a href="#" class="btn-text d-none d-md-block">더보기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a>
+            <a href="#" class="btn-text d-none d-md-block" data-text="CU_0023_01">더보기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a>
           </div>
           <div class="popular-edu-list">
             <ul class="clearfix">
@@ -260,12 +260,12 @@
         <div class="popular-edu-category">
           <div class="scroll-wrap">
             <div class="scroll" style="width: 990px; padding: 20px 0;">
-              <a href="#" class="category">전체</a>
-              <a href="#" class="category">수학</a>
-              <a href="#" class="category">영어</a>
-              <a href="#" class="category">국어</a>
-              <a href="#" class="category">특별</a>
-              <a href="#" class="category">사회</a>
+              <a href="#" class="category" data-text="MA_0014_09">전체</a>
+              <a href="#" class="category" data-text="MA_0014_04">수학</a>
+              <a href="#" class="category" data-text="MA_0014_05">영어</a>
+              <a href="#" class="category" data-text="MA_0014_06">국어</a>
+              <a href="#" class="category" data-text="MA_0014_07">특별</a>
+              <a href="#" class="category" data-text="MA_0014_08">사회</a>
             </div>
           </div>
         </div>
@@ -273,9 +273,9 @@
         <!-- 이벤트 영역 - 2개 --> <!-- 2단 : card-list card-list-2 -->
         <div class="event-box mb-rem-md-6 p-md-no px-no mb-rem-3">
           <div class="link-title pl-rem-2 pl-md-no pr-rem-md-2">
-            <a href="#" class="d-lg-no-cursor color-text2">이벤트에 참여해 보세요<i
+            <a href="#" class="d-lg-no-cursor color-text2" data-text="MA_0007_03">이벤트에 참여해 보세요<i
               class="sprite btn-tag-more-arrow-n d-xs-block d-md-none"></i></a>
-            <a href="#" class="btn-text d-none d-md-block">더보기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a>
+            <a href="#" class="btn-text d-none d-md-block" data-text="CU_0023_01">더보기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a>
           </div>
           <div class="card-list card-list-2">
             <div class="scroll-wrap"> <!-- scroll-wrap 추가 --- 2020.08.19 -->
@@ -300,9 +300,9 @@
         <!-- 5단 / 5개 --> <!-- 5단 : card-list card-list-5 --> <!-- 5단 추가 -- 2020.08.19-->
         <div class="tag-list mb-rem-md-3">
           <div class="link-title pl-rem-2 pl-md-no pr-rem-md-2 mb-rem-1">
-            <a href="#" class="d-lg-no-cursor color-text2">이벤트에 참여해 보세요<i
+            <a href="#" class="d-lg-no-cursor color-text2" data-text="MA_0007_03">이벤트에 참여해 보세요<i
               class="sprite btn-tag-more-arrow-n d-xs-block d-md-none"></i></a>
-            <a href="#" class="btn-text d-none d-md-block">더보기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a>
+            <a href="#" class="btn-text d-none d-md-block" data-text="CU_0023_01">더보기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a>
           </div>
           <div class="card-list card-list-5">
             <div class="scroll-wrap"> <!-- scroll-wrap 추가 --- 2020.08.19 -->
@@ -380,7 +380,7 @@
         <!-- 홈런 에코와 함께하고 있어요   -->
         <div class="square-box p-md-no px-no mb-rem-3">
           <div class="link-title pl-rem-2 pl-md-no pr-rem-md-2">
-            <span class="color-text2">홈런 에코와 함께 하고 있어요</span>
+            <span class="color-text2" data-text="MA_0014_02">홈런 에코와 함께 하고 있어요</span>
           </div>
           <div class="card-list card-list-md-3">
             <ul class="clearfix px-rem-2 pb-rem-2 p-md-no">
@@ -441,7 +441,7 @@
             </ul>
           </div>
           <div class="more-btn px-rem-2 px-rem-md-0">
-            <a href="#" class="btn btn-block btn-more">더보기<i class="sprite btn-open-color-n"></i></a>
+            <a href="#" class="btn btn-block btn-more" data-text="CU_0023_01">더보기<i class="sprite btn-open-color-n"></i></a>
           </div>
 
         </div>
@@ -449,8 +449,8 @@
         <!-- 이런 학습 어때요?  -->
         <div class="event-box p-md-no px-no mb-rem-3">
           <div class="link-title pl-rem-2 pl-md-no pr-rem-md-2">
-            <a href="#" class="d-lg-no-cursor color-text2">이런 학습 어때요?</a>
-            <a href="#" class="btn-text d-none d-md-block">더보기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a>
+            <a href="#" class="d-lg-no-cursor color-text2" data-text="MA_0001_03">이런 학습 어때요?</a>
+            <a href="#" class="btn-text d-none d-md-block" data-text="CU_0023_01">더보기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a>
           </div>
           <div class="card-list card-list-md-3">
             <ul class="clearfix px-rem-2 pb-rem-2 p-md-no">
@@ -487,7 +487,7 @@
             </ul>
           </div>
           <div class="more-btn px-rem-2 px-rem-md-0">
-            <a href="#" class="btn btn-block btn-more">더보기<i class="sprite btn-open-color-n"></i></a>
+            <a href="#" class="btn btn-block btn-more" data-text="CU_0023_01">더보기<i class="sprite btn-open-color-n"></i></a>
           </div>
         </div>
       </div>
