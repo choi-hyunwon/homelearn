@@ -755,7 +755,7 @@
 }
 
 
-/* 교육과정별 메인_01_초등 - 인기학습! 아직도 안해봤어요? todo! */
+/* 교육과정별 메인_01_초등 - 인기학습! 아직도 안해봤어요? */
 .popular-edu-box {
   margin-bottom: 20px;
 
@@ -771,7 +771,40 @@
 
   }
 }
+@media (min-width: 769px) and (max-width: 1280px) {
+  .popular-edu-box {
+    max-width: none !important;
+    height: auto !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+    margin-bottom: 20px !important;
 
+    .link-title {
+      margin-bottom: 14px;
+    }
+
+    .popular-edu-list {
+      padding: 0 !important;
+      position: relative !important;
+
+      .edu-item-list {
+        position: relative !important;
+        padding: 14px 0 !important;
+        border-bottom: 2px solid rgba(224, 224, 224, 0.5) !important;
+        width: 100% !important;
+
+        &.first {
+          position: relative !important;
+          top: auto !important;
+          left: auto !important;
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
 @include media-breakpoint-up($size-tablet) {
   .popular-edu-box {
     max-width: 1160px;
