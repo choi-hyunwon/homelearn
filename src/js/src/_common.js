@@ -190,6 +190,18 @@ $(function () {
   front.common.init();
 });
 
+if (!String.format) {
+  String.format = function(format) {
+    var args = Array.prototype.slice.call(arguments, 1);
+    return format.replace(/{(\d+)}/g, function(match, number) {
+      return typeof args[number] != 'undefined'
+        ? args[number]
+        : match
+        ;
+    });
+  };
+}
+
 // 언어 설정
 window.onload = () => {
   let koBtn = document.getElementById("koBtn");
@@ -202,7 +214,23 @@ window.onload = () => {
       let child = v.firstChild;
       while (child) {
         if (child.nodeType == 3) {
-          child.data = langData[lang][v.dataset.text];
+
+          var split_text = v.dataset.text.split(';');
+          if(split_text.length == 2){
+            child.data = String.format(langData[lang][split_text[0]],split_text[1]);
+          }
+          else if(split_text.length == 3){
+            child.data = String.format(langData[lang][split_text[0]],split_text[1],split_text[2]);
+          }
+          else if(split_text.length == 4){
+            child.data = String.format(langData[lang][split_text[0]],split_text[1],split_text[2],split_text[3]);
+          }
+          else if(split_text.length == 5){
+            child.data = String.format(langData[lang][split_text[0]],split_text[1],split_text[2],split_text[3],split_text[4]);
+          }
+          else{
+            child.data = langData[lang][v.dataset.text];
+          }
           break;
         }
         child = child.nextSibling;
@@ -227,4 +255,3 @@ window.onload = () => {
   });
   setLanguage("ko");
 };
-
