@@ -458,9 +458,9 @@
   height: 44px;
   font-size: 14px;
   padding: 0 14px;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 40px;
-  color: #333333;
+  color: #bbb !important;
   vertical-align: middle;
   background: #ffffff url("../img/common/btn-open-n@3x.png") no-repeat right 14px center/16px 16px;
   border: 2px solid #bbb;
@@ -520,6 +520,7 @@
   .custom-select {
     height: 54px;
     line-height: 50px;
+    font-size: 16px;
   }
 }
 
