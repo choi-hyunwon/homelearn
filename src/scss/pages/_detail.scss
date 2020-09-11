@@ -47,6 +47,15 @@
         top: -7px;
         left: 10px;
         width: 48px;
+        i {
+          display: block;
+          position: absolute;
+          font-size: 10px;
+          color: #ffffff;
+          font-style: normal;
+          top: 5px;
+          left: 7px;
+        }
       }
 
       .badge-package {
@@ -54,6 +63,15 @@
         top: -7px;
         left: 58px;
         width: 38px;
+        i {
+          display: block;
+          position: absolute;
+          font-size: 10px;
+          color: #ffffff;
+          font-style: normal;
+          top: 5px;
+          left: 7px;
+        }
       }
 
       .badge-free {
@@ -61,8 +79,34 @@
         top: 60px;
         right: -5px;
         width: 54px;
+
+        i {
+          display: block;
+          position: absolute;
+          font-size: 17px;
+          color: #ffffff;
+          font-style: normal;
+          top: 10px;
+          left: 11px;
+        }
       }
 
+      .badge-percent {
+        position: absolute;
+        top: 60px;
+        right: -5px;
+        width: 54px;
+
+        i {
+          display: block;
+          position: absolute;
+          font-size: 17px;
+          color: #ffffff;
+          font-style: normal;
+          top: 10px;
+          left: 11px;
+        }
+      }
     }
 
     .title {
@@ -280,18 +324,39 @@
         .badge-homelearn {
           left: 46px;
           width: 80px;
+          i {
+            font-size: 16px;
+            padding-left: 5px;
+          }
         }
 
         .badge-package {
           left: 129px;
           width: 63px;
+          i {
+            font-size: 16px;
+            padding-left: 5px;
+          }
         }
 
         .badge-free {
           top: 134px;
           width: 76px;
+          i {
+            font-size: 25px;
+            top: 14px;
+            left: 15px;
+          }
         }
-
+        .badge-percent {
+          top: 134px;
+          width: 76px;
+          i {
+            font-size: 25px;
+            top: 14px;
+            left: 15px;
+          }
+        }
       }
 
       .title {

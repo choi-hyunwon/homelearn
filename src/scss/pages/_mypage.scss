@@ -614,6 +614,8 @@
     }
     .container {
       padding: 0 42px;
+      min-height: auto !important;
+
       & + .buttons {
         padding: 0;
       }
@@ -731,12 +733,12 @@
           }
         }
         ul {
-          display: flex;
-          justify-content: space-between;
           li {
+            float: left;
             margin-left: 0;
             padding: 12px 0;
-            width: 29.6%;
+            width: calc(33% - 25px);
+            margin-right: 25px;
             &::before {
               margin-right: 14px;
               width: 24px;
@@ -751,6 +753,9 @@
             }
             &.p-24 {
               padding: 24px 0;
+            }
+            &:nth-child(3n) {
+              margin-right: 0;
             }
           }
         }
