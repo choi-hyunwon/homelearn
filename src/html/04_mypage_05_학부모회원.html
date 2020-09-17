@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+<!-- 코드값 변경 -- 2020.09.17 -->
 @@include('../html/include/head.html')
 <body>@@include('../html/include/button.html')
     <div class="wrap p-no mypage">
@@ -14,44 +15,40 @@
         </div>
       </div>
       <div class="content">
-        <div class="container">
+        <div class="container parent"> <!-- parent 클래스 추가 -- 2020.09.17 -->
           <div class="dashboard">
-            <a href="" class="btn btn-outline btn-radius btn-reg" data-text="MY_0051_01">
+            <a href="" class="btn btn-outline btn-radius btn-reg" data-text="MY_0052_01">
               로고 등록
             </a>
             <h4>선생님 회원</h4>
             <h2>박선생</h2>
+            <!-- S 추가 -- 2020.09.17 -->
+            <div class="h-plan">
+              <p data-text="MY_0012_06">홈런 학습 계획</p>
+              <a href="#" class="btn btn-secondary btn-sm btn-radius btn-on">ON</a>
+            </div>
+            <!-- E 추가 -- 2020.09.17  -->
             <nav>
-              <a href="" class="btn-edu"
-                ><img
-                  src="../img/common/icon-36-subscribe-management-n@3x.png"
-                /><span data-text="MY_0019_01">학습관리</span></a
-              >
-              <a href="" class="btn-payment"
-                ><img src="../img/common/icon-36-pay-info-n@3x.png" /><span
-                   data-text="MY_0043_08">결제 상세 내역</span
-                >
+              <a href="" class="btn-edu">
+                <img src="../img/common/icon-36-subscribe-management-n@3x.png"/><span data-text="MY_0001_12">학습관리</span>
               </a>
-              <a href="" class="btn-rating"
-                ><img
-                  src="../img/common/icon-36-evaluation-management-n@3x.png"
-                /><span data-text="MY_0046_01">평가 관리</span></a
-              >
+              <a href="" class="btn-payment">
+                <img src="../img/common/icon-36-pay-info-n@3x.png" /><span data-text="MY_0044_08">결제 상세 내역</span>
+              </a>
+              <a href="" class="btn-rating">
+                <img src="../img/common/icon-36-evaluation-management-n@3x.png"/><span data-text="MY_0001_14">평가 관리</span>
+              </a>
               <a href="" class="btn-qna">
                 <span class="badge">1</span>
-                <img src="../img/common/icon-36-q-a-list-n@3x.png" /><span
-                   data-text="CC_0001_05">1:1 문의 내역</span
-                ></a
-              >
+                <img src="../img/common/icon-36-q-a-list-n@3x.png" /><span data-text="MY_0001_15">1:1 문의 내역</span>
+              </a>
             </nav>
             <div class="list">
-              <a href="" class="btn btn-outline btn-radius btn-plus" data-text="MY_0009_03">
-                학생 추가
-              </a>
-              <h3 data-text="MY_0001_05">자녀별 학습 현황</h3>
+              <a href="" class="btn btn-outline btn-radius btn-plus" data-text="MY_0012_02">학생 추가</a>
+              <h3 data-text="MY_0004_01">자녀별 학습 현황</h3>
               <div class="desc">
                 <img src="../img/common/icon-16-info-black@3x.png" />
-                <p data-text="MY_0009_04">학생 회원에 대한 자세한 사항은 고객센터에 문의하세요.</p>
+                <p data-text="MY_0012_03">학생 회원에 대한 자세한 사항은 고객센터에 문의하세요.</p>
               </div>
               <ul>
                 <li>
@@ -60,7 +57,7 @@
                 </li>
                 <li class="disabled">
                   <h3><strong>김홈런</strong> (kim_homelearn/초3)</h3>
-                  <span data-text="MY_0009_05">사용 중지</span>
+                  <span data-text="MY_0012_04">사용 중지</span>
                 </li>
                 <li>
                   <h3><strong>김홈런</strong> (kim_homelearn/초3)</h3>
@@ -73,8 +70,7 @@
         </div>
         <!--/.container-->
         <div class="buttons">
-          <button class="btn btn-block btn-more" data-text="CU_0023_01">
-더보기<img src="../img/sprite/btn-open-color-n@2x.png" />
+          <button class="btn btn-block btn-more" data-text="CU_0023_01">더보기<img src="../img/sprite/btn-open-color-n@2x.png" />
           </button>
         </div>
       </div>

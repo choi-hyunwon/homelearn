@@ -1,47 +1,64 @@
 .mypage {
+  background-color: #ffffff;
+
   .navbar-sub {
     margin-bottom: 0;
+
     .title {
       color: #333;
     }
   }
+
   .nav-tabs-detail {
     margin-bottom: 0;
+
     .nav-item {
       color: #999;
+
       &.active {
         color: #ff7600;
       }
     }
   }
+
   .content {
     padding-top: 0;
   }
+
   .container {
+    min-height: auto !important;
     padding-bottom: 0;
     max-width: inherit;
+
     & > .input-group:first-child {
       margin-top: 10px;
+
       & + p {
         margin: 20px 0 4px 0;
         color: #666;
+
         strong {
           color: #333;
         }
       }
     }
+
     & + .buttons {
       padding: 0 20px 20px 20px;
     }
   }
+
   .edu-list {
     margin-bottom: 0;
+
     li {
       padding: 20px 0;
+
       img {
         float: left;
         width: 50px;
       }
+
       h2 {
         display: inline-block;
         margin: 3px 0 0 12px;
@@ -51,63 +68,79 @@
         line-height: 1.33;
         font-weight: bold;
       }
+
       p {
         margin-top: 16px;
         font-size: 12px;
+
         strong {
           display: block;
         }
+
         span {
           display: inline-block;
           padding-right: 6px;
+
           & + span {
             padding-left: 6px;
             line-height: 1;
             border-left: 1px solid #ddd;
           }
+
           strong {
             display: inline-block;
             font-weight: normal;
           }
         }
+
         a {
           display: block;
         }
       }
+
       & + li {
         border-top: 2px solid rgba(224, 224, 224, 0.5);
       }
+
       select.form-control {
         padding: 8px 12px 8px 5px;
         height: 34px;
         line-height: 1;
         font-size: 12px;
       }
+
       .form-control,
       .btn {
         float: right;
         margin: 5px 0 0 0;
         width: 94px;
+
         & ~ h2 {
           width: calc(100% - 50px - 18px - 94px - 5px);
         }
       }
     }
+
     & + .input-group {
       border-top: 2px solid rgba(224, 224, 224, 0.5);
+
       p {
         margin: 18px 0;
+
         + .desc {
           margin-top: 0;
-          color: #666;
+          color: #999;
         }
       }
+
       & + .buttons {
         text-align: center;
+
         .btn {
           max-width: 48%;
           min-width: inherit;
           width: 150px;
+
           &:first-child {
             margin-right: 6px;
           }
@@ -127,25 +160,31 @@
       background-position: center;
       background-size: cover;
     }
+
     figure {
       margin: 0;
       padding-top: calc(100% - 2px);
       background: #ccc;
     }
+
     ul {
       padding-left: 20px;
+
       li {
         margin-top: 10px;
         list-style-type: disc;
         color: #666;
       }
     }
+
     & + .buttons {
       text-align: center;
+
       .btn {
         max-width: 48%;
         min-width: inherit;
         width: 150px;
+
         &:first-child {
           margin-right: 6px;
         }
@@ -172,24 +211,29 @@
     background: url(../img/common/btn-plus-color-n@3x.png) no-repeat 10px center;
     background-size: 16px;
   }
+
   .btn-minus {
     background-image: url(../img/common/btn-minus-color-n@3x.png);
   }
+
   .btn-reg,
   .btn-disabled {
     padding: 0 10px;
     background: none;
   }
+
   .btn-disabled {
     color: #999;
     border: 0;
   }
+
   .btn-install,
   .btn-pay {
     padding: 0 10px;
     background: #ff7600;
     box-shadow: none;
   }
+
   .btn-install {
     &.readonly {
       color: #ff7600;
@@ -199,9 +243,12 @@
   }
 
   .dashboard {
+    overflow: hidden;
+
     h4 {
       font-size: 14px;
-      color: #999;
+      color: #666;
+
       small {
         margin-left: 1em;
         padding: 1px 5px;
@@ -210,33 +257,45 @@
         border-radius: 4px;
       }
     }
+
     h2 {
+      position: relative;
       margin: 5px 0 0 0;
       font-size: 20px;
       font-weight: bold;
+
+      &.border-bottom {
+        border-bottom: 2px solid rgba(224, 224, 224, 0.5) !important;
+      }
     }
+
     nav {
       display: flex;
       justify-content: center;
       margin: 12px 0 16px 0;
       text-align: center;
+
       a {
         display: inline-block;
         position: relative;
         margin-left: 5px;
         padding: 10px 0;
         width: 23.7%;
+
         img {
           width: 36px;
         }
+
         span {
           display: block;
           margin-top: 3px;
           font-size: 12px;
         }
+
         &:first-child {
           margin-left: 0;
         }
+
         .badge {
           position: absolute;
           right: 20%;
@@ -257,36 +316,45 @@
     .list {
       padding: 20px 0;
       border-top: 2px solid rgba(224, 224, 224, 0.5);
+
       .btn-plus {
         margin: -6px 0 0 0;
       }
+
       h3 {
         font-size: 18px;
         font-weight: bold;
+
         & + div {
           margin: 24px 0 0 0;
+
           img {
             float: left;
             margin: 2px 6px 0 0;
             width: 16px;
           }
+
           p {
             margin-left: 22px;
           }
         }
       }
+
       li {
         margin-top: 18px;
+
         h3 {
           font-weight: normal;
           font-size: 14px;
         }
+
         span {
           display: block;
           margin-top: 5px;
           margin-left: calc(14px + 8px);
           color: #666;
         }
+
         &::before {
           content: "";
           float: left;
@@ -296,22 +364,27 @@
           background: url(../img/common/icon-14-profile@3x.png) no-repeat center;
           background-size: contain;
         }
+
         &.disabled {
           opacity: 0.5;
         }
       }
+
       .buttons {
         padding-bottom: 0;
       }
     }
+
     .empty {
       p {
         margin: 32px 0 8px 0 !important;
       }
     }
   }
+
   .buttons {
     padding: 20px 0;
+
     .btn-more {
       img {
         margin-left: 3px;
@@ -319,23 +392,28 @@
       }
     }
   }
+
   .recent {
     margin: 0 auto;
     padding: 18px 0 0 0;
     width: calc(100% - 20px * 2);
     border-top: 2px solid rgba(224, 224, 224, 0.5);
+
     h3 {
       margin-bottom: 4px;
       font-size: 18px;
       font-weight: bold;
     }
+
     .card-item {
       margin-top: 14px;
       border-radius: 8px;
       box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.12);
       background-color: #fff;
+
       .list-body {
         padding: 8px 14px 12px 14px;
+
         .title {
           display: block;
           margin-bottom: 10px;
@@ -343,12 +421,14 @@
           font-size: 16px;
           @include ellipsis(2, 1.3em);
         }
+
         .score {
           i {
             float: left;
             margin: 1px 3px 0 0;
           }
         }
+
         .s-sticker {
           float: right;
         }
@@ -360,24 +440,30 @@
     label {
       display: block;
     }
+
     input {
       float: left;
       margin-right: 6px;
       width: calc(100% - 88px - 6px);
     }
+
     .btn {
       display: inline-block;
       min-width: 88px;
     }
+
     .form-control + .form-control {
       margin-top: 8px;
     }
+
     & + .buttons {
       margin-top: 24px;
       padding: 0;
     }
+
     .form-group {
       margin-bottom: 0;
+
       & + span {
         margin-bottom: 1.2rem;
         padding-top: 0 !important;
@@ -394,22 +480,27 @@
     white-space: nowrap;
     overflow-y: hidden;
     overflow-x: auto;
+
     .nav-item {
       display: inline-block;
       flex: none;
+
       &.active::after {
         bottom: 0;
       }
+
       & + .nav-item {
         margin-left: 3vw;
       }
     }
   }
+
   .datepicker {
     position: relative;
     padding: 12px 0;
     border-bottom: 2px solid rgba(224, 224, 224, 0.5);
     text-align: center;
+
     h3 {
       font-size: 16px;
       font-weight: bold;
@@ -425,23 +516,28 @@
       border: 0;
       background: url(../img/common/btn-20-left-arrow-n@3x.png) no-repeat center;
       background-size: contain;
+
       &:disabled {
         opacity: 0.2;
       }
     }
+
     .btn-next {
       left: auto;
       right: 20%;
       background-image: url(../img/common/btn-20-right-arrow-n@3x.png);
     }
   }
+
   .visible-header {
     display: none;
   }
+
   .pay-list {
     li {
       position: relative;
       padding: 20px 0;
+
       & > span:nth-last-of-type(1) {
         position: absolute;
         right: 0;
@@ -450,66 +546,80 @@
         font-weight: bold;
         color: #999;
       }
+
       h2 {
         font-size: 18px;
         font-weight: bold;
       }
+
       p {
         margin-top: 10px;
         font-size: 12px;
+
         span {
           display: block;
+
           em {
             margin-right: 0.2em;
             font-style: normal;
           }
         }
       }
+
       & + li {
         border-top: 2px solid rgba(224, 224, 224, 0.5);
       }
     }
   }
+
   .review {
     p {
       padding: 10px 0 5px 0;
     }
+
     .review-list {
       & > li {
         padding: 16px 0 20px 0;
+
         img {
           float: left;
           margin-right: 12px;
           width: 50px;
         }
+
         h2 {
           font-size: 18px;
           font-weight: bold;
         }
+
         div {
           margin: 30px 0 0 0;
           padding: 15px 0 0 0;
+
           .star-rating {
             float: left;
             margin: 1px 10px 0 0;
             font-size: 0;
+
             li {
               display: inline-block;
               padding: 0;
               width: 16px;
               height: 16px;
-              background: url(../img/common/icon-16-star-none@3x.png) no-repeat
-                center;
+              background: url(../img/common/icon-16-star-none@3x.png) no-repeat center;
               background-size: contain;
+
               &.checked {
                 background-image: url(../img/common/icon-16-star@3x.png);
               }
             }
           }
+
           span {
             color: #666;
           }
         }
+
         .btn-review {
           float: right;
           margin-top: -2.6em;
@@ -521,70 +631,111 @@
           font-size: 12px;
           border: solid 1px #ccc;
           border-radius: 4px;
-          background: url(../img/common/btn-line-edit-n@3x.png) no-repeat 10px
-            center;
+          background: url(../img/common/btn-line-edit-n@3x.png) no-repeat 10px center;
           background-size: 20px auto;
         }
+
         .review-content {
           margin: 0;
           color: #666;
         }
+
         .review-comment {
           margin: 16px 0 0 0;
           padding: 18px 15px 15px 15px;
           background: #eeefed;
           border-radius: 6px;
+
           h4 {
             font-weight: bold;
             font-size: 14px;
+
             &::before {
               content: "";
               float: left;
               margin: -7px 3px 0 0;
               width: 24px;
               height: 24px;
-              background: url(../img/common/icon-24-reply@3x.png) no-repeat
-                center;
+              background: url(../img/common/icon-24-reply@3x.png) no-repeat center;
               background-size: contain;
             }
+
             small {
               margin-left: 10px;
               font-size: 12px;
               color: #666;
             }
           }
+
           p {
             margin: 10px 0 0 0;
             padding: 0;
             color: #666;
           }
         }
+
         & + li {
           border-top: 2px solid rgba(224, 224, 224, 0.5);
         }
       }
     }
+
     .buttons:nth-last-of-type(1) {
       margin: 20px 0 0 0;
     }
+
     .empty {
       img {
         max-width: 80px;
       }
+
       p {
         padding: 0;
       }
     }
   }
+
   .children-add {
     .input-group {
       display: block;
+
       input + input {
         margin-top: 8px;
       }
     }
   }
+
+  .container.parent {
+    padding: 0 0 24px;
+    .dashboard {
+      .btn-reg,
+      .btn-disabled {
+        margin-right: 20px;
+      }
+      h4 {
+        padding-left: 20px;
+      }
+      h2 {
+        padding-left: 20px;
+        padding-bottom: 24px;
+        border-bottom: 2px solid rgba(224, 224, 224, 0.5);
+      }
+      .h-plan {
+        position: relative;
+        width: 100%;
+        height: 60px;
+        border-bottom: 2px solid rgba(224, 224, 224, 0.5);
+        p {
+
+        }
+      }
+      .list {
+        padding: 20px;
+      }
+    }
+  }
 }
+
 .modal-footer {
   .buttons {
     margin-top: 14px;
@@ -592,6 +743,7 @@
     border-top: 1px solid rgba(224, 224, 224, 0.6);
     width: 100%;
     text-align: left;
+
     .btn-delete {
       padding: 0;
       min-width: inherit;
@@ -605,6 +757,8 @@
 
 @include media-breakpoint-up($size-tablet) {
   .mypage {
+    background-color: #fffdfa;
+
     .content {
       margin: 46px 84px 60px 84px;
       padding-top: 40px;
@@ -612,25 +766,29 @@
       box-shadow: 0 9px 24px 0 rgba(0, 0, 0, 0.1);
       background-color: #ffffff;
     }
+
     .container {
       padding: 0 42px;
-      min-height: auto !important;
 
       & + .buttons {
         padding: 0;
       }
+
       & > .input-group:first-child {
         display: inline-block;
         margin-right: 20px;
         width: 220px;
+
         & + p {
           display: inline-block;
           font-size: 24px;
+
           & + .edu-list {
             margin-top: 36px;
           }
         }
       }
+
       & > .edu-list:first-child {
         li {
           padding: 40px 0;
@@ -638,9 +796,11 @@
         }
       }
     }
+
     .nav-tabs-detail {
       font-size: 20px;
       width: auto;
+
       .nav-item {
         flex: none;
         margin-right: 14px;
@@ -649,8 +809,10 @@
         line-height: 1;
       }
     }
+
     .buttons {
       padding: 0;
+
       .btn-more {
         background: #fafafa;
         border-color: #fafafa;
@@ -658,6 +820,7 @@
         border-bottom-right-radius: 8px;
       }
     }
+
     .btn-install,
     .btn-disabled,
     .btn-pay,
@@ -672,11 +835,13 @@
       background-position: 22px center;
       background-size: 24px;
     }
+
     .btn-reg,
     .btn-disabled {
       padding: 0 10px;
       background: none;
     }
+
     .btn-install,
     .btn-pay {
       padding: 0 10px;
@@ -685,28 +850,35 @@
     .dashboard {
       h4 {
         font-size: 20px;
+
         small {
           font-size: 14px;
         }
       }
+
       h2 {
         margin: 10px 0 0 0;
         font-size: 32px;
       }
+
       nav {
         margin: 30px 0;
+
         a {
           margin-left: 20px;
           padding: 32px 0;
           width: 23.2%;
           border-radius: 5px;
           border: solid 2px rgba(224, 224, 224, 0.5);
+
           img {
             width: 80px;
           }
+
           span {
             font-size: 20px;
           }
+
           .badge {
             top: 15%;
             right: 25%;
@@ -717,21 +889,27 @@
           }
         }
       }
+
       .list {
         padding: 36px 0 30px 0;
+
         h3 {
           font-size: 24px;
+
           & + div {
             margin: 24px 0 26px 0;
+
             img {
               margin: 0 10px 0 0;
               width: 20px;
             }
+
             p {
               font-size: 18px;
             }
           }
         }
+
         ul {
           li {
             float: left;
@@ -739,55 +917,69 @@
             padding: 12px 0;
             width: calc(33% - 25px);
             margin-right: 25px;
+
             &::before {
               margin-right: 14px;
               width: 24px;
               height: 24px;
             }
+
             h3 {
               font-size: 18px;
             }
+
             span {
               margin-left: calc(24px + 14px);
               font-size: 16px;
             }
+
             &.p-24 {
               padding: 24px 0;
             }
+
             &:nth-child(3n) {
               margin-right: 0;
             }
           }
         }
+
         .empty {
           margin: 32px 0 40px 0;
           padding: 0;
+
           p {
             line-height: 1.56;
           }
         }
       }
     }
+
     .recent {
       margin: 0;
       padding: 0 84px 0 84px;
       width: 100%;
       border-top: 0;
+
       h3 {
         margin-bottom: 20px;
         font-size: 24px;
       }
+
       .card-item {
         margin-top: 0;
         margin-bottom: 46px;
+
         .list-body {
           padding: 12px 12px 20px 12px;
+
           .title {
             font-weight: bold;
           }
+
           .score {
             font-size: 14px;
             font-weight: bold;
+
             i {
               margin: 0 3px 0 0;
               width: 24px;
@@ -795,6 +987,7 @@
               background-size: 20px auto;
             }
           }
+
           .s-sticker {
             i {
               width: 62px;
@@ -803,44 +996,55 @@
           }
         }
       }
+
       .buttons {
         display: none;
       }
+
       .empty {
         padding: 52px 0 32px 0;
+
         p {
           font-size: 18px;
         }
       }
     }
+
     .edu-list {
       li {
         position: relative;
         padding: 40px 0;
         height: calc(146px + 40px * 2);
+
         img {
           width: 146px;
         }
+
         h2 {
           margin-left: 24px;
           width: auto;
           height: auto;
           font-size: 24px;
         }
+
         p {
           margin-left: calc(146px + 24px);
           width: calc(100% - 146px - 24px - 180px);
           font-size: 18px;
+
           span {
             margin-top: 8px;
             padding-right: 10px;
+
             & + span {
               padding-left: 10px;
               border-width: 2px;
             }
           }
+
           & + p {
             font-size: 16px;
+
             a {
               display: inline-block;
               padding-left: 10px;
@@ -849,6 +1053,7 @@
             }
           }
         }
+
         .form-control,
         .btn {
           position: absolute;
@@ -856,10 +1061,12 @@
           top: 50%;
           transform: translate(0, -50%);
           margin: 0;
+
           & ~ h2 {
             width: calc(100% - 146px - 24px - 160px - 40px);
           }
         }
+
         select.form-control {
           position: absolute;
           right: 0;
@@ -872,22 +1079,31 @@
           font-size: 18px;
         }
       }
+
       & + .input-group {
         padding: 32px 0;
+
         & > div {
+          text-align: center;
           margin: 0 auto;
           width: 650px;
+
           p {
             margin: 0;
             font-size: 20px;
+
             & + .form-control {
               flex: inherit;
               margin: 46px auto 48px auto;
               width: 340px;
+
               & + p {
+                text-align: left;
                 margin-bottom: 30px;
                 font-size: 16px;
+
                 & + .desc {
+                  text-align: left;
                   margin-bottom: 60px;
                   font-size: 16px;
                 }
@@ -895,11 +1111,14 @@
             }
           }
         }
+
         & + .buttons {
           padding-bottom: 60px;
           text-align: center;
+
           .btn {
             min-width: 180px;
+
             &:first-child {
               margin-right: 20px;
             }
@@ -907,55 +1126,67 @@
         }
       }
     }
+
     .form-group {
       & + .buttons {
         margin: 0;
         padding: 48px 0 60px 0;
       }
+
       .form-control {
         & + .form-control {
           margin-top: 20px;
         }
       }
     }
+
     .button-group {
       label {
         display: inline-block;
       }
+
       input {
         float: none;
         width: calc(100% - 180px - 8px - 118px - 18px);
       }
+
       .btn {
         float: right;
         max-width: 180px;
       }
+
       span {
         display: block;
         margin-left: 128px;
         margin-bottom: 1.2rem;
       }
+
       & + .form-group {
         margin-top: 20px;
       }
     }
+
     .datepicker {
       margin: 2px 0 30px 0;
       padding: 0;
       border: 0;
+
       h3 {
         font-size: 20px;
       }
+
       .btn {
         left: 38%;
         width: 24px;
         height: 24px;
       }
+
       .btn-next {
         left: auto;
         right: 38%;
       }
     }
+
     .visible-header {
       display: block;
       margin: 0 auto;
@@ -964,48 +1195,58 @@
       font-size: 0;
       border-top: 2px solid #ccc;
       border-bottom: 2px solid #ccc;
+
       span {
         display: inline-block;
         width: 15%;
         font-size: 16px;
         text-align: center;
         font-weight: bold;
+
         &:first-child {
           width: 40%;
         }
       }
     }
+
     .pay-list {
       padding: 0 25px 12px 25px;
+
       li {
         padding: 22px 0;
         font-size: 0;
         line-height: 0;
+
         h2 {
           display: inline-block;
           padding-left: 39px;
           width: 40%;
           font-size: 16px;
         }
+
         p {
           display: inline-block;
           width: 45%;
           font-size: 0;
           text-align: center;
+
           span {
             display: inline-block;
             width: 33.33%;
             font-size: 16px;
             text-align: center;
+
             em {
               display: none;
             }
+
             &:first-child {
               font-size: 18px;
               font-weight: bold;
             }
           }
         }
+
         & > span:nth-last-of-type(1) {
           display: inline-block;
           position: static;
@@ -1016,34 +1257,42 @@
         }
       }
     }
+
     .review {
       .container {
         & > p {
           font-size: 24px;
         }
       }
+
       .review-list {
         li {
           padding: 24px 0;
+
           img {
             margin-right: 20px;
             width: 60px;
           }
+
           h2 {
             font-size: 24px;
           }
+
           div {
             .star-rating {
               margin-top: -1px;
+
               li {
                 width: 20px;
                 height: 20px;
               }
             }
+
             span {
               font-size: 14px;
             }
           }
+
           .btn-review {
             margin-top: -5.8em;
             padding: 11px 5px 11px 30px;
@@ -1052,10 +1301,13 @@
             background-position: 14px center;
             background-size: 24px auto;
           }
+
           .review-comment {
             padding: 20px;
+
             h4 {
               font-size: 16px;
+
               small {
                 font-size: 14px;
               }
@@ -1064,54 +1316,68 @@
         }
       }
     }
+
     .children-add {
       .form-group {
         display: flex;
+
         label {
           & + input {
             width: calc(100% - 128px - 18px);
           }
         }
+
         .input-group {
           width: calc(100% - 128px - 18px);
         }
       }
+
       .button-group {
         display: flex;
         flex-wrap: wrap;
         margin-top: 20px;
+
         .form-group {
           width: 100%;
+
           label {
             & + input {
               width: calc(100% - 128px - 174px);
             }
           }
+
           & + span {
             margin-left: calc(128px + 18px);
           }
         }
+
         .btn {
           min-width: inherit;
           width: 150px;
         }
       }
     }
+
     .add-logo {
       display: flex;
+
       .thumb {
         margin: 0 48px 0 0;
         padding: 12px;
         max-width: 276px;
       }
+
       ul {
         align-self: center;
+
         li {
           margin: 40px 0;
         }
       }
+
       & + .buttons {
         padding: 60px 0;
+
         .btn {
           min-width: 180px;
         }
