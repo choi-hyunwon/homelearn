@@ -71,7 +71,7 @@ body {
   line-height: normal;
   color: #333333;
   text-align: left;
-  background-color: #fff;
+  background-color: #fffdfa;
   font-size: 1.4rem;
 }
 
@@ -491,7 +491,7 @@ mark,
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #fff;
+  background-color: #fffdfa;
   border: 1px solid #dddddd;
   border-radius: 0.6rem;
   max-width: 100%;
@@ -4846,9 +4846,9 @@ input::-webkit-search-results-decoration {
   height: 44px;
   font-size: 14px;
   padding: 0 14px;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 40px;
-  color: #333333;
+  color: #bbb !important;
   vertical-align: middle;
   background: #ffffff url("../img/common/btn-open-n@3x.png") no-repeat right 14px center/16px 16px;
   border: 2px solid #bbb;
@@ -4894,6 +4894,7 @@ input::-webkit-search-results-decoration {
   .custom-select {
     height: 54px;
     line-height: 50px;
+    font-size: 16px;
   }
 }
 
@@ -5036,15 +5037,15 @@ input::-webkit-search-results-decoration {
 }
 
 .custom-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(255, 118, 0, 0.25);
+  box-shadow: 0 0 0 1px #fffdfa, 0 0 0 0.2rem rgba(255, 118, 0, 0.25);
 }
 
 .custom-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(255, 118, 0, 0.25);
+  box-shadow: 0 0 0 1px #fffdfa, 0 0 0 0.2rem rgba(255, 118, 0, 0.25);
 }
 
 .custom-range:focus::-ms-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(255, 118, 0, 0.25);
+  box-shadow: 0 0 0 1px #fffdfa, 0 0 0 0.2rem rgba(255, 118, 0, 0.25);
 }
 
 .custom-range::-moz-focus-outer {
@@ -5242,7 +5243,7 @@ input[type=search]:disabled + .btn-search {
   line-height: 29px;
   margin-right: 1px;
   border: 1px solid;
-  background-color: #fff;
+  background-color: #fffdfa;
   border-color: #bfbfbf #bfbfbf #ff7600;
   color: #333;
   text-align: center;
@@ -14363,24 +14364,6 @@ common
   height: 18px;
 }
 
-.sprite.icon-list-badge-homelearn {
-  background-image: url("../img/common/icon-list-badge-homelearn@3x.png");
-  width: 48px;
-  height: 16px;
-}
-
-.sprite.icon-list-badge-package {
-  background-image: url("../img/common/icon-list-badge-package@3x.png");
-  width: 38px;
-  height: 16px;
-}
-
-.sprite.icon-list-badge-discount-free {
-  background-image: url("../img/common/icon-list-badge-discount-free@3x.png");
-  width: 76px;
-  height: 48px;
-}
-
 .drawer {
   position: fixed;
   z-index: 1000;
@@ -16723,6 +16706,7 @@ body {
 }
 
 .wrap .container {
+  min-height: 700px;
   padding: 0 20px 24px;
 }
 
@@ -17570,7 +17554,7 @@ footer address .copyright {
   }
 }
 
-/* 교육과정별 메인_01_초등 - 인기학습! 아직도 안해봤어요? todo! */
+/* 교육과정별 메인_01_초등 - 인기학습! 아직도 안해봤어요? */
 .popular-edu-box {
   margin-bottom: 20px;
 }
@@ -17583,6 +17567,37 @@ footer address .copyright {
   width: 100%;
   height: auto;
   padding: 0 20px;
+}
+
+@media (min-width: 769px) and (max-width: 1280px) {
+  .popular-edu-box {
+    max-width: none !important;
+    height: auto !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+    margin-bottom: 20px !important;
+  }
+  .popular-edu-box .link-title {
+    margin-bottom: 14px;
+  }
+  .popular-edu-box .popular-edu-list {
+    padding: 0 !important;
+    position: relative !important;
+  }
+  .popular-edu-box .popular-edu-list .edu-item-list {
+    position: relative !important;
+    padding: 14px 0 !important;
+    border-bottom: 2px solid rgba(224, 224, 224, 0.5) !important;
+    width: 100% !important;
+  }
+  .popular-edu-box .popular-edu-list .edu-item-list.first {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+  }
 }
 
 @media (min-width: 769px) {
@@ -17867,6 +17882,8 @@ footer address .copyright {
   background-color: #ffffff;
   margin: -60px auto 24px;
   padding: 14px;
+  /* S 추가 -- 2020.09.02*/
+  /* E 추가 -- 2020.09.02*/
 }
 
 .detail-card .card-name {
@@ -17889,6 +17906,16 @@ footer address .copyright {
   width: 48px;
 }
 
+.detail-card .card-name .app-icon .badge-homelearn i {
+  display: block;
+  position: absolute;
+  font-size: 10px;
+  color: #ffffff;
+  font-style: normal;
+  top: 5px;
+  left: 7px;
+}
+
 .detail-card .card-name .app-icon .badge-package {
   position: absolute;
   top: -7px;
@@ -17896,11 +17923,48 @@ footer address .copyright {
   width: 38px;
 }
 
+.detail-card .card-name .app-icon .badge-package i {
+  display: block;
+  position: absolute;
+  font-size: 10px;
+  color: #ffffff;
+  font-style: normal;
+  top: 5px;
+  left: 7px;
+}
+
 .detail-card .card-name .app-icon .badge-free {
   position: absolute;
   top: 60px;
   right: -5px;
   width: 54px;
+}
+
+.detail-card .card-name .app-icon .badge-free i {
+  display: block;
+  position: absolute;
+  font-size: 17px;
+  color: #ffffff;
+  font-style: normal;
+  top: 10px;
+  left: 11px;
+}
+
+.detail-card .card-name .app-icon .badge-percent {
+  position: absolute;
+  top: 60px;
+  right: -5px;
+  width: 54px;
+}
+
+.detail-card .card-name .app-icon .badge-percent i {
+  display: block;
+  position: absolute;
+  font-size: 17px;
+  color: #ffffff;
+  font-style: normal;
+  top: 10px;
+  left: 11px;
 }
 
 .detail-card .card-name .title {
@@ -17961,6 +18025,21 @@ footer address .copyright {
   line-height: 1.43;
   color: #333333;
   display: block;
+}
+
+.detail-card .card-grey {
+  width: 100%;
+  height: 36px;
+  border-radius: 4px;
+  background-color: #f3f3f3;
+  margin-bottom: 12px;
+}
+
+.detail-card .card-grey span {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 36px;
 }
 
 .detail-card .card-price {
@@ -18077,6 +18156,8 @@ footer address .copyright {
     background-color: transparent;
     margin: 0;
     padding: 0;
+    /* S 추가 -- 2020.09.02*/
+    /* E 추가 -- 2020.09.02*/
   }
   .detail-card .card-name {
     position: relative;
@@ -18096,30 +18177,67 @@ footer address .copyright {
     left: 46px;
     width: 80px;
   }
+  .detail-card .card-name .app-icon .badge-homelearn i {
+    font-size: 16px;
+    padding-left: 5px;
+  }
   .detail-card .card-name .app-icon .badge-package {
     left: 129px;
     width: 63px;
   }
+  .detail-card .card-name .app-icon .badge-package i {
+    font-size: 16px;
+    padding-left: 5px;
+  }
   .detail-card .card-name .app-icon .badge-free {
     top: 134px;
     width: 76px;
+  }
+  .detail-card .card-name .app-icon .badge-free i {
+    font-size: 25px;
+    top: 14px;
+    left: 15px;
+  }
+  .detail-card .card-name .app-icon .badge-percent {
+    top: 134px;
+    width: 76px;
+  }
+  .detail-card .card-name .app-icon .badge-percent i {
+    font-size: 25px;
+    top: 14px;
+    left: 15px;
   }
   .detail-card .card-name .title {
     font-size: 32px;
     font-weight: bold;
     line-height: 1.13;
     color: #111111;
-  }
-  .detail-card .card-name .company {
-    font-size: 20px;
-    line-height: 1.2;
     margin-bottom: 8px;
   }
+  .detail-card .card-name .company {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    margin-right: 26px;
+  }
+  .detail-card .card-name .company::after {
+    content: '';
+    position: absolute;
+    right: -17px;
+    top: 8px;
+    width: 2px;
+    height: 12px;
+    background-color: #e0e0e0;
+  }
   .detail-card .card-name .star {
-    line-height: 20px;
+    display: inline-block;
+    line-height: 24px;
   }
   .detail-card .card-name .star > img {
     height: 20px;
+    transform: translateY(-2px);
   }
   .detail-card .card-name .star span {
     font-size: 16px;
@@ -18128,7 +18246,7 @@ footer address .copyright {
   }
   .detail-card .card-spec {
     position: absolute;
-    top: 134px;
+    top: 82px;
     left: 206px;
     border-bottom: none;
     width: 400px;
@@ -18163,6 +18281,17 @@ footer address .copyright {
     font-size: 16px;
     font-weight: bold;
     display: block;
+  }
+  .detail-card .card-grey {
+    position: absolute;
+    width: 436px;
+    height: 42px;
+    margin-bottom: 0;
+    top: 144px;
+    left: 217px;
+  }
+  .detail-card .card-grey span {
+    line-height: 42px;
   }
   .detail-card .card-price {
     padding-top: 0;
@@ -19145,6 +19274,10 @@ footer address .copyright {
   background-color: #eeeeee !important;
 }
 
+.min-h-0 {
+  min-height: auto !important;
+}
+
 .text-ellipsis {
   overflow: hidden;
   white-space: nowrap;
@@ -19171,6 +19304,10 @@ footer address .copyright {
   color: #42c2d1;
 }
 
+em {
+  font-style: normal !important;
+}
+
 /* 학습중 라벨 */
 .badge-list {
   display: inline-block;
@@ -19184,6 +19321,48 @@ footer address .copyright {
   font-size: 10px;
 }
 
+.icon-list-badge-homelearn {
+  background-image: url("../img/common/icon-list-badge-homelearn@3x.png");
+  width: 48px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  font-size: 10px;
+  color: #ffffff;
+  font-style: normal;
+  text-align: center;
+  padding-left: 3px;
+}
+
+.icon-list-badge-package {
+  background-image: url("../img/common/icon-list-badge-package@3x.png");
+  width: 38px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  font-size: 10px;
+  color: #ffffff;
+  font-style: normal;
+  text-align: center;
+  padding-left: 5px;
+}
+
+.icon-list-badge-discount-free {
+  background-image: url("../img/common/icon-list-badge-discount-free@3x.png");
+  width: 76px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  font-size: 10px;
+  color: #ffffff;
+  font-style: normal;
+  text-align: center;
+  padding-left: 5px;
+}
+
 @media (min-width: 769px) {
   .badge-list {
     position: absolute;
@@ -19195,6 +19374,22 @@ footer address .copyright {
     line-height: 24px;
     min-width: 62px;
     font-size: 14px;
+  }
+  .icon-list-badge-homelearn {
+    background-image: url("../img/common/icon-list-badge-homelearn@3x.png");
+    width: 80px;
+    height: 24px;
+    font-size: 13px;
+    padding-left: 2px;
+    line-height: 24px;
+  }
+  .icon-list-badge-package {
+    background-image: url("../img/common/icon-list-badge-package@3x.png");
+    width: 64px;
+    height: 24px;
+    font-size: 13px;
+    padding-left: 0;
+    line-height: 24px;
   }
 }
 
@@ -19620,14 +19815,25 @@ footer address .copyright {
 
 .tag-list .card-item .img .sticker-free {
   position: absolute;
+  background-image: url("../img/common/icon-list-badge-discount-free@2x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   display: block;
+  width: 54px;
+  height: 36px;
   bottom: 6px;
   right: -4px;
 }
 
-.tag-list .card-item .img .sticker-free i {
-  width: 54px;
-  height: 36px;
+.tag-list .card-item .img .sticker-free span {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  line-height: 36px;
+  padding-top: 3px;
+  padding-left: 4px;
 }
 
 .tag-list .card-item .list-body {
@@ -19662,7 +19868,7 @@ footer address .copyright {
   transform: translateY(-1px);
 }
 
-.tag-list .card-item .list-body .s-sticker {
+.tag-list .card-item .list-body .s-sticker, .tag-list .card-item .list-body .badge-list {
   display: block;
   position: absolute;
   bottom: 12px;
@@ -19685,10 +19891,10 @@ footer address .copyright {
   .tag-list .card-list.card-list-md-5 .card-item:nth-child(2n) {
     margin-right: 12px !important;
   }
-  .tag-list .card-list .card-item .s-sticker {
+  .tag-list .card-list .card-item .s-sticker, .tag-list .card-list .card-item .badge-list {
     bottom: 16px !important;
   }
-  .tag-list .card-list .card-item .s-sticker i {
+  .tag-list .card-list .card-item .s-sticker i, .tag-list .card-list .card-item .badge-list i {
     width: 48px !important;
     height: 18px !important;
   }
@@ -19736,11 +19942,14 @@ footer address .copyright {
     font-size: 16px;
   }
   .tag-list .card-list .card-item .img .sticker-free {
-    right: -6px;
-  }
-  .tag-list .card-list .card-item .img .sticker-free i {
+    background-image: url("../img/common/icon-list-badge-discount-free@2x.png");
     width: 76px;
     height: 48px;
+    right: -6px;
+  }
+  .tag-list .card-list .card-item .img .sticker-free span {
+    font-size: 20px;
+    line-height: 48px;
   }
   .tag-list .card-list .card-item .list-body .title {
     font-size: 16px;
@@ -19755,7 +19964,7 @@ footer address .copyright {
     height: 24px;
     margin-right: 2px;
   }
-  .tag-list .card-list .card-item .list-body .s-sticker i {
+  .tag-list .card-list .card-item .list-body .s-sticker i, .tag-list .card-list .card-item .list-body .badge-list i {
     width: 62px;
     height: 24px;
   }
@@ -19905,19 +20114,58 @@ footer address .copyright {
   display: inline-block;
 }
 
-.edu-item-list a .list-body .sticker-area .sticker-homerun {
+.edu-item-list a .list-body .sticker-area .sticker-homelearn {
+  display: inline-block;
+  background-image: url("../img/common/icon-list-homelearn@3x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 56px;
   height: 18px;
 }
 
+.edu-item-list a .list-body .sticker-area .sticker-homelearn span {
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  line-height: 18px;
+}
+
 .edu-item-list a .list-body .sticker-area .sticker-package {
+  display: inline-block;
+  background-image: url("../img/common/icon-list-package@3x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 42px;
   height: 18px;
 }
 
+.edu-item-list a .list-body .sticker-area .sticker-package span {
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  line-height: 18px;
+}
+
 .edu-item-list a .list-body .sticker-area .sticker-free {
+  display: inline-block;
+  background-image: url("../img/common/icon-list-free@3x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 38px;
   height: 18px;
+}
+
+.edu-item-list a .list-body .sticker-area .sticker-free span {
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  line-height: 18px;
 }
 
 .edu-item-list a .list-body .sticker-area .sticker-discount-sm {
@@ -20177,6 +20425,7 @@ footer address .copyright {
 
 /* 검색창 */
 .search-box {
+  display: none;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -20323,13 +20572,18 @@ footer address .copyright {
 
 @media (min-width: 769px) {
   .search-box {
-    position: static;
+    position: fixed;
+    height: auto;
+    top: 24px;
+    left: 0;
     background: transparent;
-    border-radius: 33px;
-    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.12);
+    padding: 0 24px;
+    overflow: visible;
   }
   .search-box .input-group {
     background-color: #fff;
+    border-radius: 33px 33px 0 0;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.12);
   }
   .search-box .input-group .form-control {
     font-size: 20px;
@@ -20348,6 +20602,8 @@ footer address .copyright {
     margin: 0;
     padding: 18px 42px 18px 42px;
     background-color: rgba(255, 255, 255, 0.96);
+    border-radius: 0 0 33px 33px;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.12);
   }
   .search-box .search-content .search-list > p {
     font-size: 16px;
@@ -20519,7 +20775,6 @@ footer address .copyright {
 }
 
 .search-result .empty {
-  padding-top: 36px;
   padding-bottom: 20px;
 }
 
@@ -20529,23 +20784,28 @@ footer address .copyright {
   margin: 0 auto 12px;
 }
 
+.search-result .empty .img img {
+  max-width: none;
+}
+
 .search-result .empty .desc {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   color: #666666;
   text-align: center;
   margin-bottom: 12px;
+  margin-top: 0;
 }
 
 .search-result .empty .dot-list {
-  width: 286px;
+  width: 254px;
   margin: 0 auto;
 }
 
 .search-result .empty .dot-list li {
   position: relative;
   display: block;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 20px;
   margin-bottom: 6px;
   color: #666666;
@@ -20589,6 +20849,10 @@ footer address .copyright {
     width: 120px;
     height: 120px;
     margin: 0 auto 16px;
+  }
+  .search-result .empty .img img {
+    width: 100%;
+    height: 100%;
   }
   .search-result .empty .desc {
     font-size: 24px;
@@ -20739,8 +21003,26 @@ footer address .copyright {
   }
 }
 
-body {
-  background-color: #fff;
+@media (min-width: 769px) and (max-width: 1160px) {
+  .mypage .container {
+    padding: 0 20px !important;
+  }
+  .mypage .dashboard .list ul li {
+    width: 33% !important;
+    margin-right: 0 !important;
+  }
+  .mypage .dashboard .list ul li::before {
+    margin-right: 7px !important;
+  }
+  .mypage .dashboard .list ul li h3 {
+    width: calc(100% - 15px);
+    font-size: 13px !important;
+  }
+  .mypage .dashboard .list ul li span {
+    margin-left: calc(24px + 7px) !important;
+    font-size: 13px !important;
+    width: calc(100% - 15px);
+  }
 }
 
 .cs-center .navbar-sub {
@@ -20987,6 +21269,10 @@ body {
   background-size: 16px auto;
 }
 
+.form-group .custom-select {
+  color: #aaa;
+}
+
 .empty {
   margin: 60px auto;
   color: #999;
@@ -20994,7 +21280,7 @@ body {
 }
 
 .empty img {
-  max-width: 64px;
+  max-width: 80px;
 }
 
 .empty p {
@@ -21171,14 +21457,24 @@ body {
   .cs-center .title.text-center h3 img {
     max-width: 20px;
   }
+  .cs-center .form-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .cs-center .form-group label {
     margin-right: 14px;
     min-width: 128px;
+    line-height: 56px;
+    font-size: 18px;
+    color: #666;
   }
   .cs-center .form-group label + input,
   .cs-center .form-group label + select {
-    display: inline-block;
-    width: calc(100% - 118px - 18px);
+    width: calc(100% - 128px - 18px);
+  }
+  .cs-center .form-group label + input + span,
+  .cs-center .form-group label + select + span {
+    margin-left: calc(128px + 18px);
   }
   .cs-center .form-group + .form-group {
     margin-top: 20px;
@@ -22332,6 +22628,10 @@ body {
   }
 }
 
+.mypage {
+  background-color: #ffffff;
+}
+
 .mypage .navbar-sub {
   margin-bottom: 0;
 }
@@ -22357,6 +22657,7 @@ body {
 }
 
 .mypage .container {
+  min-height: auto !important;
   padding-bottom: 0;
   max-width: inherit;
 }
@@ -22463,7 +22764,7 @@ body {
 
 .mypage .edu-list + .input-group p + .desc {
   margin-top: 0;
-  color: #666;
+  color: #999;
 }
 
 .mypage .edu-list + .input-group + .buttons {
@@ -22480,10 +22781,52 @@ body {
   margin-right: 6px;
 }
 
+.mypage .add-logo .thumb {
+  margin: 10px 0 0 0;
+  padding: 16px;
+  width: 100%;
+  border: 1px solid #ddd;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.mypage .add-logo figure {
+  margin: 0;
+  padding-top: calc(100% - 2px);
+  background: #ccc;
+}
+
+.mypage .add-logo ul {
+  padding-left: 20px;
+}
+
+.mypage .add-logo ul li {
+  margin-top: 10px;
+  list-style-type: disc;
+  color: #666;
+}
+
+.mypage .add-logo + .buttons {
+  text-align: center;
+}
+
+.mypage .add-logo + .buttons .btn {
+  max-width: 48%;
+  min-width: inherit;
+  width: 150px;
+}
+
+.mypage .add-logo + .buttons .btn:first-child {
+  margin-right: 6px;
+}
+
 .mypage .btn-more {
   border-radius: 4px;
 }
 
+.mypage .btn-install,
 .mypage .btn-disabled,
 .mypage .btn-pay,
 .mypage .btn-reg,
@@ -22514,15 +22857,26 @@ body {
   border: 0;
 }
 
+.mypage .btn-install,
 .mypage .btn-pay {
   padding: 0 10px;
   background: #ff7600;
   box-shadow: none;
 }
 
+.mypage .btn-install.readonly {
+  color: #ff7600;
+  border-color: transparent;
+  background: #ffd5b2;
+}
+
+.mypage .dashboard {
+  overflow: hidden;
+}
+
 .mypage .dashboard h4 {
   font-size: 14px;
-  color: #999;
+  color: #666;
 }
 
 .mypage .dashboard h4 small {
@@ -22534,14 +22888,20 @@ body {
 }
 
 .mypage .dashboard h2 {
+  position: relative;
   margin: 5px 0 0 0;
   font-size: 20px;
   font-weight: bold;
 }
 
+.mypage .dashboard h2.border-bottom {
+  border-bottom: 2px solid rgba(224, 224, 224, 0.5) !important;
+}
+
 .mypage .dashboard nav {
+  display: flex;
+  justify-content: center;
   margin: 12px 0 16px 0;
-  font-size: 0;
   text-align: center;
 }
 
@@ -22685,7 +23045,7 @@ body {
   display: block;
   margin-bottom: 10px;
   color: #333;
-  font-size: 1.25vw;
+  font-size: 16px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -22962,6 +23322,126 @@ body {
   margin-top: 8px;
 }
 
+.mypage .container.parent {
+  padding: 0 0 24px;
+}
+
+.mypage .container.parent .dashboard .btn-reg,
+.mypage .container.parent .dashboard .btn-disabled {
+  margin-right: 20px;
+}
+
+.mypage .container.parent .dashboard h4 {
+  padding-left: 20px;
+}
+
+.mypage .container.parent .dashboard h2 {
+  padding-left: 20px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid rgba(224, 224, 224, 0.5);
+}
+
+.mypage .container.parent .dashboard .h-plan {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  border-bottom: 2px solid rgba(224, 224, 224, 0.5);
+}
+
+.mypage .container.parent .dashboard .h-plan p {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 60px;
+  color: #666666;
+  padding-left: 20px;
+}
+
+.mypage .container.parent .dashboard .h-plan .btn {
+  position: absolute;
+  min-width: 94px;
+  color: #ffffff;
+  right: 20px;
+  top: 13px;
+}
+
+.mypage .container.parent .dashboard .h-plan .btn.off {
+  border-color: #EFEFEF;
+  background-color: #EFEFEF;
+  color: #666;
+}
+
+.mypage .container.parent .dashboard .list {
+  padding: 0 20px 20px;
+  border-top: 0;
+}
+
+.mypage .container.parent .dashboard .list > h3 {
+  padding-top: 20px;
+  border-top: 2px solid rgba(224, 224, 224, 0.5);
+}
+
+.mypage .container.parent .dashboard .list .btn-plus {
+  margin: 13px 0 0 0;
+}
+
+.mypage .s-info {
+  padding: 16px 6px 24px;
+}
+
+.mypage .s-info > div:first-child {
+  margin-bottom: 12px;
+}
+
+.mypage .s-info > div:first-child .box-1 {
+  float: left;
+  width: 70%;
+}
+
+.mypage .s-info > div:first-child .box-2 {
+  float: left;
+  width: 30%;
+}
+
+.mypage .s-info .tit {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #999999;
+  margin-bottom: 2px;
+}
+
+.mypage .s-info .value {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #666666;
+}
+
+.mypage .s-info .value.empty {
+  color: #bbbbbb;
+  margin: 0;
+  text-align: left;
+}
+
+.mypage .s-info .area-btn {
+  position: relative;
+  text-align: center;
+  margin: 20px 0 0;
+  padding-bottom: 20px;
+}
+
+.mypage .s-info .area-btn::after {
+  content: '';
+  position: absolute;
+  width: calc(100% + 50px);
+  height: 2px;
+  background-color: #EFEFEF;
+  bottom: 0;
+  left: -25px;
+}
+
 .modal-footer .buttons {
   margin-top: 14px;
   padding: 12px 0 0 0;
@@ -22980,6 +23460,9 @@ body {
 }
 
 @media (min-width: 769px) {
+  .mypage {
+    background-color: #fffdfa;
+  }
   .mypage .content {
     margin: 46px 84px 60px 84px;
     padding-top: 40px;
@@ -23006,8 +23489,8 @@ body {
     margin-top: 36px;
   }
   .mypage .container > .edu-list:first-child li {
-    padding: 10px 0 88px 0;
-    height: auto;
+    padding: 40px 0;
+    height: calc(146px + 40px * 2);
   }
   .mypage .nav-tabs-detail {
     font-size: 20px;
@@ -23029,6 +23512,7 @@ body {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
   }
+  .mypage .btn-install,
   .mypage .btn-disabled,
   .mypage .btn-pay,
   .mypage .btn-reg,
@@ -23047,6 +23531,7 @@ body {
     padding: 0 10px;
     background: none;
   }
+  .mypage .btn-install,
   .mypage .btn-pay {
     padding: 0 10px;
   }
@@ -23100,29 +23585,30 @@ body {
   .mypage .dashboard .list h3 + div p {
     font-size: 18px;
   }
-  .mypage .dashboard .list li {
-    display: inline-block;
-    margin-left: 5%;
-    padding: 12px 0;
-    width: 29.6%;
-  }
-  .mypage .dashboard .list li:nth-child(3n + 1) {
+  .mypage .dashboard .list ul li {
+    float: left;
     margin-left: 0;
+    padding: 12px 0;
+    width: calc(33% - 25px);
+    margin-right: 25px;
   }
-  .mypage .dashboard .list li::before {
+  .mypage .dashboard .list ul li::before {
     margin-right: 14px;
     width: 24px;
     height: 24px;
   }
-  .mypage .dashboard .list li h3 {
+  .mypage .dashboard .list ul li h3 {
     font-size: 18px;
   }
-  .mypage .dashboard .list li span {
+  .mypage .dashboard .list ul li span {
     margin-left: calc(24px + 14px);
     font-size: 16px;
   }
-  .mypage .dashboard .list li.p-24 {
+  .mypage .dashboard .list ul li.p-24 {
     padding: 24px 0;
+  }
+  .mypage .dashboard .list ul li:nth-child(3n) {
+    margin-right: 0;
   }
   .mypage .dashboard .list .empty {
     margin: 32px 0 40px 0;
@@ -23190,6 +23676,7 @@ body {
   }
   .mypage .edu-list li p {
     margin-left: calc(146px + 24px);
+    width: calc(100% - 146px - 24px - 180px);
     font-size: 18px;
   }
   .mypage .edu-list li p span {
@@ -23233,23 +23720,29 @@ body {
     font-size: 18px;
   }
   .mypage .edu-list + .input-group {
-    padding: 32px 190px 0 190px;
-    width: 100%;
+    padding: 32px 0;
   }
-  .mypage .edu-list + .input-group p {
+  .mypage .edu-list + .input-group > div {
+    text-align: center;
+    margin: 0 auto;
+    width: 650px;
+  }
+  .mypage .edu-list + .input-group > div p {
     margin: 0;
     font-size: 20px;
   }
-  .mypage .edu-list + .input-group p + .form-control {
+  .mypage .edu-list + .input-group > div p + .form-control {
     flex: inherit;
     margin: 46px auto 48px auto;
     width: 340px;
   }
-  .mypage .edu-list + .input-group p + .form-control + p {
+  .mypage .edu-list + .input-group > div p + .form-control + p {
+    text-align: left;
     margin-bottom: 30px;
     font-size: 16px;
   }
-  .mypage .edu-list + .input-group p + .form-control + p + .desc {
+  .mypage .edu-list + .input-group > div p + .form-control + p + .desc {
+    text-align: left;
     margin-bottom: 60px;
     font-size: 16px;
   }
@@ -23409,15 +23902,113 @@ body {
   .mypage .children-add .form-group {
     display: flex;
   }
-  .mypage .children-add .form-group label {
-    margin-right: 0;
+  .mypage .children-add .form-group label + input {
+    width: calc(100% - 128px - 18px);
   }
-  .mypage .children-add .form-group label[for="id"] + .input-group {
+  .mypage .children-add .form-group .input-group {
+    width: calc(100% - 128px - 18px);
+  }
+  .mypage .children-add .button-group {
     display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .mypage .children-add .button-group .form-group {
+    width: 100%;
+  }
+  .mypage .children-add .button-group .form-group label + input {
+    width: calc(100% - 128px - 174px);
+  }
+  .mypage .children-add .button-group .form-group + span {
+    margin-left: calc(128px + 18px);
   }
   .mypage .children-add .button-group .btn {
     min-width: inherit;
     width: 150px;
+  }
+  .mypage .add-logo {
+    display: flex;
+  }
+  .mypage .add-logo .thumb {
+    margin: 0 48px 0 0;
+    padding: 12px;
+    max-width: 276px;
+  }
+  .mypage .add-logo ul {
+    align-self: center;
+  }
+  .mypage .add-logo ul li {
+    margin: 40px 0;
+  }
+  .mypage .add-logo + .buttons {
+    padding: 60px 0;
+  }
+  .mypage .add-logo + .buttons .btn {
+    min-width: 180px;
+  }
+  .mypage .container.parent {
+    padding: 0 42px 24px;
+  }
+  .mypage .container.parent .dashboard {
+    position: relative;
+  }
+  .mypage .container.parent .dashboard .btn-reg,
+  .mypage .container.parent .dashboard .btn-disabled {
+    margin-right: 0;
+  }
+  .mypage .container.parent .dashboard h4 {
+    padding-left: 0;
+  }
+  .mypage .container.parent .dashboard h2 {
+    padding-left: 0;
+    padding-bottom: 24px;
+    border-bottom: 0;
+  }
+  .mypage .container.parent .dashboard .h-plan {
+    position: absolute;
+    top: 0;
+    right: 202px;
+    width: auto;
+    height: auto;
+    border-bottom: 0;
+  }
+  .mypage .container.parent .dashboard .h-plan p {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 35px;
+    padding-left: 0;
+  }
+  .mypage .container.parent .dashboard .h-plan .btn {
+    display: inline-block;
+    position: static;
+    height: 48px !important;
+    line-height: 46px !important;
+    min-width: 100px !important;
+    color: #ffffff;
+    right: auto;
+    top: auto;
+    font-size: 18px;
+    margin-left: 8px;
+  }
+  .mypage .container.parent .dashboard .h-plan::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 18px;
+    background-color: #d8d8d8;
+    right: -21px;
+    top: 16px;
+  }
+  .mypage .container.parent .dashboard .list {
+    padding: 0 0 20px;
+    border-top: 0;
+  }
+  .mypage .container.parent .dashboard .list > h3 {
+    padding-top: 36px;
+    border-top: 2px solid rgba(224, 224, 224, 0.5);
+  }
+  .mypage .container.parent .dashboard .list .btn-plus {
+    margin: 30px 0 0 0;
   }
 }
 

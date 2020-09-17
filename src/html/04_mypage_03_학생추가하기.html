@@ -8,7 +8,7 @@
         <div class="navbar-brand">
           <a href="#"><img src="../img/common/btn-back-n@3x.png"/></a>
         </div>
-        <div class="title" data-text="MY_0007_01">자녀 추가하기</div>
+        <div class="title" data-text="MY_0007_01">학생 추가하기</div>
         <div class="navbar-util">
           <a href="#"><img src="../img/common/btn-main-search-n@3x.png"/></a>
           <a href="#"><img src="../img/common/btn-sub-home-n@3x.png"/></a>
@@ -54,17 +54,17 @@
           <!-- S sb반영 추가 -- 2020.09.08 -->
           <div class="button-group">
             <div class="form-group">
-              <label for="address" class="font-weight-bold" data-text="MY_0015_06">주소<i class="require"></i></label>
+              <label for="address" class="font-weight-bold mb-rem-md-0" data-text="MY_0015_06">주소<i class="require"></i></label><!-- mb-rem-md-0 클래스 추가 -- 2020.09.17 -->
               <input type="text" class="form-control" id="address" placeholder="영문/숫자 조합 6자리 이상" data-placeholder="MY_0007_09"/>
-              <button class="btn btn-outline-primary">우편번호</button>
+              <button class="btn btn-outline-primary" data-text="AD_0028_08">우편번호</button>
             </div>
           </div>
-          <div class="form-group my-md-0">
-            <label for="address2"></label>
+          <div class="form-group my-0"><!-- my-0 로 클래스 변경 -- 2020.09.17 -->
+            <label for="address2" class="d-none d-md-block"></label><!-- d-none d-md-block 클래스 추가 -- 2020.09.17 -->
             <input type="text" id="address2" class="form-control"/>
           </div>
           <div class="form-group mt-md-0">
-            <label for="address3"></label>
+            <label for="address3" class="d-none d-md-block"></label><!-- d-none d-md-block 클래스 추가 -- 2020.09.17 -->
             <input type="text" id="address3" class="form-control"/>
           </div>
           <!-- E sb반영 추가 -- 2020.09.08 -->
@@ -101,8 +101,8 @@
                 type="password"
                 id="password-confirm"
                 placeholder="비밀번호 확인" data-placeholder="MY_0007_14"
-                class="form-control"
-              />
+                class="form-control mt-0"
+              /><!-- mt-0 클래스 추가 -- 2020.09.17 -->
             </div>
           </div>
 

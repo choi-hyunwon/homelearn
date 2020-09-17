@@ -383,9 +383,15 @@ data.mypage = {
     },
     {
       'stateClass': 'complete',
-      'url': '04_mypage_03_자녀추가하기',
+      'url': '04_mypage_03_학생추가하기',
       'category': 'mypage',
-      'page': '자녀추가하기'
+      'page': '학생추가하기'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '04_mypage_03_정보수정하기',
+      'category': 'mypage',
+      'page': '정보수정하기'
     },
     {
       'stateClass': 'complete',
@@ -395,9 +401,15 @@ data.mypage = {
     },
     {
       'stateClass': 'complete',
-      'url': '04_mypage_05_학부모회원',
+      'url': '04_mypage_05_학부모회원_on',
       'category': 'mypage',
-      'page': '학부모회원'
+      'page': '학부모회원 on'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '04_mypage_05_학부모회원_off',
+      'category': 'mypage',
+      'page': '학부모회원 off'
     },
     {
       'stateClass': 'complete',
