@@ -116,20 +116,19 @@
   }
 }
   /* 769~960 겹침 현상 대응 */
-@media (min-width: 769px) and (max-width: 960px) {
-  .edu-item {
-    .rounded-box {
-      width: 437px;
-      padding-left: 47px;
-      font-size: 16px;
-
-      .badge-img {
-        right: 25px;
-      }
-    }
-  }
-}
-
+//@media (min-width: 769px) and (max-width: 960px) {
+//  .edu-item {
+//    .rounded-box {
+//      width: 437px !important;
+//      padding-left: 47px !important;
+//      font-size: 16px !important;
+//
+//      .badge-img {
+//        right: 25px !important;
+//      }
+//    }
+//  }
+//}
 @include media-breakpoint-up($size-tablet) {
   .edu-list {
     .edu-item {
@@ -180,10 +179,6 @@
     }
   }
 }
-
-
-
-
 
 
 /* 메인 - 링크 타이틀 */
@@ -321,6 +316,7 @@
     }
   }
 }
+
 /* 메인 - box-shadow를 가진 리스트 */
 .shadow-box-list {
   .card-item {
@@ -371,15 +367,15 @@
   }
 }
   /* 769~960 겹침 현상 대응 */
-@media (min-width: 769px) and (max-width: 960px) {
-  .shadow-box-list {
-    .card-item {
-      .title-sm {
-        padding-right: 92px;
-      }
-    }
-  }
-}
+//@media (min-width: 769px) and (max-width: 960px) {
+//  .shadow-box-list {
+//    .card-item {
+//      .title-sm {
+//        padding-right: 92px !important;
+//      }
+//    }
+//  }
+//}
 @include media-breakpoint-up($size-tablet) {
   .shadow-box-list {
     .card-list {
@@ -771,40 +767,40 @@
 
   }
 }
-@media (min-width: 769px) and (max-width: 1280px) {
-  .popular-edu-box {
-    max-width: none !important;
-    height: auto !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    background-color: transparent !important;
-    padding: 0 !important;
-    margin-bottom: 20px !important;
-
-    .link-title {
-      margin-bottom: 14px;
-    }
-
-    .popular-edu-list {
-      padding: 0 !important;
-      position: relative !important;
-
-      .edu-item-list {
-        position: relative !important;
-        padding: 14px 0 !important;
-        border-bottom: 2px solid rgba(224, 224, 224, 0.5) !important;
-        width: 100% !important;
-
-        &.first {
-          position: relative !important;
-          top: auto !important;
-          left: auto !important;
-          width: 100% !important;
-        }
-      }
-    }
-  }
-}
+//@media (min-width: 769px) and (max-width: 1280px) {
+//  .popular-edu-box {
+//    max-width: none !important;
+//    height: auto !important;
+//    border-radius: 0 !important;
+//    box-shadow: none !important;
+//    background-color: transparent !important;
+//    padding: 0 !important;
+//    margin-bottom: 20px !important;
+//
+//    .link-title {
+//      margin-bottom: 14px;
+//    }
+//
+//    .popular-edu-list {
+//      padding: 0 !important;
+//      position: relative !important;
+//
+//      .edu-item-list {
+//        position: relative !important;
+//        padding: 14px 0 !important;
+//        border-bottom: 2px solid rgba(224, 224, 224, 0.5) !important;
+//        width: 100% !important;
+//
+//        &.first {
+//          position: relative !important;
+//          top: auto !important;
+//          left: auto !important;
+//          width: 100% !important;
+//        }
+//      }
+//    }
+//  }
+//}
 @include media-breakpoint-up($size-tablet) {
   .popular-edu-box {
     max-width: 1160px;
@@ -927,6 +923,7 @@
             img {
               width: 100%;
               height: 100%;
+              border-radius: 5px;
             }
 
             .sticker-num {

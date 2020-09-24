@@ -5,8 +5,8 @@
 <div class="wrap-bg">
 
   <div class="bg bg_detail">
-    <div class="d-none d-md-block" style="background: url(../img/_temp/main-recommend-sub-bg@3x.png) no-repeat center center /cover"></div>
-    <div class="d-xs-block d-md-none" style="background: url(../img/_temp/m-main-recommend-sub-bg@3x.png) no-repeat center center /cover"></div>
+    <div class="d-none d-xl-block" style="background: url(../img/_temp/main-recommend-sub-bg@3x.png) no-repeat center center /cover"></div><!-- d-xl-block로 변경 -- 2020.09.24  -->
+    <div class="d-xs-block d-xl-none" style="background: url(../img/_temp/m-main-recommend-sub-bg@3x.png) no-repeat center center /cover"></div><!-- d-xl-none로 변경 -- 2020.09.24  -->
   </div>
 
   <div class="wrap">
@@ -25,15 +25,17 @@
       <div class="navbar-util">
         <a href="#"><img src="../img/common/btn-main-search-n.png" height="36" width="36"/></a>
         <a href="#" data-trigger="drawer"><img src="../img/common/btn-main-user-off-n.png" height="36" width="36"/></a>
+        <a href="#" data-toggle="modal" data-target="#langSetting"><img
+          src="../img/common/btn-main-country-kor-n@2x.png" height="36" width="36"></a>
         @@include('../html/include/drawer.html')
       </div>
       <div class="navbar-btn-eco">
         <a href="#">
-          <img src="../img/common/btn-main-homerun-eco-n.png" class="d-none d-md-block"/>
-          <img src="../img/common/btn-main-homerun-eco-n-mobile.png" class="d-xs-block d-md-none"/>
+          <img src="../img/common/btn-main-homerun-eco-n.png" class="d-none d-xl-block"/><!-- d-xl-block로 변경 -- 2020.09.24  -->
+          <img src="../img/common/btn-main-homerun-eco-n-mobile.png" class="d-xs-block d-xl-none"/><!-- d-xl-none로 변경 -- 2020.09.24  -->
         </a>
       </div>
-      <div class="navbar-gnb-sm d-md-none mt-rem-6">
+      <div class="navbar-gnb-sm d-xl-none mt-rem-6"><!-- d-xl-none로 변경 -- 2020.09.24  -->
         <ul class="navbar-nav flex-row">
           <li class="nav-item active"><a href="#" class="nav-link" data-text="MA_0013_02">추천</a></li>
           <li class="nav-item"><a href="#" class="nav-link" data-text="MA_0013_03">초등</a></li>
@@ -43,16 +45,15 @@
       </div>
     </div>
 
-    <div class="container-lg container-fluid px-rem-md-3 px-no">
+    <div class="container-lg container-fluid px-rem-xl-3 px-no"><!-- d-xl-block로 변경 -- 2020.09.24  -->
 
       <div class="content element">
 
         <!-- 인기학습 -->
         <div class="popular-edu-box">
-          <div class="link-title pl-rem-2 pl-md-no pr-rem-md-2">
-            <a href="#" class="d-lg-no-cursor color-text2" data-text="MA_0013_01">인기학습! 아직도 안해봤어요?<i
-              class="sprite btn-tag-more-arrow-n d-xs-block d-md-none tr-y-2"></i></a>
-            <a href="#" class="btn-text d-none d-md-block" data-text="CU_0023_01">더보기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a>
+          <div class="link-title pl-rem-2 pl-xl-no pr-rem-xl-2"><!-- pl-xl-no pr-rem-xl-2로 변경 -- 2020.09.24  -->
+            <a href="#" class="d-lg-no-cursor color-text2" data-text="MA_0013_01">인기학습! 아직도 안해봤어요?<i class="sprite btn-tag-more-arrow-n d-xs-block d-xl-none tr-y-2"></i></a><!-- d-xl-none로 변경 -- 2020.09.24  -->
+            <a href="#" class="btn-text d-none d-xl-block" data-text="CU_0023_01">더보기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a><!-- d-xl-block로 변경 -- 2020.09.24  -->
           </div>
           <div class="popular-edu-list">
             <ul class="clearfix">
@@ -233,16 +234,16 @@
         </div>
 
         <!-- 이벤트 영역 - 2개 --> <!-- 2단 : card-list card-list-2 -->
-        <div class="event-box mb-rem-md-6 p-md-no px-no mb-rem-3">
-          <div class="link-title pl-rem-2 pl-md-no pr-rem-md-2">
+        <div class="event-box mb-rem-xl-6 p-xl-no px-no mb-rem-3 clearfix"><!-- mb-rem-xl-6 p-xl-no로 변경 -- 2020.09.24  -->
+          <div class="link-title pl-rem-2 pl-xl-no pr-rem-xl-2"><!-- pl-xl-no pr-rem-xl-2로 변경 -- 2020.09.24  -->
             <a href="#" class="d-lg-no-cursor color-text2" data-text="MA_0007_03">이벤트에 참여해 보세요<i
-              class="sprite btn-tag-more-arrow-n d-xs-block d-md-none"></i></a>
-            <a href="#" class="btn-text d-none d-md-block" data-text="CU_0023_01">더보기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a>
+              class="sprite btn-tag-more-arrow-n d-xs-block d-xl-none"></i></a><!-- d-xl-none로 변경 -- 2020.09.24  -->
+            <a href="#" class="btn-text d-none d-xl-block" data-text="CU_0023_01">더보기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a><!-- d-xl-block로 변경 -- 2020.09.24  -->
           </div>
           <div class="card-list card-list-2">
             <div class="scroll-wrap"> <!-- scroll-wrap 추가 --- 2020.08.19 -->
               <div class="scroll" style="width: 700px">
-                <ul class="clearfix px-rem-2 pb-rem-2 p-md-no">
+                <ul class="clearfix px-rem-2 pb-rem-2 p-xl-no"><!-- p-xl-no로 변경 -- 2020.09.24  -->
                   <li class="card-item">
                     <a href="#" class="img">
                       <img src="../img/_temp/m-main-recommend-event-banner-img@3x.png" alt="">
@@ -260,27 +261,23 @@
         </div>
 
         <!-- 5단 / 5개 --> <!-- 5단 : card-list card-list-5 --> <!-- 5단 추가 -- 2020.08.19-->
-        <div class="tag-list mb-rem-md-3">
-          <div class="link-title pl-rem-2 pl-md-no pr-rem-md-2 mb-rem-1">
-            <a href="#" class="d-lg-no-cursor color-text2" data-text="MA_0007_03">이벤트에 참여해 보세요<i
-              class="sprite btn-tag-more-arrow-n d-xs-block d-md-none"></i></a>
-            <a href="#" class="btn-text d-none d-md-block" data-text="CU_0023_01">더보기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a>
+        <div class="tag-list mb-rem-xl-3"><!-- mb-rem-xl-3로 변경 -- 2020.09.24  -->
+          <div class="link-title clearfix px-rem-2 pl-xl-no pr-xl-no"><!-- pl-xl-no pr-xl-no로 변경 -- 2020.09.24  -->
+            <div class="title">
+              <a href="#" class="color-secondary d-lg-no-cursor">#초등한자<i class="sprite btn-tag-more-arrow-color-n d-xl-none"></i></a><!-- d-xl-none로 변경 -- 2020.09.24  -->
+              <a href="#" class="btn btn-sm btn-main-on btn-main-on-right"><i class="sprite btn-noti-color-n-sm"></i>알림 ON</a>
+              <a href="#" class="btn-text d-none d-xl-block" data-text="CU_0023_01">더보기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a><!-- d-xl-block로 변경 -- 2020.09.24  -->
+            </div>
+            <p class="desc" data-text="MA_0010_08">스스로 생각해보는 습관 기르기</p>
           </div>
           <div class="card-list card-list-5">
             <div class="scroll-wrap"> <!-- scroll-wrap 추가 --- 2020.08.19 -->
               <div class="scroll" style="width: 845px">
-                <ul class="clearfix px-rem-2 px-md-no">
+                <ul class="clearfix px-rem-2 px-xl-no"><!-- px-xl-no로 변경 -- 2020.09.24  -->
                   <li class="card-item">
                     <a href="#">
                       <div class="img">
                         <img src="../img/main/m-app-card-img02@3x.png" alt="">
-                        <div class="sticker-top">
-                          <i class="icon-list-badge-homelearn" data-text="CU_0024_01">홈런 전용</i>
-                          <i class="icon-list-badge-package" data-text="CU_0024_02">패키지</i>
-                        </div>
-                        <div class="sticker-discount">
-                          <span data-text="CU_0024_03">50</span>
-                        </div>
                       </div>
                       <div class="list-body">
                         <span class="title">1번째 탭 : 24시간 1:1 영어회화</span>
@@ -297,6 +294,7 @@
                       <div class="list-body">
                         <span class="title">캐치잇 잉글리시 : 게임보다 쉬운 영어</span>
                         <span class="score"><i class="sprite icon-16-star"></i>3.5</span>
+                        <span class="badge-list" data-text="CU_0023_02">학습중</span>
                       </div>
                     </a>
                   </li>
@@ -308,6 +306,7 @@
                       <div class="list-body">
                         <span class="title">영어를 부탁해</span>
                         <span class="score"><i class="sprite icon-16-star"></i>3.5</span>
+                        <span class="badge-list" data-text="CU_0023_02">학습중</span>
                       </div>
                     </a>
                   </li>
@@ -319,6 +318,7 @@
                       <div class="list-body">
                         <span class="title">EBS 생방송 톡!톡! 보니하니</span>
                         <span class="score"><i class="sprite icon-16-star"></i>3.5</span>
+                        <span class="badge-list" data-text="CU_0023_02">학습중</span>
                       </div>
                     </a>
                   </li>
@@ -330,6 +330,7 @@
                       <div class="list-body">
                         <span class="title">실감형 콘텐츠</span>
                         <span class="score"><i class="sprite icon-16-star"></i>3.5</span>
+                        <span class="badge-list" data-text="CU_0023_02">학습중</span>
                       </div>
                     </a>
                   </li>
@@ -340,12 +341,12 @@
         </div>
 
         <!-- 홈런 에코와 함께하고 있어요   -->
-        <div class="square-box p-md-no px-no mb-rem-3">
-          <div class="link-title pl-rem-2 pl-md-no pr-rem-md-2">
+        <div class="square-box p-xl-no px-no mb-rem-3"><!-- p-xl-no로 변경 -- 2020.09.24  -->
+          <div class="link-title pl-rem-2 pl-xl-no pr-rem-xl-2"><!-- pl-xl-no pr-rem-xl-2로 변경 -- 2020.09.24  -->
             <span class="color-text2" data-text="MA_0014_02">홈런 에코와 함께 하고 있어요</span>
           </div>
           <div class="card-list card-list-md-3">
-            <ul class="clearfix px-rem-2 pb-rem-2 p-md-no">
+            <ul class="clearfix px-rem-2 pb-rem-2 p-xl-no"><!-- p-xl-no로 변경 -- 2020.09.24  -->
               <li class="card-item">
                 <a href="#">
                   <span class="title text-ellipsis">아이스크림 홈런</span>
@@ -402,20 +403,20 @@
               </li>
             </ul>
           </div>
-          <div class="more-btn px-rem-2 px-rem-md-0">
+          <div class="more-btn px-rem-2 px-rem-xl-0"><!-- px-rem-xl-0로 변경 -- 2020.09.24  -->
             <a href="#" class="btn btn-block btn-more" data-text="CU_0023_01">더보기<i class="sprite btn-open-color-n"></i></a>
           </div>
 
         </div>
 
         <!-- 이런 학습 어때요?  -->
-        <div class="event-box p-md-no px-no mb-rem-3">
-          <div class="link-title pl-rem-2 pl-md-no pr-rem-md-2">
+        <div class="event-box p-xl-no px-no mb-rem-3"><!-- p-xl-no로 변경 -- 2020.09.24  -->
+          <div class="link-title pl-rem-2 pl-xl-no pr-rem-xl-2"><!-- pl-xl-no pr-rem-xl-2로 변경 -- 2020.09.24  -->
             <a href="#" class="d-lg-no-cursor color-text2" data-text="MA_0001_03">이런 학습 어때요?</a>
-            <a href="#" class="btn-text d-none d-md-block" data-text="CU_0023_01">더보기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a>
+            <a href="#" class="btn-text d-none d-xl-block" data-text="CU_0023_01">더보기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a><!-- d-xl-block로 변경 -- 2020.09.24  -->
           </div>
           <div class="card-list card-list-md-3">
-            <ul class="clearfix px-rem-2 pb-rem-2 p-md-no">
+            <ul class="clearfix px-rem-2 pb-rem-2 p-xl-no"><!-- p-xl-no로 변경 -- 2020.09.24  -->
               <li class="card-item">
                 <a href="#" class="img">
                   <img src="../img/_temp/m-main-recommend-event-banner-img@3x.png" alt="">
@@ -448,7 +449,7 @@
               </li>
             </ul>
           </div>
-          <div class="more-btn px-rem-2 px-rem-md-0">
+          <div class="more-btn px-rem-2 px-rem-xl-0"><!-- px-rem-xl-0로 변경 -- 2020.09.24  -->
             <a href="#" class="btn btn-block btn-more" data-text="CU_0023_01">더보기<i class="sprite btn-open-color-n"></i></a>
           </div>
         </div>

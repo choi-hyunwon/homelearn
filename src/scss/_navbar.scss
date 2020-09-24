@@ -191,10 +191,7 @@
   }
 }
 
-@include media-breakpoint-up(sm) {
-
-}
-@include media-breakpoint-up($size-tablet) {
+@include media-breakpoint-up(xl) {
   .navbar-util {
     a.hasalram {
       &:after {
@@ -204,7 +201,7 @@
     }
   }
 }
-@include media-breakpoint-up(lg) {
+@include media-breakpoint-up(xl) {
   .navbar-util {
     a.hasalram {
       &:after {
@@ -234,7 +231,7 @@
 }
 
 
-@include media-breakpoint-up($size-tablet) {
+@include media-breakpoint-up(xl) {
   .navbar {
     height: 66px;
     border-radius: 33px;
@@ -347,7 +344,7 @@
   }
 
 }
-@include media-breakpoint-up(lg) {
+@include media-breakpoint-up(xl) {
   .navbar-gnb {
     left: 25%;
     .nav-link {

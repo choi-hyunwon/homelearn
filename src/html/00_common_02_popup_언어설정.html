@@ -3,24 +3,19 @@
 @@include('../html/include/head.html')
 <body>@@include('../html/include/button.html')
 <div class="wrap-bg">
-
   <!-- S 배경 슬라이드 -->
   <div id="mainCarousel" class="carousel slide main" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="bg bg_main">
-          <div class="d-none d-md-block"
-               style="background: url(../img/_temp/main-recommend-sub-bg.png) no-repeat center center /cover"></div>
-          <div class="d-xs-block d-md-none"
-               style="background: url(../img/_temp/m-main-recommend-bg@3x.png) no-repeat center center /cover"></div>
+          <div class="d-none d-xl-block" style="background: url(../img/_temp/main-recommend-sub-bg.png) no-repeat center center /cover"></div><!-- d-xl-block로 변경 -- 2020.09.24  -->
+          <div class="d-xs-block d-xl-none" style="background: url(../img/_temp/m-main-recommend-bg@3x.png) no-repeat center center /cover"></div><!-- d-xl-none로 변경 -- 2020.09.24  -->
         </div>
       </div>
       <div class="carousel-item">
         <div class="bg bg_main">
-          <div class="d-none d-md-block"
-               style="background: url(../img/_temp/img-main-top@3x.png) no-repeat center center /cover"></div>
-          <div class="d-xs-block d-md-none"
-               style="background: url(../img/_temp/m-main-recommend-bg@3x.png) no-repeat center center /cover"></div>
+          <div class="d-none d-xl-block" style="background: url(../img/_temp/img-main-top@3x.png) no-repeat center center /cover"></div><!-- d-xl-block로 변경 -- 2020.09.24  -->
+          <div class="d-xs-block d-xl-none" style="background: url(../img/_temp/m-main-recommend-bg@3x.png) no-repeat center center /cover"></div><!-- d-xl-none로 변경 -- 2020.09.24  -->
         </div>
       </div>
       <ol class="carousel-indicators">
@@ -59,11 +54,11 @@
       </div>
       <div class="navbar-btn-eco">
         <a href="#">
-          <img src="../img/common/btn-main-homerun-eco-n.png" class="d-none d-md-block"/>
-          <img src="../img/common/btn-main-homerun-eco-n-mobile.png" class="d-xs-block d-md-none"/>
+          <img src="../img/common/btn-main-homerun-eco-n.png" class="d-none d-xl-block"/><!-- d-xl-block로 변경 -- 2020.09.24  -->
+          <img src="../img/common/btn-main-homerun-eco-n-mobile.png" class="d-xs-block d-xl-none"/><!-- d-xl-none로 변경 -- 2020.09.24  -->
         </a>
       </div>
-      <div class="navbar-gnb-sm d-md-none mt-rem-6">
+      <div class="navbar-gnb-sm d-xl-none mt-rem-6"><!-- d-xl-none로 변경 -- 2020.09.24  -->
         <ul class="navbar-nav flex-row">
           <li class="nav-item active"><a href="#" class="nav-link" data-text="MA_0013_02">추천</a></li>
           <li class="nav-item"><a href="#" class="nav-link" data-text="MA_0013_03">초등</a></li>
@@ -73,18 +68,19 @@
       </div>
     </div>
 
-    <div class="container-lg container-fluid px-rem-md-3 px-no">
+    <div class="container-lg container-fluid px-rem-xl-3 px-no"><!-- px-rem-xl-3로 변경 -- 2020.09.24  -->
 
       <div class="content">
 
         <!-- 3단 이미지 3개 --> <!-- 3단 : card-list card-list-3 -->
-        <div class="edu-list normal-list line-bottom mb-rem-md-6 p-md-no">
+        <div class="edu-list normal-list line-bottom mb-rem-xl-6 p-xl-no"><!-- mb-rem-xl-6 p-xl-no로 변경 -- 2020.09.24  -->
           <div class="edu-item">
-            <p class="title pl-md-no" data-text="MA_0001_01"><span class="color-text">김홈런</span> 님을 위한 맞춤 학습</p>
-            <div class="px-rem-2 p-md-no">
-              <a href="#" class="rounded-box" data-text="MA_0001_02">공부하고 싶은 학습이 <span class="color-secondary">2개</span> 있어요.<span
-                class="badge bg-secondary">2</span>
-                <ul class="clearfix badge-img d-none d-md-inline-block">
+            <p class="title pl-xl-no" data-text="MA_0001_01"><span class="color-text" data-text="MA_0001_07">김홈런</span> 님을 위한 맞춤 학습</p><!-- pl-xl-no로 변경 -- 2020.09.24  -->
+            <div class="px-rem-2 p-xl-no"><!-- p-xl-no로 변경 -- 2020.09.24  -->
+              <a href="#" class="rounded-box">
+                <em data-text="MA_0001_04">공부하고 싶은 학습이</em> <span class="color-secondary" data-text="MA_0001_05">2개</span>
+                <em data-text="MA_0001_06">있어요.</em><span class="badge bg-secondary">2</span>
+                <ul class="clearfix badge-img d-none d-xl-inline-block"><!-- d-xl-inline-block로 변경 -- 2020.09.24  -->
                   <li><img src="../img/main/zen@3x.png" alt=""></li>
                   <li><img src="../img/main/ybird@3x.png" alt=""></li>
                 </ul>
@@ -93,7 +89,7 @@
             <div class="card-list card-list-3">
               <div class="scroll-wrap"> <!-- scroll-wrap 추가 --- 2020.08.19 -->
                 <div class="scroll line-bottom" style="width:844px;">
-                  <ul class="clearfix px-rem-2 p-md-no">
+                  <ul class="clearfix px-rem-2 p-xl-no"><!-- p-xl-no로 변경 -- 2020.09.24  -->
                     <li class="card-item">
                       <a href="#">
                         <span class="img"><img src="../img/main/m-main-recommend-app-img01@2x.png" alt=""></span>
@@ -123,13 +119,15 @@
         </div>
 
         <!-- 3단 이미지 2개 --> <!-- 3단 : card-list card-list-3 -->
-        <div class="edu-list normal-list line-bottom mb-rem-md-6 p-md-no">
+        <div class="edu-list normal-list line-bottom mb-rem-xl-6 p-xl-no"><!-- mb-rem-xl-6 p-xl-no로 변경 -- 2020.09.24  -->
           <div class="edu-item">
-            <p class="title pl-md-no" data-text="MA_0001_01"><span class="color-text">김에듀</span> 님을 위한 맞춤 학습</p>
-            <div class="px-rem-2 p-md-no">
-              <a href="#" class="rounded-box" data-text="MA_0001_02">공부하고 싶은 학습이 <span class="color-secondary">5개</span> 있어요.<span
-                class="badge bg-secondary">5</span>
-                <ul class="clearfix badge-img d-none d-md-inline-block">
+            <p class="title pl-xl-no" data-text="MA_0001_01"><span class="color-text" data-text="MA_0001_07">김홈런</span> 님을 위한 맞춤 학습</p><!-- pl-xl-no로 변경 -- 2020.09.24  -->
+            <div class="px-rem-2 p-xl-no"><!-- p-xl-no로 변경 -- 2020.09.24  -->
+              <a href="#" class="rounded-box">
+                <em data-text="MA_0001_04">공부하고 싶은 학습이</em> <span class="color-secondary" data-text="MA_0001_05">2개</span>
+                <em data-text="MA_0001_06">있어요.</em>
+                <span class="badge bg-secondary">5</span>
+                <ul class="clearfix badge-img d-none d-xl-inline-block"><!-- d-xl-inline-block로 변경 -- 2020.09.24  -->
                   <li><img src="../img/main/p-fox@3x.png" alt=""></li>
                   <li><img src="../img/main/wcat@3x.png" alt=""></li>
                   <li><img src="../img/main/todo@3x.png" alt=""></li>
@@ -141,7 +139,7 @@
             <div class="card-list card-list-3">
               <div class="scroll-wrap"> <!-- scroll-wrap 추가 --- 2020.08.19 -->
                 <div class="scroll line-bottom" style="width:577px;">
-                  <ul class="clearfix px-rem-2 p-md-no">
+                  <ul class="clearfix px-rem-2 p-xl-no"><!-- p-xl-no로 변경 -- 2020.09.24  -->
                     <li class="card-item">
                       <a href="#">
                         <span class="img"><img src="../img/main/m-main-recommend-app-img01@2x.png" alt=""></span>
@@ -164,28 +162,28 @@
         </div>
 
         <!-- 이벤트 영역 - 1개 --> <!-- 1단 : card-list -->
-        <div class="event-box mb-rem-md-6 p-md-no">
+        <div class="event-box mb-rem-xl-6 p-xl-no"><!-- mb-rem-xl-6 p-xl-no로 변경 -- 2020.09.24  -->
           <div class="card-list">
             <div class="card-item">
               <a class="img" href="#">
-                <img class="d-none d-md-block" src="../img/main/homelearn-banner.png" alt="">
-                <img class="d-xs-block d-md-none" src="../img/main/m-homelearn-banner@2x.png" alt="">
+                <img class="d-none d-xl-block" src="../img/main/homelearn-banner.png" alt=""><!-- d-xl-block로 변경 -- 2020.09.24  -->
+                <img class="d-xs-block d-xl-none" src="../img/main/m-homelearn-banner@2x.png" alt=""><!-- d-xl-none로 변경 -- 2020.09.24  -->
               </a>
             </div>
           </div>
         </div>
 
         <!-- 이벤트 영역 - 2개 --> <!-- 2단 : card-list card-list-2 -->
-        <div class="event-box mb-rem-md-6 p-md-no px-no mb-rem-3 clearfix">
-          <div class="link-title pl-rem-2 pl-md-no pr-rem-md-2">
+        <div class="event-box mb-rem-xl-6 p-xl-no px-no mb-rem-3 clearfix"><!-- mb-rem-xl-6 p-xl-no로 변경 -- 2020.09.24  -->
+          <div class="link-title pl-rem-2 pl-xl-no pr-rem-xl-2"><!-- pl-xl-no pr-rem-xl-2로 변경 -- 2020.09.24  -->
             <a href="#" class="d-lg-no-cursor color-text2" data-text="MA_0007_03">이벤트에 참여해 보세요<i
-              class="sprite btn-tag-more-arrow-n d-xs-block d-md-none"></i></a>
-            <a href="#" class="btn-text d-none d-md-block" data-text="CU_0023_01">더보기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a>
+              class="sprite btn-tag-more-arrow-n d-xs-block d-xl-none"></i></a><!-- d-xl-none로 변경 -- 2020.09.24  -->
+            <a href="#" class="btn-text d-none d-xl-block" data-text="CU_0023_01">더보기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a><!-- d-xl-block로 변경 -- 2020.09.24  -->
           </div>
           <div class="card-list card-list-2">
             <div class="scroll-wrap"> <!-- scroll-wrap 추가 --- 2020.08.19 -->
               <div class="scroll" style="width: 700px">
-                <ul class="clearfix px-rem-2 pb-rem-2 p-md-no">
+                <ul class="clearfix px-rem-2 pb-rem-2 p-xl-no"><!-- p-xl-no로 변경 -- 2020.09.24  -->
                   <li class="card-item">
                     <a href="#" class="img">
                       <img src="../img/_temp/m-main-recommend-event-banner-img@3x.png" alt="">
@@ -203,7 +201,7 @@
         </div>
 
         <!-- 배너 --> <!-- 1단 : card-list -->
-        <div class="banner-box mb-rem-md-6 p-md-no clearfix">
+        <div class="banner-box mb-rem-xl-6 p-xl-no clearfix"><!-- mb-rem-xl-6 p-xl-no로 변경 -- 2020.09.24  -->
           <div class="link-title clearfix">
             <div class="title color-secondary">#인공지능
               <a href="#" class="btn btn-sm btn-main-off bg-grey" data-text="CU_0007_03"><i class="sprite btn-noti-n-sm"></i>알림 OFF</a>
@@ -226,12 +224,12 @@
         </div>
 
         <!-- 2단 -->  <!-- 2단 : card-list card-list-2 -->
-        <div class="edu-list shadow-box-list mb-rem-3 mb-rem-md-6">
+        <div class="edu-list shadow-box-list mb-rem-3 mb-rem-xl-6"><!-- mb-rem-xl-6로 변경 -- 2020.09.24  -->
           <div class="edu-item">
-            <div class="link-title clearfix px-rem-2 px-md-no">
+            <div class="link-title clearfix px-rem-2 px-xl-no"><!-- px-xl-no로 변경 -- 2020.09.24  -->
               <div class="title">
                 <a href="#" class="color-secondary d-lg-no-cursor">#초등사고력<i
-                  class="sprite btn-tag-more-arrow-color-n d-md-none"></i></a>
+                  class="sprite btn-tag-more-arrow-color-n d-xl-none"></i></a><!-- d-xl-none로 변경 -- 2020.09.24  -->
                 <a href="#" class="btn btn-sm btn-main-on" data-text="CU_0007_02"><i class="sprite btn-noti-color-n-sm"></i>알림 ON</a>
               </div>
               <p class="desc" data-text="MA_0010_08">스스로 생각해보는 습관 기르기</p>
@@ -239,11 +237,10 @@
             <div class="card-list card-list-2">
               <div class="scroll-wrap"> <!-- scroll-wrap 추가 --- 2020.08.19 -->
                 <div class="scroll pb-20" style="width:570px;">
-                  <ul class="clearfix px-rem-2 px-md-no pb-rem-2">
+                  <ul class="clearfix px-rem-2 px-xl-no pb-rem-2"><!-- px-xl-no로 변경 -- 2020.09.24  -->
                     <li class="card-item">
                       <a href="#">
-                      <span class="img"><img src="../img/main/m-main-recommend-scroll-app-card-img01@3x.png"
-                                             alt=""></span>
+                      <span class="img"><img src="../img/main/m-main-recommend-scroll-app-card-img01@3x.png" alt=""></span>
                         <span class="title text-ellipsis" data-text="CU_0018_15">아이스크림에듀</span>
                         <span class="title-sm text-ellipsis">마법과 함께하는 천자문 교육</span>
                         <span class="badge-list" data-text="CU_0023_02">학습중</span>
@@ -251,8 +248,7 @@
                     </li>
                     <li class="card-item">
                       <a href="#">
-                      <span class="img"><img src="../img/main/m-main-recommend-scroll-app-card-img02@3x.png"
-                                             alt=""></span>
+                      <span class="img"><img src="../img/main/m-main-recommend-scroll-app-card-img02@3x.png" alt=""></span>
                         <span class="title text-ellipsis" data-text="CU_0018_15">아이스크림에듀</span>
                         <span class="title-sm text-ellipsis">프리미엄</span>
                         <span class="badge-list" data-text="CU_0023_02">학습중</span>
@@ -266,26 +262,23 @@
         </div>
 
         <!-- 3단 --> <!-- 3단 : card-list card-list-3 -->
-        <div class="edu-list shadow-box-list mb-rem-3 mb-rem-md-6 d-none d-md-block">
+        <div class="edu-list shadow-box-list mb-rem-3 mb-rem-xl-6 d-none d-xl-block"><!-- mb-rem-xl-6 d-xl-block로 변경 -- 2020.09.24  -->
           <div class="edu-item">
-            <div class="link-title clearfix px-rem-2 pl-md-no pr-md-no">
+            <div class="link-title clearfix px-rem-2 pl-xl-no pr-xl-no"><!-- pl-xl-no pr-xl-no로 변경 -- 2020.09.24  -->
               <div class="title">
-                <a href="#" class="color-secondary d-lg-no-cursor">#초등한자<i
-                  class="sprite btn-tag-more-arrow-color-n d-md-none"></i></a>
-                <a href="#" class="btn btn-sm btn-main-on btn-main-on-right"><i class="sprite btn-noti-color-n-sm"></i>알림
-                  ON</a>
-                <a href="#" class="btn-text d-none d-md-block" data-text="CU_0023_01">더보기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a>
+                <a href="#" class="color-secondary d-lg-no-cursor">#초등한자<i class="sprite btn-tag-more-arrow-color-n d-xl-none"></i></a><!-- d-xl-none로 변경 -- 2020.09.24  -->
+                <a href="#" class="btn btn-sm btn-main-on btn-main-on-right"><i class="sprite btn-noti-color-n-sm"></i>알림 ON</a>
+                <a href="#" class="btn-text d-none d-xl-block" data-text="CU_0023_01">더보기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a><!-- d-xl-block로 변경 -- 2020.09.24  -->
               </div>
               <p class="desc" data-text="MA_0010_08">스스로 생각해보는 습관 기르기</p>
             </div>
             <div class="card-list card-list-3">
               <div class="scroll-wrap"> <!-- scroll-wrap 추가 --- 2020.08.19 -->
                 <div class="scroll pb-20 " style="width:844px;">
-                  <ul class="clearfix px-rem-2 px-md-no">
+                  <ul class="clearfix px-rem-2 px-xl-no"><!-- px-xl-no로 변경 -- 2020.09.24  -->
                     <li class="card-item">
                       <a href="#">
-                        <span class="img"><img src="../img/main/m-main-recommend-scroll-app-card-img01.png"
-                                               alt=""></span>
+                        <span class="img"><img src="../img/main/m-main-recommend-scroll-app-card-img01.png" alt=""></span>
                         <span class="title text-ellipsis" data-text="CU_0018_15">아이스크림에듀</span>
                         <span class="title-sm text-ellipsis">마법과 함께하는 천자문 교육</span>
                         <span class="badge-list" data-text="CU_0023_02">학습중</span>
@@ -293,8 +286,7 @@
                     </li>
                     <li class="card-item">
                       <a href="#">
-                        <span class="img"><img src="../img/main/m-main-recommend-scroll-app-card-img01.png"
-                                               alt=""></span>
+                        <span class="img"><img src="../img/main/m-main-recommend-scroll-app-card-img01.png" alt=""></span>
                         <span class="title" data-text="CU_0018_15">아이스크림에듀</span>
                         <span class="title-sm text-ellipsis">마법과 함께하는 천자문 교육</span>
                         <span class="badge-list" data-text="CU_0023_02">학습중</span>
@@ -302,8 +294,7 @@
                     </li>
                     <li class="card-item">
                       <a href="#">
-                        <span class="img"><img src="../img/main/m-main-recommend-scroll-app-card-img01.png"
-                                               alt=""></span>
+                        <span class="img"><img src="../img/main/m-main-recommend-scroll-app-card-img01.png" alt=""></span>
                         <span class="title" data-text="CU_0018_15">아이스크림에듀</span>
                         <span class="title-sm text-ellipsis">마법과 함께하는 천자문 교육</span>
                         <span class="badge-list" data-text="CU_0023_02">학습중</span>
@@ -317,21 +308,19 @@
         </div>
 
         <!-- 5단 / 5개 --> <!-- 5단 : card-list card-list-5 --> <!-- 5단 추가 -- 2020.08.19-->
-        <div class="tag-list mb-rem-md-3">
-          <div class="link-title clearfix px-rem-2 pl-md-no pr-md-no">
+        <div class="tag-list mb-rem-xl-3"><!-- mb-rem-xl-3로 변경 -- 2020.09.24  -->
+          <div class="link-title clearfix px-rem-2 pl-xl-no pr-xl-no"><!-- pl-xl-no pr-xl-no로 변경 -- 2020.09.24  -->
             <div class="title">
-              <a href="#" class="color-secondary d-lg-no-cursor">#초등한자<i
-                class="sprite btn-tag-more-arrow-color-n d-md-none"></i></a>
-              <a href="#" class="btn btn-sm btn-main-on btn-main-on-right"><i class="sprite btn-noti-color-n-sm"></i>알림
-                ON</a>
-              <a href="#" class="btn-text d-none d-md-block" data-text="CU_0023_01">더보기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a>
+              <a href="#" class="color-secondary d-lg-no-cursor">#초등한자<i class="sprite btn-tag-more-arrow-color-n d-xl-none"></i></a><!-- d-xl-none로 변경 -- 2020.09.24  -->
+              <a href="#" class="btn btn-sm btn-main-on btn-main-on-right"><i class="sprite btn-noti-color-n-sm"></i>알림 ON</a>
+              <a href="#" class="btn-text d-none d-xl-block" data-text="CU_0023_01">더보기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a><!-- d-xl-block로 변경 -- 2020.09.24  -->
             </div>
             <p class="desc" data-text="MA_0010_08">스스로 생각해보는 습관 기르기</p>
           </div>
           <div class="card-list card-list-5">
             <div class="scroll-wrap"> <!-- scroll-wrap 추가 --- 2020.08.19 -->
               <div class="scroll" style="width: 845px">
-                <ul class="clearfix px-rem-2 px-md-no">
+                <ul class="clearfix px-rem-2 px-xl-no"><!-- px-xl-no로 변경 -- 2020.09.24  -->
                   <li class="card-item">
                     <a href="#">
                       <div class="img">
@@ -399,11 +388,10 @@
         </div>
 
         <!-- 5단 / 4개--> <!-- 5단 : card-list card-list-5 --> <!-- 5단 추가 -- 2020.08.19-->
-        <div class="tag-list mb-rem-md-3">
-          <div class="link-title clearfix px-rem-2 px-md-no">
+        <div class="tag-list mb-rem-xl-3"><!-- mb-rem-xl-3로 변경 -- 2020.09.24  -->
+          <div class="link-title clearfix px-rem-2 px-xl-no"><!-- px-xl-no로 변경 -- 2020.09.24  -->
             <div class="title">
-              <a href="#" class="color-secondary d-lg-no-cursor">#초등사고력<i
-                class="sprite btn-tag-more-arrow-color-n d-md-none"></i></a>
+              <a href="#" class="color-secondary d-lg-no-cursor">#초등사고력<i class="sprite btn-tag-more-arrow-color-n d-xl-none"></i></a><!-- d-xl-none로 변경 -- 2020.09.24  -->
               <a href="#" class="btn btn-sm btn-main-on" data-text="CU_0007_02"><i class="sprite btn-noti-color-n-sm"></i>알림 ON</a>
             </div>
             <p class="desc" data-text="MA_0010_08">스스로 생각해보는 습관 기르기</p>
@@ -411,7 +399,7 @@
           <div class="card-list card-list-5">
             <div class="scroll-wrap"> <!-- scroll-wrap 추가 --- 2020.08.19 -->
               <div class="scroll" style="width: 681px">
-                <ul class="clearfix px-rem-2 px-md-no">
+                <ul class="clearfix px-rem-2 px-xl-no"><!-- px-xl-no로 변경 -- 2020.09.24  -->
                   <li class="card-item">
                     <a href="#">
                       <div class="img">
@@ -467,17 +455,16 @@
         </div>
 
         <!-- 4단 정사각형 --> <!-- 4단 : card-list card-list-4 -->
-        <div class="edu-list edu-list-sm mb-rem-3 mb-rem-md-6">
+        <div class="edu-list edu-list-sm mb-rem-3 mb-rem-xl-6"><!-- mb-rem-xl-6로 변경 -- 2020.09.24  -->
           <div class="edu-item">
-            <div class="link-title px-rem-2 pl-md-no pr-md-no">
-              <div><a href="#" class="d-lg-no-cursor color-text2" data-text="MA_0010_02">아이스크림몰 상품 추천<i
-                class="sprite btn-tag-more-arrow-n d-md-none"></i></a></div>
-              <a href="#" class="btn-text d-none d-md-block" data-text="MA_0010_05">아이스크림몰 가기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a>
+            <div class="link-title px-rem-2 pl-xl-no pr-xl-no"><!-- pl-xl-no pr-xl-no로 변경 -- 2020.09.24  -->
+              <div><a href="#" class="d-lg-no-cursor color-text2" data-text="MA_0010_02">아이스크림몰 상품 추천<i class="sprite btn-tag-more-arrow-n d-xl-none"></i></a></div><!-- d-xl-none로 변경 -- 2020.09.24  -->
+              <a href="#" class="btn-text d-none d-xl-block" data-text="MA_0010_05">아이스크림몰 가기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a><!-- d-xl-block로 변경 -- 2020.09.24  -->
             </div>
             <div class="card-list card-list-4">
               <div class="scroll-wrap"> <!-- scroll-wrap 추가 --- 2020.08.19 -->
                 <div class="scroll" style="width:680px;">
-                  <ul class="clearfix px-rem-2 px-md-no">
+                  <ul class="clearfix px-rem-2 px-xl-no"><!-- px-xl-no로 변경 -- 2020.09.24  -->
                     <li class="card-item">
                       <a href="#">
                         <span class="img"><img src="../img/main/main-recommend-app-goods-img@3x.png" alt=""></span>
@@ -516,16 +503,14 @@
         <!-- 4단 포스터형 --> <!-- 4단 : card-list card-list-4 -->
         <div class="edu-list edu-list-post mb-rem-4">
           <div class="edu-item">
-            <div class="link-title px-rem-2 pl-md-no pr-md-no">
-              <div class=""><a href="#" class="d-lg-no-cursor color-text2" data-text="MA_0010_03">아이스크림북스 도서 추천<i
-                class="sprite btn-tag-more-arrow-n tr-y-2 d-md-none"></i></a></div>
-              <a href="#" class="btn-text d-none d-md-block" data-text="MA_0010_06">아이스크림북스 가기<i
-                class="sprite btn-24-right-arrow-n tr-y-2"></i></a>
+            <div class="link-title px-rem-2 pl-xl-no pr-xl-no"><!-- pl-xl-no pr-xl-no로 변경 -- 2020.09.24  -->
+              <div class=""><a href="#" class="d-lg-no-cursor color-text2" data-text="MA_0010_03">아이스크림북스 도서 추천<i class="sprite btn-tag-more-arrow-n tr-y-2 d-xl-none"></i></a></div><!-- d-xl-none로 변경 -- 2020.09.24  -->
+              <a href="#" class="btn-text d-none d-xl-block" data-text="MA_0010_06">아이스크림북스 가기<i class="sprite btn-24-right-arrow-n tr-y-2"></i></a><!-- d-xl-block로 변경 -- 2020.09.24  -->
             </div>
             <div class="card-list card-list-4">
               <div class="scroll-wrap"> <!-- scroll-wrap 추가 --- 2020.08.19 -->
                 <div class="scroll" style="width:680px;">
-                  <ul class="clearfix px-rem-2 px-md-no">
+                  <ul class="clearfix px-rem-2 px-xl-no"><!-- px-xl-no로 변경 -- 2020.09.24  -->
                     <li class="card-item">
                       <a href="#">
                         <span class="img"><img src="../img/main/m-main-recommend-app-book-img05@3x.png" alt=""></span>
@@ -570,8 +555,7 @@
 @@include('../html/include/footer.html')
 
 <!-- S 언어설정 팝업 -->
-<div class="modal fade common-lang-setting" id="langSetting" tabindex="-1" role="dialog" aria-labelledby="alert"
-     aria-hidden="true">
+<div class="modal fade common-lang-setting" id="langSetting" tabindex="-1" role="dialog" aria-labelledby="alert" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-head">

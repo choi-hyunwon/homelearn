@@ -235,7 +235,7 @@ $grid-breakpoints: (
   sm: 576px,
   md: 769px,
   lg: 960px,
-  xl: 1200px
+  xl: 1280px
 ) !default;
 
 @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
@@ -1231,4 +1231,4 @@ $pager-border-color:                      $primary !default;
 $pager-bg-color:                          $primary !default;
 $pager-line-border-color:                 #dcdcdc !default;
 
-$size-tablet :                            md !default;
+$size-tablet :                            xl !default;

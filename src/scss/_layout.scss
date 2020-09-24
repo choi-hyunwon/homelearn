@@ -9,12 +9,6 @@ body {
   background-color: #fffdfa;
 }
 .wrap-bg {
-  //background: url("../img/main/m-main-recommend-bg.png") no-repeat center 0;
-  //background-size: contain;
-  //&.element {
-  //  background: url("../img/main/m-main-recommend-sub-bg.png") no-repeat center 0;
-  //  background-size: contain;
-  //}
   .bg {
     position: absolute;
     top:0;
@@ -28,6 +22,7 @@ body {
   transition: .5s ease-in;
   height: 100%;
   max-width: 1280px;
+  min-height: 700px;
   margin: 0 auto;
 
   .container {
@@ -229,8 +224,6 @@ footer {
     right: 24px;
     bottom: 30px;
 
-
-
     .cs {
       width: 72px;
       height: 72px;
@@ -244,6 +237,5 @@ footer {
       border-radius: 12px;
       box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.24);
     }
-
   }
 }
