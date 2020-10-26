@@ -155,6 +155,19 @@ front.common = (function () {
     $('._searchCloseBtn').on('click',function (){
       $('._searchBox').hide();
     })
+
+
+    $('#enBtn').on('click', function () {
+      if(!$('body').hasClass('eng')) {
+        $('body').addClass('eng');
+      }
+    });
+
+    $('#koBtn').on('click', function () {
+      if($('body').hasClass('eng')) {
+        $('body').removeClass('eng');
+      }
+    });
   };
 
   var drawer = function () {
@@ -206,6 +219,7 @@ if (!String.format) {
 window.onload = () => {
   let koBtn = document.getElementById("koBtn");
   let enBtn = document.getElementById("enBtn");
+
   let setLanguage = (lang) => {
     let textList = Array.prototype.slice.call(document.querySelectorAll('[data-text]'));
 

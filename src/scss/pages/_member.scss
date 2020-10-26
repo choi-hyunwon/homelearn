@@ -218,7 +218,7 @@
         }
       }
       .timer {
-        top: 16px;
+        top: 18px;
         right: 145px;
       }
 
@@ -269,4 +269,15 @@
     }
   }
 
+}
+body.eng {
+  .member.findidpw .timer {
+    right: 144px;
+  }
+  .member .form-group:not(.w100p) label {
+    font-size: 14px;
+  }
+  .member .btn-check {
+    font-size: 16px;
+  }
 }

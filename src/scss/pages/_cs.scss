@@ -464,3 +464,19 @@
     }
   }
 }
+
+@media (max-width: 644px){
+  body.eng {
+    .cs-center .nav-tabs-detail .nav-item:nth-child(3) {
+      line-height: 17px;
+    }
+  }
+}
+@include media-breakpoint-up($size-tablet) {
+  body.eng {
+    .cs-center .nav-tabs-detail .nav-item:nth-child(3) {
+      line-height: 1;
+    }
+  }
+}
+

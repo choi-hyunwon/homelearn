@@ -1599,3 +1599,15 @@
     }
   }
 }
+body.eng {
+  .mypage .button-group .btn {
+    font-size: 10px;
+  }
+}
+@include media-breakpoint-up($size-tablet) {
+  body.eng {
+    .mypage .button-group .btn {
+      font-size: 14px;
+    }
+  }
+}

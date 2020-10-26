@@ -53,8 +53,9 @@
           font-size: 10px;
           color: #ffffff;
           font-style: normal;
-          top: 5px;
+          top: 4px;
           left: 7px;
+          white-space: nowrap;
         }
       }
 
@@ -69,8 +70,9 @@
           font-size: 10px;
           color: #ffffff;
           font-style: normal;
-          top: 5px;
-          left: 7px;
+          top: 4px;
+          left: 8px;
+          white-space: nowrap;
         }
       }
 
@@ -326,7 +328,8 @@
           width: 80px;
           i {
             font-size: 16px;
-            padding-left: 5px;
+            left: 12px;
+            top: 3px;
           }
         }
 
@@ -335,7 +338,8 @@
           width: 63px;
           i {
             font-size: 16px;
-            padding-left: 5px;
+            left: 14px;
+            top: 3px;
           }
         }
 
@@ -345,7 +349,7 @@
           i {
             font-size: 25px;
             top: 14px;
-            left: 15px;
+            left: 11px;
           }
         }
         .badge-percent {
@@ -354,7 +358,7 @@
           i {
             font-size: 25px;
             top: 14px;
-            left: 15px;
+            left: 11px;
           }
         }
       }
@@ -407,7 +411,7 @@
       top: 82px;
       left: 206px;
       border-bottom: none;
-      width: 400px;
+      width: 475px;
 
       .spec {
         width: auto;
@@ -622,7 +626,7 @@
     width: 156px;
     min-width: 0;
     height: 48px;
-
+    line-height: 44px;
     &.btn-subscribe {
       background-color: rgba(255, 255, 255, 0.3);
       color: #ffffff;
@@ -632,6 +636,7 @@
   .btn-white {
     border-radius: 27px;
     border: solid 2px #ffffff;
+    line-height: 43px;
   }
 
   .price {
@@ -1295,6 +1300,13 @@
           }
         }
       }
+    }
+  }
+}
+@include media-breakpoint-up($size-tablet) {
+  body.eng {
+    .review-wrap .review-count .summary {
+      padding: 19px 28px;
     }
   }
 }

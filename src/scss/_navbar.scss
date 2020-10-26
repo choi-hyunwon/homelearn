@@ -147,7 +147,8 @@
             border-radius: 4.5px 4.5px 0 0;
             background-color: $primary;
             bottom: 0;
-            left: -11px;
+            left: 50%;
+            transform: translateX(-50%);
           }
         }
       }
@@ -284,7 +285,8 @@
             border-radius: 4.5px 4.5px 0 0;
             background-color: #ff7600;
             bottom: 0;
-            left: 16px;
+            left: 50%;
+            transform: translateX(-50%);
           }
         }
       }
@@ -371,6 +373,11 @@
 @include media-breakpoint-up(xl) {
   .navbar-gnb {
     left: 466px;
+  }
+  body.eng {
+    .navbar-gnb {
+      left: 270px;
+    }
   }
 }
 

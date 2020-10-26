@@ -365,7 +365,7 @@
               display: inline-block;
               min-width: 140px;
               height: 34px;
-              line-height: 30px;
+              line-height: 29px;
               box-shadow: none;
             }
           }
@@ -1100,6 +1100,19 @@
         line-height: 50px;
         margin: 0 10px;
       }
+    }
+  }
+}
+
+body.eng {
+  .payment .p-info .accordion .card .card-body .delivery-info .form-group .button-group .btn {
+    font-size: 11px;
+  }
+}
+@include media-breakpoint-up($size-tablet) {
+  body.eng {
+    .payment .p-info .accordion .card .card-body .delivery-info .form-group .button-group .btn {
+      font-size: 14px;
     }
   }
 }

@@ -18,7 +18,7 @@
   color: #fff;
   min-width: 200px;
   height: 44px;
-  line-height: 42px;
+  line-height: 41px;
   border: 2px solid $primary;
   border-radius: 6px;
   padding: 0 10px;
@@ -290,7 +290,7 @@
   &.btn-round {
     min-width: 120px;
     border-radius: 27px;
-
+    line-height: 31px;
     &.btn-outline {
       &:active, &.active {
         background-color: rgba(0, 0, 0, 0.12);
@@ -456,7 +456,7 @@
   .btn {
     font-size: 18px;
     height: 56px;
-    line-height: 54px;
+    line-height: 52px;
   }
   &.btn-radius {
     -webkit-border-radius: 56px;
@@ -878,7 +878,7 @@ input[type="button"] {
 @include media-breakpoint-up($size-tablet) {
   .btn-sm {
     height: 42px !important;
-    line-height: 40px !important;
+    line-height: 39px !important;
     font-size: 16px !important;
     min-width: 130px !important;
     &.btn-main-off {
