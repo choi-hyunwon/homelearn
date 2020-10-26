@@ -92,6 +92,12 @@ data.common = {
       'category': 'common',
       'page': '이용약관'
     },
+    {
+      'stateClass': 'complete',
+      'url': 'error',
+      'category': 'common',
+      'page': '에러페이지'
+    },
   ]
 }
 
