@@ -88,7 +88,7 @@
           font-size: 17px;
           color: #ffffff;
           font-style: normal;
-          top: 10px;
+          top: 7px;
           left: 11px;
         }
       }
@@ -105,7 +105,7 @@
           font-size: 17px;
           color: #ffffff;
           font-style: normal;
-          top: 10px;
+          top: 7px;
           left: 11px;
         }
       }
@@ -348,8 +348,8 @@
           width: 76px;
           i {
             font-size: 25px;
-            top: 14px;
-            left: 11px;
+            top: 9px;
+            left: 15px;
           }
         }
         .badge-percent {
@@ -357,8 +357,8 @@
           width: 76px;
           i {
             font-size: 25px;
-            top: 14px;
-            left: 11px;
+            top: 9px;
+            left: 15px;
           }
         }
       }
@@ -542,6 +542,12 @@
     }
   }
 
+}
+
+body.eng {
+  .detail-card .card-btn.please .info .btn.btn-outline {
+    font-size: 14px;
+  }
 }
 
 .detail-page {

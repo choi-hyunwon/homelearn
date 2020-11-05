@@ -155,7 +155,11 @@
     }
   }
 }
-
+body.eng {
+  .navbar-gnb-sm .navbar-nav .nav-item .nav-link {
+    font-size: 11px;
+  }
+}
 .navbar-util {
   position: absolute;
   top: 14px;

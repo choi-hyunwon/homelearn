@@ -801,6 +801,11 @@
 //    }
 //  }
 //}
+body.eng {
+  .edu-item-list a .list-body .sticker-area .sticker-homelearn span {
+    font-size: 10px;
+  }
+}
 @include media-breakpoint-up($size-tablet) {
   .popular-edu-box {
     max-width: 1160px;
@@ -1043,8 +1048,12 @@
       }
     }
   }
+  body.eng {
+    .edu-item-list a .list-body .sticker-area .sticker-package {
+      width: auto;
+    }
+  }
 }
-
 
 /* 교육과정별 카테고리 */
 .popular-edu-category {

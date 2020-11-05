@@ -63,10 +63,72 @@ em {
   color: #ffffff;
   font-style: normal;
   text-align: center;
-  padding-left: 3px;
+  padding-left: 5px;
   white-space: nowrap;
 }
+body.eng {
+  .icon-list-badge-homelearn {
+    position: relative;
+    font-size: 0;
+    width: 117px;
+    height: 17px;
+    background-size: contain;
+    padding-left: 9px;
+    transform: translate(-1px,-13px);
+    &::before {
+      content: 'For Home Learn Only';
+      position: absolute;
+      font-size: 10px;
+      width: 108px;
+      height: 17px;
+      top: 0;
+      right: 0;
+      background-color: #FF7200;
+      border-radius: 0 3px 3px 0;
+    }
+  }
+  .icon-list-badge-package {
+    position: relative;
+    font-size: 0;
+    width: 54px;
+    height: 17px;
+    background-size: contain;
+    padding-left: 9px;
+    transform: translate(-2px, -14px);
+    &::before {
+      content: 'package';
+      position: absolute;
+      font-size: 10px;
+      width: 49px;
+      height: 17px;
+      top: 0;
+      right: 0;
+      background-color: #6F00FF;
+      border-radius: 0 3px 3px 0;
+    }
+  }
+}
+@include media-breakpoint-up($size-tablet) {
+  body.eng {
+    .icon-list-badge-homelearn {
+      height: 24px;
+      transform: translate(-7px,-4px);
+      &::before {
+        height: 24px;
+        border-radius: 0 4px 4px 0;
+      }
+    }
+    .icon-list-badge-package {
+      height: 24px;
+      transform: translate(-7px,-4px);
 
+      &::before {
+        height: 24px;
+        border-radius: 4px 4px 4px 0;
+      }
+    }
+  }
+}
 .icon-list-badge-package {
   background-image: url("../img/common/icon-list-badge-package@3x.png");
   width: 38px;
@@ -824,7 +886,7 @@ em {
       .img {
         position: relative;
         width: 100%;
-        height: 100%;
+        height: calc(100vw * .5625);
         top: auto;
         left: auto;
 
@@ -1085,9 +1147,16 @@ em {
         .img {
           position: relative;
           width: 100%;
-          height: 100%;
+          height: 208px;
           top: auto;
           left: auto;
+          text-align: center;
+
+          img {
+            width: auto;
+            height: 100%;
+            max-height: 208px;
+          }
 
           .sticker-num {
             width: 32px;
@@ -1127,7 +1196,7 @@ em {
               color: #fff;
               font-weight: bold;
               line-height: 36px;
-              padding-top: 3px;
+              padding-top: 2px;
               padding-left: 4px;
 
               .percent {
