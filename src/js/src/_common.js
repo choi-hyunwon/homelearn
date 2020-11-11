@@ -216,14 +216,14 @@ if (!String.format) {
 }
 
 // 언어 설정
-window.onload = () => {
+window.onload = function () {
   let koBtn = document.getElementById("koBtn");
   let enBtn = document.getElementById("enBtn");
 
-  let setLanguage = (lang) => {
+  let setLanguage = function(lang) {
     let textList = Array.prototype.slice.call(document.querySelectorAll('[data-text]'));
 
-    textList.map( v => {
+    textList.map( function (v) {
 
       let child = v.firstChild;
       while (child) {
@@ -252,19 +252,19 @@ window.onload = () => {
     });
 
     let urlList = Array.prototype.slice.call(document.querySelectorAll('[data-url]'));
-    urlList.map( v => {
+    urlList.map( function (v) {
       v.src = langData[lang][v.dataset.url]
     });
 
     let placeholderList = Array.prototype.slice.call(document.querySelectorAll('[data-placeholder]'));
-    placeholderList.map( v => {
+    placeholderList.map( function (v) {
       v.placeholder = langData[lang][v.dataset.placeholder]
     });
   };
-  koBtn.addEventListener("click" , () => {
+  koBtn.addEventListener("click" , function (v) {
     setLanguage("ko");
   });
-  enBtn.addEventListener("click" , () => {
+  enBtn.addEventListener("click" , function (v) {
     setLanguage("en");
   });
   setLanguage("ko");
