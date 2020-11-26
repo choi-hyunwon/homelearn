@@ -22,6 +22,9 @@
     max-width: inherit;
   }
   .accordion {
+    article {
+      padding-bottom: 1px;
+    }
     & > label {
       display: block;
       position: relative;
@@ -482,6 +485,11 @@
     }
     .cs-center .box .desc + .btn {
       margin-top: -15px;
+    }
+  }
+  .wrap.p-no.cs-center {
+    .container {
+      padding-bottom: 60px;
     }
   }
 }

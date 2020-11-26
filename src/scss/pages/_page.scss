@@ -75,6 +75,7 @@ body.eng {
     background-size: contain;
     padding-left: 9px;
     transform: translate(-1px,-13px);
+    z-index: 3;
     &::before {
       content: 'For Home Learn Only';
       position: absolute;
@@ -111,8 +112,9 @@ body.eng {
 @include media-breakpoint-up($size-tablet) {
   body.eng {
     .icon-list-badge-homelearn {
+      width: 115px !important;
       height: 24px;
-      transform: translate(-7px,-4px);
+      transform: translate(-7px,-3px);
       &::before {
         height: 24px;
         border-radius: 0 4px 4px 0;
@@ -120,11 +122,11 @@ body.eng {
     }
     .icon-list-badge-package {
       height: 24px;
-      transform: translate(-7px,-4px);
-
+      transform: translate(-7px, -3px);
       &::before {
         height: 24px;
         border-radius: 4px 4px 4px 0;
+        right: 6px;
       }
     }
   }
@@ -625,8 +627,8 @@ body.eng {
 
     .img {
       position: relative;
-      width: 100%;
-      height: 100%;
+      width: auto;
+      height: calc(100vw * .4);
 
       img {
         width: 100%;
@@ -746,39 +748,7 @@ body.eng {
     }
   }
 }
-  /* 769~960 겹침 대응 */
-//@media (min-width: 769px) and (max-width: 960px) {
-//  .tag-list {
-//    .card-list {
-//      &.card-list-rem-2 {
-//        .card-item {
-//          &:nth-child(2n) {
-//            margin-right: 12px !important;
-//          }
-//        }
-//      }
-//      &.card-list-md-5 {
-//        .card-item {
-//          width: calc(20% - 12px) !important;
-//          margin-right: 12px !important;
-//          &:nth-child(2n) {
-//            margin-right: 12px !important;
-//          }
-//        }
-//      }
-//      .card-item {
-//        .s-sticker, .badge-list {
-//          bottom: 16px !important;
-//
-//          i {
-//            width: 48px !important;
-//            height: 18px !important;
-//          }
-//        }
-//      }
-//    }
-//  }
-//}
+
 @include media-breakpoint-up($size-tablet) {
   .tag-list {
     margin-bottom: 0;
@@ -795,6 +765,7 @@ body.eng {
 
         .img {
           overflow: visible !important;
+          height: 193px;
 
           .sticker-top {
             right: 0;
@@ -1936,24 +1907,12 @@ body.eng {
     }
   }
 }
-//@media (min-width: 769px) and (max-width: 1160px) {
-//  .mypage .container {
-//    padding: 0 20px !important;
-//  }
-//  .mypage .dashboard .list ul li {
-//    width: 33% !important;
-//    margin-right: 0 !important;
-//  }
-//  .mypage .dashboard .list ul li::before {
-//    margin-right: 7px !important;
-//  }
-//  .mypage .dashboard .list ul li h3 {
-//    width: calc(100% - 15px);
-//    font-size: 13px !important;
-//  }
-//  .mypage .dashboard .list ul li span {
-//    margin-left: calc(24px + 7px) !important;
-//    font-size: 13px !important;
-//    width: calc(100% - 15px);
-//  }
-//}
+
+@include media-breakpoint-up($size-tablet) {
+  body.eng {
+    .tag-list .card-item .list-body .s-sticker, .tag-list .card-item .list-body .badge-list {
+      font-size: 10px;
+    }
+  }
+}
+

@@ -199,13 +199,28 @@ footer {
   }
 
   .cs {
-
     width: 52px;
     height: 52px;
     border-radius: 8px;
     box-shadow: 0 9px 17px 0 rgba(0, 0, 0, 0.24);
     background-color: rgba(255, 255, 255, 0.96);
     margin-bottom: 12px;
+    text-align: center;
+    padding-top: 8px;
+    img {
+      width: 24px;
+      height: 24px;
+    }
+    span {
+      display: block;
+      font-family: 'Noto Sans CJK KR Bold';
+      font-size: 10px;
+      font-weight: bold;
+      letter-spacing: -0.05rem;
+      text-align: center;
+      color: #333333;
+      line-height: 10px;
+    }
   }
 
   .top {
@@ -229,6 +244,21 @@ footer {
       height: 72px;
       border-radius: 12px;
       box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.24);
+      padding-top: 8px;
+      img {
+        width: 36px;
+        height: 36px;
+      }
+      span {
+        display: block;
+        font-family: 'Noto Sans CJK KR Bold';
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: -0.05rem;
+        text-align: center;
+        color: #333333;
+        line-height: 18px;
+      }
     }
 
     .top {
@@ -236,6 +266,25 @@ footer {
       height: 72px;
       border-radius: 12px;
       box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.24);
+    }
+  }
+}
+body.eng {
+  .fixed-btn .cs {
+    padding-top: 0;
+  }
+  .fixed-btn .cs img {
+    width: 20px;
+    height: 20px;
+  }
+}
+@include media-breakpoint-up($size-tablet) {
+  body.eng {
+    .fixed-btn .cs {
+      padding-top: 10px;
+    }
+    .fixed-btn .cs span {
+      line-height: 12px;
     }
   }
 }

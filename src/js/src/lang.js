@@ -838,7 +838,7 @@ const langData = {
     AD_0004_05: 'Close',
     AD_0004_06: 'Nudged! A message has been sent to your parents.',
     AD_0004_07: 'Confirm',
-    AD_0006_01: 'Send a Nudge',
+    AD_0006_01: 'I want to study this!',
     AD_0006_02: 'Install',
     AD_0006_03: 'Installing',
     AD_0006_04: 'Learning',

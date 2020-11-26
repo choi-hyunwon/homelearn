@@ -270,6 +270,7 @@
   }
 
 }
+
 body.eng {
   .member.findidpw .timer {
     right: 144px;
@@ -279,5 +280,35 @@ body.eng {
   }
   .member .btn-check {
     font-size: 16px;
+  }
+  .detail-card .card-grey span {
+    font-size: 10px;
+    line-height: 13px;
+    padding-top: 5px;
+  }
+}
+@include media-breakpoint-up($size-tablet) {
+  body.eng {
+    .member.findidpw {
+      .form-group {
+        .input-group {
+          input[type="password"] {
+            color: red;
+            padding: 0 5px;
+            font-size: 11px;
+          }
+          .timer {
+            font-size: 10px;
+            top: 21px;
+            right: 137px;
+          }
+        }
+      }
+    }
+    .detail-card .card-grey span {
+      font-size: 11px;
+      line-height: 42px;
+      padding-top: 0;
+    }
   }
 }

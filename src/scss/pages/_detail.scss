@@ -1310,9 +1310,26 @@ body.eng {
   }
 }
 @include media-breakpoint-up($size-tablet) {
-  body.eng {
+  body {
     .review-wrap .review-count .summary {
       padding: 19px 28px;
     }
+  }
+}
+
+/* 수정 사항 */
+body.eng {
+  .review-wrap .review-count .count > div .grade {
+    right: 57px;
+  }
+}
+@media (min-width: 960px) {
+  body.eng .review-wrap .review-count .count > div .grade {
+    right: 43px;
+  }
+}
+@include media-breakpoint-up($size-tablet) {
+  body.eng .review-wrap .review-count .count > div .grade {
+    right: 43px;
   }
 }

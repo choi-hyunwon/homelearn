@@ -58,12 +58,3 @@
     @include badge-variant($value);
   }
 }
-
-@media (min-width: 991.98px) {
-  .badge {
-    width: 42px;
-    height: 42px;
-    line-height: 42px;
-    font-size: 20px;
-  }
-}
