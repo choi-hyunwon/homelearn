@@ -632,3 +632,56 @@ body.eng {
 
 
 
+/* 추가 -- 2020.11.27 */
+body.eng {
+  .navbar {
+    .navbar-brand {
+      a {
+        .kor {
+          display: none !important;
+        }
+        .eng {
+          width: 215px;
+          display: block !important;
+        }
+      }
+    }
+  }
+}
+@include media-breakpoint-up(xl) {
+  .navbar-btn-eco {
+    a {
+      display: block;
+      position: relative;
+      .eco {
+        position: absolute;
+        color: #fff;
+        font-size: 22px;
+        top:50%;
+        transform: translateY(-50%);
+        left:30px
+      }
+      .arrow {
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        top:50%;
+        transform: translateY(-50%);
+        right: 12px;
+      }
+    }
+  }
+  body.eng {
+    .navbar-btn-eco {
+      a {
+        .eco {
+          font-size: 12px;
+          left:10px
+        }
+        .arrow {
+          right: 8px;
+        }
+      }
+    }
+  }
+}
