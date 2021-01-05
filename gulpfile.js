@@ -11,11 +11,6 @@ sass.compiler = require('node-sass');
 /* scss TASK*/
 function scss() {
   return gulp.src('src/scss/**/*.scss')
-    // style.css 파일 하나로 할 경우
-    // .pipe(sass.sync().on('error', sass.logError))
-    // .pipe(combine())
-    // .pipe(concat('style.scss'))
-
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(gulp.dest('./dist/css'))
 }
@@ -64,12 +59,7 @@ function jsLib() {
     'src/js/src/jquery.js',
     'src/js/src/popper.min.js',
     'src/js/src/bootstrap.min.js',
-    'src/js/src/prism.js',
     'src/js/src/_common.js',
-    'src/js/src/bootstrap-datepicker.js',
-    'src/js/src/bootstrap-datepicker.ko.min.js',
-    'src/js/src/jquery.twbsPagination.js',
-    'src/js/src/Chart.min.js',
   ];
   return gulp.src(sourceLib)
     .pipe(concat('bundle.js'))

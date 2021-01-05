@@ -167,6 +167,7 @@
             img {
               width: 100%;
               height: 100%;
+              border-radius: 50%;
             }
           }
         }
@@ -247,17 +248,72 @@
       display: block;
 
       .img {
+        position: relative;
         width: 100%;
         display: block;
         height: 150px;
         margin-bottom: 8px;
-        overflow: hidden;
         border-radius: 6px;
         box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.12);
 
         img {
           width: 100%;
           height: 100%;
+          border-radius: 6px;
+        }
+        .sticker-top {
+          position: absolute;
+          top: -5px;
+          right: 6px;
+          i {
+            display: inline-block;
+            background-position-x: -5px;
+            padding-left: 0;
+            padding-right: 4px;
+            padding-top: 1px;
+          }
+        }
+        .sticker-discount {
+          position: absolute;
+          background-image: url(../img/common/icon-list-badge-discount-percent@2x.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          display: block;
+          width: 54px;
+          height: 36px;
+          bottom: 6px;
+          right: -5px;
+          em {
+            display: block;
+            font-size: 16px;
+            text-align: center;
+            color: #fff;
+            font-weight: bold;
+            line-height: 33px;
+            padding-top: 3px;
+            padding-left: 4px;
+          }
+        }
+        .sticker-free {
+          position: absolute;
+          background-image: url(../img/common/icon-list-badge-discount-free@2x.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          display: block;
+          width: 54px;
+          height: 36px;
+          bottom: 6px;
+          right: -4px;
+          em {
+            display: block;
+            font-size: 16px;
+            text-align: center;
+            color: #fff;
+            font-weight: bold;
+            line-height: 33px;
+            padding-top: 3px;
+            padding-left: 4px;
+          }
         }
       }
 
@@ -312,6 +368,36 @@
         .img {
           margin-bottom: 12px;
           height: 220px;
+          .sticker-top {
+            top: -13px;
+            right: 6px;
+            i {
+              display: inline-block;
+              background-position-x: 0;
+              padding-left: 0;
+              padding-right: 0;
+              padding-top: 0;
+            }
+          }
+          .sticker-discount {
+            width: 76px;
+            height: 48px;
+            right: -7px;
+            em {
+              font-size: 20px;
+              line-height: 48px;
+            }
+          }
+          .sticker-free {
+            background-image: url(../img/common/icon-list-badge-discount-free@2x.png);
+            width: 76px;
+            height: 48px;
+            right: -6px;
+            em {
+              font-size: 20px;
+              line-height: 48px;
+            }
+          }
         }
       }
     }
@@ -1110,12 +1196,36 @@ body.eng {
     vertical-align: middle;
     padding-top: 6px;
   }
+  .normal-list .card-item a .img .sticker-top {
+    top: -2px;
+  }
+  .normal-list .card-item a .img .sticker-top .icon-list-badge-homelearn {
+    width: 111px;
+  }
+  .normal-list .card-item a .img .sticker-top .icon-list-badge-package {
+    width: 50px;
+  }
 }
 @include media-breakpoint-up($size-tablet) {
   body.eng {
     .popular-edu-category a.line2 {
       line-height: 20px;
       padding-top: 12px;
+    }
+    .normal-list .card-item a .img .sticker-top {
+      top: -15px;
+      right: 13px;
+    }
+    .normal-list .card-item a .img .sticker-top .icon-list-badge-package {
+      width: 50px;
+      background-size: cover;
+      margin-left: 4px;
+    }
+    .normal-list .card-item a .img .sticker-top .icon-list-badge-package::before {
+      height: 24px;
+      border-radius: 4px 4px 4px 0;
+      right: -7px;
+      top: 0;
     }
   }
 }

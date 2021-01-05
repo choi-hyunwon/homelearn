@@ -5504,6 +5504,15 @@ input[type=search]:disabled + .btn-search {
   display: block;
 }
 
+/*
+  수정사항
+*/
+@media (min-width: 1280px) {
+  body.eng .nav-tabs-detail {
+    width: 470px;
+  }
+}
+
 .navbar {
   position: relative;
   display: flex;
@@ -5638,6 +5647,10 @@ input[type=search]:disabled + .btn-search {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+body.eng .navbar-gnb-sm .navbar-nav .nav-item .nav-link {
+  font-size: 11px;
 }
 
 .navbar-util {
@@ -5837,9 +5850,6 @@ input[type=search]:disabled + .btn-search {
 @media (min-width: 1280px) {
   .navbar-gnb {
     left: 466px;
-  }
-  body.eng .navbar-gnb {
-    left: 324px;
   }
   body.eng .navbar-gnb {
     left: 270px;
@@ -6165,6 +6175,46 @@ input[type=search]:disabled + .btn-search {
 
 .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
   color: #fff;
+}
+
+/* 추가 -- 2020.11.27 */
+body.eng .navbar .navbar-brand a .kor {
+  display: none !important;
+}
+
+body.eng .navbar .navbar-brand a .eng {
+  width: 215px;
+  display: block !important;
+}
+
+@media (min-width: 1280px) {
+  .navbar-btn-eco a {
+    display: block;
+    position: relative;
+  }
+  .navbar-btn-eco a .eco {
+    position: absolute;
+    color: #fff;
+    font-size: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+  }
+  .navbar-btn-eco a .arrow {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 12px;
+  }
+  body.eng .navbar-btn-eco a .eco {
+    font-size: 12px;
+    left: 10px;
+  }
+  body.eng .navbar-btn-eco a .arrow {
+    right: 8px;
+  }
 }
 
 .card {
@@ -6760,15 +6810,6 @@ a.badge-disable:hover, a.badge-disable:focus {
 
 a.badge-disable:focus, a.badge-disable.focus {
   outline: 0;
-}
-
-@media (min-width: 991.98px) {
-  .badge {
-    width: 42px;
-    height: 42px;
-    line-height: 42px;
-    font-size: 20px;
-  }
 }
 
 .jumbotron {
@@ -14839,6 +14880,10 @@ common
   }
 }
 
+body.eng .drawer-body .alram {
+  margin-bottom: 34px;
+}
+
 /*!
  *  추가
  */
@@ -16874,6 +16919,24 @@ footer address .copyright {
   box-shadow: 0 9px 17px 0 rgba(0, 0, 0, 0.24);
   background-color: rgba(255, 255, 255, 0.96);
   margin-bottom: 12px;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.fixed-btn .cs img {
+  width: 24px;
+  height: 24px;
+}
+
+.fixed-btn .cs span {
+  display: block;
+  font-family: 'Noto Sans CJK KR Bold';
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: -0.05rem;
+  text-align: center;
+  color: #333333;
+  line-height: 10px;
 }
 
 .fixed-btn .top {
@@ -16894,12 +16957,45 @@ footer address .copyright {
     height: 72px;
     border-radius: 12px;
     box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.24);
+    padding-top: 8px;
+  }
+  .fixed-btn .cs img {
+    width: 36px;
+    height: 36px;
+  }
+  .fixed-btn .cs span {
+    display: block;
+    font-family: 'Noto Sans CJK KR Bold';
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: -0.05rem;
+    text-align: center;
+    color: #333333;
+    line-height: 18px;
   }
   .fixed-btn .top {
     width: 72px;
     height: 72px;
     border-radius: 12px;
     box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.24);
+  }
+}
+
+body.eng .fixed-btn .cs {
+  padding-top: 0;
+}
+
+body.eng .fixed-btn .cs img {
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 1280px) {
+  body.eng .fixed-btn .cs {
+    padding-top: 10px;
+  }
+  body.eng .fixed-btn .cs span {
+    line-height: 12px;
   }
 }
 
@@ -17049,6 +17145,7 @@ footer address .copyright {
   .edu-list .edu-item .rounded-box .badge-img li img {
     width: 100%;
     height: 100%;
+    border-radius: 50%;
   }
   .edu-list.line-bottom::after {
     content: none;
@@ -17123,11 +17220,11 @@ footer address .copyright {
 }
 
 .normal-list .card-item a .img {
+  position: relative;
   width: 100%;
   display: block;
-  height: auto;
+  height: 150px;
   margin-bottom: 8px;
-  overflow: hidden;
   border-radius: 6px;
   box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.12);
 }
@@ -17135,6 +17232,67 @@ footer address .copyright {
 .normal-list .card-item a .img img {
   width: 100%;
   height: 100%;
+  border-radius: 6px;
+}
+
+.normal-list .card-item a .img .sticker-top {
+  position: absolute;
+  top: -5px;
+  right: 6px;
+}
+
+.normal-list .card-item a .img .sticker-top i {
+  display: inline-block;
+  background-position-x: -5px;
+  padding-left: 0;
+  padding-right: 4px;
+  padding-top: 1px;
+}
+
+.normal-list .card-item a .img .sticker-discount {
+  position: absolute;
+  background-image: url(../img/common/icon-list-badge-discount-percent@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  width: 54px;
+  height: 36px;
+  bottom: 6px;
+  right: -5px;
+}
+
+.normal-list .card-item a .img .sticker-discount em {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  line-height: 33px;
+  padding-top: 3px;
+  padding-left: 4px;
+}
+
+.normal-list .card-item a .img .sticker-free {
+  position: absolute;
+  background-image: url(../img/common/icon-list-badge-discount-free@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  width: 54px;
+  height: 36px;
+  bottom: 6px;
+  right: -4px;
+}
+
+.normal-list .card-item a .img .sticker-free em {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  line-height: 33px;
+  padding-top: 3px;
+  padding-left: 4px;
 }
 
 .normal-list .card-item a .title {
@@ -17182,6 +17340,37 @@ footer address .copyright {
   }
   .normal-list .card-item a .img {
     margin-bottom: 12px;
+    height: 220px;
+  }
+  .normal-list .card-item a .img .sticker-top {
+    top: -13px;
+    right: 6px;
+  }
+  .normal-list .card-item a .img .sticker-top i {
+    display: inline-block;
+    background-position-x: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+  }
+  .normal-list .card-item a .img .sticker-discount {
+    width: 76px;
+    height: 48px;
+    right: -7px;
+  }
+  .normal-list .card-item a .img .sticker-discount em {
+    font-size: 20px;
+    line-height: 48px;
+  }
+  .normal-list .card-item a .img .sticker-free {
+    background-image: url(../img/common/icon-list-badge-discount-free@2x.png);
+    width: 76px;
+    height: 48px;
+    right: -6px;
+  }
+  .normal-list .card-item a .img .sticker-free em {
+    font-size: 20px;
+    line-height: 48px;
   }
 }
 
@@ -17244,6 +17433,7 @@ footer address .copyright {
     margin-bottom: 20px;
     border-radius: 12px 12px 0 0;
     overflow: hidden;
+    height: 210px;
     box-shadow: none;
   }
   .shadow-box-list .card-item .title {
@@ -17562,6 +17752,10 @@ footer address .copyright {
   padding: 0 20px;
 }
 
+body.eng .edu-item-list a .list-body .sticker-area .sticker-homelearn span {
+  font-size: 10px;
+}
+
 @media (min-width: 1280px) {
   .popular-edu-box {
     max-width: 1160px;
@@ -17685,7 +17879,7 @@ footer address .copyright {
     display: block;
     font-size: 16px;
     font-weight: bold;
-    line-height: 22px;
+    line-height: 20px;
     text-align: center;
     color: #ffffff;
   }
@@ -17698,6 +17892,7 @@ footer address .copyright {
   .popular-edu-box .popular-edu-list .edu-item a .list-body .sticker-area {
     padding-left: 9px;
     margin-bottom: 2px;
+    height: 20px;
   }
   .popular-edu-box .popular-edu-list .edu-item a .list-body .sticker-area > div {
     display: inline-block;
@@ -17768,6 +17963,9 @@ footer address .copyright {
     bottom: 0;
     right: 0;
   }
+  body.eng .edu-item-list a .list-body .sticker-area .sticker-package {
+    width: auto;
+  }
 }
 
 /* 교육과정별 카테고리 */
@@ -17823,11 +18021,84 @@ body.eng .popular-edu-category a.line2 {
   padding-top: 6px;
 }
 
+body.eng .normal-list .card-item a .img .sticker-top {
+  top: -2px;
+}
+
+body.eng .normal-list .card-item a .img .sticker-top .icon-list-badge-homelearn {
+  width: 111px;
+}
+
+body.eng .normal-list .card-item a .img .sticker-top .icon-list-badge-package {
+  width: 50px;
+}
+
 @media (min-width: 1280px) {
   body.eng .popular-edu-category a.line2 {
     line-height: 20px;
     padding-top: 12px;
   }
+  body.eng .normal-list .card-item a .img .sticker-top {
+    top: -15px;
+    right: 13px;
+  }
+  body.eng .normal-list .card-item a .img .sticker-top .icon-list-badge-package {
+    width: 50px;
+    background-size: cover;
+    margin-left: 4px;
+  }
+  body.eng .normal-list .card-item a .img .sticker-top .icon-list-badge-package::before {
+    height: 24px;
+    border-radius: 4px 4px 4px 0;
+    right: -7px;
+    top: 0;
+  }
+}
+
+/* 수정 요청 사항 -- 2020.11.26 */
+.tag-list.mb-rem-xl-3 .card-list .card-item .img {
+  height: 146px;
+}
+
+@media (min-width: 1280px) {
+  .tag-list.mb-rem-xl-3 .card-list .card-item .img {
+    height: 193px;
+  }
+}
+
+.edu-item .card-list.card-list-2 .card-item .img {
+  height: 144px;
+}
+
+@media (min-width: 1280px) {
+  .edu-item .card-list.card-list-2 .card-item .img {
+    height: 317px;
+  }
+}
+
+.edu-list.edu-list-sm .card-list.card-list-4 .card-item .img {
+  height: 146px;
+}
+
+.edu-list.edu-list-post .edu-item .card-list .card-item .img {
+  height: 210px;
+}
+
+@media (min-width: 1280px) {
+  .edu-list.edu-list-sm .card-list.card-list-4 .card-item .img {
+    height: 270px;
+  }
+  .edu-list.edu-list-post .edu-item .card-list .card-item .img {
+    height: 389px;
+  }
+}
+
+.popular-edu-category .scroll {
+  padding: 20px 0 0 !important;
+}
+
+.popular-edu-category a {
+  margin-bottom: 20px;
 }
 
 .navbar-sub-detail {
@@ -17924,7 +18195,7 @@ body.eng .popular-edu-category a.line2 {
   font-size: 17px;
   color: #ffffff;
   font-style: normal;
-  top: 10px;
+  top: 7px;
   left: 11px;
 }
 
@@ -17941,7 +18212,7 @@ body.eng .popular-edu-category a.line2 {
   font-size: 17px;
   color: #ffffff;
   font-style: normal;
-  top: 10px;
+  top: 7px;
   left: 11px;
 }
 
@@ -18118,9 +18389,9 @@ body.eng .popular-edu-category a.line2 {
   transform: rotate(225deg);
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1280px) {
   .detail {
-    width: 1112px;
+    width: 100%;
     border-radius: 12px;
     box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.12);
     background-color: #ffffff;
@@ -18158,7 +18429,7 @@ body.eng .popular-edu-category a.line2 {
   .detail-card .card-name .app-icon .badge-homelearn i {
     font-size: 16px;
     left: 12px;
-    top: 1px;
+    top: 3px;
   }
   .detail-card .card-name .app-icon .badge-package {
     left: 129px;
@@ -18166,8 +18437,8 @@ body.eng .popular-edu-category a.line2 {
   }
   .detail-card .card-name .app-icon .badge-package i {
     font-size: 16px;
-    left: 13px;
-    top: 1px;
+    left: 14px;
+    top: 3px;
   }
   .detail-card .card-name .app-icon .badge-free {
     top: 134px;
@@ -18175,8 +18446,8 @@ body.eng .popular-edu-category a.line2 {
   }
   .detail-card .card-name .app-icon .badge-free i {
     font-size: 25px;
-    top: 11px;
-    left: 11px;
+    top: 9px;
+    left: 15px;
   }
   .detail-card .card-name .app-icon .badge-percent {
     top: 134px;
@@ -18184,8 +18455,8 @@ body.eng .popular-edu-category a.line2 {
   }
   .detail-card .card-name .app-icon .badge-percent i {
     font-size: 25px;
-    top: 11px;
-    left: 11px;
+    top: 9px;
+    left: 15px;
   }
   .detail-card .card-name .title {
     font-size: 32px;
@@ -18193,6 +18464,7 @@ body.eng .popular-edu-category a.line2 {
     line-height: 1.13;
     color: #111111;
     margin-bottom: 8px;
+    padding-right: 273px;
   }
   .detail-card .card-name .company {
     position: relative;
@@ -18226,7 +18498,7 @@ body.eng .popular-edu-category a.line2 {
   }
   .detail-card .card-spec {
     position: absolute;
-    top: 82px;
+    top: 112px;
     left: 206px;
     border-bottom: none;
     width: 475px;
@@ -18299,7 +18571,7 @@ body.eng .popular-edu-category a.line2 {
   }
   .detail-card .card-btn {
     position: absolute;
-    top: 126px;
+    top: 164px;
     right: 0;
   }
   .detail-card .card-btn .btn {
@@ -18334,6 +18606,10 @@ body.eng .popular-edu-category a.line2 {
   .detail-card .card-btn.please .info:after {
     right: 160px;
   }
+}
+
+body.eng .detail-card .card-btn.please .info .btn.btn-outline {
+  font-size: 14px;
 }
 
 .detail-page {
@@ -18573,7 +18849,8 @@ body.eng .popular-edu-category a.line2 {
 .review-wrap .review-count .count > div .grade {
   position: absolute;
   top: 0;
-  right: 64px;
+  left: calc((100% - 115px) + 10px);
+  right: auto;
   font-size: 12px;
   font-weight: bold;
   line-height: 2.5;
@@ -19023,6 +19300,43 @@ body.eng .popular-edu-category a.line2 {
   }
 }
 
+@media (min-width: 1280px) {
+  body .review-wrap .review-count .summary {
+    padding: 19px 28px;
+  }
+}
+
+/* 수정 사항 */
+body.eng .review-wrap .review-count .count > div .grade {
+  left: calc((100% - 115px) + 5px);
+  font-size: 10px;
+  right: auto;
+}
+
+@media (min-width: 960px) {
+  body.eng .detail-card .card-name .app-icon .badge-homelearn i {
+    font-size: 7px;
+    left: 20px;
+    top: 3px;
+    white-space: normal;
+    line-height: 10px;
+  }
+  body.eng .detail-card .card-name .app-icon .badge-package i {
+    font-size: 11px;
+    left: 14px;
+    top: 5px;
+  }
+}
+
+@media (min-width: 1280px) {
+  body.eng .review-wrap .review-count .count > div .grade {
+    left: calc((100% - 115px) + 5px);
+  }
+  body.eng .detail-card .card-name .app-icon .badge-package i {
+    top: 7px;
+  }
+}
+
 .member {
   width: 100%;
   border-radius: 0;
@@ -19259,6 +19573,30 @@ body.eng .member .btn-check {
   font-size: 16px;
 }
 
+body.eng .detail-card .card-grey span {
+  font-size: 10px;
+  line-height: 13px;
+  padding-top: 5px;
+}
+
+@media (min-width: 1280px) {
+  body.eng .member.findidpw .form-group .input-group input[type="password"] {
+    color: red;
+    padding: 0 5px;
+    font-size: 11px;
+  }
+  body.eng .member.findidpw .form-group .input-group .timer {
+    font-size: 10px;
+    top: 21px;
+    right: 137px;
+  }
+  body.eng .detail-card .card-grey span {
+    font-size: 11px;
+    line-height: 42px;
+    padding-top: 0;
+  }
+}
+
 .bg-grey {
   background-color: #EFEFEF;
   border-color: #EFEFEF;
@@ -19326,8 +19664,74 @@ em {
   color: #ffffff;
   font-style: normal;
   text-align: center;
-  padding-left: 3px;
+  padding-left: 5px;
   white-space: nowrap;
+}
+
+body.eng .icon-list-badge-homelearn {
+  position: relative;
+  font-size: 0;
+  width: 117px;
+  height: 17px;
+  background-size: contain;
+  padding-left: 9px;
+  transform: translate(-1px, -13px);
+  z-index: 3;
+}
+
+body.eng .icon-list-badge-homelearn::before {
+  content: 'For Home Learn Only';
+  position: absolute;
+  font-size: 10px;
+  width: 108px;
+  height: 17px;
+  top: 0;
+  right: 0;
+  background-color: #FF7200;
+  border-radius: 0 3px 3px 0;
+}
+
+body.eng .icon-list-badge-package {
+  position: relative;
+  font-size: 0;
+  width: 54px;
+  height: 17px;
+  background-size: contain;
+  padding-left: 9px;
+  transform: translate(-2px, -14px);
+}
+
+body.eng .icon-list-badge-package::before {
+  content: 'package';
+  position: absolute;
+  font-size: 10px;
+  width: 49px;
+  height: 17px;
+  top: 0;
+  right: 0;
+  background-color: #6F00FF;
+  border-radius: 0 3px 3px 0;
+}
+
+@media (min-width: 1280px) {
+  body.eng .icon-list-badge-homelearn {
+    width: 115px !important;
+    height: 24px;
+    transform: translate(-7px, -3px);
+  }
+  body.eng .icon-list-badge-homelearn::before {
+    height: 24px;
+    border-radius: 0 4px 4px 0;
+  }
+  body.eng .icon-list-badge-package {
+    height: 24px;
+    transform: translate(-7px, -3px);
+  }
+  body.eng .icon-list-badge-package::before {
+    height: 24px;
+    border-radius: 4px 4px 4px 0;
+    right: 6px;
+  }
 }
 
 .icon-list-badge-package {
@@ -19727,8 +20131,8 @@ em {
 
 .tag-list .card-item .img {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: calc(100vw * .4);
 }
 
 .tag-list .card-item .img img {
@@ -19842,7 +20246,6 @@ em {
   margin-right: 0;
 }
 
-/* 769~960 겹침 대응 */
 @media (min-width: 1280px) {
   .tag-list {
     margin-bottom: 0;
@@ -19857,6 +20260,7 @@ em {
   }
   .tag-list .card-list .card-item .img {
     overflow: visible !important;
+    height: 193px;
   }
   .tag-list .card-list .card-item .img .sticker-top {
     right: 0;
@@ -19930,7 +20334,7 @@ em {
 .edu-item-list.first a .img {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: calc(100vw * .5625);
   top: auto;
   left: auto;
 }
@@ -20041,7 +20445,7 @@ em {
   display: block;
   font-size: 16px;
   font-weight: bold;
-  line-height: 22px;
+  line-height: 20px;
   text-align: center;
   color: #ffffff;
 }
@@ -20056,6 +20460,7 @@ em {
 .edu-item-list a .list-body .sticker-area {
   padding-left: 9px;
   margin-bottom: 2px;
+  height: 20px;
 }
 
 .edu-item-list a .list-body .sticker-area > div {
@@ -20192,9 +20597,15 @@ em {
   .edu-item-list.first a .img {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 208px;
     top: auto;
     left: auto;
+    text-align: center;
+  }
+  .edu-item-list.first a .img img {
+    width: auto;
+    height: 100%;
+    max-height: 208px;
   }
   .edu-item-list.first a .img .sticker-num {
     width: 32px;
@@ -20230,7 +20641,7 @@ em {
     color: #fff;
     font-weight: bold;
     line-height: 36px;
-    padding-top: 3px;
+    padding-top: 2px;
     padding-left: 4px;
   }
   .edu-item-list.first a .img .sticker-discount span .percent {
@@ -20947,6 +21358,12 @@ em {
   }
 }
 
+@media (min-width: 1280px) {
+  body.eng .tag-list .card-item .list-body .s-sticker, body.eng .tag-list .card-item .list-body .badge-list {
+    font-size: 10px;
+  }
+}
+
 .cs-center .navbar-sub {
   margin-bottom: 0;
 }
@@ -20974,6 +21391,10 @@ em {
 .cs-center .container {
   padding-bottom: 0;
   max-width: inherit;
+}
+
+.cs-center .accordion article {
+  padding-bottom: 1px;
 }
 
 .cs-center .accordion > label {
@@ -21218,7 +21639,7 @@ em {
     background-color: #ffffff;
   }
   .cs-center .container {
-    padding: 0 80px 60px 80px;
+    padding: 0 80px 0 80px;
   }
   .cs-center .nav-tabs-detail {
     font-size: 20px;
@@ -21441,6 +21862,15 @@ em {
 @media (min-width: 1280px) {
   body.eng .cs-center .nav-tabs-detail .nav-item:nth-child(3) {
     line-height: 1;
+  }
+  body.eng .cs-center .nav-tabs-detail {
+    width: 900px;
+  }
+  body.eng .cs-center .box .desc + .btn {
+    margin-top: -15px;
+  }
+  .wrap.p-no.cs-center .container {
+    padding-bottom: 60px;
   }
 }
 
@@ -22573,6 +23003,16 @@ body.eng .payment .p-info .accordion .card .card-body .delivery-info .form-group
   body.eng .payment .p-info .accordion .card .card-body .delivery-info .form-group .button-group .btn {
     font-size: 14px;
   }
+  body.eng .payment .p-info .accordion .card .card-body .total-bottom .title {
+    margin-top: -24px;
+    font-size: 12px;
+  }
+  body.eng .payment .p-info .accordion .card .card-body .total-bottom ul li .custom-checkbox .custom-control-label {
+    font-size: 12px;
+  }
+  body.eng .payment .p-info .accordion .card .card-body .user-list li .custom-radio .custom-control-label .badge-list {
+    right: -152px;
+  }
 }
 
 .mypage {
@@ -23012,6 +23452,37 @@ body.eng .payment .p-info .accordion .card .card-body .delivery-info .form-group
   float: right;
 }
 
+.mypage .app-version {
+  padding: 0 20px;
+}
+
+.mypage .app-version a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 42px;
+  border-top: 1px solid rgba(224, 224, 224, 0.5);
+  padding-top: 18px;
+  color: #333333;
+}
+
+.mypage .app-version a span {
+  display: inline-block;
+  font-family: 'Noto Sans CJK KR Bold';
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: normal;
+}
+
+.mypage .app-version a img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 18px;
+  right: 0;
+}
+
 .mypage .button-group label {
   display: block;
 }
@@ -23395,6 +23866,82 @@ body.eng .payment .p-info .accordion .card .card-body .delivery-info .form-group
   left: -25px;
 }
 
+.mypage .app-info {
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+.mypage .app-info .img {
+  display: block;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 40px;
+}
+
+.mypage .app-info .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.mypage .app-info .info p:first-child {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.mypage .app-info .info p:nth-child(2) {
+  font-family: 'Noto Sans CJK KR Regular';
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  text-align: center;
+  color: #ff7600;
+  margin-bottom: 40px;
+}
+
+.mypage .app-info .info p:nth-child(2).no-update {
+  color: #999999;
+}
+
+.mypage .app-info .btn-wrap {
+  text-align: center;
+}
+
+.mypage .app-info .btn-wrap .btn {
+  display: inline-block;
+  width: 156px;
+  height: 48px;
+  line-height: 46px;
+  font-size: 14px;
+}
+
+.mypage .app-info .btn-wrap .btn.disabled {
+  background-color: #eeeeee;
+  border-color: #eeeeee;
+}
+
+@media (min-width: 1280px) {
+  .mypage .content .app-info .img {
+    margin: 0 auto 50px;
+  }
+  .mypage .content .app-info .info p:first-child {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 11px;
+  }
+  .mypage .content .app-info .info p:nth-child(2) {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .mypage .content .app-info .btn-wrap .btn {
+    width: 180px;
+    height: 54px;
+    line-height: 52px;
+    font-size: 18px;
+  }
+}
+
 .modal-footer .buttons {
   margin-top: 14px;
   padding: 12px 0 0 0;
@@ -23614,6 +24161,30 @@ body.eng .payment .p-info .accordion .card .card-body .delivery-info .form-group
   .mypage .recent .empty p {
     font-size: 18px;
   }
+  .mypage .app-version {
+    padding: 0 84px 0 84px;
+  }
+  .mypage .app-version a {
+    height: 36px;
+    border-top: 0;
+    padding-top: 14px;
+  }
+  .mypage .app-version a span {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: normal;
+    vertical-align: middle;
+  }
+  .mypage .app-version a img {
+    display: inline-block;
+    position: static;
+    width: 36px;
+    height: 36px;
+    top: auto;
+    right: auto;
+    vertical-align: middle;
+    margin-left: 5px;
+  }
   .mypage .edu-list li {
     position: relative;
     padding: 40px 0;
@@ -23670,7 +24241,7 @@ body.eng .payment .p-info .accordion .card .card-body .delivery-info .form-group
     padding: 0 24px;
     width: 180px;
     height: 54px;
-    line-height: 54px;
+    line-height: 50px;
     font-size: 18px;
   }
   .mypage .edu-list + .input-group {
@@ -24030,9 +24601,30 @@ body.eng .mypage .button-group .btn {
   font-size: 10px;
 }
 
+body.eng .mypage .edu-list li select.form-control {
+  padding: 0 5px;
+  font-size: 11px;
+  width: 172px;
+}
+
+body.eng .mypage .edu-list li .form-control ~ h2, body.eng .mypage .edu-list li .btn ~ h2 {
+  width: calc(100% - 50px - 18px - 172px - 5px);
+}
+
 @media (min-width: 1280px) {
   body.eng .mypage .button-group .btn {
     font-size: 14px;
+  }
+  body.eng .mypage .edu-list li select.form-control {
+    padding: 0 5px;
+    font-size: 11px;
+    width: 180px;
+  }
+  body.eng .mypage .edu-list li .form-control ~ h2, body.eng .mypage .edu-list li .btn ~ h2 {
+    width: calc(100% - 50px - 18px - 180px - 5px);
+  }
+  body.eng .mypage .pay-list li > span:nth-last-of-type(1) {
+    white-space: nowrap;
   }
 }
 

@@ -291,9 +291,9 @@
 
 }
 
-@include media-breakpoint-up(lg) {
+@include media-breakpoint-up($size-tablet) {
   .detail {
-    width: 1112px;
+    width: 100%;
     border-radius: 12px;
     box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.12);
     background-color: #ffffff;
@@ -369,6 +369,7 @@
         line-height: 1.13;
         color: #111111;
         margin-bottom: 8px;
+        padding-right: 273px;
       }
 
       .company {
@@ -408,7 +409,7 @@
 
     .card-spec {
       position: absolute;
-      top: 82px;
+      top: 112px;
       left: 206px;
       border-bottom: none;
       width: 475px;
@@ -496,7 +497,7 @@
 
     .card-btn {
       position: absolute;
-      top: 126px;
+      top: 164px;
       right: 0;
 
       .btn {
@@ -799,7 +800,8 @@ body.eng {
         .grade {
           position: absolute;
           top: 0;
-          right: 64px;
+          left: calc((100% - 115px) + 10px);
+          right: auto;
           font-size: 12px;
           font-weight: bold;
           line-height: 2.5;
@@ -1320,16 +1322,37 @@ body.eng {
 /* 수정 사항 */
 body.eng {
   .review-wrap .review-count .count > div .grade {
-    right: 57px;
+    left: calc((100% - 115px) + 5px);
+    font-size: 10px;
+    right: auto;
   }
 }
-@media (min-width: 960px) {
-  body.eng .review-wrap .review-count .count > div .grade {
-    right: 43px;
+
+@include media-breakpoint-up(lg) {
+  body.eng {
+    .detail-card .card-name .app-icon .badge-homelearn i {
+      font-size: 7px;
+      left: 20px;
+      top: 3px;
+      white-space: normal;
+      line-height: 10px;
+    }
+    .detail-card .card-name .app-icon .badge-package i {
+      font-size: 11px;
+      left: 14px;
+      top: 5px;
+    }
   }
 }
+
 @include media-breakpoint-up($size-tablet) {
-  body.eng .review-wrap .review-count .count > div .grade {
-    right: 43px;
+  body.eng {
+    .review-wrap .review-count .count > div .grade {
+      left: calc((100% - 115px) + 5px);
+    }
+    .detail-card .card-name .app-icon .badge-package i {
+      top: 7px;
+    }
   }
 }
+
