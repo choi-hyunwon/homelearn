@@ -426,8 +426,8 @@ body.eng {
     .card-list {
       > ul {
         .card-item {
-          margin-bottom: 0;
-          padding-bottom: 36px;
+          margin-bottom: 36px;
+          height: 210px;
 
           &:last-child {
             margin-bottom: 0;
@@ -435,6 +435,7 @@ body.eng {
 
           .img {
             margin-bottom: 0;
+            height: 100%;
           }
         }
       }

@@ -7,6 +7,8 @@ const langData = {
     CU_0002_01: '일시적인 오류가 발생하였습니다.',
     CU_0002_02: '오류 코드',
     CU_0002_03: '새로고침',
+    CU_0002_04: '로그인 후 서비스를 이용할 수 있습니다.',
+    CU_0002_05: '결제 요청에 실패하였습니다. ',
 
     CU_0004_01: '학부모 회원, 자녀 회원, 선생님 회원 중 1개 노출, 학습관 이용',
     CU_0004_02: '회원명',
@@ -31,8 +33,7 @@ const langData = {
     CU_0004_21: '에 새로운 학습이 등록되었습니다.',
     CU_0004_22: '알림함이 비었습니다.',
     CU_0006_01: '회원님이 알림을 설정하신 #%S에 새로운 학습이 등록되었습니다.\n지금 홈런 마켓 플레이스에서 확인해 보세요!',
-    // eslint-disable-next-line no-useless-concat
-    CU_0006_02: '\'%S님이 %S을(를) 학습하고 싶다고 요청을 보냈습니다.\n' + '지금 홈런 마켓 플레이스에서 확인해 보세요!',
+    CU_0006_02: '%S님이 %S을(를) 학습하고 싶다고 요청을 보냈습니다.\n지금 홈런 마켓 플레이스에서 확인해 보세요!',
     CU_0007_01: '태그 알림 설정하기',
     CU_0007_02: '알림 ON',
     CU_0007_03: '알림 OFF',
@@ -103,13 +104,13 @@ const langData = {
     CU_0027_04: '고%S',
     CU_0027_05: '성인',
     CU_0028_01: '월별 결제',
-    CU_0028_02: '\%S/월',
+    CU_0028_02: '%S / 월',
     CU_0029_01: '6개월 약정, 12개월 약정, 24개월 약정',
     CU_0029_02: '\%S/월',
     CU_0029_03: '6개월 약정',
     CU_0029_04: '12개월 약정',
     CU_0029_05: '24개월 약정',
-    CU_0029_06: '\%S/',
+    CU_0029_06: '%S/',
     CU_0029_07: '월',
     LI_0001_01: '아이스크림 홈런 로그인',
     LI_0001_02: '아이디',
@@ -213,7 +214,9 @@ const langData = {
     MA_0010_06: '아이스크림북스 가기',
     MA_0010_07: '나에게 딱 맞는 수준별 학습',
     MA_0010_08: '스스로 생각해보는 습관 기르기',
+
     MA_0010_09: '홈런프렌즈샵 가기',
+
     MA_0013_01: '인기 학습! 아직도 안해봤어요?',
     MA_0013_02: '추천',
     MA_0013_03: '초등',
@@ -281,8 +284,10 @@ const langData = {
     AD_0013_01: '평가하기',
     AD_0013_02: '%S 학생들이 가장 많이 학습하고 있어요',
     AD_0013_03: '%S개의 리뷰가 있습니다.',
+
     AD_0013_04: '리뷰가 도움이 되는 순',
     AD_0013_08: '최신순',
+
     AD_0013_05: '이 리뷰가 도움이 되었어요',
     AD_0013_06: '학부모',
     AD_0013_07: '선생님',
@@ -306,14 +311,14 @@ const langData = {
     AD_0023_02: '다음',
     AD_0025_01: '전체 선택',
     AD_0025_02: '전체 해제',
-    AD_0025_03: '2명 이상 선택',
+    AD_0025_03: '2명 이상 %S명 이하 선택',
     AD_0025_04: '선택 미완료',
-    AD_0025_05: ' \'%S\' 외 %S명',
+    AD_0025_05: ' %S 외 %S명',
     AD_0025_06: '학습관 이용 자녀만 학습이 가능합니다.',
     AD_0025_07: '%S명',
-    AD_0025_08: '이상 선택',
+    AD_0025_08: '2명 이상 %S명 이하 선택',
     AD_0026_01: '수량',
-    AD_0026_02: '%S개',
+    AD_0026_02: '개',
     AD_0028_01: '배송지',
     AD_0028_02: '* 항목은 필수 입력 항목입니다.',
     AD_0028_03: '배송지 선택',
@@ -326,19 +331,21 @@ const langData = {
     AD_0028_10: '전화 번호',
     AD_0028_11: '이메일',
     AD_0028_12: '선택',
+
     AD_0028_14: '네이버',
     AD_0028_15: '다음',
     AD_0028_16: '구글',
     AD_0028_17: '네이트',
     AD_0028_18: '핫메일',
     AD_0028_19: '직접입력',
+
     AD_0028_13: '한글 50자, 영문 100자 이내로 입력해주세요.',
     AD_0031_01: '입력 미완료',
     AD_0033_01: '총 결제 금액',
     AD_0033_02: '다음 정기 결제는 현재 구독이 만료되면 시작됩니다. 갱신일 하루 전까지 마이페이지에서 취소할 수 있습니다. 취소할 대까지 구독이 자동 갱신됩니다.',
     AD_0033_03: '다음 결제일, YYYY. MM. DD 결제 예정',
     AD_0033_04: '약정은 결제 시 바로 시작되며, 마이페이지에서 중도 해지할 수 있습니다. 자세한 내용은 고객 센터에 문의하세요.',
-    AD_0033_05: '약정 기간, YYYY. MM. DD ~ YYYY. MM. DD',
+    AD_0033_05: '약정 기간,',
     AD_0033_06: '약관 동의',
     AD_0033_07: '개인정보수집 약관 동의(필수)',
     AD_0033_08: '환불 규정 안내 동의(필수)',
@@ -356,10 +363,12 @@ const langData = {
     AD_0034_07: '홈런 에코를 실행하여 다운로드한 후 학습을 시작하세요.',
     AD_0034_08: '결제',
     AD_0034_09: '배송시 요구사항',
+
     AD_0034_10: '홈런 학습 계획을 사용합니다.',
     AD_0034_11: '사용할 경우 학생들에게 오늘의 학습이 제공됩니다. 마이페이지에서 사용 여부 설정이 가능합니다.',
     AD_0034_12: '가 완료되었습니다.',
     AD_0034_13: '가(이) 실패하였습니다.',
+
     AD_0034_14: '%S년 %S월',
     AD_0034_15: '신용카드',
     AD_0034_16: '가상계좌',
@@ -369,6 +378,7 @@ const langData = {
     AD_0036_02: '사용할 경우 학생들에게 오늘의 학습이 제공됩니다.',
     AD_0036_03: '마이페이지에서 사용 여부 설정이 가능합니다.',
     AD_0036_04: '확인',
+
     EV_0001_01: '이벤트',
     EV_0001_02: '진행 중인 이벤트, 지난 이벤트',
     EV_0001_03: '기간 -',
@@ -383,19 +393,22 @@ const langData = {
     CC_0001_02: '공지사항, 1:1 문의 내역, 자주 묻는 질문',
     CC_0001_03: '서비스 소식, 안내, 서비스 점검, 서비스 종료 중 1개 노출',
     CC_0001_04: '공지사항',
-    CC_0001_05: '1:! 문의 내역',
+    CC_0001_05: '1:1 문의 내역',
     CC_0001_06: '자주 묻는 질문',
     CC_0001_07: '서비스 소식',
     CC_0001_08: '안내',
     CC_0001_09: '서비스 점검',
     CC_0001_10: '서비스 종료',
+
     CC_0001_11: '공지사항이 없어요',
+
     CC_0003_01: '학습 문의 혹은 홈런 마켓 이용에 관한 문의는 “1:1문의하기”를 이용하세요.\n각 학습 상품에 대한 리뷰, 평가에 대한 정보는 상세 목록을 참고하세요.',
     CC_0003_02: '1:1 문의하기',
     CC_0003_03: 'TBD (FAQ 대분류에 따름)',
     CC_0003_04: '답변 대기, 답변 완료 중 1개 노출',
     CC_0003_05: '답변 대기',
     CC_0003_06: '답변 완료',
+
     CC_0004_01: '등록한 1:1문의가 없어요.',
     CC_0006_01: '비회원 1:1 문의 내역 조회',
     CC_0006_02: '비회원 고객께서 남기신 1:1 문의 내용과 답변을 확인할 수 있습니다.\n1:1 문의 등록 시 작성한 이름과 비밀번호를 입력 후 조회하시면 1:1 문의 내역을 확인할 수 있습니다.',
@@ -410,7 +423,9 @@ const langData = {
     CC_0009_01: '궁금하신 점이나 문제점을 검색하세요.',
     CC_0009_02: 'TBD',
     CC_0009_03: 'TBD (FAQ 대분류에 따름)',
+
     CC_0009_04: '자주 묻는 질문이 없어요',
+
     CC_0011_01: '1:1 문의하기',
     CC_0011_02: '답변은 고객센터 1:1 문의 내역을 통해 확인하실 수 있습니다.',
     CC_0011_03: '항목은 필수 입력 항목입니다.',
@@ -422,7 +437,9 @@ const langData = {
     CC_0011_09: '문의 내용을 입력하세요. (최대 500자)',
     CC_0012_01: '취소',
     CC_0012_02: '등록',
+
     CC_0012_03: '입력하신 내용이 저장되지 않아요. 취소하시겠어요?',
+
     CC_0014_01: '이름',
     CC_0014_02: '비밀번호',
     CC_0014_03: '비밀번호 4자리를 입력해주세요.',
@@ -446,7 +463,9 @@ const langData = {
     MY_0002_02: '등록된 자녀가 없습니다. 자녀를 추가하세요.',
     MY_0004_01: '자녀별 학습 현황',
     MY_0004_02: '%S개의 학습이 진행 중입니다.',
-    MY_0004_03: '부터 학습 시작',
+
+    MY_0004_03: '%S부터 학습 시작',
+
     MY_0004_04: '의 학습이 진행 중입니다.',
     MY_0005_01: '진행 중인 학습이 없어요.',
     MY_0007_01: '자녀 추가하기',
@@ -507,46 +526,68 @@ const langData = {
     MY_0020_08: '진행 중 학습',
     MY_0020_09: '해지/만료된 학습',
     MY_0020_10: '환불 요청 학습',
+
+    MY_0020_11: '결제일 변경',
+    MY_0020_12: '결제 해지',
+
     MY_0021_01: '진행 중인 학습이 없어요.',
     MY_0021_02: '판매 중인 학습을 둘러보고 원하는 학습을 시작해보세요.',
-    MY_0023_01: '\%S/월 (%S개 X \%S/월)',
+    MY_0023_01: '%S / 월 (%S개 X %S / 월)',
+
     MY_0023_02: '부터 구독',
     MY_0023_03: '결제 예정',
     MY_0023_04: '해지 예정',
     MY_0023_05: '결제 오류',
+
     MY_0024_01: 'YYYY. MM. DD ~ YYYY. MM. DD',
+
     MY_0024_02: '만료 예정',
+
     MY_0025_01: '결제 대기',
+
     MY_0025_02: '결제 완료',
+
     MY_0025_03: '결제완료',
     MY_0025_04: '결제오류',
     MY_0026_01: '배송 준비중',
     MY_0026_02: '배송 중',
+
     MY_0026_03: '발송',
+
     MY_0026_04: '송장번호 %S',
     MY_0026_05: '배송 완료',
+
     MY_0026_06: '배달 완료',
+
     MY_0027_01: '결제일 변경',
+
     MY_0027_02: '현재 결제일은 매월 %S일 입니다. 변경을 원하시면 원하는 날짜를 선택해 주세요.',
+
     MY_0027_03: '%S일',
     MY_0029_01: '매월 %S일에 %S원의 결제 금액이 청구됩니다.',
     MY_0029_02: '확인\'을 선택하면 결제일이 변경되며, 자세한 내용은 고객 센터에 문의하세요.',
     MY_0029_03: '결제일이 변경되었어요.',
+
     MY_0029_04: '다음 결제 예정일은 %S입니다.',
+
     MY_0031_01: '구독을 해지하시겠어요?',
     MY_0031_02: '약정을 해지하시겠어요?',
+
     MY_0031_03: '까지 학습이 가능합니다.',
+
     MY_0031_04: '해지가 완료되었어요.',
-    MY_0031_05: '진행 중 학습',
-    MY_0031_06: '해지/만료된 학습',
-    MY_0031_07: '환불 요청 학습',
+
     MY_0032_01: '다시 결제',
     MY_0034_01: '해지/만료된 학습이 없어요.',
+
     MY_0036_01: '해지',
     MY_0036_02: '서비스 종료',
+
     MY_0037_01: '만료',
     MY_0039_01: '환불을 요청한 학습이 없어요.',
+
     MY_0041_01: '환불 요청',
+
     MY_0041_02: '환불 대기',
     MY_0041_03: '환불 완료',
     MY_0041_04: '환불 요청',
@@ -570,7 +611,6 @@ const langData = {
     MY_0050_04: '평가를 삭제하시겠어요?',
     MY_0050_05: '삭제',
     MY_0050_06: '수정하기',
-    MY_0050_07: '구독 관리',
     MY_0052_01: '로고 등록',
     MY_0052_02: '로고 이미지가 최대 크기 가로 700px, 세로 700px를 넘어가는 경우 자동으로 조정됩니다.\n이미지를 등록하지 않으면 아이스크림 홈런 로고가 자동으로 제공됩니다.',
     MY_0052_03: '이미지 불러오기',
@@ -589,6 +629,8 @@ const langData = {
     CU_0002_01: '일시적인 오류가 발생하였습니다.ENG',
     CU_0002_02: 'ERROR CODE',
     CU_0002_03: '새로고침ENG',
+    CU_0002_04: '로그인 후 서비스를 이용할 수 있습니다.ENG',
+    CU_0002_05: '결제 요청에 실패하였습니다. ENG',
 
     CU_0004_01: 'Parent User, Child User, Teacher User, Use Learning Center',
     CU_0004_02: 'Username',
@@ -781,7 +823,7 @@ const langData = {
     MA_0001_03: 'How about these lessons?',
     MA_0001_04: 'There are',
     MA_0001_05: '%S',
-    MA_0001_06: '',
+    MA_0001_06: 'lessons I want to learn.',
     MA_0001_07: '',
     MA_0007_01: 'Notification ON',
     MA_0007_02: 'Notification OFF',
@@ -861,7 +903,7 @@ const langData = {
     AD_0009_05: 'Main Contents',
     AD_0013_01: 'Review',
     AD_0013_02: '%S\' school students learned this the most',
-    AD_0013_03: 'There are N reviews.',
+    AD_0013_03: 'There are %S reviews.',
     AD_0013_04: 'Most Helpful',
     AD_0013_08: 'Most Recent',
     AD_0013_05: 'This review was helpful',
@@ -887,12 +929,12 @@ const langData = {
     AD_0023_02: 'Next',
     AD_0025_01: 'Select All',
     AD_0025_02: 'Unselect All',
-    AD_0025_03: 'Select more than 2',
+    AD_0025_03: 'Select more than 2, less than %S',
     AD_0025_04: 'Selection Incomplete',
-    AD_0025_05: '',
+    AD_0025_05: '%S excluding %S',
     AD_0025_06: 'Learning Center students only',
     AD_0025_07: '%S',
-    AD_0025_08: 'Select more than ~',
+    AD_0025_08: 'Select more than 2, less than %S',
     AD_0026_01: 'Amount',
     AD_0026_02: '',
     AD_0028_01: 'Shipping Address',
@@ -1014,7 +1056,7 @@ const langData = {
     MY_0002_01: 'There is no recently searched lesson.',
     MY_0001_04: 'Manage Lessons, Payment Details, Manage Evaluations, 1:1 Inquiry Details ',
     MY_0001_05: 'Child Lesson Status',
-    MY_0001_06: '+ Add a Child',
+    MY_0001_06: 'Add a Child',
     MY_0001_07: 'For details regarding Child Users, please contact Customer Service Center.',
     MY_0001_08: 'Use Learning Center',
     MY_0001_09: '%S lesson(s) in progress',
@@ -1027,8 +1069,8 @@ const langData = {
     MY_0002_02: 'There is no registered Child. Please add a Child.',
     MY_0004_01: 'Child Lesson Status',
     MY_0004_02: '%S lesson(s) is in progress',
-    MY_0004_03: 'Start lesson on ~',
-    MY_0004_04: '',
+    MY_0004_03: 'Start lesson on %S',
+    MY_0004_04: '의 학습이 진행 중입니다. ENG',
     MY_0005_01: 'There is no lesson in progress.',
     MY_0007_01: 'Add a Child',
     MY_0007_02: 'Please remember your username and password.',
@@ -1077,13 +1119,12 @@ const langData = {
     MY_0018_03: 'Postal Code',
     MY_0020_01: 'Manage Lessons',
     MY_0020_02: 'Lesson in Progress, Expired Lesson, Refund Requested Lesson',
-
     MY_0020_03: 'Edit Payment',
     MY_0020_04: 'Change Payment Method',
+    MY_0020_05: 'Payment method has been changed.',
     MY_0020_11: 'Change Payment Date',
     MY_0020_12: 'Cancel Payment',
     MY_0020_13: 'Payment method has been changed.',
-
     MY_0020_05: 'Payment method has been changed.',
     MY_0020_06: 'This lesson is in payment process. Please contact Customer Service Center.',
     MY_0020_07: 'Pay again',
@@ -1120,9 +1161,6 @@ const langData = {
     MY_0031_02: 'Would you like to terminate your contract?',
     MY_0031_03: 'Lessons are available until ~.',
     MY_0031_04: 'Cancellation complete.',
-    MY_0031_05: '',
-    MY_0031_06: '',
-    MY_0031_07: '',
     MY_0032_01: 'Pay Again',
     MY_0034_01: 'You have no cancelled/expired lesson.',
     MY_0036_01: 'Cancelled',
@@ -1144,7 +1182,7 @@ const langData = {
     MY_0045_01: 'There is no payment detail.',
     MY_0047_01: 'Manage Reviews',
     MY_0047_02: 'I wrote %S reviews.',
-    MY_0047_03: '',
+    MY_0047_03: '의 내가 남긴 평가가 있습니다. ENG',
     MY_0048_01: 'There is no review.',
     MY_0048_02: 'Write a review for the paid lessons.',
     MY_0050_01: 'Edit Review',
@@ -1153,7 +1191,6 @@ const langData = {
     MY_0050_04: 'Would you like to delete the review?',
     MY_0050_05: 'Delete',
     MY_0050_06: 'Edit',
-    MY_0050_07: '',
     MY_0052_01: 'Add a Logo',
     MY_0052_02: 'Image exceeding the maximum upload size of 700px by 700px will automatically be adjusted. Default i-Scream Home Learn logo is provided for those who did not upload an image.',
     MY_0052_03: 'Load Image',
@@ -1161,7 +1198,7 @@ const langData = {
     MY_0052_05: 'Image exceeding the maximum upload size of 700px by 700px will automatically be adjusted.',
     MY_0052_06: 'Default i-Scream Home Learn logo will be provided for those who does not upload an image.',
     MY_0054_01: 'Reset',
-    MY_0054_02: '정보 수정하기',
-    MY_0054_03: '항목은 변경이 불가합니다.'
+    MY_0054_02: '정보 수정하기 ENG',
+    MY_0054_03: '항목은 변경이 불가합니다. ENG'
   }
 }

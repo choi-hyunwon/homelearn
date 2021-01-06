@@ -58,3 +58,13 @@
     @include badge-variant($value);
   }
 }
+
+/* 추가 -- 2020.01.05 */
+@media (min-width: 991.98px) {
+  .badge {
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 20px;
+  }
+}
