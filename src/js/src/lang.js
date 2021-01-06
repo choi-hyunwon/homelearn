@@ -518,17 +518,14 @@ const langData = {
     MY_0020_03: '결제 수정',
     MY_0020_04: '결제 수단 변경',
     MY_0020_05: '수정 불가',
-    MY_0020_11: '결제일 변경',
-    MY_0020_12: '결제 해지',
-    MY_0020_13: '결제 수단이 변경되었어요.',
     MY_0020_06: '통합 결제 중인 학습입니다. 고객 센터에 문의하세요.',
     MY_0020_07: '다시 결제',
     MY_0020_08: '진행 중 학습',
     MY_0020_09: '해지/만료된 학습',
     MY_0020_10: '환불 요청 학습',
-
     MY_0020_11: '결제일 변경',
     MY_0020_12: '결제 해지',
+    MY_0020_13: '결제 수단이 변경되었어요.',
 
     MY_0021_01: '진행 중인 학습이 없어요.',
     MY_0021_02: '판매 중인 학습을 둘러보고 원하는 학습을 시작해보세요.',
@@ -576,7 +573,6 @@ const langData = {
     MY_0031_03: '까지 학습이 가능합니다.',
 
     MY_0031_04: '해지가 완료되었어요.',
-
     MY_0032_01: '다시 결제',
     MY_0034_01: '해지/만료된 학습이 없어요.',
 
@@ -1122,15 +1118,15 @@ const langData = {
     MY_0020_03: 'Edit Payment',
     MY_0020_04: 'Change Payment Method',
     MY_0020_05: 'Payment method has been changed.',
-    MY_0020_11: 'Change Payment Date',
-    MY_0020_12: 'Cancel Payment',
-    MY_0020_13: 'Payment method has been changed.',
-    MY_0020_05: 'Payment method has been changed.',
     MY_0020_06: 'This lesson is in payment process. Please contact Customer Service Center.',
     MY_0020_07: 'Pay again',
     MY_0020_08: 'Lesson in Progress',
     MY_0020_09: 'Expired Lesson',
     MY_0020_10: 'Refund Requested Lesson',
+    MY_0020_11: 'Change Payment Date',
+    MY_0020_12: 'Cancel Payment',
+    MY_0020_13: 'Payment method has been changed.',
+
     MY_0021_01: 'There is no lesson in progress.',
     MY_0021_02: 'Browse through the offered lessons and start learning about what interests you.',
     MY_0023_01: '%S / month (%S X %S / month)',
